@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 블로그 사이트맵 랜딩페이지
 
-## Getting Started
+카테고리별로 정리된 블로그 글들을 한눈에 볼 수 있는 사이트맵 형태의 랜딩페이지입니다.
 
-First, run the development server:
+## 🚀 주요 기능
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### 📊 카테고리별 분류
+- **정부 지원금/혜택**: 민생회복 소비쿠폰, 양육비 선지급제 등
+- **세금 환급**: 으뜸효율 가전제품 환급, 출국납부금 환급 등
+- **사업자 지원**: 소상공인 부담경감크레딧 등
+- **제품 리뷰**: 다양한 제품의 솔직한 후기와 추천
+- **건강/웰빙**: 다이어트, 비타민, 건강 관리 정보
+- **금융/투자**: 대출, 투자, 퇴직연금 관련 정보
+- **기술/IT**: iOS, 스마트폰, 인증서 관련 정보
+- **엔터테인먼트**: 영화, 스포츠, 운세, 할인 정보
+- **음식/영양**: 건강 식품, 영양 정보
+- **반려동물**: 강아지, 고양이 관련 정보
+- **라이프스타일**: 여름 가전, 패션, 생활용품
+- **정보/가이드**: 각종 신청 방법, 발급 절차 등
+- **계절/시즌**: 복날, 계절 관련 정보
+
+### 🎯 사용자 경험
+- **직관적인 카테고리 분류**: 각 카테고리별 아이콘과 색상으로 구분
+- **원클릭 이동**: 글 제목 클릭 시 현재 탭에서 해당 블로그로 이동
+- **키워드 태그**: 매칭된 키워드를 태그로 표시하여 분류 근거 제공
+- **반응형 디자인**: 모바일, 태블릿, 데스크톱 모든 기기에서 최적화
+- **부드러운 애니메이션**: 호버 효과와 스크롤 인디케이터
+
+### 📱 반응형 레이아웃
+- **모바일**: 1열 그리드
+- **태블릿**: 2열 그리드
+- **데스크톱**: 3-4열 그리드
+
+## 🛠️ 기술 스택
+
+- **Next.js 14**: React 기반 프레임워크
+- **TypeScript**: 타입 안전성
+- **Tailwind CSS**: 스타일링
+- **Node.js**: 서버 사이드 로직
+
+## 📁 프로젝트 구조
+
+```
+src/
+├── app/
+│   ├── page.tsx              # 메인 랜딩페이지
+│   ├── layout.tsx            # 레이아웃
+│   └── globals.css           # 전역 스타일
+├── components/
+│   ├── Header.tsx            # 헤더 컴포넌트
+│   ├── Footer.tsx            # 푸터 컴포넌트
+│   ├── CategorySection.tsx   # 카테고리 섹션
+│   ├── CategorySummary.tsx   # 카테고리 요약
+│   └── ScrollIndicator.tsx   # 스크롤 진행률
+└── utils/
+    └── categoryData.ts       # 카테고리 데이터 유틸리티
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 실행 방법
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **의존성 설치**
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **개발 서버 실행**
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+3. **브라우저에서 확인**
+   ```
+   http://localhost:3000
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+## 📊 데이터 구조
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 카테고리별 분류 결과
+- **총 글 수**: 100개
+- **카테고리 수**: 13개
+- **가장 많은 카테고리**: 제품 리뷰 (50개)
+- **지원금/환급금 관련**: 12개
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### JSON 파일
+- `word_filtered.json`: 원본 블로그 데이터
+- `categorized_posts.json`: 기본 카테고리 분류
+- `detailed_categorized_posts.json`: 상세 카테고리 분류 (키워드 매칭 포함)
 
-## Deploy on Vercel
+## 🎨 디자인 특징
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 색상 시스템
+- **정부 지원금**: 파란색 (#3B82F6)
+- **세금 환급**: 초록색 (#10B981)
+- **제품 리뷰**: 노란색 (#F59E0B)
+- **건강/웰빙**: 빨간색 (#EF4444)
+- **기술/IT**: 인디고 (#6366F1)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 애니메이션
+- **호버 효과**: 카드 상승 및 그림자 변화
+- **아이콘 회전**: 카테고리 아이콘 호버 시 회전
+- **키워드 태그**: 페이드인 애니메이션
+- **스크롤 인디케이터**: 상단 진행률 바
+
+## 🔗 외부 링크
+
+- **메인 블로그**: https://zucca100.com
+- **모든 글은 현재 탭에서 메인 블로그로 이동**
+
+## 📈 성능 최적화
+
+- **정적 생성**: 빌드 시 데이터 처리
+- **이미지 최적화**: Next.js Image 컴포넌트 사용
+- **코드 분할**: 컴포넌트별 지연 로딩
+- **SEO 최적화**: 메타 태그 및 구조화된 데이터
+
+## 🤝 기여하기
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 라이선스
+
+이 프로젝트는 MIT 라이선스 하에 배포됩니다.

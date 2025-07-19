@@ -1,26 +1,120 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* AdSense 광고 스타일 */
+.ad-container {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.ad-container ins {
+  display: block !important;
+  text-align: center;
+}
+
+/* 광고 로딩 중 표시 */
+.ad-container:empty::before {
+  content: "광고 로딩 중...";
+  color: #6c757d;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* 반응형 광고 컨테이너 */
+@media (max-width: 768px) {
+  .ad-container {
+    min-height: 60px;
+    margin: 0.5rem 0;
+  }
+}
+
+/* 광고가 로드되지 않았을 때 숨기기 */
+.ad-container:not(:has(ins[data-ad-status="filled"])) {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 모든 텍스트 요소에 word-break 적용 */
+h1, h2, h3, h4, h5, h6, p, span, div, a, li {
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+/* 카테고리 섹션 호버 효과 */
+.category-section {
+  transition: all 0.3s ease;
+}
+
+.category-section:hover {
+  transform: translateY(-2px);
+}
+
+/* 키워드 태그 애니메이션 */
+.keyword-tag {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 카테고리 아이콘 회전 효과 */
+.category-icon {
+  transition: transform 0.3s ease;
+}
+
+.category-icon:hover {
+  transform: rotate(5deg);
+}
+
+/* 스크롤 인디케이터 */
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  z-index: 1000;
+  transition: width 0.3s ease;
 }
