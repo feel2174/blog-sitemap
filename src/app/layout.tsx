@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -93,6 +94,7 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
         {children}
+        <Analytics />
       </body>
     </html>
   );
