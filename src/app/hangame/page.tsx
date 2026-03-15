@@ -61,8 +61,29 @@ export default function HangameLandingPage() {
                 {/* Download links structured based on user request */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', margin: '30px 0' }}>
                     
-                    {/* 1. 한게임 바둑 안드로이드 앱 다운로드 */}
+                    {/* 한게임 바둑 바로가기 */}
                     <div style={{ backgroundColor: 'red', borderRadius: '12px', textAlign: 'center', animation: 'pulse-nhis 2s infinite', padding: '18px' }}>
+                        <Link href="https://baduk.hangame.com/?utm_source=baduk&utm_medium=gamelist&utm_campaign=main" style={{ color: '#ffffff', textDecoration: 'none', fontWeight: 'bold', fontSize: '18px', display: 'block' }}>
+                            한게임 바둑 바로가기
+                        </Link>
+                    </div>
+
+                    {/* 한게임 장기 바로가기 */}
+                    <div style={{ backgroundColor: 'red', borderRadius: '12px', textAlign: 'center', animation: 'pulse-nhis 2s infinite', padding: '18px', animationDelay: '0.1s' }}>
+                        <Link href="https://janggi.hangame.com/?utm_source=janggi&utm_medium=gamelist&utm_campaign=main" style={{ color: '#ffffff', textDecoration: 'none', fontWeight: 'bold', fontSize: '18px', display: 'block' }}>
+                            한게임 장기 바로가기
+                        </Link>
+                    </div>
+
+                    {/* 한게임 바로가기 */}
+                    <div style={{ backgroundColor: 'red', borderRadius: '12px', textAlign: 'center', animation: 'pulse-nhis 2s infinite', padding: '18px', animationDelay: '0.2s' }}>
+                        <Link href="https://www.hangame.com/" style={{ color: '#ffffff', textDecoration: 'none', fontWeight: 'bold', fontSize: '18px', display: 'block' }}>
+                            한게임 바로가기
+                        </Link>
+                    </div>
+
+                    {/* 1. 한게임 바둑 안드로이드 앱 다운로드 */}
+                    <div style={{ backgroundColor: 'red', borderRadius: '12px', textAlign: 'center', animation: 'pulse-nhis 2s infinite', padding: '18px', animationDelay: '0.3s' }}>
                         <Link href="https://play.google.com/store/apps/details?id=com.nhnent.HanBaduk&hl=ko" style={{ color: '#ffffff', textDecoration: 'none', fontWeight: 'bold', fontSize: '18px', display: 'block' }}>
                             한게임 바둑 안드로이드 앱 다운로드
                         </Link>
