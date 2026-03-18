@@ -63,6 +63,13 @@ export default function DeliveryTrackingPage() {
             icon: '🏢',
             bg: 'bg-[#00723F]',
             shadow: 'hover:shadow-[0_15px_30px_-5px_var(--tw-shadow-color)] shadow-[#00723F]/40'
+        },
+        {
+            name: 'CU 편의점',
+            url: 'https://www.cupost.co.kr/postbox/delivery/all.cupost',
+            icon: '🏪',
+            bg: 'bg-[#652C91]',
+            shadow: 'hover:shadow-[0_15px_30px_-5px_var(--tw-shadow-color)] shadow-[#652C91]/40'
         }
     ];
 
@@ -90,7 +97,7 @@ export default function DeliveryTrackingPage() {
                     <Link
                         href={courier.url}
                         key={idx}
-                        className={`group relative overflow-hidden bg-white rounded-3xl p-6 sm:p-7 flex flex-col items-center text-center transition-all duration-300 transform hover:-translate-y-2 border border-slate-200/60 shadow-[0_8px_20px_rgb(0,0,0,0.03)] ${courier.shadow}`}
+                        className={`group relative overflow-hidden bg-white rounded-3xl p-6 sm:p-7 flex flex-col items-center text-center transition-all duration-300 transform hover:-translate-y-2 border border-slate-200/60 shadow-[0_8px_20px_rgb(0,0,0,0.03)] ${courier.shadow} ${idx === 8 ? 'col-span-2 md:col-span-1' : ''}`}
                     >
                         {/* 호버 시 은은한 배경 글로우 */}
                         <div className={`absolute -bottom-10 -right-10 w-32 h-32 ${courier.bg} rounded-full blur-[60px] opacity-0 group-hover:opacity-30 transition-opacity duration-500`}></div>
