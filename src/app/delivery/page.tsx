@@ -97,7 +97,7 @@ export default function DeliveryTrackingPage() {
                     <Link
                         href={courier.url}
                         key={idx}
-                        className={`group relative overflow-hidden bg-white rounded-3xl p-6 sm:p-7 flex flex-col items-center text-center transition-all duration-300 transform hover:-translate-y-2 border border-slate-200/60 shadow-[0_8px_20px_rgb(0,0,0,0.03)] ${courier.shadow} ${idx === 8 ? 'col-span-2 md:col-span-1' : ''}`}
+                        className={`group relative overflow-hidden bg-white rounded-3xl p-6 sm:p-7 flex flex-col items-center text-center transition-all duration-300 transform hover:-translate-y-2 border border-slate-200/60 shadow-[0_8px_20px_rgb(0,0,0,0.03)] ${courier.shadow}`}
                     >
                         {/* 호버 시 은은한 배경 글로우 */}
                         <div className={`absolute -bottom-10 -right-10 w-32 h-32 ${courier.bg} rounded-full blur-[60px] opacity-0 group-hover:opacity-30 transition-opacity duration-500`}></div>
