@@ -35,6 +35,18 @@ export default function NetflixLandingPage() {
 
                 {/* Action Buttons */}
                 <div className="flex flex-col gap-5">
+                    {/* Traffic Control Info */}
+                    <Link
+                        href="https://blog.naver.com/PostView.naver?blogId=naver_map&navType=tl&logNo=224221951847"
+                        className="group relative flex items-center justify-between bg-yellow-400 text-black p-5 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(250,204,21,0.4)] active:scale-[0.98]"
+                    >
+                        <div className="flex items-center gap-4 text-left">
+                            <span className="text-2xl">🚧</span>
+                            <span className="leading-tight">광화문 교통통제 구간 및<br />우회 루트 먼저 확인하기</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="opacity-70 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </Link>
+
                     {/* Live Shortcut */}
                     <Link
                         href="https://www.netflix.com/kr/title/82157128"
