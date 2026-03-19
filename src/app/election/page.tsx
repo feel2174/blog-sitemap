@@ -48,13 +48,30 @@ export default function ElectionJobLandingPage() {
                 </div>
 
                 {/* Information Links */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', margin: '20px 0' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', margin: '30px 0' }}>
                     
-                    {/* 알바몬 선거 알바 검색 결과 바로가기 */}
-                    <div style={{ backgroundColor: '#4F46E5', borderRadius: '16px', textAlign: 'center', animation: 'pulse-election 2.5s infinite', padding: '22px', border: '2px solid #6366F1' }}>
-                        <Link href="https://www.albamon.com/total-search?keyword=%EC%84%A0%EA%B1%B0" style={{ color: '#ffffff', textDecoration: 'none', fontWeight: '900', fontSize: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
-                            <span>🔎 최신 지방선거 단기알바 보기</span>
-                            <span style={{ fontSize: '0.85rem', fontWeight: 'normal', opacity: 0.9 }}>알바몬 실시간 채용 리스트로 이동합니다</span>
+                    {/* 알바 사이트 1 (알바몬 연동) */}
+                    <div style={{ backgroundColor: '#2563EB', borderRadius: '16px', textAlign: 'center', animation: 'pulse-election 2.5s infinite', padding: '20px', border: '1px solid #3B82F6', position: 'relative', overflow: 'hidden' }}>
+                        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(45deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%)', pointerEvents: 'none' }}></div>
+                        <Link href="https://www.albamon.com/total-search?keyword=%EC%84%A0%EA%B1%B0" style={{ color: '#ffffff', textDecoration: 'none', fontWeight: '900', fontSize: '18px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem' }}>
+                            <span style={{ fontSize: '1.2rem' }}>✅ 선거운동원 / 유세차량 공고 보기</span>
+                            <span style={{ fontSize: '0.8rem', fontWeight: 'normal', color: '#BFDBFE' }}>가장 많은 단기 알바 리스트 확인하기</span>
+                        </Link>
+                    </div>
+
+                    {/* 알바 사이트 2 (알바천국 연동) */}
+                    <div style={{ backgroundColor: '#059669', borderRadius: '16px', textAlign: 'center', padding: '20px', border: '1px solid #10B981', position: 'relative', overflow: 'hidden' }}>
+                        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(45deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%)', pointerEvents: 'none' }}></div>
+                        <Link href="https://www.alba.co.kr/search/Search?section=ALL&srchType=ALL&clsType=search&EasySearch=mainSearch&wsSrchWord=%EC%84%A0%EA%B1%B0" style={{ color: '#ffffff', textDecoration: 'none', fontWeight: '900', fontSize: '18px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem' }}>
+                            <span style={{ fontSize: '1.2rem' }}>✅ 개표사무원 / 여론조사 요원 보기</span>
+                            <span style={{ fontSize: '0.8rem', fontWeight: 'normal', color: '#A7F3D0' }}>최신 등록된 꿀알바 공고 바로가기</span>
+                        </Link>
+                    </div>
+
+                    {/* 공식 선관위 연동 */}
+                    <div style={{ backgroundColor: '#4B5563', borderRadius: '16px', textAlign: 'center', padding: '20px', border: '1px solid #6B7280', marginTop: '10px' }}>
+                        <Link href="https://www.nec.go.kr/site/nec/main.do" style={{ color: '#ffffff', textDecoration: 'none', fontWeight: '800', fontSize: '17px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                            <span>🏛️ 중앙선거관리위원회 공식 채용공고</span>
                         </Link>
                     </div>
 
