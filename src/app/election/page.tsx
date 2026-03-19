@@ -63,7 +63,7 @@ export default function ElectionJobLandingPage() {
                 {/* Footer Info */}
                 <div className="mt-16 border-t border-zinc-800 pt-8 text-zinc-500 text-xs leading-relaxed">
                     <p className="text-zinc-400 font-bold mb-2">💡 어떤 일을 하나요?</p>
-                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, textAlign: 'left', display: 'inline-block', backgroundColor: 'rgba(0,0,0,0.3)', padding: '1rem', borderRadius: '8px' }}>
+                    <ul style={{ listStyle: 'none', margin: 0, textAlign: 'left', display: 'inline-block', backgroundColor: 'rgba(0,0,0,0.3)', padding: '1rem', borderRadius: '8px' }}>
                         <li style={{ marginBottom: '0.5rem' }}>✔️ <strong>투·개표 사무원:</strong> 투표소 안내 및 개표 보조 (수당 지급)</li>
                         <li style={{ marginBottom: '0.5rem' }}>✔️ <strong>선거운동원:</strong> 유세차량 탑승 및 지정 장소 선거운동</li>
                         <li>✔️ <strong>여론조사 요원:</strong> 리서치 기관 단기 콜센터 업무</li>
