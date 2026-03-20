@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-    title: '2025 장병내일준비적금 은행별 바로가기 - KB, 하나, IBK, 신한은행',
-    description: '군 장병을 위한 고금리 적금, 장병내일준비적금 신청 가이드. 국민은행, 하나은행, 기업은행, 신한은행 공식 홈페이지 바로가기와 최신 금리 및 실질 혜택 정보를 확인하세요.',
+    title: '2025 장병내일준비적금 은행별 바로가기 - KB, 하나, IBK, 신한, NH농협',
+    description: '군 장병을 위한 고금리 적금, 장병내일준비적금 신청 가이드. 국민은행, 하나은행, 기업은행, 신한은행, 농협은행 공식 홈페이지 바로가기와 최신 금리 및 실질 혜택 정보를 확인하세요.',
 };
 
 export default function MilitarySavingsPage() {
@@ -11,7 +11,6 @@ export default function MilitarySavingsPage() {
             name: 'KB 국민은행',
             url: 'https://obank.kbstar.com/quics?page=C016613&cc=b061496:b061645&isNew=N&prcode=DP01000939#loading',
             desc: '든든한 군생활의 시작, KB 장병내일준비적금',
-            logo: 'https://img.etoday.co.kr/static/news/2021/04/20210430155208_1615636_600_400.jpg', // Placeholder for actual icon/color
             color: 'from-amber-400 to-amber-600'
         },
         {
@@ -31,6 +30,12 @@ export default function MilitarySavingsPage() {
             url: 'https://bank.shinhan.com/index.jsp#020102010110',
             desc: '편리한 뱅킹의 가치, 신한 장병내일준비적금',
             color: 'from-blue-500 to-indigo-700'
+        },
+        {
+            name: 'NH 농협은행',
+            url: 'https://banking.nonghyup.com/nhbank.html',
+            desc: '농심(農心)을 담은 혜택, NH 장병내일준비적금',
+            color: 'from-green-500 to-lime-600'
         }
     ];
 
