@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CountdownTimer from '@/components/CountdownTimer';
 
 export const metadata = {
     title: '통합 티켓 예매 참전 라운지 - 인터파크 & YES24',
@@ -140,6 +141,8 @@ export default function TicketLoungePage() {
                 </div>
                 
             </div>
+            
+            <CountdownTimer />
         </div>
     );
 }
