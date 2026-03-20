@@ -66,6 +66,23 @@ export default function VotePage() {
         </div>
     );
 
+    const InfoButtons = () => (
+        <div className="w-full max-w-xs flex flex-col gap-2 px-4 mt-6">
+            <Link 
+                href="https://zucca100.com/mbn-channel-live/" 
+                className="w-full py-3 bg-zinc-800/50 hover:bg-zinc-700/50 border border-zinc-700 rounded-xl transition-all flex items-center justify-center gap-2 text-zinc-300 group"
+            >
+                <span className="text-sm font-bold">📡 MBN 편성표 보기</span>
+            </Link>
+            <Link 
+                href="https://zucca100.com/mbn-channel-live/" 
+                className="w-full py-3 bg-zinc-800/50 hover:bg-zinc-700/50 border border-zinc-700 rounded-xl transition-all flex items-center justify-center gap-2 text-zinc-300 group"
+            >
+                <span className="text-sm font-bold">📂 무명전설 재방송 다시보기</span>
+            </Link>
+        </div>
+    );
+
     return (
         <div 
             className="min-h-screen bg-[#050b18] text-white flex flex-col items-center px-4 py-8 relative"
@@ -127,6 +144,7 @@ export default function VotePage() {
                 {/* 2. Top Action Buttons */}
                 <div className="w-full flex flex-col items-center mb-10">
                     <ActionButtons />
+                    <InfoButtons />
                 </div>
 
                 {/* 3. Main Poster Image */}
@@ -142,6 +160,7 @@ export default function VotePage() {
                 {/* 4. Bottom Action Buttons */}
                 <div className="w-full flex flex-col items-center mb-12">
                     <ActionButtons />
+                    <InfoButtons />
                 </div>
 
                 {/* 5. Footer Description */}
