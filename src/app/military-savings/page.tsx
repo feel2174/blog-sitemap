@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-    title: '2025 전국 장병내일준비적금 은행별 금리 비교 및 신청 - KB, 하나, IBK, 신한 등 14개 은행',
+    title: '2026 전국 장병내일준비적금 은행별 금리 비교 및 신청 - KB, 하나, IBK, 신한 등 14개 은행',
     description: '전국 14개 은행의 장병내일준비적금 금리를 한눈에 비교하세요. 최고 10%대 금리 정보와 네이버페이 간편 신청 링크를 제공합니다. 군 장병을 위한 고금리 적금 완벽 가이드.',
 };
 
@@ -43,7 +43,7 @@ export default function MilitarySavingsPage() {
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-500/20 border border-green-500/30 rounded-full text-green-300 text-[10px] font-black tracking-widest uppercase mb-6">
                         <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-                        2025 Military Financial Guide
+                        2026 Military Financial Guide
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-black tracking-tighter mb-4">

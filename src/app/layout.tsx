@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "정부 지원금 & 환급 한눈에 보기 | 블로그 사이트맵",
-  description: "2025년 민생회복 지원금, 소비쿠폰, 세금 환급 등 정부 혜택 정보를 카테고리별로 정리한 사이트맵. 실제 받을 수 있는 지원금과 환급 정보를 한눈에 확인하세요.",
+  description: "2026년 민생회복 지원금, 소비쿠폰, 세금 환급 등 정부 혜택 정보를 카테고리별로 정리한 사이트맵. 실제 받을 수 있는 지원금과 환급 정보를 한눈에 확인하세요.",
   keywords: [
     "정부 지원금", "민생회복 지원금", "소비쿠폰", "세금 환급", 
     "양육비 선지급제", "활력보험지원금", "차상위계층", "소상공인 지원",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "정부 지원금 & 환급 한눈에 보기 | 블로그 사이트맵",
-    description: "2025년 민생회복 지원금, 소비쿠폰, 세금 환급 등 정부 혜택 정보를 카테고리별로 정리한 사이트맵",
+    description: "2026년 민생회복 지원금, 소비쿠폰, 세금 환급 등 정부 혜택 정보를 카테고리별로 정리한 사이트맵",
     url: 'https://zucca100.com',
     siteName: 'zucca100 블로그',
     locale: 'ko_KR',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "정부 지원금 & 환급 한눈에 보기 | 블로그 사이트맵",
-    description: "2025년 민생회복 지원금, 소비쿠폰, 세금 환급 등 정부 혜택 정보를 카테고리별로 정리한 사이트맵",
+    description: "2026년 민생회복 지원금, 소비쿠폰, 세금 환급 등 정부 혜택 정보를 카테고리별로 정리한 사이트맵",
     images: ['/og-image.jpg'],
   },
   robots: {
