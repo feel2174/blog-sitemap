@@ -39,6 +39,8 @@ export default function GarbageBagsPage() {
                 </p>
             </div>
 
+            {/* Content Grids Container */}
+            <div className="w-full max-w-5xl">
                 {/* Private Platforms Section */}
                 <div className="flex items-center gap-3 mb-6">
                     <h2 className="text-2xl font-bold text-slate-800">통합 민간 플랫폼</h2>
