@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 12,
+      "count": 13,
       "description": "라이프스타일"
     }
   },
@@ -165,6 +165,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/info-1",
         "category": "lifestyle",
         "matched_keywords": ["정보", "가이드"]
+      },
+      {
+        "title": "SPOTV 편성표 및 바로가기 안내 (SPOTV NOW, Prime, Golf, Plus)",
+        "link": "https://zucca100.com/spotv",
+        "category": "lifestyle",
+        "matched_keywords": ["SPOTV", "편성표", "스포티비", "중계"]
       }
     ]
   }
