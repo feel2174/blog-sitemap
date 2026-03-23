@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 12,
+      "count": 13,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -97,6 +97,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/%ec%86%8c%ec%83%81%ea%b3%b5%ec%9d%b8-%eb%b6%80%eb%8b%b4%ea%b2%bd%ea%b0%90%ed%81%ac%eb%a0%88%eb%94%a7-50%eb%a7%8c%ec%9b%90-%ec%a7%80%ec%9b%90-%ec%a7%80%ea%b8%88-%eb%b0%94%eb%a1%9c-%ec%8b%a0%ec%b2%ad/",
         "category": "government_support",
         "matched_keywords": ["소상공인", "부담경감", "크레딧"]
+      },
+      {
+        "title": "전국 주요 지자체 종량제봉투 (지정판매소 전용) 인터넷 주문 바로가기",
+        "link": "https://zucca100.com/garbage-bags",
+        "category": "government_support",
+        "matched_keywords": ["종량제봉투", "인터넷주문", "지진판매소", "쓰레기봉투", "지자체"]
       }
     ],
     "finance_investment": [
