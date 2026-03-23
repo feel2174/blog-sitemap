@@ -70,6 +70,13 @@ export default function DeliveryTrackingPage() {
             icon: '🏪',
             bg: 'bg-[#652C91]',
             shadow: 'hover:shadow-[0_15px_30px_-5px_var(--tw-shadow-color)] shadow-[#652C91]/40'
+        },
+        {
+            name: '제로데이택배',
+            url: 'https://www.zerodayexpress.com/b2cpublic/main.page',
+            icon: '🚀',
+            bg: 'bg-[#00B0F0]',
+            shadow: 'hover:shadow-[0_15px_30px_-5px_var(--tw-shadow-color)] shadow-[#00B0F0]/40'
         }
     ];
 
