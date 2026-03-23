@@ -2,8 +2,8 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata = {
-    title: 'KBO 리그 및 WBC 생중계 시청 안내 | 2026 프로야구 무료 중계 바로가기',
-    description: 'KBO 리그, WBC 2026 대한민국 전 경기 생중계 채널 안내. MBC, SBS, KBS, tvN SPORTS, 티빙(TVING) 실시간 중계 링크 모음.',
+    title: 'KBO 리그 생중계 시청 안내 | 2026 프로야구 무료 중계 바로가기',
+    description: 'KBO 리그 대한민국 전 경기 생중계 채널 안내. MBC, SBS, KBS, tvN SPORTS, 티빙(TVING) 실시간 중계 링크 모음.',
 };
 
 export default function KboLandingPage() {
@@ -52,8 +52,8 @@ export default function KboLandingPage() {
                         </span>
                         Live Coverage 2026
                     </div>
-                    <h1 className="text-5xl md:text-6xl font-black text-white italic tracking-tighter drop-shadow-2xl mb-4">
-                        <span className="text-white">KBO</span> <span className="text-[#00a0e9]">&</span> <span className="text-[#e5001a]">WBC</span>
+                    <h1 className="text-5xl md:text-6xl font-black text-white italic tracking-tighter drop-shadow-2xl mb-4 text-center">
+                        <span className="text-white uppercase">KBO LEAGUE</span>
                     </h1>
                     <p className="text-zinc-300 text-base md:text-lg font-medium max-w-xs mx-auto">
                         전 경기 생중계 및 독점 하이라이트 안내
@@ -81,14 +81,14 @@ export default function KboLandingPage() {
 
                     {/* SBS - Special DBC Page */}
                     <Link 
-                        href="https://programs.sbs.co.kr/sports/wbc2026" 
+                        href="https://programs.sbs.co.kr/sports/main" 
                         className="group relative flex items-center gap-4 p-5 rounded-2xl bg-[#00a0e9] text-white font-bold text-lg transition-all duration-300 hover:scale-[1.03] active:scale-95 shadow-xl overflow-hidden"
                     >
                         <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
                         <span className="w-10 text-center text-2xl">📺</span>
                         <div className="text-left">
-                            <span className="block text-xl">SBS 스포츠 WBC 2026</span>
-                            <span className="text-[10px] text-white/70 font-bold uppercase tracking-[0.2em]">Tournament Special</span>
+                            <span className="block text-xl">SBS 스포츠 생중계 안내</span>
+                            <span className="text-[10px] text-white/70 font-bold uppercase tracking-[0.2em]">General Sports</span>
                         </div>
                     </Link>
 

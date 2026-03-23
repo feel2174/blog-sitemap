@@ -173,10 +173,10 @@ const categorizedData: CategorizedData = {
         "matched_keywords": ["SPOTV", "편성표", "스포티비", "중계"]
       },
       {
-        "title": "KBO 리그 및 WBC 생중계 바로가기 안내 (MBC, SBS, KBS, tvN, 티빙)",
+        "title": "KBO 리그 생중계 바로가기 안내 (MBC, SBS, KBS, tvN, 티빙)",
         "link": "https://zucca100.com/kbo",
         "category": "lifestyle",
-        "matched_keywords": ["KBO", "WBC", "야구", "중계", "티빙", "MBC", "SBS", "KBS"]
+        "matched_keywords": ["KBO", "야구", "중계", "티빙", "MBC", "SBS", "KBS"]
       }
     ]
   }
