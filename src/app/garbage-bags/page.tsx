@@ -39,8 +39,34 @@ export default function GarbageBagsPage() {
                 </p>
             </div>
 
-            {/* Local Government Grids */}
-            <div className="w-full max-w-5xl">
+                {/* Private Platforms Section */}
+                <div className="flex items-center gap-3 mb-6">
+                    <h2 className="text-2xl font-bold text-slate-800">통합 민간 플랫폼</h2>
+                    <div className="h-px bg-slate-300 flex-1 ml-4" />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-16">
+                    <Link
+                        href="https://www.jongryangje.com/"
+                        className="group bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-white relative overflow-hidden"
+                    >
+                        <div className="relative z-10">
+                            <h3 className="text-2xl font-black mb-3">종량제닷컴</h3>
+                            <p className="text-blue-100 mb-6 font-medium leading-relaxed max-w-sm">
+                                전국 단위 통합 결제 플랫폼. 인천, 서울, 경기도 등 전국 70여개 지역 시/군/구별 지정판매소 배송 지원.
+                            </p>
+                            <span className="inline-flex items-center font-bold text-white/90 group-hover:text-white group-hover:translate-x-2 transition-all duration-300">
+                                바로가기 
+                                <svg xmlns="http://www.w3.org/2000/svg" className="ml-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </span>
+                        </div>
+                        <div className="absolute right-[-20%] bottom-[-40%] text-[200px] opacity-10 rotate-[-15deg] pointer-events-none transition-transform duration-500 group-hover:scale-110">
+                            🌐
+                        </div>
+                    </Link>
+                </div>
+
+                {/* Local Government Grids */}
                 <div className="flex items-center gap-3 mb-6">
                     <h2 className="text-2xl font-bold text-slate-800">지자체 운영 주문 사이트</h2>
                     <div className="h-px bg-slate-300 flex-1 ml-4" />
@@ -71,33 +97,6 @@ export default function GarbageBagsPage() {
                             </div>
                         </Link>
                     ))}
-                </div>
-
-                {/* Private Platforms Section */}
-                <div className="flex items-center gap-3 mb-6">
-                    <h2 className="text-2xl font-bold text-slate-800">통합 민간 플랫폼</h2>
-                    <div className="h-px bg-slate-300 flex-1 ml-4" />
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-16">
-                    <Link
-                        href="https://www.jongryangje.com/"
-                        className="group bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-white relative overflow-hidden"
-                    >
-                        <div className="relative z-10">
-                            <h3 className="text-2xl font-black mb-3">종량제닷컴</h3>
-                            <p className="text-blue-100 mb-6 font-medium leading-relaxed max-w-sm">
-                                전국 단위 통합 결제 플랫폼. 인천, 서울, 경기도 등 전국 70여개 지역 시/군/구별 지정판매소 배송 지원.
-                            </p>
-                            <span className="inline-flex items-center font-bold text-white/90 group-hover:text-white group-hover:translate-x-2 transition-all duration-300">
-                                바로가기 
-                                <svg xmlns="http://www.w3.org/2000/svg" className="ml-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                            </span>
-                        </div>
-                        <div className="absolute right-[-20%] bottom-[-40%] text-[200px] opacity-10 rotate-[-15deg] pointer-events-none transition-transform duration-500 group-hover:scale-110">
-                            🌐
-                        </div>
-                    </Link>
                 </div>
             </div>
 
