@@ -47,7 +47,7 @@ export default function LotteryPage() {
                     동행복권 <span className="text-purple-600">공식 바로가기</span>
                 </h1>
                 <p className="text-slate-500 font-semibold text-base sm:text-lg max-w-2xl mx-auto break-keep leading-relaxed italic">
-                    "꿈을 향한 설레임, 행복한 나눔의 시작" <br className="hidden sm:block"/>
+                    &quot;꿈을 향한 설레임, 행복한 나눔의 시작&quot; <br className="hidden sm:block"/>
                     대한민국 유일 로또6/45, 연금복권720+ 발행처 동행복권 안내입니다.
                 </p>
             </div>
@@ -148,7 +148,7 @@ export default function LotteryPage() {
                                 <span className="text-2xl font-black text-slate-800">매주 토요일</span>
                                 <span className="text-lg font-bold text-purple-700">오후 8:35분경</span>
                             </div>
-                            <p className="mt-3 text-sm text-slate-500 font-medium">MBC 생방송 '행복드림 로또 6/45'</p>
+                            <p className="mt-3 text-sm text-slate-500 font-medium">MBC 생방송 &apos;행복드림 로또 6/45&apos;</p>
                         </div>
                         <div className="bg-indigo-50/50 p-6 rounded-3xl border border-indigo-100/50">
                             <span className="text-indigo-600 font-bold mb-1 block">연금복권 720+</span>
@@ -156,7 +156,7 @@ export default function LotteryPage() {
                                 <span className="text-2xl font-black text-slate-800">매주 목요일</span>
                                 <span className="text-lg font-bold text-indigo-700">오후 7:05분경</span>
                             </div>
-                            <p className="mt-3 text-sm text-slate-500 font-medium">MBC '생방송 연금복권 720+'</p>
+                            <p className="mt-3 text-sm text-slate-500 font-medium">MBC &apos;생방송 연금복권 720+&apos;</p>
                         </div>
                     </div>
                 </div>
