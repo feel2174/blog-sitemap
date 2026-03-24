@@ -16,7 +16,7 @@ const categorizedData: CategorizedData = {
       "description": "건강 & 웰빙"
     },
     "technology": {
-      "count": 4,
+      "count": 5,
       "description": "기술 & IT"
     },
     "lifestyle": {
@@ -145,6 +145,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/%f0%9f%9a%80-ios-26-%eb%b2%a0%ed%83%80-%ec%b6%9c%ec%8b%9c-ios-26-%eb%b2%a0%ed%83%80-%ec%84%a4%ec%b9%98-%eb%b0%a9%eb%b2%95/",
         "category": "technology",
         "matched_keywords": ["iOS"]
+      },
+      {
+        "title": "카카오톡 및 카카오 공식 앱 다운로드 바로가기 | 안드로이드 & 아이폰",
+        "link": "https://zucca100.com/kakao",
+        "category": "technology",
+        "matched_keywords": ["카카오톡", "카카오뱅크", "카카오페이", "카카오스토리", "다운로드", "앱설치"]
       }
     ],
     "lifestyle": [
