@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 14,
+      "count": 15,
       "description": "라이프스타일"
     }
   },
@@ -183,6 +183,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/kbo",
         "category": "lifestyle",
         "matched_keywords": ["KBO", "야구", "중계", "티빙", "MBC", "SBS", "KBS"]
+      },
+      {
+        "title": "동행복권 바로가기 | 로또 6/45, 연금복권 720+, 스피또 당첨 확인 안내",
+        "link": "https://zucca100.com/lottery",
+        "category": "lifestyle",
+        "matched_keywords": ["로또", "복권", "동행복권", "당첨번호", "연금복권"]
       }
     ]
   }
