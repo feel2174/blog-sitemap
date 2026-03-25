@@ -16,7 +16,7 @@ const categorizedData: CategorizedData = {
       "description": "건강 & 웰빙"
     },
     "technology": {
-      "count": 5,
+      "count": 4,
       "description": "기술 & IT"
     },
     "lifestyle": {
@@ -151,6 +151,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/kakao",
         "category": "technology",
         "matched_keywords": ["카카오톡", "카카오뱅크", "카카오페이", "카카오스토리", "다운로드", "앱설치"]
+      },
+      {
+        "title": "안랩 V3 Lite & 무료백신 다운로드 바로가기 | 공식 홈페이지",
+        "link": "https://zucca100.com/v3",
+        "category": "technology",
+        "matched_keywords": ["V3", "안랩", "AhnLab", "백신", "무료백신", "다운로드"]
       }
     ],
     "lifestyle": [
