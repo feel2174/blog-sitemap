@@ -77,6 +77,13 @@ export default function DeliveryTrackingPage() {
             icon: '🚀',
             bg: 'bg-[#00B0F0]',
             shadow: 'hover:shadow-[0_15px_30px_-5px_var(--tw-shadow-color)] shadow-[#00B0F0]/40'
+        },
+        {
+            name: 'DHL',
+            url: 'https://www.dhl.com/kr-ko/home/tracking.html',
+            icon: '🌐',
+            bg: 'bg-[#FFCC00]',
+            shadow: 'hover:shadow-[0_15px_30px_-5px_var(--tw-shadow-color)] shadow-[#FFCC00]/40'
         }
     ];
 
