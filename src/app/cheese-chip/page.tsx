@@ -85,7 +85,7 @@ export default function HwangCheeseChipPage() {
                 </h1>
                 
                 <p className="text-amber-800/80 font-semibold text-lg sm:text-xl max-w-2xl mx-auto break-keep leading-relaxed mb-8">
-                    지금 가장 핫한 "촉촉한 황치즈칩", <br className="hidden sm:block"/>
+                    지금 가장 핫한 &quot;촉촉한 황치즈칩&quot;, <br className="hidden sm:block"/>
                     찾아 헤매지 말고 아래 온라인 판매처들을 바로 확인하세요!
                 </p>
 
@@ -152,7 +152,7 @@ export default function HwangCheeseChipPage() {
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700 font-medium">
                         <li className="flex items-start gap-3 bg-amber-50/50 p-4 rounded-2xl border border-amber-100/50">
                             <span className="text-amber-500 mt-1">✓</span>
-                            <span><strong>올리브영</strong> 어플에서 \'오늘드림\' 재고를 수시로 확인하세요.</span>
+                            <span><strong>올리브영</strong> 어플에서 &apos;오늘드림&apos; 재고를 수시로 확인하세요.</span>
                         </li>
                         <li className="flex items-start gap-3 bg-amber-50/50 p-4 rounded-2xl border border-amber-100/50">
                             <span className="text-amber-500 mt-1">✓</span>
@@ -160,7 +160,7 @@ export default function HwangCheeseChipPage() {
                         </li>
                         <li className="flex items-start gap-3 bg-amber-50/50 p-4 rounded-2xl border border-amber-100/50">
                             <span className="text-amber-500 mt-1">✓</span>
-                            <span><strong>트위터(X)</strong> 검색 창에서 \'촉촉한 황치즈칩\'을 최신순으로 정렬하여 실시간 제보를 확인하세요.</span>
+                            <span><strong>트위터(X)</strong> 검색 창에서 &apos;촉촉한 황치즈칩&apos;을 최신순으로 정렬하여 실시간 제보를 확인하세요.</span>
                         </li>
                         <li className="flex items-start gap-3 bg-amber-50/50 p-4 rounded-2xl border border-amber-100/50">
                             <span className="text-amber-500 mt-1">✓</span>
