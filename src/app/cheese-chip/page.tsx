@@ -102,8 +102,6 @@ export default function HwangCheeseChipPage() {
                     <Link 
                         key={index}
                         href={site.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className={`group relative overflow-hidden rounded-[2rem] p-6 shadow-md hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 border-2 border-transparent hover:border-amber-400 bg-white`}
                     >
                         <div className="relative z-10 flex flex-col h-full">
