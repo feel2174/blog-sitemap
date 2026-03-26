@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 15,
+      "count": 16,
       "description": "라이프스타일"
     }
   },
@@ -201,6 +201,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/lottery",
         "category": "lifestyle",
         "matched_keywords": ["로또", "복권", "동행복권", "당첨번호", "연금복권"]
+      },
+      {
+        "title": "촉촉한 황치즈칩 파는곳 & 실시간 재고 확인 바로가기 (메가마트, 올리브영, 컬리 등)",
+        "link": "https://zucca100.com/cheese-chip",
+        "category": "lifestyle",
+        "matched_keywords": ["촉촉한 황치즈칩", "황치즈칩", "재고확인", "메가마트", "올리브영"]
       }
     ]
   }
