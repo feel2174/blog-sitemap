@@ -68,8 +68,6 @@ export default function IamSoloPage() {
                             <Link 
                                 key={index}
                                 href={person.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
                                 className={`group bg-white rounded-3xl p-6 border-2 border-transparent shadow shadow-slate-100 ${person.hover} transition-all duration-300 flex flex-col items-center justify-center text-center`}
                             >
                                 <div className={`w-20 h-20 mb-4 rounded-full bg-gradient-to-tr ${person.bg} flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform duration-300`}>
@@ -102,8 +100,6 @@ export default function IamSoloPage() {
                             <Link 
                                 key={index}
                                 href={person.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
                                 className={`group bg-white rounded-3xl p-6 border-2 border-transparent shadow shadow-slate-100 ${person.hover} transition-all duration-300 flex flex-col items-center justify-center text-center`}
                             >
                                 <div className={`w-20 h-20 mb-4 rounded-full bg-gradient-to-tr ${person.bg} flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform duration-300`}>
