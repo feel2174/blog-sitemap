@@ -65,12 +65,12 @@ export default function HoroscopePage() {
                         key={i} 
                         className="star"
                         style={{
-                            width: \`\${Math.random() * 3 + 1}px\`,
-                            height: \`\${Math.random() * 3 + 1}px\`,
-                            top: \`\${Math.random() * 100}%\`,
-                            left: \`\${Math.random() * 100}%\`,
-                            animationDuration: \`\${Math.random() * 3 + 2}s\`,
-                            animationDelay: \`\${Math.random() * 2}s\`,
+                            width: `${Math.random() * 3 + 1}px`,
+                            height: `${Math.random() * 3 + 1}px`,
+                            top: `${Math.random() * 100}%`,
+                            left: `${Math.random() * 100}%`,
+                            animationDuration: `${Math.random() * 3 + 2}s`,
+                            animationDelay: `${Math.random() * 2}s`,
                         }}
                     />
                 ))}
@@ -94,8 +94,6 @@ export default function HoroscopePage() {
                     <Link
                         key={sign.eng}
                         href="https://www.marieclairekorea.com/tag/%EB%B3%84%EC%9E%90%EB%A6%AC-%EC%9A%B4%EC%84%B8/"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className="glass-card rounded-3xl p-6 group flex flex-col items-center justify-center text-center overflow-hidden relative cursor-pointer"
                     >
                         {/* Hover effect background gradient */}
