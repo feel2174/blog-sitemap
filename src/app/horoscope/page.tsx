@@ -93,7 +93,7 @@ export default function HoroscopePage() {
                 {horoscopes.map((sign) => (
                     <Link
                         key={sign.eng}
-                        href="https://www.marieclairekorea.com/tag/%EB%B3%84%EC%9E%90%EB%A6%AC-%EC%9A%B4%EC%84%B8/"
+                        href={`https://mind.zucca100.com/horoscope/${sign.eng.toLowerCase()}`}
                         className="glass-card rounded-3xl p-6 group flex flex-col items-center justify-center text-center overflow-hidden relative cursor-pointer"
                     >
                         {/* Hover effect background gradient */}
