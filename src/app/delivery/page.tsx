@@ -30,6 +30,13 @@ export default function DeliveryTrackingPage() {
             shadow: 'hover:shadow-[0_15px_30px_-5px_var(--tw-shadow-color)] shadow-[#DA001D]/40'
         },
         {
+            name: '세븐일레븐 착한택배',
+            url: 'https://www.lotteglogis.com/home/reservation/tracking/index',
+            icon: '🏪',
+            bg: 'bg-[#008037]',
+            shadow: 'hover:shadow-[0_15px_30px_-5px_var(--tw-shadow-color)] shadow-[#008037]/40'
+        },
+        {
             name: '한진택배',
             url: 'https://www.hanjin.com/kor/CMS/DeliveryMgr/WaybillSch.do?mCode=MN038',
             icon: '✈️',
