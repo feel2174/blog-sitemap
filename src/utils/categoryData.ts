@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 14,
+      "count": 15,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -109,6 +109,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/median-income",
         "category": "government_support",
         "matched_keywords": ["중위소득", "하위70%", "하위60%", "하위50%", "계산기", "건강보험료", "지원금"]
+      },
+      {
+        "title": "2026년 청년월세지원 신청방법 및 조건 안내 | 복지로 바로가기",
+        "link": "https://zucca100.com/2026-rent-support",
+        "category": "government_support",
+        "matched_keywords": ["청년월세지원", "월세지원", "복지로", "2026", "주거비"]
       }
     ],
     "finance_investment": [
