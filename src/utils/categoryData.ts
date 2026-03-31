@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 17,
+      "count": 18,
       "description": "라이프스타일"
     }
   },
@@ -219,6 +219,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/soccer-korea-austria",
         "category": "lifestyle",
         "matched_keywords": ["축구", "국가대표", "평가전", "중계", "티빙", "쿠팡플레이", "TV조선"]
+      },
+      {
+        "title": "스토브리그 일본판 리메이크 티빙 바로가기 | SBS 화제작 드라마 다시보기 안내",
+        "link": "https://zucca100.com/stove-league-japan",
+        "category": "lifestyle",
+        "matched_keywords": ["스토브리그", "일본판", "리메이크", "드라마", "다시보기", "티빙", "SBS"]
       }
     ]
   }
