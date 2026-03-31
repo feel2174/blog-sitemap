@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 13,
+      "count": 14,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -103,6 +103,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/garbage-bags",
         "category": "government_support",
         "matched_keywords": ["종량제봉투", "인터넷주문", "지진판매소", "쓰레기봉투", "지자체"]
+      },
+      {
+        "title": "2026년 기준 중위소득 계산기 | 소득 하위 70%, 60%, 50% 가구원수별 확인",
+        "link": "https://zucca100.com/median-income",
+        "category": "government_support",
+        "matched_keywords": ["중위소득", "하위70%", "하위60%", "하위50%", "계산기", "건강보험료", "지원금"]
       }
     ],
     "finance_investment": [
