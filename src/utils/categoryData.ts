@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 16,
+      "count": 17,
       "description": "라이프스타일"
     }
   },
@@ -207,6 +207,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/cheese-chip",
         "category": "lifestyle",
         "matched_keywords": ["촉촉한 황치즈칩", "황치즈칩", "재고확인", "메가마트", "올리브영"]
+      },
+      {
+        "title": "대한민국 vs 오스트리아 평가전 실시간 중계 안내 (티빙, 쿠팡플레이, TV조선)",
+        "link": "https://zucca100.com/soccer-korea-austria",
+        "category": "lifestyle",
+        "matched_keywords": ["축구", "국가대표", "평가전", "중계", "티빙", "쿠팡플레이", "TV조선"]
       }
     ]
   }
