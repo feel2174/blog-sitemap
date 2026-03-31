@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -91,7 +92,25 @@ export default function MedianIncomeCalculator() {
                             <div className="absolute top-[-50px] right-[-50px] w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none" />
                         </div>
 
-                        <div className="p-8">
+                        <div className="p-8 pb-4">
+                            <div className="flex flex-col md:flex-row items-center justify-between gap-4 p-4 bg-yellow-50 border border-yellow-200 rounded-2xl">
+                                <div className="flex items-center gap-3">
+                                    <span className="text-2xl">🔍</span>
+                                    <div>
+                                        <p className="text-yellow-800 font-bold text-sm">차상위계층 핵심 정보</p>
+                                        <p className="text-yellow-600 text-xs">중위소득 50% 이하 가구에 해당합니다.</p>
+                                    </div>
+                                </div>
+                                <Link 
+                                    href="https://zucca100.com/near-poverty/"
+                                    className="w-full md:w-auto bg-yellow-400 text-yellow-950 px-6 py-2.5 rounded-xl font-black text-sm hover:bg-yellow-300 transition-all text-center shadow-sm"
+                                >
+                                    차상위계층 조건 확인하기
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="px-8 pb-8 pt-4">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 {PERCENTAGES.map((p, idx) => (
                                     <div 
