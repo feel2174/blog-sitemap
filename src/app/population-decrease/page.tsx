@@ -305,7 +305,7 @@ export default function PopulationDecreasePage() {
                          ? '20만원' : '25만원'}
                        </span>
                     </div>
-                    <p className="text-slate-400 text-xs leading-relaxed">좌측 지도에서 해당 지역의 상세 위치를 확인할 수 있습니다. 인근 지역과의 거리를 확인해보세요.</p>
+                  
                  </div>
               )}
             </div>
