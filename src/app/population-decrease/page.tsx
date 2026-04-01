@@ -412,14 +412,19 @@ export default function PopulationDecreasePage() {
             <div className="md:col-span-1 p-8 bg-blue-600 text-white rounded-[32px] shadow-lg flex flex-col justify-between">
               <div>
                 <div className="text-4xl mb-4">📢</div>
-                <h4 className="text-xl font-bold mb-2">꼭 확인하세요!</h4>
+                <h4 className="text-xl font-bold mb-2">대상 자격 확인</h4>
                 <p className="text-blue-100 text-sm leading-relaxed mb-6">
-                  20~25만원의 혜택은 주거비 지원 등 지자체별 사업에 따라 다를 수 있습니다. 상세 모집 요강은 해당 시·군·구청 홈페이지를 확인하세요.
+                  대상자 선정은 가구 소득 수준을 기준으로 합니다. 아래를 통해 본인의 기준을 확인하세요.
                 </p>
               </div>
-              <Link href="https://www.bokjiro.go.kr" className="bg-white text-blue-600 text-center py-3 rounded-2xl font-bold hover:bg-blue-50 transition-colors">
-                복지로에서 상세 신청
-              </Link>
+              <div className="flex flex-col gap-3">
+                <Link href="https://zucca100.com/2026-reference-median-income-table-100-150-200/" className="bg-white text-blue-600 text-center py-3.5 rounded-2xl text-sm font-bold hover:bg-blue-50 transition-all flex items-center justify-center gap-2">
+                   <span>📊</span> 소득하위 70% 기준
+                </Link>
+                <Link href="https://zucca100.com/near-poverty/" className="bg-white/10 border border-white/20 text-white text-center py-3.5 rounded-2xl text-sm font-bold hover:bg-white/20 transition-all flex items-center justify-center gap-2">
+                   <span>🛡️</span> 차상위계층 기준
+                </Link>
+              </div>
             </div>
 
             <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -432,28 +437,8 @@ export default function PopulationDecreasePage() {
                   <p className="text-slate-500 text-sm leading-relaxed">인구 소멸 위험이 매우 심각하여 보다 공격적인 인구 유입 정책과 25만원의 강화된 지원을 제공합니다.</p>
                </div>
                <div className="bg-white p-8 rounded-[32px] border border-slate-100 shadow-sm sm:col-span-2">
-                  <h5 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
-                     <span className="text-lg">🔎</span> 지원 대상 자격 기준 알아보기
-                  </h5>
-                  <p className="text-slate-500 text-sm leading-relaxed mb-5">
-                     정부의 인구감소지역 지원 혜택은 기본적으로 가구 소득 수준을 기준으로 대상자가 선정됩니다. 아래 링크를 통해 본인의 기준을 정확히 확인해 보세요.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-3">
-                     <Link href="https://zucca100.com/2026-reference-median-income-table-100-150-200/" className="flex-1 bg-slate-50 border border-slate-100 text-slate-700 p-4 rounded-2xl text-sm font-bold flex items-center justify-between hover:bg-white hover:border-blue-300 hover:text-blue-600 hover:shadow-sm transition-all group">
-                        <div className="flex items-center gap-2.5">
-                           <span className="bg-white group-hover:bg-blue-50 text-blue-500 w-8 h-8 rounded-full flex items-center justify-center shadow-sm">📊</span>
-                           <span>소득하위 70% 기준 조회</span>
-                        </div>
-                        <svg className="w-4 h-4 text-slate-300 group-hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" /></svg>
-                     </Link>
-                     <Link href="https://zucca100.com/near-poverty/" className="flex-1 bg-slate-50 border border-slate-100 text-slate-700 p-4 rounded-2xl text-sm font-bold flex items-center justify-between hover:bg-white hover:border-indigo-300 hover:text-indigo-600 hover:shadow-sm transition-all group">
-                        <div className="flex items-center gap-2.5">
-                           <span className="bg-white group-hover:bg-indigo-50 text-indigo-500 w-8 h-8 rounded-full flex items-center justify-center shadow-sm">🛡️</span>
-                           <span>차상위계층 기준 조회</span>
-                        </div>
-                        <svg className="w-4 h-4 text-slate-300 group-hover:text-indigo-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" /></svg>
-                     </Link>
-                  </div>
+                  <h5 className="font-bold text-slate-900 mb-2">안내사항</h5>
+                  <p className="text-slate-500 text-sm leading-relaxed">20~25만원의 혜택은 주거비 지원 등 지자체별 사업에 따라 다를 수 있습니다. 상세 모집 요강 및 신청은 해당 시·군·구청 홈페이지 또는 [복지로]를 이용해 주세요.</p>
                </div>
             </div>
           </div>
