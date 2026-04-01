@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 18,
+      "count": 19,
       "description": "라이프스타일"
     }
   },
@@ -231,6 +231,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/stove-league-japan",
         "category": "lifestyle",
         "matched_keywords": ["스토브리그", "일본판", "리메이크", "드라마", "다시보기", "티빙", "SBS"]
+      },
+      {
+        "title": "아웃백 스테이크하우스 할인 꿀팁 총정리 | 상품권, 할인카드, 제휴사 안내",
+        "link": "https://zucca100.com/outback-discount",
+        "category": "lifestyle",
+        "matched_keywords": ["아웃백", "할인", "스테이크하우스", "상품권", "제휴카드"]
       }
     ]
   }
