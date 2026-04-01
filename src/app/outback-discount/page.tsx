@@ -109,7 +109,33 @@ export default function OutbackDiscountPage() {
                         </Link>
                     </div>
 
-                    {/* Link 3: 공식 제휴카드사 */}
+                    {/* Link 3: 부메랑 멤버십 */}
+                    <div className="group relative">
+                        <div className="absolute -inset-1 bg-gradient-to-r from-[#d4af37] to-[#2d1b11] rounded-[2rem] blur opacity-10 group-hover:opacity-40 transition duration-700"></div>
+                        <Link 
+                            href="https://m.outback.co.kr/benefit/membershipBoomerang.do?menuIdx=303"
+                            className="relative flex items-center justify-between px-8 py-8 rounded-[1.8rem] bg-[#2d1b11] border border-[#d4af37]/20 hover:border-[#d4af37]/50 shadow-2xl transition-all duration-500"
+                        >
+                            <div className="flex items-center gap-6">
+                                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#d4af37] to-[#b8860b] flex items-center justify-center text-[#1a0f0a] shadow-[0_0_20px_rgba(212,175,55,0.2)] group-hover:scale-110 transition-transform">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    </svg>
+                                </div>
+                                <div className="text-left">
+                                    <p className="text-[#d4af37] text-xs font-bold mb-1 tracking-widest">MEMBERSHIP ONLY</p>
+                                    <p className="text-white font-extrabold text-2xl md:text-3xl tracking-tight">부메랑 멤버십 가입 및 혜택</p>
+                                </div>
+                            </div>
+                            <div className="text-[#d4af37]/40 group-hover:text-[#d4af37] group-hover:translate-x-2 transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                            </div>
+                        </Link>
+                    </div>
+
+                    {/* Link 4: 공식 제휴카드사 */}
                     <div className="group relative">
                         <div className="absolute -inset-1 bg-gradient-to-r from-[#d4af37] to-[#1a0f0a] rounded-[2rem] blur opacity-5 group-hover:opacity-30 transition duration-700"></div>
                         <Link 
