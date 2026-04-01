@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 15,
+      "count": 16,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -115,6 +115,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/2026-rent-support",
         "category": "government_support",
         "matched_keywords": ["청년월세지원", "월세지원", "복지로", "2026", "주거비"]
+      },
+      {
+        "title": "인구감소지역 판정 및 지원금 조회 | 우대·특별 지역 확인 및 20~25만원 지원금 안내",
+        "link": "https://zucca100.com/population-decrease",
+        "category": "government_support",
+        "matched_keywords": ["인구감소지역", "지원금", "우대지역", "특별지역", "지역위기"]
       }
     ],
     "finance_investment": [
