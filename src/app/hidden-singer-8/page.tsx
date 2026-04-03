@@ -141,6 +141,28 @@ export default function HiddenSingerPage() {
                 </div>
             </div>
 
+            {/* Namuwiki Link Section */}
+            <div className="w-full max-w-4xl mt-8 z-10 relative">
+                <Link 
+                    href="https://namu.wiki/w/%ED%9E%88%EB%93%A0%EC%8B%B1%EC%96%B48"
+                    className="group flex flex-col sm:flex-row items-start sm:items-center justify-between bg-[#00A495]/10 hover:bg-[#00A495]/20 border border-[#00A495]/30 rounded-[2rem] p-6 sm:px-8 transition-all duration-300 shadow-lg backdrop-blur-sm"
+                >
+                    <div className="flex items-center gap-4 mb-4 sm:mb-0">
+                        <div className="w-14 h-14 bg-gradient-to-br from-[#00A495] to-[#008276] rounded-2xl flex items-center justify-center text-white text-2xl shadow-md group-hover:scale-110 transition-transform">
+                            🌳
+                        </div>
+                        <div>
+                            <h3 className="text-white font-bold text-lg mb-1">나무위키에서 더 자세한 정보 보기</h3>
+                            <p className="text-slate-300 text-sm">출연진, 회차별 정보, 비하인드 스토리 등</p>
+                        </div>
+                    </div>
+                    <div className="w-full sm:w-auto inline-flex items-center justify-center bg-[#00A495] text-white rounded-full py-2.5 px-6 font-bold text-sm group-hover:bg-[#008276] transition-colors">
+                        문서 보러가기
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="ml-2 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </div>
+                </Link>
+            </div>
+
             {/* Custom CSS for Shimmer Animation */}
             <style dangerouslySetInnerHTML={{__html: `
                 @keyframes shimmer {
