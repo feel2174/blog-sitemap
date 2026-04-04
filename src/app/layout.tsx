@@ -1,10 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "정부 지원금 & 환급 한눈에 보기 | 블로그 사이트맵",
@@ -85,7 +82,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#3b82f6" />
         <meta name="msapplication-TileColor" content="#3b82f6" />
       </head>
-      <body className={inter.className}>
+      <body className="font-['Pretendard']">
         {/* Google AdSense */}
         <Script
           async
