@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-    title: '넷플릭스 라이브: BTS 특별 공연 생중계',
-    description: '넷플릭스에서 독점으로 생중계되는 BTS의 특별 공연을 감상하세요. 앱 다운로드 및 바로가기 링크 제공.',
+    title: '넷플릭스 (Netflix) 바로가기 및 앱 다운로드',
+    description: '넷플릭스 영화, TV 프로그램을 시청하세요. 넷플릭스 바로가기 및 스마트폰, 태블릿, 스마트 TV 앱 다운로드 링크를 제공합니다.',
 };
 
 export default function NetflixLandingPage() {
@@ -13,7 +13,7 @@ export default function NetflixLandingPage() {
         >
             {/* Cinematic Background Image */}
             <div
-                className="absolute inset-0 z-0 bg-cover bg-center opacity-60 scale-105"
+                className="absolute inset-0 z-0 bg-cover bg-center opacity-40 scale-105"
                 style={{ backgroundImage: 'url("/netflix-bg.png")' }}
             />
 
@@ -25,36 +25,24 @@ export default function NetflixLandingPage() {
             <div className="relative z-10 w-full max-w-md text-center">
                 {/* Netflix Logo / Header */}
                 <div className="mb-12">
-                    <h1 className="text-4xl md:text-5xl font-black text-[#E50914] tracking-tighter mb-2 italic">
-                        BTS LIVE
+                    <h1 className="text-4xl md:text-5xl font-black text-[#E50914] tracking-tighter mb-2 uppercase">
+                        Netflix
                     </h1>
-                    <p className="text-zinc-400 text-sm md:text-base font-medium">
-                        넷플릭스 독점 생중계 - 지금 바로 입장하세요
+                    <p className="text-zinc-300 text-sm md:text-base font-medium">
+                        영화, 시리즈 등을 무제한으로
                     </p>
                 </div>
 
                 {/* Action Buttons */}
                 <div className="flex flex-col gap-5">
-                    {/* Traffic Control Info */}
+                    {/* Official Website Shortcut */}
                     <Link
-                        href="https://blog.naver.com/PostView.naver?blogId=naver_map&navType=tl&logNo=224221951847"
-                        className="group relative flex items-center justify-between bg-yellow-400 text-black p-5 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(250,204,21,0.4)] active:scale-[0.98]"
-                    >
-                        <div className="flex items-center gap-4 text-left">
-                            <span className="text-2xl">🚧</span>
-                            <span className="leading-tight">광화문 교통통제 구간 및<br />우회 루트 먼저 확인하기</span>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="opacity-70 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                    </Link>
-
-                    {/* Live Shortcut */}
-                    <Link
-                        href="https://www.netflix.com/kr/title/82157128"
+                        href="https://www.netflix.com/kr/"
                         className="group relative flex items-center justify-between bg-[#E50914] text-white p-5 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(229,9,20,0.4)] active:scale-[0.98]"
                     >
                         <div className="flex items-center gap-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                            <span>넷플릭스 라이브 바로가기</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                            <span>넷플릭스 바로가기</span>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="opacity-70 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                     </Link>
@@ -90,7 +78,6 @@ export default function NetflixLandingPage() {
 
                 {/* Footer Info */}
                 <div className="mt-16 text-zinc-500 text-xs leading-relaxed">
-
                     <p className="mt-2 text-zinc-600">
                         앱 설치 및 원활한 이용을 위해 <br className="md:hidden" /> 안정적인 네트워크 환경을 권장합니다.
                     </p>
