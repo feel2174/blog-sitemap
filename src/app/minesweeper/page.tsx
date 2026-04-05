@@ -142,6 +142,25 @@ export default function MinesweeperPage() {
                     </Link>
                 </div>
 
+                {/* 온라인 웹 버전 안내 */}
+                <Link 
+                    href="https://minesweeper.online/ko/"
+                    className="glass-card rounded-[20px] p-5 sm:p-6 mt-2 relative overflow-hidden flex flex-col sm:flex-row items-center justify-between gap-4 transition-all duration-300 hover:scale-[1.02] no-underline group border border-[#2d3142] hover:border-[#ffcc00]"
+                >
+                    <div className="absolute inset-0 bg-gradient-to-r from-[rgba(255,204,0,0.05)] to-transparent pointer-events-none"></div>
+                    <div className="flex flex-col gap-1.5 text-center sm:text-left relative z-10 w-full">
+                        <span className="text-[#cccccc] text-[13px] sm:text-[14px] font-[600] tracking-wide inline-flex items-center justify-center sm:justify-start gap-1">
+                            <span className="text-[#ffcc00]">🌐</span> 무설치로 바로 게임을 즐기고 싶으신가요?
+                        </span>
+                        <span className="text-white text-[18px] sm:text-[20px] font-[800] group-hover:text-[#ffcc00] transition-colors duration-200">
+                            🚩 지뢰찾기 온라인 웹 사이트 바로가기
+                        </span>
+                    </div>
+                    <div className="flex items-center justify-center min-w-[44px] h-[44px] rounded-full bg-[#121318] group-hover:bg-[#ffcc00] group-hover:text-[#121318] transition-colors duration-300 border border-[#2d3142] group-hover:border-transparent text-white relative z-10 mt-2 sm:mt-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </div>
+                </Link>
+
                 <div className="h-10"></div>
             </div>
             
