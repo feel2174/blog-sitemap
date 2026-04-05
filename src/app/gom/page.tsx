@@ -129,6 +129,26 @@ export default function GomSeriesPage() {
 
                 {/* 하단 안내 배너 */}
               
+                {/* 팟플레이어 안내 코너 */}
+                <Link 
+                    href="https://zucca100.com/potplayer"
+                    className="glass-card rounded-[24px] p-6 sm:p-7 mt-2 relative overflow-hidden flex flex-col sm:flex-row items-center justify-between gap-4 transition-all duration-300 hover:scale-[1.02] no-underline group border border-[#2d303b] hover:border-[#2e55d1]"
+                >
+                    <div className="absolute inset-0 bg-gradient-to-r from-[rgba(46,85,209,0.08)] to-transparent pointer-events-none"></div>
+                    <div className="flex flex-col gap-1.5 text-center sm:text-left relative z-10">
+                        <span className="text-[#cccccc] text-[13px] sm:text-[14px] font-[600] tracking-wide inline-flex items-center justify-center sm:justify-start gap-1">
+                            <span className="text-[#fceb42]">💡</span> 광고 없는 고화질 동영상 플레이어를 찾으시나요?
+                        </span>
+                        <span className="text-white text-[18px] sm:text-[20px] font-[800] group-hover:text-[#fceb42] transition-colors duration-200">
+                            📺 다음 팟플레이어 & 구버전 무료 다운로드
+                        </span>
+                    </div>
+                    <div className="flex items-center justify-center min-w-[44px] h-[44px] rounded-full bg-[#1e2028] group-hover:bg-[#2e55d1] transition-colors duration-300 border border-[#2d303b] group-hover:border-transparent relative z-10 mt-2 sm:mt-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </div>
+                </Link>
+
+                <div className="h-10"></div>
             </div>
             
         </div>
