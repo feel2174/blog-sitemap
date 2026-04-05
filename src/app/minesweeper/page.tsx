@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 export const metadata = {
     title: '추억의 윈도우 지뢰찾기 다운로드 (구버전 & 신버전)',
@@ -70,11 +71,12 @@ export default function MinesweeperPage() {
                     <div className="glass-card overflow-hidden rounded-[24px] flex flex-col md:flex-row group transition-all duration-300 hover:shadow-[0_15px_40px_rgba(255,76,76,0.15)] hover:border-[#ff4c4c]">
                         {/* 이미지 영역 */}
                         <div className="w-full md:w-[45%] bg-[#121318] p-6 flex items-center justify-center border-b md:border-b-0 md:border-r border-[#2d3142]">
-                            <img 
+                            <Image 
                                 src="/old.png" 
                                 alt="지뢰찾기 구버전 화면" 
+                                width={280}
+                                height={280}
                                 className="w-full max-w-[280px] object-contain rounded-[8px] shadow-[0_8px_20px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform duration-500"
-                                loading="lazy"
                             />
                         </div>
                         {/* 텍스트 및 버튼 영역 */}
@@ -99,11 +101,12 @@ export default function MinesweeperPage() {
                     <div className="glass-card overflow-hidden rounded-[24px] flex flex-col md:flex-row-reverse group transition-all duration-300 hover:shadow-[0_15px_40px_rgba(0,204,153,0.15)] hover:border-[#00cc99]">
                         {/* 이미지 영역 */}
                         <div className="w-full md:w-[45%] bg-[#121318] p-6 flex items-center justify-center border-b md:border-b-0 md:border-l border-[#2d3142]">
-                            <img 
+                            <Image 
                                 src="/new.png" 
                                 alt="지뢰찾기 신버전 화면" 
+                                width={280}
+                                height={280}
                                 className="w-full max-w-[280px] object-contain rounded-[12px] shadow-[0_8px_20px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform duration-500"
-                                loading="lazy"
                             />
                         </div>
                         {/* 텍스트 및 버튼 영역 */}

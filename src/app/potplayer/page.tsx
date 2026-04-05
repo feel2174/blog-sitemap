@@ -63,7 +63,7 @@ export default function PotPlayerPage() {
                             <strong className="text-white">최신버전:</strong> 카카오TV의 최신 라이브 스트리밍 기능과 보안 패치, 최신 코덱 엔진을 경험하고 싶으신 분들에게 권장합니다.
                         </li>
                         <li>
-                            <strong className="text-white">구버전 (1.7.18958):</strong> 플레이어 내 광고가 추가되기 전의 마지막 버전으로, 순수하게 <strong>"동영상 재생기"</strong> 본연의 목적만 가볍게 사용하시고 싶은 유저분들이 주로 많이 찾는 명작 버전입니다.
+                            <strong className="text-white">구버전 (1.7.18958):</strong> 플레이어 내 광고가 추가되기 전의 마지막 버전으로, 순수하게 <strong>&quot;동영상 재생기&quot;</strong> 본연의 목적만 가볍게 사용하시고 싶은 유저분들이 주로 많이 찾는 명작 버전입니다.
                         </li>
                     </ul>
                 </section>
@@ -116,7 +116,7 @@ export default function PotPlayerPage() {
                 {/* 팁 안내 */}
                 <div className="mt-4 bg-[rgba(0,0,0,0.2)] rounded-[16px] p-5 border border-[#2d2f38] text-center">
                     <p className="text-[#9999aa] text-[14px] m-0 font-[500]">
-                        <span className="text-[#fceb42] font-bold">구버전 설치 팁:</span> 구버전을 설치하신 후, 프로그램 실행 시 나타나는 <strong>"자동 업데이트 알림"을 반드시 취소(또는 설정에서 끄기)</strong> 하셔야 계속 광고 없는 구버전으로 유지하며 사용하실 수 있습니다.
+                        <span className="text-[#fceb42] font-bold">구버전 설치 팁:</span> 구버전을 설치하신 후, 프로그램 실행 시 나타나는 <strong>&quot;자동 업데이트 알림&quot;을 반드시 취소(또는 설정에서 끄기)</strong> 하셔야 계속 광고 없는 구버전으로 유지하며 사용하실 수 있습니다.
                     </p>
                 </div>
 
