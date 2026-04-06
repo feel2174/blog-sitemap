@@ -120,6 +120,37 @@ export default function RadioReplayPage() {
                     ))}
                 </div>
 
+                {/* Radio Schedule CTA */}
+                <div className="mb-16">
+                    <Link
+                        href="https://zucca100.com/radio-schedule/"
+                        className="group relative flex items-center justify-between bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+                        style={{ textDecoration: 'none' }}
+                    >
+                        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none" />
+                        
+                        <div className="flex items-center gap-5 relative z-10">
+                            <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center text-3xl shadow-inner backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+                                📅
+                            </div>
+                            <div>
+                                <h2 className="text-2xl font-bold text-white mb-1 drop-shadow-sm">
+                                    라디오 편성표 확인하기
+                                </h2>
+                                <p className="text-emerald-50 drop-shadow-sm hidden md:block">
+                                    각 채널별 실시간 / 일일 라디오 시간표를 한눈에 확인하세요.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="text-white opacity-80 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300 relative z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </Link>
+                </div>
+
                 {/* Footer Notice */}
                 <div className="bg-neutral-100 rounded-2xl p-6 text-center border border-neutral-200">
                     <p className="text-neutral-500 text-sm font-medium">
