@@ -407,8 +407,29 @@ export default function PopulationDecreasePage() {
             </div>
           </div>
 
+          {/* Livelihood Support CTA Banner */}
+          <div className="mt-16 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-[32px] p-6 md:p-8 shadow-xl shadow-emerald-500/20 text-white flex flex-col lg:flex-row items-center justify-between gap-6 border border-emerald-400">
+             <div className="text-center lg:text-left">
+                <div className="inline-block px-3 py-1 bg-emerald-700/50 rounded-full text-xs font-bold tracking-wider mb-3 backdrop-blur-sm">
+                   ⭐ 특별 안내
+                </div>
+                <h4 className="text-2xl md:text-3xl font-black mb-2 tracking-tight">인구감소지역 거주자라면, <br className="md:hidden" /> 지원금 신청 잊지 마세요!</h4>
+                <p className="text-emerald-50 font-medium text-sm md:text-base">
+                   거주 지역 및 소득 수준(하위 70%)에 따라 <strong className="font-bold text-yellow-300">최대 25만원</strong>이 차등 지급됩니다.
+                </p>
+             </div>
+             <a 
+                href="https://zucca100.com/high-people-support/" 
+                className="w-full lg:w-auto shrink-0 bg-white text-emerald-700 px-6 md:px-8 py-4 md:py-5 rounded-2xl font-black text-lg md:text-xl shadow-lg hover:bg-emerald-50 hover:scale-[1.02] transition-all flex items-center justify-center gap-2"
+             >
+                <span className="text-2xl">💰</span> 
+                2026 고유가 피해지원금,<br className="sm:hidden" /> 민생지원금 신청
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="ml-1"><path d="m9 18 6-6-6-6"/></svg>
+             </a>
+          </div>
+
           {/* Bottom Info Section */}
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="md:col-span-1 p-8 bg-blue-600 text-white rounded-[32px] shadow-lg flex flex-col justify-between">
               <div>
                 <div className="text-4xl mb-4">📢</div>
