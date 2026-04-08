@@ -42,7 +42,7 @@ export const govData = [
     keywords: ['광주', '동구', '서구', '남구', '북구', '광산', '광산구']
   },
   {
-    name: '대전광역시청',
+    name: '역시청',
     url: 'https://www.daejeon.go.kr',
     desc: '일류 경제도시 대전',
     color: 'from-rose-600 via-pink-500 to-red-600',
