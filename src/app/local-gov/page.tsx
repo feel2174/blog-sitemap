@@ -26,13 +26,39 @@ export default function LocalGovLandingPage() {
                 {/* Header Section */}
                 <div className="mb-8">
 
+                  
 
                     <h1 className="text-4xl md:text-5xl font-black tracking-tighter mb-6 leading-tight">
                         <span className="text-slate-900">2026 고유가피해지원금</span><br />
                         <span className="text-blue-600">지역별 안내 바로가기</span>
                     </h1>
 
-                    
+                    <style>{`
+                        @keyframes scalePulse {
+                            0%, 100% { transform: scale(0.95); }
+                            50% { transform: scale(1.05); }
+                        }
+                        .animate-scale-pulse {
+                            animation: scalePulse 1.2s infinite ease-in-out;
+                            will-change: transform;
+                        }
+                        .animate-scale-pulse:hover {
+                            animation: none;
+                            transform: scale(1.05);
+                        }
+                    `}</style>
+                    <Link href="https://www.ips.go.kr/pot/forwardMain.do" className="inline-flex flex-row items-center justify-center w-full p-4 mb-8 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl shadow-lg shadow-blue-200/50 transition-all active:scale-95 ring-4 ring-white/50 group animate-scale-pulse">
+                        <span className="text-xl mr-2 flex items-center gap-2">
+                            <span className="relative flex h-3 w-3">
+                              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                              <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                            </span>
+                            지원금 놓치지 않게 알림 신청하기
+                        </span>
+                        <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                    </Link>  
 
                 </div>
 
