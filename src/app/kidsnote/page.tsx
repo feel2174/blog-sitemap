@@ -89,8 +89,8 @@ export default function KidsNotePage() {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
                             </div>
                             <div className="flex flex-col items-start justify-center">
-                                <span className="text-amber-400 text-xs font-semibold tracking-wider">WEB GUIDE</span>
-                                <span className="text-white font-bold text-lg md:text-xl tracking-tight">키즈노트 통합 가이드 및 안내</span>
+                                <span className="text-amber-400 text-xs font-semibold tracking-wider">PHOTO SAVE</span>
+                                <span className="text-white font-bold text-lg md:text-xl tracking-tight">알림장 사진 다운로드/저장</span>
                             </div>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-amber-400 opacity-50 transition-transform duration-300 group-hover:translate-x-1 group-hover:opacity-100"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
