@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 17,
+      "count": 18,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -127,6 +127,12 @@ const categorizedData: CategorizedData = {
         "link": "/holiday-pay-calculator",
         "category": "government_support",
         "matched_keywords": ["주휴수당", "계산기", "시급", "2026", "알바"]
+      },
+      {
+        "title": "동물등록증 신청 및 재발급 방법 안내 | 정부24 온라인 바로가기",
+        "link": "/animal-registration",
+        "category": "government_support",
+        "matched_keywords": ["동물등록증", "강아지등록", "반려동물", "정부24", "재발급"]
       }
     ],
     "finance_investment": [
