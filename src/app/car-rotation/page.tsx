@@ -3,6 +3,18 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 
+// 5부제 규칙
+// 월: 1,6 / 화: 2,7 / 수: 3,8 / 목: 4,9 / 금: 5,0 / 주말: 없음
+const restrictionRules: Record<number, number[]> = {
+    1: [1, 6],
+    2: [2, 7],
+    3: [3, 8],
+    4: [4, 9],
+    5: [5, 0],
+    6: [],
+    0: []
+};
+
 export default function CarRotationPage() {
     const [plateDigit, setPlateDigit] = useState<string>('');
     const [currentTime, setCurrentTime] = useState<Date | null>(null);
@@ -21,19 +33,7 @@ export default function CarRotationPage() {
     const todayKor = daysKor[todayNum];
     const isWeekend = todayNum === 0 || todayNum === 6;
 
-    // 5부제 규칙
-    // 월: 1,6 / 화: 2,7 / 수: 3,8 / 목: 4,9 / 금: 5,0 / 주말: 없음
-    const restrictionRules: Record<number, number[]> = {
-        1: [1, 6],
-        2: [2, 7],
-        3: [3, 8],
-        4: [4, 9],
-        5: [5, 0],
-        6: [],
-        0: []
-    };
-
-    const todaysRestricted = restrictionRules[todayNum] || [];
+    const todaysRestricted = useMemo(() => restrictionRules[todayNum] || [], [todayNum]);
 
     // Check logic
     const isRestrictedToday = useMemo(() => {

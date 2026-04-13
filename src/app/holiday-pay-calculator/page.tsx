@@ -42,7 +42,7 @@ export default function HolidayPayCalculator() {
     useEffect(() => {
         // Push ads to any ins tags if they exist
         try {
-            // @ts-ignore
+            // @ts-expect-error: window.adsbygoogle is not defined in global window object
             (window.adsbygoogle = window.adsbygoogle || []).push({});
         } catch (e) {
             console.error('AdSense error:', e);

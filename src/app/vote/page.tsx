@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
 export default function VotePage() {
@@ -149,9 +150,11 @@ export default function VotePage() {
 
                 {/* 3. Main Poster Image */}
                 <div className="w-full max-w-[420px] mb-10 relative rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,1)] border border-white/10 animate-[float_6s_ease-in-out_infinite]">
-                    <img 
+                    <Image 
                         src="/legend.png" 
                         alt="무명전설 포스터" 
+                        width={420}
+                        height={600}
                         className="w-full h-auto object-contain bg-black/40"
                     />
                     <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#050b18] to-transparent pointer-events-none" />
