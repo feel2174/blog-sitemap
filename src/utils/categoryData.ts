@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 16,
+      "count": 17,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -121,6 +121,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/population-decrease",
         "category": "government_support",
         "matched_keywords": ["인구감소지역", "지원금", "우대지역", "특별지역", "지역위기"]
+      },
+      {
+        "title": "2026년 주휴수당 계산기 | 나의 주휴수당은 얼마? (최저임금 반영)",
+        "link": "/holiday-pay-calculator",
+        "category": "government_support",
+        "matched_keywords": ["주휴수당", "계산기", "시급", "2026", "알바"]
       }
     ],
     "finance_investment": [
