@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 13,
+      "count": 14,
       "description": "라이프스타일"
     }
   },
@@ -267,6 +267,12 @@ const categorizedData: CategorizedData = {
         "link": "/marathon-schedule",
         "category": "lifestyle",
         "matched_keywords": ["마라톤", "서울마라톤", "춘천마라톤", "JTBC마라톤", "동아마라톤", "조선마라톤", "중앙마라톤", "대회일정"]
+      },
+      {
+        "title": "티머니GO 고객센터 및 앱 다운로드 안내 (고속/시외버스, 따릉이, 택시 통합)",
+        "link": "/tmoney-go",
+        "category": "lifestyle",
+        "matched_keywords": ["티머니", "티머니고", "Tmoney", "고객센터", "앱다운로드", "고속버스", "시외버스"]
       }
     ]
   }
