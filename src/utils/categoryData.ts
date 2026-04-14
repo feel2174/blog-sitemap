@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 20,
+      "count": 21,
       "description": "라이프스타일"
     }
   },
@@ -261,6 +261,12 @@ const categorizedData: CategorizedData = {
         "link": "/dataq-schedule",
         "category": "lifestyle",
         "matched_keywords": ["데이터자격시험", "SQLD", "ADsP", "ADP", "빅데이터분석기사", "시험일정", "dataq"]
+      },
+      {
+        "title": "2026 국내 3대 메이저 마라톤 대회 일정 (서울, 춘천, JTBC 마라톤) | 공식 홈페이지 안내",
+        "link": "/marathon-schedule",
+        "category": "lifestyle",
+        "matched_keywords": ["마라톤", "서울마라톤", "춘천마라톤", "JTBC마라톤", "동아마라톤", "조선마라톤", "중앙마라톤", "대회일정"]
       }
     ]
   }
