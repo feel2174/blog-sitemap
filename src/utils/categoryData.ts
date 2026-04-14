@@ -16,7 +16,7 @@ const categorizedData: CategorizedData = {
       "description": "건강 & 웰빙"
     },
     "technology": {
-      "count": 4,
+      "count": 5,
       "description": "기술 & IT"
     },
     "lifestyle": {
@@ -205,6 +205,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/v3",
         "category": "technology",
         "matched_keywords": ["V3", "안랩", "AhnLab", "백신", "무료백신", "다운로드"]
+      },
+      {
+        "title": "네이트온(NateOn) 공식 무료 다운로드 및 설치 안내 (PC 및 모바일)",
+        "link": "/nateon",
+        "category": "technology",
+        "matched_keywords": ["네이트온", "NateOn", "메신저", "다운로드", "무료설치", "메신저추천"]
       }
     ],
     "lifestyle": [
