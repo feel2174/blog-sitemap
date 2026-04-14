@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   
   // 개별 블로그 포스트
   const blogPosts = Object.values(categories).flat().map(post => ({
-    url: post.link,
+    url: post.link.startsWith('http') ? post.link : `${baseUrl}${post.link}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.6,

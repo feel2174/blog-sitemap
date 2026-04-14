@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 21,
+      "count": 13,
       "description": "라이프스타일"
     }
   },
