@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 8,
+      "count": 9,
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
@@ -153,6 +153,12 @@ const categorizedData: CategorizedData = {
         "link": "/ok-savings-bank",
         "category": "finance_investment",
         "matched_keywords": ["OK저축은행", "저축은행", "금융", "고객센터", "앱다운로드", "대출", "모바일뱅킹"]
+      },
+      {
+        "title": "SBI저축은행 사이다뱅크 고객센터 및 앱 다운로드 안내 (안드로이드, iOS 바로가기)",
+        "link": "/sbi-savings-bank",
+        "category": "finance_investment",
+        "matched_keywords": ["SBI저축은행", "사이다뱅크", "저축은행", "금융", "고객센터", "앱다운로드", "대출", "모바일뱅킹"]
       }
     ],
     "health_wellness": [
