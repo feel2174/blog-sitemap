@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 7,
+      "count": 8,
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
@@ -147,6 +147,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/%ed%95%98%eb%82%98%ec%a0%80%ec%b6%95%ec%9d%80%ed%96%89-%ec%82%ac%ec%9e%87%eb%8f%8c2-%eb%8c%80%ec%b6%9c-%ed%9b%84%ea%b8%b0-%ec%8b%a0%ec%9a%a9%ec%a0%90%ec%88%98-%eb%82%ae%ec%95%84%eb%8f%84-3%ec%b2%9c/",
         "category": "finance_investment",
         "matched_keywords": ["대출", "신용점수"]
+      },
+      {
+        "title": "OK저축은행 고객센터 및 앱 다운로드 안내 (안드로이드, iOS 바로가기)",
+        "link": "/ok-savings-bank",
+        "category": "finance_investment",
+        "matched_keywords": ["OK저축은행", "저축은행", "금융", "고객센터", "앱다운로드", "대출", "모바일뱅킹"]
       }
     ],
     "health_wellness": [
