@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 9,
+      "count": 10,
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
@@ -159,6 +159,12 @@ const categorizedData: CategorizedData = {
         "link": "/sbi-savings-bank",
         "category": "finance_investment",
         "matched_keywords": ["SBI저축은행", "사이다뱅크", "저축은행", "금융", "고객센터", "앱다운로드", "대출", "모바일뱅킹"]
+      },
+      {
+        "title": "내 주변 ATM 위치 검색 및 금융맵 앱 다운로드 안내 (네이버 지도 바로가기)",
+        "link": "/atm-location",
+        "category": "finance_investment",
+        "matched_keywords": ["ATM", "ATM위치", "현금인출기", "편의점ATM", "은행ATM", "금융맵", "내주변ATM"]
       }
     ],
     "health_wellness": [
