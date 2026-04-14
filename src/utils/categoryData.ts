@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 15,
+      "count": 16,
       "description": "라이프스타일"
     }
   },
@@ -291,6 +291,12 @@ const categorizedData: CategorizedData = {
         "link": "/ok-cashbag",
         "category": "lifestyle",
         "matched_keywords": ["OK캐시백", "OKCashbag", "포인트", "현금화", "앱다운로드", "홈페이지"]
+      },
+      {
+        "title": "2026 전국 주요 홈쇼핑 TV 편성표 모음 (CJ, 롯데, 현대, GS, 홈앤쇼핑, NS)",
+        "link": "/homeshopping-schedule",
+        "category": "lifestyle",
+        "matched_keywords": ["홈쇼핑", "편성표", "CJ홈쇼핑", "롯데홈쇼핑", "현대홈쇼핑", "GS홈쇼핑", "홈앤쇼핑", "NS홈쇼핑", "TV방송"]
       }
     ]
   }
