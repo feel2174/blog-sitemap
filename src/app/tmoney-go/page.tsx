@@ -17,6 +17,15 @@ export default function TmoneyGoPage() {
             color: 'from-blue-500 to-indigo-600'
         },
         {
+            title: '코버스(Kobus) 홈페이지',
+            desc: '전국 고속버스 운송조합 통합 예매',
+            url: 'https://www.kobus.co.kr/main.do',
+            icon: (
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-1.1 0-2 .9-2 2v7c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+            ),
+            color: 'from-amber-500 to-orange-600'
+        },
+        {
             title: '티머니GO 앱 다운로드 (Android)',
             desc: '구글 플레이 스토어 바로가기',
             url: 'https://play.google.com/store/apps/details?id=kr.co.tmoney.tia&hl=ko',
