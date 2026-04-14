@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 19,
+      "count": 20,
       "description": "라이프스타일"
     }
   },
@@ -255,6 +255,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/outback-discount",
         "category": "lifestyle",
         "matched_keywords": ["아웃백", "할인", "스테이크하우스", "상품권", "제휴카드"]
+      },
+      {
+        "title": "2026 데이터자격시험 일정 안내 (SQLD, ADsP, ADP, 빅분기 등) | 한국데이터산업진흥원",
+        "link": "/dataq-schedule",
+        "category": "lifestyle",
+        "matched_keywords": ["데이터자격시험", "SQLD", "ADsP", "ADP", "빅데이터분석기사", "시험일정", "dataq"]
       }
     ]
   }
