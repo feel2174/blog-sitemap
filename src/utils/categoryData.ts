@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 16,
+      "count": 17,
       "description": "라이프스타일"
     }
   },
@@ -309,6 +309,12 @@ const categorizedData: CategorizedData = {
         "link": "/homeshopping-schedule",
         "category": "lifestyle",
         "matched_keywords": ["홈쇼핑", "편성표", "CJ홈쇼핑", "롯데홈쇼핑", "현대홈쇼핑", "GS홈쇼핑", "홈앤쇼핑", "NS홈쇼핑", "TV방송"]
+      },
+      {
+        "title": "잔나비(JANNABI) EBS 스페이스 공감 무료콘서트 관람신청 안내",
+        "link": "/jannabi",
+        "category": "lifestyle",
+        "matched_keywords": ["잔나비", "Jannabi", "EBS", "스페이스공감", "무료콘서트", "공연신청"]
       }
     ]
   }
