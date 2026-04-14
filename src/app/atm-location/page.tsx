@@ -38,17 +38,17 @@ export default function AtmLocationPage() {
 
     return (
         <div 
-            className="min-h-screen bg-[#050505] text-white flex flex-col items-center py-16 px-6 relative overflow-hidden"
-            style={{ fontFamily: '"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif' }}
+            className="min-h-screen bg-[#030303] text-white flex flex-col items-center py-20 px-6 relative overflow-hidden"
+            style={{ fontFamily: '"Pretendard Variable", Pretendard, sans-serif' }}
         >
-            {/* Background Aesthetics */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,_rgba(59,130,246,0.15)_0%,transparent_50%)] z-0" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/5 blur-[120px] rounded-full z-0" />
+            {/* Ambient Background Lights */}
+            <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-600/20 blur-[150px] rounded-full animate-pulse" />
+            <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-600/10 blur-[130px] rounded-full" />
             
             <div className="relative z-10 w-full max-w-xl mx-auto flex flex-col items-center">
                 {/* Header */}
-                <header className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-[10px] font-bold tracking-[0.2em] uppercase mb-6 backdrop-blur-md">
+                <header className="text-center mb-20 animate-[fadeIn_0.8s_ease-out]">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-400 text-[11px] font-bold tracking-[0.25em] uppercase mb-8 backdrop-blur-3xl shadow-[0_0_15px_rgba(59,130,246,0.2)]">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
@@ -56,86 +56,87 @@ export default function AtmLocationPage() {
                         ATM Location Finder
                     </div>
 
-                    <h1 className="text-4xl md:text-5xl font-black tracking-tighter mb-4 leading-tight">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60">현금이 급할 때</span><br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-blue-600">내 주변 ATM 찾기</span>
+                    <h1 className="text-5xl md:text-6xl font-black tracking-tighter mb-6 leading-[1.1]">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">현금이 필요할 때</span><br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-sky-400 drop-shadow-[0_0_30px_rgba(59,130,246,0.3)]">내 주변 ATM 찾기</span>
                     </h1>
 
-                    <div className="h-1 w-12 bg-blue-600 mx-auto rounded-full mb-8" />
+                    <div className="h-1.5 w-16 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full mb-10 shadow-[0_0_20px_rgba(59,130,246,0.6)]" />
 
-                    <p className="text-neutral-400 text-sm md:text-base font-light tracking-tight leading-relaxed">
-                        가장 가까운 ATM 기기 위치가 궁금하신가요?<br />
-                        <span className="text-neutral-200 font-medium">실시간 지도 검색과 금융 앱</span>으로 빠르게 확인하세요.
+                    <p className="text-neutral-400 text-sm md:text-lg font-light tracking-tight leading-relaxed max-sm:max-w-xs mx-auto">
+                        가까운 현금 인출기 위치가 궁금하신가요?<br />
+                        <span className="text-neutral-100 font-semibold underline decoration-blue-500/50 underline-offset-4">통합 금융맵과 실시간 지도</span>로 해결하세요.
                     </p>
                 </header>
 
-                {/* Main Link Grid */}
-                <div className="w-full space-y-4 mb-20">
+                {/* List Sections with improved contrast and animations */}
+                <div className="w-full flex flex-col gap-5 mb-24">
                     {atmServices.map((service, index) => (
                         <Link 
                             key={index}
                             href={service.url}
-                            className="group relative flex items-center p-6 bg-zinc-900/40 hover:bg-zinc-800/60 border border-white/5 hover:border-blue-500/30 rounded-[2rem] transition-all duration-500 backdrop-blur-2xl active:scale-[0.98] overflow-hidden"
+                            className="group relative flex items-center p-7 bg-zinc-900/60 hover:bg-zinc-800/90 border border-white/10 hover:border-blue-500/50 rounded-[2.5rem] transition-all duration-500 backdrop-blur-2xl shadow-2xl hover:shadow-blue-900/20 hover:-translate-y-2 active:scale-95 overflow-hidden"
+                            style={{ animation: `fadeIn 0.6s ease-out backwards ${index * 150}ms` }}
                         >
-                            {/* Card Accent */}
-                            <div className={`absolute left-0 top-0 w-1.5 h-full bg-gradient-to-b ${service.color} opacity-80 group-hover:w-2 transition-all duration-300`} />
+                            {/* Card Accent Glow */}
+                            <div className={`absolute left-0 top-0 w-2 h-full bg-gradient-to-b ${service.color} opacity-40 group-hover:opacity-100 transition-all duration-500 group-hover:w-3`} />
                             
-                            <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${service.color} text-white shadow-lg transition-transform duration-500 group-hover:scale-110`}>
+                            <div className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${service.color} text-white shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}>
                                 {service.icon}
                             </div>
 
-                            <div className="ml-5 flex-1 pr-6 overflow-hidden">
-                                <h3 className="text-lg font-bold text-white group-hover:text-blue-200 transition-colors truncate">
+                            <div className="ml-6 flex-1 pr-6 overflow-hidden">
+                                <h3 className="text-xl font-bold text-white group-hover:text-blue-200 transition-colors truncate">
                                     {service.title}
                                 </h3>
-                                <p className="text-xs text-neutral-500 mt-1 font-medium group-hover:text-neutral-400 transition-colors">
+                                <p className="text-sm text-neutral-500 mt-1 font-medium group-hover:text-neutral-300 transition-colors">
                                     {service.desc}
                                 </p>
                             </div>
 
-                            <div className="h-9 w-9 flex items-center justify-center rounded-full border border-white/10 text-neutral-600 transition-all group-hover:border-blue-500/50 group-hover:text-blue-400 group-hover:bg-blue-500/10">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            <div className="h-12 w-12 flex items-center justify-center rounded-full border border-white/10 text-neutral-600 transition-all duration-500 group-hover:border-blue-500/50 group-hover:text-blue-400 group-hover:bg-blue-500/10 group-hover:rotate-45">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                             </div>
                         </Link>
                     ))}
                 </div>
 
                 {/* Information Card */}
-                <div className="w-full bg-zinc-900/30 border border-white/5 p-8 md:p-10 rounded-[2.5rem] backdrop-blur-xl relative overflow-hidden group">
-                    <div className="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity">
-                        <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                <div className="w-full bg-blue-950/20 border border-blue-500/10 p-10 md:p-12 rounded-[3.5rem] backdrop-blur-xl relative overflow-hidden group hover:border-blue-500/30 transition-all duration-700 shadow-3xl">
+                    <div className="absolute top-0 right-0 p-10 opacity-[0.03] group-hover:opacity-[0.1] transition-all duration-1000 group-hover:scale-125 group-hover:rotate-12">
+                        <svg width="150" height="150" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
                     </div>
 
-                    <h2 className="text-xl font-black text-white mb-6 flex items-center gap-3">
-                        <span className="p-2 bg-blue-500/20 rounded-xl">ℹ️</span>
-                        금융맵(금융대동여지도) 이란?
+                    <h2 className="text-2xl font-black text-white mb-8 flex items-center gap-4 tracking-tighter">
+                        <span className="p-3 bg-blue-500/20 rounded-2xl text-xl animate-bounce">ℹ️</span>
+                        금융맵(금융대동여지도)
                     </h2>
                     
-                    <div className="space-y-6">
-                        <p className="text-sm text-neutral-400 leading-relaxed font-light">
-                            금융위원회와 한국은행이 공동 추진한 <strong className="text-neutral-200">금융맵 서비스</strong>는 모든 금융권의 ATM과 지점 정보를 하나로 통합해 보여주는 서비스입니다.
+                    <div className="space-y-8">
+                        <p className="text-base text-neutral-400 leading-relaxed font-light">
+                            금융위원회와 한국은행이 공동 추진한 <strong className="text-neutral-200 font-bold border-b border-blue-500/30">금융맵 서비스</strong>는 모든 금융권의 ATM 정보를 하나로 통합한 서비스입니다.
                         </p>
-                        <ul className="space-y-3">
-                            <li className="flex gap-2 text-xs text-neutral-500">
-                                <span className="text-blue-500">•</span>
-                                맵에서 바로 수수료 인하 ATM 및 장애인 전용 ATM 필터링 가능
+                        <ul className="space-y-5">
+                            <li className="flex gap-4 items-start text-sm text-neutral-400 group/item">
+                                <div className="mt-1.5 h-2 w-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)] shrink-0 transition-transform group-hover/item:scale-150" />
+                                <span>수수료 없는 ATM 및 장애인 전용 기기 <strong className="text-blue-400">간편 필터링</strong></span>
                             </li>
-                            <li className="flex gap-2 text-xs text-neutral-500">
-                                <span className="text-blue-500">•</span>
-                                운영 시간 및 위치 정보 실시간 업데이트
+                            <li className="flex gap-4 items-start text-sm text-neutral-400 group/item">
+                                <div className="mt-1.5 h-2 w-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)] shrink-0 transition-transform group-hover/item:scale-150" />
+                                <span>전국 1만여 개 이상의 ATM <strong className="text-blue-400">실시간 위치</strong> 확인 가능</span>
                             </li>
                         </ul>
                     </div>
                     
-                    <div className="mt-10 pt-6 border-t border-white/5 flex justify-center">
-                        <p className="text-[10px] text-neutral-700 font-bold uppercase tracking-[0.5em]">
+                    <div className="mt-14 pt-8 border-t border-white/5 flex flex-col items-center gap-4">
+                        <p className="text-[10px] text-neutral-600 font-black uppercase tracking-[0.6em]">
                             Smart Finance Experience
                         </p>
                     </div>
                 </div>
 
-                <footer className="mt-20 text-center w-full">
-                    <p className="text-neutral-800 text-[10px] font-medium tracking-[0.6em] uppercase">
+                <footer className="mt-28 text-center w-full">
+                    <p className="text-neutral-800 text-[11px] font-bold tracking-[0.8em] uppercase opacity-50">
                         Digital Banking Support Guide
                     </p>
                 </footer>

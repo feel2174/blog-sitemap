@@ -47,17 +47,17 @@ export default function TmoneyGoPage() {
 
     return (
         <div 
-            className="min-h-screen bg-[#0a0a0c] text-white flex flex-col items-center py-16 px-6 relative overflow-hidden"
-            style={{ fontFamily: '"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif' }}
+            className="min-h-screen bg-[#010101] text-white flex flex-col items-center py-20 px-6 relative overflow-hidden"
+            style={{ fontFamily: '"Pretendard Variable", Pretendard, sans-serif' }}
         >
             {/* Design Elements */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-96 bg-blue-600/10 blur-[120px] rounded-full z-0" />
-            <div className="absolute bottom-0 right-0 w-64 h-64 bg-indigo-600/5 blur-[80px] rounded-full z-0" />
+            <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-600/20 blur-[150px] rounded-full animate-pulse" />
+            <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-600/10 blur-[130px] rounded-full" />
             
-            <div className="relative z-10 w-full max-w-xl mx-auto">
+            <div className="relative z-10 w-full max-w-xl mx-auto flex flex-col items-center">
                 {/* Header */}
-                <header className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-[10px] font-bold tracking-[0.2em] uppercase mb-6 backdrop-blur-md">
+                <header className="text-center mb-20 animate-[fadeIn_0.8s_ease-out]">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-400 text-[11px] font-black tracking-[0.3em] uppercase mb-8 backdrop-blur-3xl shadow-[0_0_20px_rgba(59,130,246,0.2)]">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
@@ -65,101 +65,92 @@ export default function TmoneyGoPage() {
                         T-money GO Info
                     </div>
 
-                    <h1 className="text-4xl md:text-5xl font-black tracking-tighter mb-4 leading-tight">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60">가장 스마트한 이동</span><br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-indigo-400 to-blue-500 text-shadow-glow">티머니GO 안내</span>
+                    <h1 className="text-5xl md:text-6xl font-black tracking-tighter mb-6 leading-[1.1]">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">가장 스마트한 이동</span><br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-blue-600 drop-shadow-[0_0_30px_rgba(59,130,246,0.3)]">티머니GO 안내</span>
                     </h1>
 
-                    <div className="h-1.5 w-16 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full mb-8 shadow-[0_0_15px_rgba(59,130,246,0.5)]" />
+                    <div className="h-1.5 w-16 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full mb-10 shadow-[0_0_20px_rgba(59,130,246,0.5)]" />
 
-                    <p className="text-neutral-400 text-sm md:text-base font-light tracking-tight leading-relaxed">
-                        고속버스, 시외버스 터미널 예매부터 따릉이, 택시까지!<br className="hidden sm:block" />
-                        <span className="text-neutral-200 font-medium">티머니GO 하나로 모든 이동을 통합</span>하세요.
+                    <p className="text-neutral-400 text-sm md:text-lg font-light tracking-tight leading-relaxed max-w-md mx-auto">
+                        고속/시외버스부터 따릉이, 택시까지!<br />
+                        <span className="text-neutral-100 font-bold border-b border-blue-500/30">티머니GO 하나로 모든 이동을 통합</span>하고 마일리지 혜택을 누리세요.
                     </p>
                 </header>
 
                 {/* Main Action List */}
-                <nav className="flex flex-col gap-5 mb-16">
+                <nav className="w-full flex flex-col gap-5 mb-24">
                     {actions.map((item, index) => (
                         <Link 
                             key={index}
                             href={item.url}
-                            className="group relative flex items-center p-6 bg-zinc-900/40 hover:bg-zinc-800/60 border border-white/5 hover:border-blue-500/30 rounded-[2rem] transition-all duration-400 backdrop-blur-2xl overflow-hidden active:scale-[0.98]"
+                            className="group relative flex items-center p-7 bg-zinc-900/60 hover:bg-zinc-800/90 border border-white/10 hover:border-blue-500/50 rounded-[2.5rem] transition-all duration-500 backdrop-blur-3xl shadow-2xl hover:shadow-blue-900/20 hover:-translate-y-2 active:scale-95 overflow-hidden"
+                            style={{ animation: `fadeIn 0.6s ease-out backwards ${index * 150}ms` }}
                         >
-                            {/* Inner Glow */}
-                            <div className={`absolute left-0 top-0 w-1.5 h-full bg-gradient-to-b ${item.color} opacity-80 group-hover:w-2 transition-all duration-300`} />
+                            {/* Card Accent Glow */}
+                            <div className={`absolute left-0 top-0 w-2 h-full bg-gradient-to-b ${item.color} opacity-40 group-hover:opacity-100 transition-all duration-500 group-hover:w-3`} />
                             
-                            <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${item.color} text-white shadow-lg shadow-blue-900/20 group-hover:scale-110 transition-transform duration-400`}>
+                            <div className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${item.color} text-white shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}>
                                 {item.icon}
                             </div>
 
-                            <div className="ml-5 flex-1 pr-6">
-                                <h3 className="text-lg font-bold text-white group-hover:text-blue-200 transition-colors">
+                            <div className="ml-6 flex-1 pr-6 overflow-hidden">
+                                <h3 className="text-xl font-bold text-white group-hover:text-blue-200 transition-colors truncate">
                                     {item.title}
                                 </h3>
-                                <p className="text-xs text-neutral-500 mt-1 font-medium tracking-tight group-hover:text-neutral-400 transition-colors">
+                                <p className="text-sm text-neutral-500 mt-1 font-medium group-hover:text-neutral-300 transition-colors">
                                     {item.desc}
                                 </p>
                             </div>
 
-                            <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 text-neutral-600 group-hover:border-blue-500/50 group-hover:text-blue-400 transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            <div className="h-12 w-12 flex items-center justify-center rounded-full border border-white/10 text-neutral-600 transition-all duration-500 group-hover:border-blue-500/50 group-hover:text-blue-400 group-hover:bg-blue-500/10 group-hover:rotate-45">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                             </div>
                         </Link>
                     ))}
                 </nav>
 
                 {/* Feature Description Card */}
-                <div className="glass-card bg-zinc-900/20 border border-white/5 p-8 rounded-[2.5rem] backdrop-blur-sm relative overflow-hidden">
-                    <div className="absolute top-0 right-0 p-6 opacity-[0.03] rotate-12 pointer-events-none">
-                        <svg width="140" height="140" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13H5v-2h14v2z"/></svg>
+                <div className="w-full bg-blue-950/20 border border-blue-500/10 p-10 md:p-14 rounded-[3.5rem] backdrop-blur-xl relative overflow-hidden group hover:border-blue-500/30 transition-all duration-700 shadow-3xl">
+                    <div className="absolute top-0 right-0 p-10 opacity-[0.03] group-hover:opacity-[0.1] transition-all duration-1000 group-hover:scale-125 group-hover:rotate-12">
+                        <svg width="150" height="150" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13H5v-2h14v2z"/></svg>
                     </div>
 
-                    <h2 className="text-xl font-black text-white mb-6 flex items-center gap-3 tracking-tighter">
-                        <span className="p-2 bg-blue-500/20 rounded-lg">🚀</span>
+                    <h2 className="text-2xl font-black text-white mb-8 flex items-center gap-4 tracking-tighter">
+                        <span className="p-3 bg-blue-500/20 rounded-2xl text-xl animate-bounce">🚀</span>
                         티머니GO 주요 기능
                     </h2>
 
-                    <div className="flex flex-col gap-6">
-                        <div className="flex gap-4">
-                            <div className="mt-1 h-5 w-5 shrink-0 rounded-full border-2 border-blue-500/30 flex items-center justify-center">
-                                <div className="h-1.5 w-1.5 rounded-full bg-blue-500" />
-                            </div>
+                    <div className="grid grid-cols-1 gap-8">
+                        <div className="flex gap-5 p-6 rounded-[2.5rem] bg-white/[0.03] border border-white/[0.05] hover:bg-white/[0.08] transition-all group-hover:translate-x-2">
+                            <div className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-blue-500 shadow-[0_0_12px_rgba(59,130,246,0.8)]" />
                             <div>
-                                <h4 className="text-sm font-bold text-neutral-200 mb-1">통합 경로 탐색</h4>
-                                <p className="text-xs text-neutral-500 leading-relaxed font-light">고속/시외버스와 따릉이, 킥보드를 연계한 최적 경로 안내</p>
+                                <h4 className="text-base font-bold text-neutral-200 mb-1">통합 경로 탐색</h4>
+                                <p className="text-sm text-neutral-500 leading-relaxed font-light">고속/시외버스와 따릉이, 킥보드를 연계한 최적 경로 안내</p>
                             </div>
                         </div>
-                        <div className="flex gap-4">
-                            <div className="mt-1 h-5 w-5 shrink-0 rounded-full border-2 border-indigo-500/30 flex items-center justify-center">
-                                <div className="h-1.5 w-1.5 rounded-full bg-indigo-500" />
-                            </div>
+                        <div className="flex gap-5 p-6 rounded-[2.5rem] bg-white/[0.03] border border-white/[0.05] hover:bg-white/[0.08] transition-all group-hover:translate-x-2">
+                            <div className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-indigo-500 shadow-[0_0_12px_rgba(99,102,241,0.8)]" />
                             <div>
-                                <h4 className="text-sm font-bold text-neutral-200 mb-1">GO마일리지 혜택</h4>
-                                <p className="text-xs text-neutral-500 leading-relaxed font-light">대중교통 환승 및 서비스 이용 시 쌓이는 강력한 마일리지 적립</p>
+                                <h4 className="text-base font-bold text-neutral-200 mb-1">GO마일리지 혜택</h4>
+                                <p className="text-sm text-neutral-500 leading-relaxed font-light">대중교통 환승 및 서비스 이용 시 쌓이는 강력한 마일리지 적립</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div className="h-px w-full bg-white/5 my-8" />
-                    
-                    <p className="text-[10px] text-center text-neutral-600 font-bold uppercase tracking-[0.3em]">
-                        Your All-in-One Mobility Partner
-                    </p>
+                    <div className="mt-14 pt-8 border-t border-white/5 flex flex-col items-center gap-4">
+                        <p className="text-[11px] text-neutral-700 font-black uppercase tracking-[0.6em]">
+                            Your All-in-One Mobility Partner
+                        </p>
+                    </div>
                 </div>
 
-                <footer className="mt-20 text-center w-full">
-                    <p className="text-neutral-800 text-[10px] font-medium tracking-[0.5em] uppercase">
+                <footer className="mt-28 text-center w-full">
+                    <p className="text-neutral-800 text-[11px] font-bold tracking-[0.8em] uppercase opacity-40">
                         T-money GO Support Portal
                     </p>
                 </footer>
             </div>
-            
-            <style dangerouslySetInnerHTML={{__html: `
-                .text-shadow-glow {
-                    text-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
-                }
-            `}} />
         </div>
     );
 }

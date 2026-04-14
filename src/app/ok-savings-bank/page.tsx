@@ -38,17 +38,17 @@ export default function OkSavingsBankPage() {
 
     return (
         <div 
-            className="min-h-screen bg-[#080808] text-white flex flex-col items-center py-16 px-6 relative overflow-hidden"
-            style={{ fontFamily: '"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif' }}
+            className="min-h-screen bg-[#010101] text-white flex flex-col items-center py-20 px-6 relative overflow-hidden"
+            style={{ fontFamily: '"Pretendard Variable", Pretendard, sans-serif' }}
         >
-            {/* Premium Background Effects */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_var(--tw-gradient-stops))] from-orange-500/10 via-transparent to-transparent z-0" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,_var(--tw-gradient-stops))] from-red-600/10 via-transparent to-transparent z-0" />
+            {/* Design Elements */}
+            <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-orange-600/20 blur-[150px] rounded-full animate-pulse" />
+            <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-red-600/10 blur-[130px] rounded-full" />
             
             <div className="relative z-10 w-full max-w-xl mx-auto flex flex-col items-center">
-                {/* Header Section */}
-                <header className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-full text-orange-400 text-[10px] font-bold tracking-[0.2em] uppercase mb-6 backdrop-blur-xl">
+                {/* Header */}
+                <header className="text-center mb-20 animate-[fadeIn_0.8s_ease-out]">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-orange-500/10 border border-orange-500/30 rounded-full text-orange-500 text-[11px] font-black tracking-[0.3em] uppercase mb-8 backdrop-blur-3xl shadow-[0_0_20px_rgba(249,115,22,0.2)]">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
@@ -56,79 +56,86 @@ export default function OkSavingsBankPage() {
                         OK Savings Bank
                     </div>
 
-                    <h1 className="text-4xl md:text-5xl font-black tracking-tighter mb-4 leading-[1.1]">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60">더 나은 금융 서비스</span><br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-red-600">OK저축은행 안내</span>
+                    <h1 className="text-5xl md:text-6xl font-black tracking-tighter mb-6 leading-[1.1]">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">더 나은 금융 서비스</span><br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-red-600 drop-shadow-[0_0_30px_rgba(249,115,22,0.3)]">OK저축은행 안내</span>
                     </h1>
 
-                    <div className="h-1.5 w-12 bg-gradient-to-r from-orange-500 to-red-600 mx-auto rounded-full mb-8 shadow-[0_0_20px_rgba(249,115,22,0.4)]" />
+                    <div className="h-1.5 w-16 bg-gradient-to-r from-orange-500 to-red-600 mx-auto rounded-full mb-10 shadow-[0_0_20px_rgba(249,115,22,0.5)]" />
 
-                    <p className="text-neutral-400 text-sm md:text-base font-light tracking-tight leading-relaxed max-w-sm mx-auto">
+                    <p className="text-neutral-400 text-sm md:text-lg font-light tracking-tight leading-relaxed max-w-sm mx-auto">
                         모바일로 더 빠르고 편리하게!<br />
-                        <span className="text-neutral-200 font-medium whitespace-nowrap">OK저축은행 고객센터와 앱 다운로드</span>를 만나보세요.
+                        <span className="text-neutral-100 font-bold border-b border-orange-500/30">OK저축은행 고객센터와 앱</span>으로 금융 업무를 시작하세요.
                     </p>
                 </header>
 
                 {/* Main Link Grid */}
-                <div className="w-full space-y-4 mb-16">
+                <div className="w-full flex flex-col gap-5 mb-24">
                     {actions.map((action, idx) => (
                         <Link 
                             key={idx}
                             href={action.url}
-                            className="group relative flex items-center p-6 bg-zinc-900/40 hover:bg-zinc-900/80 border border-white/[0.03] hover:border-orange-500/30 rounded-3xl transition-all duration-500 backdrop-blur-3xl active:scale-[0.98] overflow-hidden"
+                            className="group relative flex items-center p-7 bg-zinc-900/60 hover:bg-zinc-800/90 border border-white/10 hover:border-orange-500/50 rounded-[2.5rem] transition-all duration-500 backdrop-blur-3xl shadow-2xl hover:shadow-orange-900/20 hover:-translate-y-2 active:scale-95 overflow-hidden"
+                            style={{ animation: `fadeIn 0.6s ease-out backwards ${idx * 150}ms` }}
                         >
-                            {/* Card Glow */}
-                            <div className="absolute -inset-0.5 bg-gradient-to-r from-orange-500/0 via-orange-500/5 to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                            {/* Card Accent Glow */}
+                            <div className={`absolute left-0 top-0 w-2 h-full bg-gradient-to-b ${action.color} opacity-40 group-hover:opacity-100 transition-all duration-500 group-hover:w-3`} />
                             
-                            <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${action.color} text-white shadow-lg shadow-black/40 group-hover:scale-110 transition-transform duration-500`}>
+                            <div className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${action.color} text-white shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}>
                                 {action.icon}
                             </div>
                             
-                            <div className="ml-5 flex-1 overflow-hidden">
-                                <h3 className="text-lg font-bold text-white group-hover:text-orange-200 transition-colors truncate">
+                            <div className="ml-6 flex-1 pr-6 overflow-hidden">
+                                <h3 className="text-xl font-bold text-white group-hover:text-orange-200 transition-colors truncate">
                                     {action.title}
                                 </h3>
-                                <p className="text-xs text-neutral-500 mt-0.5 font-medium group-hover:text-neutral-400 transition-colors">
+                                <p className="text-sm text-neutral-500 mt-1 font-medium group-hover:text-neutral-300 transition-colors">
                                     {action.desc}
                                 </p>
                             </div>
                             
-                            <div className="h-10 w-10 flex items-center justify-center rounded-full border border-white/5 opacity-40 group-hover:opacity-100 group-hover:border-orange-500/40 group-hover:bg-orange-500/10 transition-all duration-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-neutral-400 group-hover:text-orange-400 transform group-hover:translate-x-0.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            <div className="h-12 w-12 flex items-center justify-center rounded-full border border-white/10 text-neutral-600 transition-all duration-500 group-hover:border-orange-500/50 group-hover:text-orange-400 group-hover:bg-orange-500/10 group-hover:rotate-45">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                             </div>
                         </Link>
                     ))}
                 </div>
 
-                {/* Additional Info / Trust Banner */}
-                <div className="w-full bg-zinc-900/20 border border-white/5 p-8 rounded-[2rem] backdrop-blur-sm relative overflow-hidden group">
-                    <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-orange-500/50 to-transparent" />
-                    
-                    <h2 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-orange-500"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                        안전한 금융 이용 안내
+                {/* Additional Info Section */}
+                <div className="w-full bg-orange-950/20 border border-orange-500/10 p-10 md:p-14 rounded-[3.5rem] backdrop-blur-xl relative overflow-hidden group hover:border-orange-500/30 transition-all duration-700 shadow-3xl">
+                    <div className="absolute top-0 right-0 p-10 opacity-[0.03] group-hover:opacity-[0.1] transition-all duration-1000 group-hover:scale-125 group-hover:rotate-12">
+                        <svg width="150" height="150" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+
+                    <h2 className="text-2xl font-black text-white mb-8 flex items-center gap-4 tracking-tighter">
+                        <span className="p-3 bg-orange-500/20 rounded-2xl text-xl animate-bounce">🛡️</span>
+                        안전한 금융 가이드
                     </h2>
                     
-                    <ul className="space-y-4">
-                        <li className="flex gap-3 text-xs leading-relaxed text-neutral-400">
-                            <span className="text-orange-500/60 font-black mt-0.5">•</span>
-                            <span>보이스피싱 예방을 위해 <strong className="text-neutral-200">출처가 불분명한 앱 설치 유도</strong>에 주의하시기 바랍니다. 반드시 공식 스토어를 통해 다운로드하세요.</span>
-                        </li>
-                        <li className="flex gap-3 text-xs leading-relaxed text-neutral-400">
-                            <span className="text-orange-500/60 font-black mt-0.5">•</span>
-                            <span>OK저축은행 고객센터 연결 시 상담원 연결이 지연될 경우 <strong className="text-neutral-200">카카오톡 챗봇 상담</strong>을 이용하시면 편리합니다.</span>
-                        </li>
-                    </ul>
+                    <div className="grid grid-cols-1 gap-6">
+                        <div className="flex gap-5 p-6 rounded-[2.5rem] bg-white/[0.03] border border-white/[0.05] hover:bg-white/[0.08] transition-all group-hover:translate-x-2">
+                            <div className="h-2.5 w-2.5 rounded-full bg-orange-600 mt-2 shrink-0 shadow-[0_0_12px_rgba(249,115,22,0.8)]" />
+                            <p className="text-sm md:text-base leading-relaxed text-neutral-400">
+                                <strong className="text-neutral-100 font-bold border-b border-orange-500/20">공식 스토어 권장</strong>: 보안을 위해 반드시 구글 플레이나 앱스토어에서만 공식 앱을 설치하세요.
+                            </p>
+                        </div>
+                        <div className="flex gap-5 p-6 rounded-[2.5rem] bg-white/[0.03] border border-white/[0.05] hover:bg-white/[0.08] transition-all group-hover:translate-x-2">
+                            <div className="h-2.5 w-2.5 rounded-full bg-orange-600 mt-2 shrink-0 shadow-[0_0_12px_rgba(249,115,22,0.8)]" />
+                            <p className="text-sm md:text-base leading-relaxed text-neutral-400">
+                                <strong className="text-neutral-100 font-bold border-b border-orange-500/20">챗봇 서비스</strong>: 전화 대기가 길어질 때 카카오톡 챗봇을 이용하면 <span className="text-orange-400">빠른 답변</span>을 얻을 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
                     
-                    <div className="mt-8 pt-6 border-t border-white/5 flex flex-col items-center gap-2">
-                        <p className="text-[10px] text-neutral-600 font-bold tracking-[0.4em] uppercase">
-                            Secure Financial Experience
+                    <div className="mt-14 pt-8 border-t border-white/5 flex flex-col items-center gap-4">
+                        <p className="text-[11px] text-neutral-700 font-black uppercase tracking-[0.6em]">
+                            Secure Banking Experience
                         </p>
                     </div>
                 </div>
 
-                <footer className="mt-20 text-center w-full">
-                    <p className="text-neutral-800 text-[10px] font-medium tracking-[0.5em] uppercase">
+                <footer className="mt-28 text-center w-full">
+                    <p className="text-neutral-800 text-[11px] font-bold tracking-[0.8em] uppercase opacity-40">
                         OK Savings Bank Official Support
                     </p>
                 </footer>

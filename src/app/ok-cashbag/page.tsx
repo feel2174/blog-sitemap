@@ -38,17 +38,17 @@ export default function OkCashbagPage() {
 
     return (
         <div 
-            className="min-h-screen bg-[#080808] text-white flex flex-col items-center py-16 px-6 relative overflow-hidden"
-            style={{ fontFamily: '"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif' }}
+            className="min-h-screen bg-[#020202] text-white flex flex-col items-center py-20 px-6 relative overflow-hidden"
+            style={{ fontFamily: '"Pretendard Variable", Pretendard, sans-serif' }}
         >
             {/* Design Elements */}
-            <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_20%,_rgba(239,68,68,0.08)_0%,transparent_50%)] z-0" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-red-600/5 blur-[120px] rounded-full z-0" />
+            <div className="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] bg-[radial-gradient(circle,_rgba(239,68,68,0.15)_0%,transparent_70%)] z-0 animate-pulse" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-red-600/5 blur-[140px] rounded-full z-0" />
             
             <div className="relative z-10 w-full max-w-xl mx-auto flex flex-col items-center">
                 {/* Header */}
-                <header className="text-center mb-16 px-4">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-500/10 border border-red-500/20 rounded-full text-red-500 text-[10px] font-bold tracking-[0.2em] uppercase mb-6 backdrop-blur-xl">
+                <header className="text-center mb-20 animate-[fadeIn_0.8s_ease-out]">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-red-500/10 border border-red-500/30 rounded-full text-red-500 text-[11px] font-black tracking-[0.3em] uppercase mb-8 backdrop-blur-3xl shadow-[0_0_20px_rgba(239,68,68,0.2)]">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-red-600"></span>
@@ -56,83 +56,86 @@ export default function OkCashbagPage() {
                         OK Cashbag Official
                     </div>
 
-                    <h1 className="text-4xl md:text-5xl font-black tracking-tighter mb-4 leading-tight">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60">포인트가 쌓이는 즐거움</span><br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-600">OK캐시백 안내</span>
+                    <h1 className="text-5xl md:text-6xl font-black tracking-tighter mb-6 leading-[1.1]">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">포인트의 가치</span><br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-600 drop-shadow-[0_0_30px_rgba(239,68,68,0.4)]">OK캐시백 안내</span>
                     </h1>
 
-                    <div className="h-1.5 w-12 bg-gradient-to-r from-red-500 to-rose-600 mx-auto rounded-full mb-8 shadow-[0_0_20px_rgba(239,68,68,0.3)]" />
+                    <div className="h-1.5 w-16 bg-gradient-to-r from-red-500 to-rose-600 mx-auto rounded-full mb-10 shadow-[0_0_25px_rgba(239,68,68,0.6)]" />
 
-                    <p className="text-neutral-400 text-sm md:text-base font-light tracking-tight leading-relaxed max-w-sm mx-auto">
-                        전 국민이 사랑하는 포인트 혜택!<br />
-                        <span className="text-neutral-200 font-medium">홈페이지와 앱</span>으로 실속 있는 포인트 생활을 시작하세요.
+                    <p className="text-neutral-400 text-sm md:text-lg font-light tracking-tight leading-relaxed max-w-sm mx-auto">
+                        전 국민의 포인트 혜택!<br />
+                        <span className="text-neutral-200 font-bold border-b border-red-500/30">공식 홈페이지와 앱</span>으로 스마트한 포인트 생활을 즐겨보세요.
                     </p>
                 </header>
 
                 {/* Main Link Grid */}
-                <div className="w-full space-y-4 mb-16 px-2">
+                <div className="w-full flex flex-col gap-5 mb-24 px-2">
                     {actions.map((action, idx) => (
                         <Link 
                             key={idx}
                             href={action.url}
-                            className="group relative flex items-center p-6 bg-zinc-900/50 hover:bg-zinc-900/80 border border-white/[0.05] hover:border-red-500/30 rounded-[2.5rem] transition-all duration-500 backdrop-blur-3xl active:scale-[0.98] overflow-hidden"
+                            className="group relative flex items-center p-7 bg-zinc-900/60 hover:bg-zinc-800/90 border border-white/10 hover:border-red-500/50 rounded-[2.5rem] transition-all duration-500 backdrop-blur-3xl shadow-2xl hover:shadow-red-900/20 hover:-translate-y-2 active:scale-95 overflow-hidden"
+                            style={{ animation: `fadeIn 0.6s ease-out backwards ${idx * 150}ms` }}
                         >
                             {/* Card Accent Glow */}
-                            <div className="absolute -inset-1.5 bg-gradient-to-r from-red-500/0 via-red-500/10 to-red-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                            <div className="absolute left-0 top-0 w-2 h-full bg-gradient-to-b from-red-500 to-rose-600 opacity-50 group-hover:opacity-100 transition-all duration-500 group-hover:w-3" />
                             
-                            <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${action.color} text-white shadow-xl shadow-black/20 group-hover:scale-110 transition-transform duration-500`}>
+                            <div className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${action.color} text-white shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}>
                                 {action.icon}
                             </div>
                             
-                            <div className="ml-5 flex-1 overflow-hidden">
-                                <h3 className="text-lg font-bold text-white group-hover:text-red-100 transition-colors truncate">
+                            <div className="ml-6 flex-1 pr-6 overflow-hidden">
+                                <h3 className="text-xl font-bold text-white group-hover:text-red-100 transition-colors truncate">
                                     {action.title}
                                 </h3>
-                                <p className="text-xs text-neutral-500 mt-0.5 font-semibold group-hover:text-neutral-400 transition-colors">
+                                <p className="text-sm text-neutral-500 mt-1 font-semibold group-hover:text-neutral-300 transition-colors">
                                     {action.desc}
                                 </p>
                             </div>
                             
-                            <div className="h-10 w-10 flex items-center justify-center rounded-full border border-white/5 opacity-40 group-hover:opacity-100 group-hover:border-red-500/40 group-hover:bg-red-500/10 transition-all duration-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-neutral-400 group-hover:text-red-500 transform group-hover:translate-x-0.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            <div className="h-12 w-12 flex items-center justify-center rounded-full border border-white/10 text-neutral-600 transition-all duration-500 group-hover:border-red-500/50 group-hover:text-red-500 group-hover:bg-red-500/10 group-hover:rotate-45">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-neutral-400 group-hover:text-red-500 transform group-hover:translate-x-0.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                             </div>
                         </Link>
                     ))}
                 </div>
 
                 {/* Additional Info Section */}
-                <div className="w-full bg-zinc-900/30 border border-white/5 p-8 rounded-[2.5rem] backdrop-blur-xl relative overflow-hidden group">
-                    <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-red-600/50 to-transparent" />
+                <div className="w-full bg-red-950/20 border border-red-500/10 p-10 md:p-14 rounded-[3.5rem] backdrop-blur-xl relative overflow-hidden group hover:border-red-500/30 transition-all duration-700 shadow-3xl">
+                    <div className="absolute top-0 right-0 p-10 opacity-[0.03] group-hover:opacity-[0.1] transition-all duration-1000 group-hover:scale-125 group-hover:-rotate-12">
+                        <svg width="150" height="150" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"></path><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                    </div>
                     
-                    <h2 className="text-xl font-black text-white mb-6 flex items-center gap-3 tracking-tighter">
-                        <span className="p-2 bg-red-500/20 rounded-lg">✨</span>
+                    <h2 className="text-2xl font-black text-white mb-8 flex items-center gap-4 tracking-tighter">
+                        <span className="p-3 bg-red-500/20 rounded-2xl text-xl animate-bounce">✨</span>
                         포인트 적립 꿀팁
                     </h2>
                     
-                    <ul className="space-y-4">
-                        <li className="flex gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/[0.05] hover:bg-white/[0.05] transition-colors">
-                            <div className="h-2 w-2 rounded-full bg-red-500 mt-1.5 shrink-0 shadow-[0_0_8px_rgba(239,68,68,0.5)]" />
-                            <p className="text-xs leading-relaxed text-neutral-400">
-                                <strong className="text-neutral-200">영수증 바코드 스캔</strong>: 마트나 편의점에서 구매한 영수증을 앱으로 스캔하여 포인트를 즉시 적립하세요.
+                    <div className="grid grid-cols-1 gap-6">
+                        <div className="flex gap-5 p-6 rounded-[2.5rem] bg-white/[0.03] border border-white/[0.05] hover:bg-white/[0.08] transition-all group-hover:translate-x-2">
+                            <div className="h-2.5 w-2.5 rounded-full bg-red-600 mt-2 shrink-0 shadow-[0_0_12px_rgba(239,68,68,0.8)]" />
+                            <p className="text-sm md:text-base leading-relaxed text-neutral-400">
+                                <strong className="text-neutral-100 font-bold border-b border-red-500/20">영수증 바코드 스캔</strong>: 오프라인 영수증을 즉시 스캔하여 잠자는 포인트를 깨우세요.
                             </p>
-                        </li>
-                        <li className="flex gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/[0.05] hover:bg-white/[0.05] transition-colors">
-                            <div className="h-2 w-2 rounded-full bg-red-500 mt-1.5 shrink-0 shadow-[0_0_8px_rgba(239,68,68,0.5)]" />
-                            <p className="text-xs leading-relaxed text-neutral-400">
-                                <strong className="text-neutral-200">출석체크 이벤트</strong>: 매일 앱 실행 시 제공되는 출석 포인트와 룰렛 이벤트에 참여하세요.
+                        </div>
+                        <div className="flex gap-5 p-6 rounded-[2.5rem] bg-white/[0.03] border border-white/[0.05] hover:bg-white/[0.08] transition-all group-hover:translate-x-2">
+                            <div className="h-2.5 w-2.5 rounded-full bg-red-600 mt-2 shrink-0 shadow-[0_0_12px_rgba(239,68,68,0.8)]" />
+                            <p className="text-sm md:text-base leading-relaxed text-neutral-400">
+                                <strong className="text-neutral-100 font-bold border-b border-red-500/20">출석체크/룰렛</strong>: 매일 가볍게 참여하고 기분 좋은 포인트를 적립하세요.
                             </p>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                     
-                    <div className="mt-8 flex justify-center pt-6 border-t border-white/5">
-                        <p className="text-[10px] text-neutral-700 font-bold uppercase tracking-[0.4em]">
+                    <div className="mt-14 flex flex-col items-center gap-4 pt-8 border-t border-white/5">
+                        <p className="text-[11px] text-neutral-700 font-black uppercase tracking-[0.6em]">
                             More Points, More Life
                         </p>
                     </div>
                 </div>
 
-                <footer className="mt-20 text-center w-full">
-                    <p className="text-neutral-800 text-[10px] font-medium tracking-[0.6em] uppercase">
+                <footer className="mt-28 text-center w-full">
+                    <p className="text-neutral-800 text-[11px] font-bold tracking-[0.8em] uppercase opacity-40">
                         OK Cashbag Official Resource
                     </p>
                 </footer>
