@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 14,
+      "count": 15,
       "description": "라이프스타일"
     }
   },
@@ -285,6 +285,12 @@ const categorizedData: CategorizedData = {
         "link": "/tmoney-go",
         "category": "lifestyle",
         "matched_keywords": ["티머니", "티머니고", "Tmoney", "고객센터", "앱다운로드", "고속버스", "시외버스"]
+      },
+      {
+        "title": "OK캐시백(OK Cashbag) 포인트 조회 및 앱 다운로드 안내 (홈페이지 바로가기)",
+        "link": "/ok-cashbag",
+        "category": "lifestyle",
+        "matched_keywords": ["OK캐시백", "OKCashbag", "포인트", "현금화", "앱다운로드", "홈페이지"]
       }
     ]
   }
