@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function KakaoBankCreditLinePage() {
   return (
-    <div className="min-h-screen bg-[#FEE500]/5 text-[#191919] py-16 px-4 sm:px-6 flex flex-col items-center">
+    <div className="min-h-screen bg-white text-[#191919] font-['Pretendard'] py-16 px-4 sm:px-6 flex flex-col items-center">
       {/* Brand Header */}
       <div className="w-full max-w-4xl text-center mb-16 relative">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-12 w-64 h-64 bg-[#FEE500]/20 blur-3xl rounded-full -z-10 animate-pulse"></div>

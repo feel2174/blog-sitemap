@@ -48,7 +48,7 @@ export default function KakaoPage() {
 
     return (
         <div 
-            className="min-h-screen bg-[#FEE500]/5 text-[#191919] py-16 px-4 sm:px-6 flex flex-col items-center selection:bg-[#FEE500]"
+      className="min-h-screen bg-white text-[#191919] py-16 px-4 sm:px-6 flex flex-col items-center selection:bg-[#FEE500]"
             style={{ fontFamily: '"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif' }}
         >
             {/* Header Section */}
