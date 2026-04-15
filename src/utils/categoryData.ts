@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 17,
+      "count": 18,
       "description": "라이프스타일"
     }
   },
@@ -327,6 +327,12 @@ const categorizedData: CategorizedData = {
         "link": "/jannabi",
         "category": "lifestyle",
         "matched_keywords": ["잔나비", "Jannabi", "EBS", "스페이스공감", "무료콘서트", "공연신청"]
+      },
+      {
+        "title": "애니어그램 무료 테스트 (Enneagram Test) | 9가지 성격 유형 확인하기",
+        "link": "/enneagram-test",
+        "category": "lifestyle",
+        "matched_keywords": ["애니어그램", "성격유형", "테스트", "심리검사", "무료성격검사"]
       }
     ]
   }
