@@ -74,9 +74,9 @@ export default function ColorBlindTest() {
   };
 
   useEffect(() => {
-    let timer: NodeJS.Timeout;
+    let timerId: any;
     if (isPlaying && !isGameOver && timeLeft > 0) {
-      timer = setInterval(() => {
+      timerId = window.setInterval(() => {
         setTimeLeft(prev => {
           if (prev <= 0.1) {
             setIsGameOver(true);
@@ -87,7 +87,9 @@ export default function ColorBlindTest() {
         });
       }, 100);
     }
-    return () => clearInterval(timer);
+    return () => {
+      if (timerId) window.clearInterval(timerId);
+    };
   }, [isPlaying, isGameOver, timeLeft]);
 
   return (
@@ -121,15 +123,15 @@ export default function ColorBlindTest() {
             </button>
           </div>
         ) : isGameOver ? (
-          <div className="bg-neutral-800 rounded-[2.5rem] p-12 text-center shadow-2xl border border-neutral-700">
+          <div className="bg-neutral-800 rounded-[2.5rem] p-8 sm:p-12 text-center shadow-2xl border border-neutral-700 animate-in fade-in zoom-in duration-500">
             <h2 className="text-3xl font-black mb-2">테스트 결과</h2>
-            <div className="text-6xl my-8">📊</div>
+            <div className="text-6xl my-6">📊</div>
             <div className="mb-8">
               <p className="text-neutral-400 text-lg mb-1">나의 스코어</p>
               <p className="text-5xl font-black text-indigo-400">Level {stage}</p>
             </div>
             
-            <div className="bg-neutral-900/50 rounded-2xl p-6 mb-10">
+            <div className="bg-neutral-900/50 rounded-2xl p-6 mb-8">
               <p className={`text-2xl font-black mb-2 ${getRank(stage).color}`}>
                 {getRank(stage).title}
               </p>
@@ -138,16 +140,32 @@ export default function ColorBlindTest() {
               </p>
             </div>
 
+            {/* Disclaimer & Information Link */}
+            <div className="mb-10 text-left bg-neutral-900/30 p-6 rounded-2xl border border-neutral-700/30">
+                <p className="text-xs text-neutral-500 mb-4 leading-relaxed break-keep">
+                    ※ 본 테스트는 오락 및 참고용으로만 사용해 주세요. 정확한 시력 및 색채 판별을 위해서는 반드시 <strong>안과 전문의와 상담</strong>이 필요합니다.
+                </p>
+                <Link
+                    href="https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=1469"
+                    className="flex items-center justify-between w-full p-4 bg-neutral-800 hover:bg-neutral-700 rounded-xl transition-colors group/link"
+                >
+                    <span className="text-sm font-bold text-neutral-300">질병관리청 국가건강정보포털 상세안내</span>
+                    <svg className="w-4 h-4 text-neutral-500 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </Link>
+            </div>
+
             <div className="grid grid-cols-2 gap-4">
               <button
                 onClick={startGame}
-                className="py-4 bg-indigo-600 hover:bg-indigo-500 rounded-xl font-bold transition-all"
+                className="py-4 bg-indigo-600 hover:bg-indigo-500 rounded-xl font-bold transition-all active:scale-95"
               >
                 다시 하기
               </button>
               <Link
                 href="/"
-                className="py-4 bg-neutral-700 hover:bg-neutral-600 rounded-xl font-bold transition-all text-center flex items-center justify-center"
+                className="py-4 bg-neutral-700 hover:bg-neutral-600 rounded-xl font-bold transition-all text-center flex items-center justify-center active:scale-95"
               >
                 홈으로
               </Link>
