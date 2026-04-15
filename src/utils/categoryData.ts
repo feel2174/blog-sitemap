@@ -12,7 +12,7 @@ const categorizedData: CategorizedData = {
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
-      "count": 6,
+      "count": 7,
       "description": "건강 & 웰빙"
     },
     "technology": {
@@ -179,6 +179,12 @@ const categorizedData: CategorizedData = {
         "link": "https://zucca100.com/%ec%96%91%eb%b0%b4%ec%b6%94%eb%b9%84%ed%83%80%eb%af%bc-%ec%86%94%ec%a7%81-%ed%9b%84%ea%b8%b0-%eb%86%80%eb%9d%bc%ec%9a%b4-%ed%9a%a8%ea%b3%bc%ec%99%80-%ea%b5%ac%eb%a7%a4-%ec%a0%84-%eb%b0%98/",
         "category": "health_wellness",
         "matched_keywords": ["비타민"]
+      },
+      {
+        "title": "색맹 / 색약 테스트 (Color Blind Test) | 나의 색채 감각은 어느 수준일까? 지금 바로 테스트 해보세요",
+        "link": "/color-blind-test",
+        "category": "health_wellness",
+        "matched_keywords": ["색맹", "색약", "테스트", "색채감각", "눈건강", "시력테스트"]
       }
     ],
     "technology": [
