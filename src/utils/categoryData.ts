@@ -16,7 +16,7 @@ const categorizedData: CategorizedData = {
       "description": "건강 & 웰빙"
     },
     "technology": {
-      "count": 5,
+      "count": 6,
       "description": "기술 & IT"
     },
     "lifestyle": {
@@ -211,6 +211,12 @@ const categorizedData: CategorizedData = {
         "link": "/nateon",
         "category": "technology",
         "matched_keywords": ["네이트온", "NateOn", "메신저", "다운로드", "무료설치", "메신저추천"]
+      },
+      {
+        "title": "디스코드(Discord) 공식 무료 다운로드 및 설치 안내 | PC 및 모바일",
+        "link": "/discord-download",
+        "category": "technology",
+        "matched_keywords": ["디스코드", "Discord", "메신저", "다운로드", "무료설치", "채팅", "게임메신저"]
       }
     ],
     "lifestyle": [
