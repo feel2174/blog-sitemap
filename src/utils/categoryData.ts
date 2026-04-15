@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 10,
+      "count": 11,
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
@@ -165,6 +165,12 @@ const categorizedData: CategorizedData = {
         "link": "/atm-location",
         "category": "finance_investment",
         "matched_keywords": ["ATM", "ATM위치", "현금인출기", "편의점ATM", "은행ATM", "금융맵", "내주변ATM"]
+      },
+      {
+        "title": "카카오뱅크 마이너스통장대출 (KakaoBank) | 한도 및 금리, 신청방법 총정리",
+        "link": "/kakaobank-creditline",
+        "category": "finance_investment",
+        "matched_keywords": ["카카오뱅크", "마이너스통장", "대출", "신용대출", "금리", "한도", "직장인대출"]
       }
     ],
     "health_wellness": [
