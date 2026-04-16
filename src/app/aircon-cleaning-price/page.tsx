@@ -68,7 +68,7 @@ export default function AirconCleaningPricePage() {
                 {link.icon}
               </div>
               <div className="flex-grow text-center sm:text-left">
-                <span className="text-sm font-black text-blue-500 mb-1 block">{link.name}</span>
+                
                 <h3 className="text-2xl font-black text-slate-800 mb-2 group-hover:text-blue-600 transition-colors">
                   {link.title}
                 </h3>
