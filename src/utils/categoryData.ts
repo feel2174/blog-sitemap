@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 19,
+      "count": 20,
       "description": "라이프스타일"
     }
   },
@@ -369,6 +369,12 @@ const categorizedData: CategorizedData = {
         "link": "/enneagram-test",
         "category": "lifestyle",
         "matched_keywords": ["애니어그램", "성격유형", "테스트", "심리검사", "무료성격검사"]
+      },
+      {
+        "title": "SBTI 무료 테스트 | 나의 성적 행동 유형 확인하기 (Sexual Behavior Type Indicator)",
+        "link": "/sbti",
+        "category": "lifestyle",
+        "matched_keywords": ["SBTI", "성적행동유형", "테스트", "심리테스트", "무료테스트"]
       }
     ]
   }
