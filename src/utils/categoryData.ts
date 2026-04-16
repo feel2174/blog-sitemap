@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 11,
+      "count": 13,
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
@@ -171,6 +171,18 @@ const categorizedData: CategorizedData = {
         "link": "/kakaobank-creditline",
         "category": "finance_investment",
         "matched_keywords": ["카카오뱅크", "마이너스통장", "대출", "신용대출", "금리", "한도", "직장인대출"]
+      },
+      {
+        "title": "우리카드 우리WON카드 고객센터 및 앱 설치 안내 (안드로이드, iOS 바로가기)",
+        "link": "/wooricard-app",
+        "category": "finance_investment",
+        "matched_keywords": ["우리카드", "우리원카드", "WON카드", "금융", "고객센터", "앱설치", "카드발급", "신용카드"]
+      },
+      {
+        "title": "IBK기업은행 i-ONE Bank 고객센터 및 앱 설치 안내 (안드로이드, iOS 바로가기)",
+        "link": "/ibk-app",
+        "category": "finance_investment",
+        "matched_keywords": ["IBK", "기업은행", "아이원뱅크", "i-ONE", "금융", "고객센터", "앱설치", "모바일뱅킹"]
       }
     ],
     "health_wellness": [
