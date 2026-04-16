@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 20,
+      "count": 21,
       "description": "라이프스타일"
     }
   },
@@ -381,6 +381,12 @@ const categorizedData: CategorizedData = {
         "link": "/sbti",
         "category": "lifestyle",
         "matched_keywords": ["SBTI", "성적행동유형", "테스트", "심리테스트", "무료테스트"]
+      },
+      {
+        "title": "에어컨 청소 가격 비교 | 숨고, 미소, 업체별 비용 총정리",
+        "link": "/aircon-cleaning-price",
+        "category": "lifestyle",
+        "matched_keywords": ["에어컨청소", "가격비교", "비용", "숨고", "미소"]
       }
     ]
   }
