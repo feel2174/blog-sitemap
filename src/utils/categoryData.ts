@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 21,
+      "count": 22,
       "description": "라이프스타일"
     }
   },
@@ -387,6 +387,12 @@ const categorizedData: CategorizedData = {
         "link": "/aircon-cleaning-price",
         "category": "lifestyle",
         "matched_keywords": ["에어컨청소", "가격비교", "비용", "숨고", "미소"]
+      },
+      {
+        "title": "드라마 21세기 대군부인 OTT 다시보기 | 웨이브, 디즈니플러스 바로가기",
+        "link": "/21st-century-princess",
+        "category": "lifestyle",
+        "matched_keywords": ["21세기대군부인", "OTT", "다시보기", "웨이브", "디즈니플러스"]
       }
     ]
   }
