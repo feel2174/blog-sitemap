@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 15,
+      "count": 16,
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
@@ -195,6 +195,12 @@ const categorizedData: CategorizedData = {
         "link": "/daol-app",
         "category": "finance_investment",
         "matched_keywords": ["다올디지털뱅크", "다올저축은행", "유진저축은행", "Fi", "파이", "저축은행", "고객센터", "앱설치"]
+      },
+      {
+        "title": "삼성페이 오류 해결 방법 | 카드 재등록, 고객센터, 공식 홈페이지 안내",
+        "link": "/samsung-pay-error",
+        "category": "finance_investment",
+        "matched_keywords": ["삼성페이", "오류", "고객센터", "카드재등록", "SamsungPay"]
       }
     ],
     "health_wellness": [
