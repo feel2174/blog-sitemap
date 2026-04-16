@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 13,
+      "count": 14,
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
@@ -183,6 +183,12 @@ const categorizedData: CategorizedData = {
         "link": "/ibk-app",
         "category": "finance_investment",
         "matched_keywords": ["IBK", "기업은행", "아이원뱅크", "i-ONE", "금융", "고객센터", "앱설치", "모바일뱅킹"]
+      },
+      {
+        "title": "SC제일은행 모바일뱅킹 고객센터 및 앱 설치 안내 (안드로이드, iOS 바로가기)",
+        "link": "/scbank-app",
+        "category": "finance_investment",
+        "matched_keywords": ["SC제일은행", "제일은행", "스탠다드차타드", "모바일뱅킹", "금융", "고객센터", "앱설치", "카드발급"]
       }
     ],
     "health_wellness": [
