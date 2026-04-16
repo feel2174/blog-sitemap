@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 18,
+      "count": 19,
       "description": "라이프스타일"
     }
   },
@@ -339,6 +339,12 @@ const categorizedData: CategorizedData = {
         "link": "/tmoney-go",
         "category": "lifestyle",
         "matched_keywords": ["티머니", "티머니고", "Tmoney", "고객센터", "앱다운로드", "고속버스", "시외버스"]
+      },
+      {
+        "title": "가왕(歌王) 조용필 노래모음 무료 재생 | 히트곡 대표곡 신곡 연속 듣기",
+        "link": "/choyongpil",
+        "category": "lifestyle",
+        "matched_keywords": ["조용필", "노래모음", "연속듣기", "가왕", "뮤직비디오", "무료듣기", "히트곡", "데뷔곡"]
       },
       {
         "title": "OK캐시백(OK Cashbag) 포인트 조회 및 앱 다운로드 안내 (홈페이지 바로가기)",
