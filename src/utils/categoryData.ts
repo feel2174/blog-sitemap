@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 22,
+      "count": 23,
       "description": "라이프스타일"
     }
   },
@@ -399,6 +399,12 @@ const categorizedData: CategorizedData = {
         "link": "/21st-century-princess",
         "category": "lifestyle",
         "matched_keywords": ["21세기대군부인", "OTT", "다시보기", "웨이브", "디즈니플러스"]
+      },
+      {
+        "title": "신문가게 v5 모바일 웹 및 앱 다운로드 | 언제 어디서나 신문 보기",
+        "link": "/newspaper-store",
+        "category": "lifestyle",
+        "matched_keywords": ["신문가게", "신문가게v5", "신문가게모바일", "신문가게앱", "전자신문", "모바일신문"]
       }
     ]
   }
