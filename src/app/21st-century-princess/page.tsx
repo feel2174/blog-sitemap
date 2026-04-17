@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default function Princess21stCenturyPage() {
-  const ottLinks = [
+  const dramaLinks = [
     {
       id: 1,
       name: '웨이브 (Wavve)',
@@ -28,6 +28,15 @@ export default function Princess21stCenturyPage() {
       color: 'bg-[#001e51]', // Disney+ Dark Blue
       icon: '🏰',
     },
+    {
+      id: 3,
+      name: '편성표 & 재방송',
+      title: '21세기 대군부인 실시간 편성표',
+      desc: '놓칠 수 없는 실시간 방송 시간 및 채널별 재방송 일정을 확인하세요.',
+      url: 'https://zucca100.com/mbc-live/',
+      color: 'bg-red-700', // MBC/Broadcast Red
+      icon: '📺',
+    },
   ];
 
   return (
@@ -36,7 +45,7 @@ export default function Princess21stCenturyPage() {
       <div className="absolute top-0 inset-x-0 h-1/2 bg-gradient-to-b from-blue-900/20 to-transparent -z-10 blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-900/10 rounded-full blur-[120px] -z-10"></div>
       
-      <div className="max-w-4xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Header Section */}
         <header className="text-center mb-16 animate-in fade-in slide-in-from-top duration-1000">
           <div className="inline-block px-5 py-1.5 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-xs font-black tracking-widest mb-8 uppercase">
@@ -48,36 +57,36 @@ export default function Princess21stCenturyPage() {
           <div className="w-20 h-1.5 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-10 shadow-lg shadow-blue-500/50"></div>
           <p className="text-slate-400 text-lg sm:text-2xl font-medium leading-relaxed max-w-2xl mx-auto break-keep italic">
             &quot;현대판 왕실 로맨틱 코미디의 정점!&quot; <br />
-            지금 원하시는 OTT 플랫폼에서 다시보기를 즐겨보세요.
+            지금 원하시는 플랫폼에서 다시보기와 편성표를 확인해보세요.
           </p>
         </header>
 
-        {/* OTT Links Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-          {ottLinks.map((ott) => (
+        {/* Drama Links Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+          {dramaLinks.map((link) => (
             <Link
-              key={ott.id}
-              href={ott.url}
+              key={link.id}
+              href={link.url}
               className="group relative block p-1 rounded-[2.5rem] bg-gradient-to-br from-white/10 to-transparent hover:from-blue-500/50 hover:to-purple-500/50 transition-all duration-500 transform hover:-translate-y-2"
             >
               <div className="bg-[#0b121e] rounded-[2.4rem] p-10 h-full flex flex-col items-center text-center relative overflow-hidden border border-white/5">
                 {/* Logo Area */}
-                <div className={`w-20 h-20 ${ott.color} rounded-[2rem] flex items-center justify-center text-4xl mb-8 shadow-2xl group-hover:scale-110 transition-transform`}>
-                  {ott.icon}
+                <div className={`w-20 h-20 ${link.color} rounded-[2rem] flex items-center justify-center text-4xl mb-8 shadow-2xl group-hover:scale-110 transition-transform`}>
+                  {link.icon}
                 </div>
                 
                 <span className="text-blue-400 text-xs font-black tracking-widest mb-3 uppercase opacity-60">
-                  Streaming Now
+                  Information
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-black mb-4 group-hover:text-blue-200 transition-colors">
-                  {ott.name}
+                  {link.name}
                 </h3>
                 <p className="text-slate-500 font-medium text-sm sm:text-base mb-10 leading-relaxed flex-grow break-keep">
-                  {ott.desc}
+                  {link.desc}
                 </p>
                 
                 <div className="w-full py-4 bg-white/5 border border-white/10 rounded-2xl font-black group-hover:bg-white group-hover:text-black transition-all flex items-center justify-center gap-2">
-                  다시보기 하러가기
+                  확인하러 가기
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M13 5l7 7-7 7M5 12h14" />
                   </svg>
