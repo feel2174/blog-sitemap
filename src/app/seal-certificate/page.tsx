@@ -3,7 +3,7 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '인감증명서 발급 안내 | 온라인 정부24 및 법인인감 발급 바로가기',
+  title: '인감증명서 온라인 발급 | 정부24 및 법인인감 발급 바로가기',
   description: '개인 인감증명서 온라인 발급 방법과 법인인감증명서 발급 안내입니다. 정부24 및 인터넷등기소 다이렉트 링크를 제공합니다.',
   keywords: ['인감증명서발급', '온라인인감증명', '법인인감증명서', '정부24인감', '인터넷등기소인감', '인감발급방법'],
 };
@@ -39,7 +39,7 @@ export default function SealCertificatePage() {
             <span className="text-5xl">📄</span>
           </div>
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight mb-8 leading-tight">
-            인감증명서 <span className="text-blue-600">발급 안내</span>
+            인감증명서 <span className="text-blue-600">온라인 발급</span>
           </h1>
           <p className="text-slate-500 font-bold text-lg sm:text-xl break-keep leading-relaxed">
             중요 금융 거래나 계약에 필요한 인감증명서!<br className="hidden sm:block" />

@@ -135,7 +135,7 @@ const categorizedData: CategorizedData = {
         "matched_keywords": ["동물등록증", "강아지등록", "반려동물", "정부24", "재발급"]
       },
       {
-        "title": "인감증명서 발급 안내 | 온라인 정부24 및 법인인감 발급 바로가기",
+        "title": "인감증명서 온라인 발급 | 정부24 및 법인인감 발급 바로가기",
         "link": "/seal-certificate",
         "category": "government_support",
         "matched_keywords": ["인감증명서", "인감발급", "정부24", "온라인인감", "법인인감"]
