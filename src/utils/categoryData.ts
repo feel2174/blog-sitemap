@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 16,
+      "count": 17,
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
@@ -213,6 +213,12 @@ const categorizedData: CategorizedData = {
         "link": "/samsung-pay-error",
         "category": "finance_investment",
         "matched_keywords": ["삼성페이", "오류", "고객센터", "카드재등록", "SamsungPay"]
+      },
+      {
+        "title": "부동산 매매계약서 양식 무료 다운로드 | HWP, PDF 표준 서식",
+        "link": "/real-estate-contract",
+        "category": "finance_investment",
+        "matched_keywords": ["부동산매매계약서", "계약서양식", "무료다운로드", "한글양식", "PDF양식", "표준계약서"]
       }
     ],
     "health_wellness": [
