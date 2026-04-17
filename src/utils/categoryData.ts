@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 19,
+      "count": 20,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -139,6 +139,12 @@ const categorizedData: CategorizedData = {
         "link": "/seal-certificate",
         "category": "government_support",
         "matched_keywords": ["인감증명서", "인감발급", "정부24", "온라인인감", "법인인감"]
+      },
+      {
+        "title": "안전신문고 사이트 및 앱 다운로드 | 생활 속 위험 신고하기",
+        "link": "/safety-report",
+        "category": "government_support",
+        "matched_keywords": ["안전신문고", "위험신고", "생활불편신고", "안전신문고앱", "정부24", "민원신고"]
       }
     ],
     "finance_investment": [
