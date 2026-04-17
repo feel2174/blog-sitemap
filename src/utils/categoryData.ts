@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 20,
+      "count": 21,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -145,6 +145,12 @@ const categorizedData: CategorizedData = {
         "link": "/safety-report",
         "category": "government_support",
         "matched_keywords": ["안전신문고", "위험신고", "생활불편신고", "안전신문고앱", "정부24", "민원신고"]
+      },
+      {
+        "title": "2026 카카오뱅크 스칼라십 장학금 신청 안내 | 대학생 350만원 지원",
+        "link": "/kakaobank-scholarship",
+        "category": "government_support",
+        "matched_keywords": ["카카오뱅크장학금", "카카오뱅크스칼라십", "대학생장학금", "장학금신청", "중위소득100%"]
       }
     ],
     "finance_investment": [
