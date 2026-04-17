@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 18,
+      "count": 19,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -133,6 +133,12 @@ const categorizedData: CategorizedData = {
         "link": "/animal-registration",
         "category": "government_support",
         "matched_keywords": ["동물등록증", "강아지등록", "반려동물", "정부24", "재발급"]
+      },
+      {
+        "title": "인감증명서 발급 안내 | 온라인 정부24 및 법인인감 발급 바로가기",
+        "link": "/seal-certificate",
+        "category": "government_support",
+        "matched_keywords": ["인감증명서", "인감발급", "정부24", "온라인인감", "법인인감"]
       }
     ],
     "finance_investment": [
