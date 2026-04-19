@@ -65,7 +65,7 @@ export default function SoccerMatchPage() {
                 </div>
                 <div className="text-center sm:text-left">
                   <h3 className="text-2xl font-black text-white mb-1 group-hover:text-blue-400 transition-colors">실시간 중계 시청하기</h3>
-                  <p className="text-slate-400 font-bold">공식 유튜브 채널 바로연결</p>
+           
                 </div>
               </div>
 
