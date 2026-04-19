@@ -4,9 +4,9 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: '천안시티FC(OGFC) vs 수원삼성 블루윙즈 중계 안내',
-  description: '흥미진진한 K리그2 맞대결! 천안시티FC와 수원삼성의 경기 중계 정보와 실시간 유튜브 링크를 확인하세요.',
-  keywords: ['천안시티FC', '천안시티중계', '수원삼성', '수원삼성중계', 'K리그2중계', 'OGFC 수원삼성'],
+  title: 'OG FC vs 수원삼성 블루윙즈 중계 안내',
+  description: '흥미진진한 K리그2 맞대결! OG FC(오리지널 FC)와 수원삼성의 경기 중계 정보와 실시간 유튜브 링크를 확인하세요.',
+  keywords: ['OGFC', 'OG FC 중계', '수원삼성', '수원삼성중계', 'K리그2중계', '오리지널FC'],
 };
 
 export default function SoccerMatchPage() {
@@ -41,7 +41,7 @@ export default function SoccerMatchPage() {
           {/* Match Title */}
           <div className="absolute bottom-8 left-8 right-8">
             <h1 className="text-3xl sm:text-5xl font-black tracking-tighter mb-2 leading-tight">
-              천안시티FC <span className="text-slate-400 font-light mx-2">VS</span> 수원삼성
+              OG FC <span className="text-slate-400 font-light mx-2">VS</span> 수원삼성
             </h1>
             <p className="text-slate-300 font-bold tracking-widest text-sm sm:text-base">
               K LEAGUE 2 2026 SEASON MATCHUP
@@ -87,7 +87,7 @@ export default function SoccerMatchPage() {
             </h4>
             <ul className="space-y-4 text-slate-300">
               <li className="flex items-center gap-3">
-                <span className="text-blue-500">✔</span> 천안시티FC (구 OGFC) 홈 경기
+                <span className="text-blue-500">✔</span> OG FC (Original Football Club) 홈 경기
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-blue-500">✔</span> K리그2 정규 라운드 맞대결

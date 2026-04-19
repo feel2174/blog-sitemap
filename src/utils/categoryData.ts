@@ -431,10 +431,10 @@ const categorizedData: CategorizedData = {
         "matched_keywords": ["서울재즈페스티벌", "서재페", "SJF", "재즈페스티벌", "멜론티켓", "콘서트"]
       },
       {
-        "title": "천안시티FC(OGFC) vs 수원삼성 블루윙즈 중계 안내 | 유튜브 바로가기",
+        "title": "OG FC vs 수원삼성 블루윙즈 중계 안내 | 유튜브 바로가기",
         "link": "/ogfc-suwon-samsung",
         "category": "lifestyle",
-        "matched_keywords": ["천안시티FC", "수원삼성", "K리그2", "축구중계", "실시간중계", "유튜브"]
+        "matched_keywords": ["OGFC", "OG FC", "수원삼성", "K리그2", "축구중계", "실시간중계", "유튜브"]
       }
     ]
   }
