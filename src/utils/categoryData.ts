@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 23,
+      "count": 24,
       "description": "라이프스타일"
     }
   },
@@ -423,6 +423,12 @@ const categorizedData: CategorizedData = {
         "link": "/newspaper-store",
         "category": "lifestyle",
         "matched_keywords": ["신문가게", "신문가게v5", "신문가게모바일", "신문가게앱", "전자신문", "모바일신문"]
+      },
+      {
+        "title": "서울재즈페스티벌 2026 예매 및 공식 정보 안내 | 멜론티켓 바로가기",
+        "link": "/seoul-jazz-festival",
+        "category": "lifestyle",
+        "matched_keywords": ["서울재즈페스티벌", "서재페", "SJF", "재즈페스티벌", "멜론티켓", "콘서트"]
       }
     ]
   }
