@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 25,
+      "count": 26,
       "description": "라이프스타일"
     }
   },
@@ -435,6 +435,12 @@ const categorizedData: CategorizedData = {
         "link": "/ogfc-suwon-samsung",
         "category": "lifestyle",
         "matched_keywords": ["OGFC", "OG FC", "수원삼성", "K리그2", "축구중계", "실시간중계", "유튜브"]
+      },
+      {
+        "title": "프래그마타(PRAGMATA) 다운로드 및 게임 정보 안내 | 캡콤 공식 페이지",
+        "link": "/pragmata",
+        "category": "lifestyle",
+        "matched_keywords": ["프래그마타", "PRAGMATA", "캡콤신작", "프래그마타다운로드", "캡콤", "SF게임"]
       }
     ]
   }
