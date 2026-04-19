@@ -39,7 +39,7 @@ export default function PragmataPage() {
         {/* Hero Banner */}
         <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] rounded-[2rem] sm:rounded-[3rem] overflow-hidden mb-16 shadow-[0_0_50px_rgba(37,99,235,0.15)] border border-white/10 group">
           <Image
-            src="/pragmata-bg.png"
+            src="/pragmata.png"
             alt="Pragmata Game Banner"
             fill
             className="object-cover transition-transform duration-1000 group-hover:scale-105"
