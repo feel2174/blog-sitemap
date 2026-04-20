@@ -41,7 +41,7 @@ export default function WeatherPage() {
     {
       title: "전국 실시간 황사 지도",
       description: "현재 미세먼지 수치와 황사 이동 경로를 확인하세요.",
-      url: "/yellow-dust",
+      url: "https://zucca100.com/yellow-dust",
       icon: "🏜️",
       color: "bg-orange-500",
       internal: true,
