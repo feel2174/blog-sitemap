@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 19,
+      "count": 20,
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
@@ -243,6 +243,12 @@ const categorizedData: CategorizedData = {
         "link": "/kbank-app",
         "category": "finance_investment",
         "matched_keywords": ["케이뱅크", "K뱅크", "앱설치", "다운로드", "인터넷은행", "고객센터", "케이뱅크고객센터"]
+      },
+      {
+        "title": "대출 갈아타기 바로가기 (전세, 주담대, 신용, 자동차 네이버페이 대출비교)",
+        "link": "/loan-refinance",
+        "category": "finance_investment",
+        "matched_keywords": ["대출갈아타기", "네이버페이대출", "전세자금대출", "신용대출", "주택담보대출", "자동차대출"]
       }
     ],
     "health_wellness": [
