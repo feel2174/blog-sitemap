@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 21,
+      "count": 22,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -151,6 +151,12 @@ const categorizedData: CategorizedData = {
         "link": "/kakaobank-scholarship",
         "category": "government_support",
         "matched_keywords": ["카카오뱅크장학금", "카카오뱅크스칼라십", "대학생장학금", "장학금신청", "중위소득100%"]
+      },
+      {
+        "title": "신생아 특례대출 1%대 금리 신청 및 자격 조건 (기금e든든, 디딤돌 완벽 비교)",
+        "link": "/newborn-loan",
+        "category": "government_support",
+        "matched_keywords": ["신생아특례대출", "디딤돌대출", "기금e든든", "주택담보대출", "최저금리", "정부지원대출", "출산가구"]
       }
     ],
     "finance_investment": [
