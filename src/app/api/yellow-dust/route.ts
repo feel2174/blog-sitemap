@@ -27,16 +27,24 @@ export async function GET() {
     // KMA APIHub URL (tm1 없이 tm2만 넣으면 tm2 기준 가장 최신 1회분 데이터를 반환)
     const url = `https://apihub.kma.go.kr/api/typ01/url/kma_pm10.php?tm2=${tm2}&stn=0&authKey=${authKey}`;
     
-    // 타임아웃 8초 설정 (공공데이터 포털 지연 대비)
+    // 타임아웃 15초 설정 (기상청 API 지연 가능성 고려)
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 8000);
+    const timeoutId = setTimeout(() => controller.abort(), 15000);
 
-    const res = await fetch(url, { 
-      cache: 'no-store',
-      signal: controller.signal 
-    });
-    
-    clearTimeout(timeoutId);
+    let res;
+    try {
+      res = await fetch(url, { 
+        cache: 'no-store',
+        signal: controller.signal 
+      });
+    } catch (e: any) {
+      if (e.name === 'AbortError') {
+        return NextResponse.json({ error: "기상청 서버 응답 시간이 초과되었습니다. 잠시 후 다시 시도해주세요." }, { status: 504 });
+      }
+      throw e;
+    } finally {
+      clearTimeout(timeoutId);
+    }
     
     const text = await res.text();
 

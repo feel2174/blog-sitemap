@@ -19,6 +19,7 @@ export default function YellowDustMapPage() {
   const [kakaoLoaded, setKakaoLoaded] = useState(false);
   const [dustData, setDustData] = useState<DustData[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<DustData | null>(null);
 
   // KAKAO App Key for script loading (Using environment variable, fallback to dummy)
@@ -30,15 +31,18 @@ export default function YellowDustMapPage() {
     const fetchDustData = async () => {
       try {
         setIsLoading(true);
+        setError(null);
         const res = await fetch("/api/yellow-dust");
         const json = await res.json();
         
         if (json.success && json.data) {
           setDustData(json.data);
         } else {
+          setError(json.error || "데이터를 불러오는 중 오류가 발생했습니다.");
           console.error("Failed to fetch yellow dust data", json);
         }
       } catch (error) {
+        setError("인터넷 연결을 확인하거나 잠시 후 다시 시도해주세요.");
         console.error("Dust data fetch error:", error);
       } finally {
         setIsLoading(false);
@@ -115,6 +119,29 @@ export default function YellowDustMapPage() {
             </svg>
           </Link>
         </div>
+
+        {/* Coupang Partner Link */}
+        <div className="flex justify-center mb-10">
+          <Link 
+            href="https://link.coupang.com/a/es8W9X"
+            className="group flex items-center gap-3 px-6 py-3 bg-white hover:bg-neutral-100 text-neutral-900 rounded-full font-bold text-base shadow-md border border-neutral-200 transition-all active:scale-95"
+          >
+            <span className="flex items-center gap-2">
+              <span className="text-orange-500 font-black">Coupang</span>
+              <span>공기청정기 최저가 구매하기</span>
+            </span>
+            <svg className="w-4 h-4 text-neutral-400 group-hover:text-orange-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </Link>
+        </div>
+
+        {/* Error Message Display */}
+        {error && (
+          <div className="mb-8 p-4 bg-red-900/20 border border-red-500/50 rounded-2xl text-center">
+            <p className="text-red-400 font-medium">⚠️ {error}</p>
+          </div>
+        )}
 
         {/* The Map */}
         <div className="w-full h-[60vh] md:h-[70vh] rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-neutral-700/50 relative bg-neutral-800 flex items-center justify-center">
