@@ -293,6 +293,12 @@ const categorizedData: CategorizedData = {
         "link": "/yellow-dust",
         "category": "health_wellness",
         "matched_keywords": ["황사", "미세먼지", "실시간지도", "기상청", "대기오염"]
+      },
+      {
+        "title": "오늘의 날씨 정보 및 기상청 날씨누리 바로가기 | 전국 동네 예보",
+        "link": "/weather",
+        "category": "health_wellness",
+        "matched_keywords": ["날씨", "오늘의날씨", "기상청", "날씨누리", "동네예보", "일기예보"]
       }
     ],
     "technology": [
