@@ -127,8 +127,7 @@ export default function YellowDustMapPage() {
             className="group flex items-center gap-3 px-6 py-3 bg-white hover:bg-neutral-100 text-neutral-900 rounded-full font-bold text-base shadow-md border border-neutral-200 transition-all active:scale-95"
           >
             <span className="flex items-center gap-2">
-              <span className="text-orange-500 font-black">Coupang</span>
-              <span>공기청정기 최저가 구매하기</span>
+              <span>⚠️ 심각한 황사·미세먼지 대비! 가족 건강 지키는 공기청정기 특가 확인하기</span>
             </span>
             <svg className="w-4 h-4 text-neutral-400 group-hover:text-orange-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
