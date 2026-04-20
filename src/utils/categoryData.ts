@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 18,
+      "count": 19,
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
@@ -237,6 +237,12 @@ const categorizedData: CategorizedData = {
         "link": "/stock-account",
         "category": "finance_investment",
         "matched_keywords": ["증권사", "계좌개설", "주식계좌", "비대면", "키움증권", "삼성증권", "미래에셋", "나무증권", "한국투자증권"]
+      },
+      {
+        "title": "케이뱅크 앱 설치 (안드로이드, iOS) 및 공식 고객센터 24시간 연결 안내",
+        "link": "/kbank-app",
+        "category": "finance_investment",
+        "matched_keywords": ["케이뱅크", "K뱅크", "앱설치", "다운로드", "인터넷은행", "고객센터", "케이뱅크고객센터"]
       }
     ],
     "health_wellness": [
