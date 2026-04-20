@@ -16,7 +16,7 @@ const categorizedData: CategorizedData = {
       "description": "건강 & 웰빙"
     },
     "technology": {
-      "count": 6,
+      "count": 7,
       "description": "기술 & IT"
     },
     "lifestyle": {
@@ -283,6 +283,12 @@ const categorizedData: CategorizedData = {
         "link": "/discord-download",
         "category": "technology",
         "matched_keywords": ["디스코드", "Discord", "메신저", "다운로드", "무료설치", "채팅", "게임메신저"]
+      },
+      {
+        "title": "인스타그램 사진 및 동영상 다운로드 (Reels, Story 저장)",
+        "link": "/insta-download",
+        "category": "technology",
+        "matched_keywords": ["인스타그램", "다운로드", "인스타사진", "인스타동영상", "릴스저장", "스토리저장"]
       }
     ],
     "lifestyle": [

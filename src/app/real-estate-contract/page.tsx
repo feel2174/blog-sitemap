@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Metadata } from 'next';
+
 
 // Metadata cannot be in a client component, but Next.js allows it if we export it from a separate server-side file or layout.
 // Since this is the main page file, I'll keep it as simple as possible.

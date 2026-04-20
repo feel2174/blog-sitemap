@@ -58,7 +58,7 @@ export default function ColorBlindTest() {
       try {
         await navigator.clipboard.writeText(window.location.href);
         alert('링크가 복사되었습니다. 친구에게 공유해보세요!');
-      } catch (err) {
+      } catch {
         alert('링크 복사에 실패했습니다.');
       }
     }
@@ -108,6 +108,7 @@ export default function ColorBlindTest() {
     return () => {
       if (timerId) window.clearInterval(timerId);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isPlaying, isGameOver, isAnalyzing]);
 
   // Handle Time out
