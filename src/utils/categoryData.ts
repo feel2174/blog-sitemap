@@ -12,7 +12,7 @@ const categorizedData: CategorizedData = {
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
-      "count": 9,
+      "count": 10,
       "description": "건강 & 웰빙"
     },
     "technology": {
@@ -281,6 +281,12 @@ const categorizedData: CategorizedData = {
         "link": "/implant-price",
         "category": "health_wellness",
         "matched_keywords": ["임플란트", "가격비교", "모두닥", "치과견적", "심평원", "비급여", "임플란트가격"]
+      },
+      {
+        "title": "서울시 손목닥터 9988 앱 다운로드(안드로이드, iOS) 및 포인트 사용법 총정리",
+        "link": "/wrist-doctor-9988",
+        "category": "health_wellness",
+        "matched_keywords": ["손목닥터9988", "손목닥터", "포인트사용법", "걷기앱", "앱설치", "건강", "스마트워치"]
       }
     ],
     "technology": [
