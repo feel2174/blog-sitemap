@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import Image from "next/image";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
@@ -93,6 +94,19 @@ export default function RootLayout({
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+        {/* Floating Coupang Logo */}
+        <div className="fixed top-4 right-4 z-[9999] pointer-events-none sm:pointer-events-auto">
+          <div className="relative w-20 h-8 sm:w-28 sm:h-10 bg-white/80 backdrop-blur-sm rounded-lg shadow-lg border border-neutral-200 overflow-hidden flex items-center justify-center p-1">
+            <Image 
+              src="/coupang.png" 
+              alt="Coupang" 
+              width={112} 
+              height={40}
+              className="object-contain"
+              priority
+            />
+          </div>
+        </div>
         {children}
         <Analytics />
       </body>
