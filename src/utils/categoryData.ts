@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 17,
+      "count": 18,
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
@@ -225,6 +225,12 @@ const categorizedData: CategorizedData = {
         "link": "/real-estate-contract",
         "category": "finance_investment",
         "matched_keywords": ["부동산매매계약서", "계약서양식", "무료다운로드", "한글양식", "PDF양식", "표준계약서"]
+      },
+      {
+        "title": "주요 증권사 비대면 계좌개설 바로가기 모음 (키움, 삼성, 미래에셋 등)",
+        "link": "/stock-account",
+        "category": "finance_investment",
+        "matched_keywords": ["증권사", "계좌개설", "주식계좌", "비대면", "키움증권", "삼성증권", "미래에셋", "나무증권", "한국투자증권"]
       }
     ],
     "health_wellness": [
