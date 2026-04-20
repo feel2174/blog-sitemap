@@ -12,7 +12,7 @@ const categorizedData: CategorizedData = {
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
-      "count": 8,
+      "count": 9,
       "description": "건강 & 웰빙"
     },
     "technology": {
@@ -257,6 +257,12 @@ const categorizedData: CategorizedData = {
         "link": "/nhis-app",
         "category": "health_wellness",
         "matched_keywords": ["건강보험", "건강보험공단", "건강보험25시", "자격득실확인서", "앱다운로드", "The건강보험"]
+      },
+      {
+        "title": "임플란트 가격비교 사이트 모음 (동네 치과 견적, 심평원 비급여 조회)",
+        "link": "/implant-price",
+        "category": "health_wellness",
+        "matched_keywords": ["임플란트", "가격비교", "모두닥", "치과견적", "심평원", "비급여", "임플란트가격"]
       }
     ],
     "technology": [
