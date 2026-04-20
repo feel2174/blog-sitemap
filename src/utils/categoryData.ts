@@ -157,6 +157,12 @@ const categorizedData: CategorizedData = {
         "link": "/newborn-loan",
         "category": "government_support",
         "matched_keywords": ["신생아특례대출", "디딤돌대출", "기금e든든", "주택담보대출", "최저금리", "정부지원대출", "출산가구"]
+      },
+      {
+        "title": "근로장려금 및 자녀장려금 신청방법 및 자격 요건 안내 | 국세청 홈택스 바로가기",
+        "link": "/work-child-subsidy",
+        "category": "government_support",
+        "matched_keywords": ["근로장려금", "자녀장려금", "장려금신청", "국세청", "홈택스", "반기신청", "정기신청"]
       }
     ],
     "finance_investment": [
