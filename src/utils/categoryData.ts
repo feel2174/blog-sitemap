@@ -16,7 +16,7 @@ const categorizedData: CategorizedData = {
       "description": "건강 & 웰빙"
     },
     "technology": {
-      "count": 7,
+      "count": 8,
       "description": "기술 & IT"
     },
     "lifestyle": {
@@ -289,6 +289,12 @@ const categorizedData: CategorizedData = {
         "link": "/insta-download",
         "category": "technology",
         "matched_keywords": ["인스타그램", "다운로드", "인스타사진", "인스타동영상", "릴스저장", "스토리저장"]
+      },
+      {
+        "title": "틱톡 영상 및 음원 워터마크 없이 저장하기 (SnapTik 다운로드)",
+        "link": "/tiktok-download",
+        "category": "technology",
+        "matched_keywords": ["틱톡", "틱톡영상", "워터마크제거", "스냅틱", "다운로드", "SnapTik"]
       }
     ],
     "lifestyle": [
