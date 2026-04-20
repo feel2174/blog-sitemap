@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'SBTI 무료 테스트 | 나의 성적 행동 유형 확인하기 (Sexual Behavior Type Indicator)',
@@ -57,7 +58,7 @@ export default function SBTIPage() {
                   약 3분 소요 | 16가지 정밀 유형 결과
                 </p>
               </div>
-              
+
               <div className="px-10 py-5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl text-xl font-black shadow-xl group-hover:px-14 transition-all duration-300 flex items-center gap-3">
                 검사 하러가기
                 <svg className="w-6 h-6 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,36 +69,23 @@ export default function SBTIPage() {
           </div>
         </Link>
       </div>
-
-      {/* Info Section */}
-      <div className="w-full max-w-4xl relative z-10">
-        <div className="bg-slate-800/50 backdrop-blur-xl border border-white/5 rounded-[3rem] p-10 sm:p-16">
-          <h3 className="text-3xl font-black mb-12 flex items-center gap-4 border-b border-white/10 pb-6">
-            <span className="text-pink-400">✨</span> SBTI란 무엇인가요?
-          </h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-slate-300 font-medium leading-relaxed break-keep text-lg">
-            <div className="space-y-4">
-              <strong className="text-white text-2xl block mb-2 underline decoration-pink-500/30 underline-offset-4">성격과 행동의 결합</strong>
-              SBTI는 MBTI의 분석 체계를 기반으로 개인의 성적 취향과 행동 양식을 16가지 유형으로 분류한 흥미로운 심리 도구입니다.
-            </div>
-            <div className="space-y-4">
-              <strong className="text-white text-2xl block mb-2 underline decoration-purple-500/30 underline-offset-4">자신에 대한 탐구</strong>
-              상대방과의 조화뿐만 아니라 본인 스스로가 어떤 성향을 가지고 있는지 객관적인 지표를 통해 확인해볼 수 있는 기회를 제공합니다.
-            </div>
-          </div>
-
-          
-        </div>
-      </div>
-
-      {/* Promotion Action Section */}
       <div className="w-full max-w-xl relative z-10 mt-12">
         <Link
           href="https://link.coupang.com/a/es9HQ8"
-          className="group flex flex-col items-center gap-4 p-8 bg-gradient-to-r from-purple-900/40 to-pink-900/40 backdrop-blur-md border border-pink-500/30 rounded-[2.5rem] hover:bg-gradient-to-r hover:from-purple-900/60 hover:to-pink-900/60 transition-all duration-300 shadow-xl"
+          className="group flex flex-col items-center gap-6 p-8 bg-gradient-to-r from-purple-900/40 to-pink-900/40 backdrop-blur-md border border-pink-500/30 rounded-[2.5rem] hover:bg-gradient-to-r hover:from-purple-900/60 hover:to-pink-900/60 transition-all duration-300 shadow-xl overflow-hidden"
         >
-          <div className="text-center">
+          {/* Image Overlay/Insertion */}
+          <div className="relative w-full h-48 sm:h-64 rounded-2xl overflow-hidden mb-2 shadow-inner">
+            <Image 
+              src="/couple.webp" 
+              alt="Relationship improvement" 
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 to-transparent"></div>
+          </div>
+
+          <div className="text-center relative z-10">
             <h4 className="text-xl sm:text-2xl font-black text-white mb-2">
               🔮 우리 사이 더 특별하게!
             </h4>
@@ -113,6 +101,30 @@ export default function SBTIPage() {
           </div>
         </Link>
       </div>
+      {/* Info Section */}
+      <div className="w-full max-w-4xl relative z-10">
+        <div className="bg-slate-800/50 backdrop-blur-xl border border-white/5 rounded-[3rem] p-10 sm:p-16">
+          <h3 className="text-3xl font-black mb-12 flex items-center gap-4 border-b border-white/10 pb-6">
+            <span className="text-pink-400">✨</span> SBTI란 무엇인가요?
+          </h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-slate-300 font-medium leading-relaxed break-keep text-lg">
+            <div className="space-y-4">
+              <strong className="text-white text-2xl block mb-2 underline decoration-pink-500/30 underline-offset-4">성격과 행동의 결합</strong>
+              SBTI는 MBTI의 분석 체계를 기반으로 개인의 성적 취향과 행동 양식을 16가지 유형으로 분류한 흥미로운 심리 도구입니다.
+            </div>
+            <div className="space-y-4">
+              <strong className="text-white text-2xl block mb-2 underline decoration-purple-500/30 underline-offset-4">자신에 대한 탐구</strong>
+              상대방과의 조화뿐만 아니라 본인 스스로가 어떤 성향을 가지고 있는지 객관적인 지표를 통해 확인해볼 수 있는 기회를 제공합니다.
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      {/* Promotion Action Section */}
+
 
       {/* Footer */}
       <footer className="mt-20 text-slate-500 text-sm font-semibold tracking-wider">
