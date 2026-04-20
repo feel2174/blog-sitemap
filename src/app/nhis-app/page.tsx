@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function NHISAppDownloadPage() {
     return (
-        <div 
+        <div
             className="min-h-screen bg-slate-50 py-16 px-4 sm:px-6 flex flex-col items-center overflow-x-hidden"
             style={{ fontFamily: '"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif' }}
         >
@@ -21,47 +21,26 @@ export default function NHISAppDownloadPage() {
                         국민건강보험공단 공식 서비스
                     </div>
                 </div>
-                
+
                 <h1 className="text-4xl sm:text-6xl font-[900] tracking-tight mb-8 text-slate-900 leading-tight">
                     모바일로 더 쉽고 빠르게 <br />
                     <span className="text-blue-700">The건강보험 (건강보험25시)</span>
                 </h1>
-                
+
                 <p className="text-slate-600 font-bold text-lg sm:text-xl max-w-2xl mx-auto break-keep leading-relaxed bg-white/60 backdrop-blur-sm p-6 rounded-3xl border border-slate-200/50 shadow-sm">
                     건강검진 결과 확인, 진료 내역 조회, 자격득실확인서 발급까지! <br className="hidden sm:block" />
                     이제 국민건강보험공단 방문 없이 스마트폰과 웹에서 모든 민원 업무를 간편하게 처리하세요.
                 </p>
             </div>
-
-            {/* Quick Service Features Grid */}
-            <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 text-center">
-                <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all">
-                    <div className="w-14 h-14 mx-auto bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mb-4">📄</div>
-                    <h4 className="text-lg font-black text-slate-800 mb-2">증명서 즉시 발급</h4>
-                    <p className="text-slate-500 text-sm font-medium break-keep">자격득실확인서, 보험료 납부확인서를 PDF 파일로 바로 발급하고 팩스로 전송할 수 있습니다.</p>
-                </div>
-                <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md hover:blue-200 transition-all">
-                    <div className="w-14 h-14 mx-auto bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-4">🩺</div>
-                    <h4 className="text-lg font-black text-slate-800 mb-2">건강검진 결과 조회</h4>
-                    <p className="text-slate-500 text-sm font-medium break-keep">과거부터 최근까지의 국가건강검진 결과를 한눈에 비교하고 건강 상태를 체계적으로 관리하세요.</p>
-                </div>
-                <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md hover:blue-200 transition-all">
-                    <div className="w-14 h-14 mx-auto bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-3xl mb-4">🏥</div>
-                    <h4 className="text-lg font-black text-slate-800 mb-2">진료받은 내용 보기</h4>
-                    <p className="text-slate-500 text-sm font-medium break-keep">가족과 본인이 언제, 어디서, 어떤 진료를 받았는지 1년간의 병원 및 약국 이용 내역을 확인합니다.</p>
-                </div>
-            </div>
-
-            {/* Download Links Section */}
             <div className="w-full max-w-5xl bg-white rounded-[3rem] p-8 sm:p-12 shadow-xl border border-slate-200/60 mb-20 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-blue-50 to-transparent rounded-bl-full -z-10"></div>
-                
+
                 <h3 className="text-2xl font-black text-slate-800 mb-8 flex items-center gap-3">
                     <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-lg text-sm">다운로드</span> 플랫폼별 접속 안내
                 </h3>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    
+
                     {/* Link 1: Android */}
                     <div className="group border-2 border-slate-100 p-8 rounded-3xl hover:bg-slate-50 hover:border-blue-200 transition-colors flex flex-col items-center">
                         <div className="w-20 h-20 bg-slate-100 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner group-hover:scale-110 transition-transform">
@@ -109,6 +88,27 @@ export default function NHISAppDownloadPage() {
 
                 </div>
             </div>
+            {/* Quick Service Features Grid */}
+            <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 text-center">
+                <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all">
+                    <div className="w-14 h-14 mx-auto bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mb-4">📄</div>
+                    <h4 className="text-lg font-black text-slate-800 mb-2">증명서 즉시 발급</h4>
+                    <p className="text-slate-500 text-sm font-medium break-keep">자격득실확인서, 보험료 납부확인서를 PDF 파일로 바로 발급하고 팩스로 전송할 수 있습니다.</p>
+                </div>
+                <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md hover:blue-200 transition-all">
+                    <div className="w-14 h-14 mx-auto bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-4">🩺</div>
+                    <h4 className="text-lg font-black text-slate-800 mb-2">건강검진 결과 조회</h4>
+                    <p className="text-slate-500 text-sm font-medium break-keep">과거부터 최근까지의 국가건강검진 결과를 한눈에 비교하고 건강 상태를 체계적으로 관리하세요.</p>
+                </div>
+                <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md hover:blue-200 transition-all">
+                    <div className="w-14 h-14 mx-auto bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-3xl mb-4">🏥</div>
+                    <h4 className="text-lg font-black text-slate-800 mb-2">진료받은 내용 보기</h4>
+                    <p className="text-slate-500 text-sm font-medium break-keep">가족과 본인이 언제, 어디서, 어떤 진료를 받았는지 1년간의 병원 및 약국 이용 내역을 확인합니다.</p>
+                </div>
+            </div>
+
+            {/* Download Links Section */}
+
 
             {/* Guide Section */}
             <div className="w-full max-w-3xl">
