@@ -287,6 +287,12 @@ const categorizedData: CategorizedData = {
         "link": "/wrist-doctor-9988",
         "category": "health_wellness",
         "matched_keywords": ["손목닥터9988", "손목닥터", "포인트사용법", "걷기앱", "앱설치", "건강", "스마트워치"]
+      },
+      {
+        "title": "실시간 전국 황사·미세먼지 지도 | 기상청 및 카카오맵 연동",
+        "link": "/yellow-dust",
+        "category": "health_wellness",
+        "matched_keywords": ["황사", "미세먼지", "실시간지도", "기상청", "대기오염"]
       }
     ],
     "technology": [
