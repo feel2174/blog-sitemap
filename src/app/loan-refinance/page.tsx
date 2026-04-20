@@ -16,9 +16,7 @@ export default function LoanRefinancePage() {
             <div className="absolute top-0 w-full max-w-4xl h-96 bg-[#03C75A]/10 blur-[120px] rounded-full pointer-events-none -z-0"></div>
 
             <div className="text-center mb-16 relative z-10 w-full max-w-2xl">
-                <div className="inline-block px-5 py-2 bg-white text-[#03C75A] rounded-full text-sm font-black tracking-widest mb-8 border border-[#03C75A]/20 shadow-sm">
-                    NAVER PAY 대출비교
-                </div>
+             
                 <h1 className="text-5xl sm:text-7xl font-black mb-4 tracking-tight leading-tight text-slate-900">
                     대출 <span className="text-[#03C75A]">갈아타기</span>
                 </h1>
