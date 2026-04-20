@@ -91,6 +91,29 @@ export default function SBTIPage() {
         </div>
       </div>
 
+      {/* Promotion Action Section */}
+      <div className="w-full max-w-xl relative z-10 mt-12">
+        <Link
+          href="https://link.coupang.com/a/es9HQ8"
+          className="group flex flex-col items-center gap-4 p-8 bg-gradient-to-r from-purple-900/40 to-pink-900/40 backdrop-blur-md border border-pink-500/30 rounded-[2.5rem] hover:bg-gradient-to-r hover:from-purple-900/60 hover:to-pink-900/60 transition-all duration-300 shadow-xl"
+        >
+          <div className="text-center">
+            <h4 className="text-xl sm:text-2xl font-black text-white mb-2">
+              🔮 우리 사이 더 특별하게!
+            </h4>
+            <p className="text-pink-300/80 font-bold text-lg">
+              커플 필수템 대화카드 & 밸런스 게임 확인하기
+            </p>
+          </div>
+          <div className="flex items-center gap-2 text-white/50 group-hover:text-pink-400 transition-colors">
+            <span>추천 제품 보러가기</span>
+            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7-7 7M5 19l7-7-7-7" />
+            </svg>
+          </div>
+        </Link>
+      </div>
+
       {/* Footer */}
       <footer className="mt-20 text-slate-500 text-sm font-semibold tracking-wider">
         © 2026 SBTI INSIGHT HUB. ALL RIGHTS RESERVED.
