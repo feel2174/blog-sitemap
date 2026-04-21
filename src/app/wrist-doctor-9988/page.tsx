@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '서울시 손목닥터 9988 앱 다운로드 및 포인트 사용 안내',
@@ -103,6 +104,13 @@ export default function WristDoctorPage() {
                             </div>
                         </div>
                     </Link>
+
+                    {/* Coupang Ads Section */}
+                    <CoupangAds 
+                        keyword="스마트워치 스트랩" 
+                        title="9988 건강 메이트 필수 아이템"
+                        hookText="서울시 손목닥터 9988과 함께 사용하면 좋은 가성비 스마트워치 & 인기 스트랩 리스트입니다."
+                    />
 
                 </div>
             </main>
