@@ -14,6 +14,10 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'plus.zucca100.com',
+      },
+      {
+        protocol: 'https',
         hostname: '*.coupangcdn.com',
       },
       {
@@ -27,6 +31,10 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'static.coupangcdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ads-partners.coupang.com',
       }
     ],
     formats: ['image/webp', 'image/avif'],

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { Metadata } from 'next';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata: Metadata = {
   title: '에어컨 청소 가격 비교 | 숨고, 미소, 업체별 비용 총정리',
@@ -117,6 +118,11 @@ export default function AirconCleaningPricePage() {
             </p>
           </div>
         </div>
+        <CoupangAds 
+          keyword="에어컨 세정제" 
+          title="🧼 전문가 없이도 가능한 에어컨 관리"
+          hookText="벌써 여름이 걱정되시나요? 집에서도 간편하게 미세먼지와 세균을 잡아주는 인기 에어컨 청소 및 항균 아이템입니다."
+        />
 
         {/* Footer */}
         <footer className="mt-20 text-center text-slate-400 text-sm font-semibold tracking-wider">

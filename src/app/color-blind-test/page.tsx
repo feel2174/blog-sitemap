@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 // Helper to generate a random color and a slightly different one
 const generateColors = (stage: number) => {
@@ -300,6 +301,12 @@ export default function ColorBlindTest() {
             </ul>
           </div>
         )}
+
+        <CoupangAds 
+            keyword="루테인 영양제" 
+            title="👁️ 피로한 우리 눈을 위한 추천"
+            hookText="오늘 테스트 결과는 어떠셨나요? 스마트폰과 모니터로 지친 소중한 눈을 위해 루테인과 지아잔틴 영양제로 건강을 챙겨보세요."
+        />
       </div>
     </div>
   );

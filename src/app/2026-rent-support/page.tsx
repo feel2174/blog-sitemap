@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '2026 청년월세지원 신청방법 및 지원조건 안내',
@@ -128,6 +129,16 @@ export default function YouthRentSupportPage() {
                 </div>
 
                 {/* Footer Disclaimer */}
+                <div className="mt-16 text-slate-400 text-sm font-medium z-10 bg-white/50 backdrop-blur-sm py-3 px-8 rounded-full border border-slate-200">
+                    <span>⚡ 본 서비스는 서울주거포털 공식 정보로 연결됩니다.</span>
+                </div>
+
+                <CoupangAds 
+                    keyword="수납 가구" 
+                    title="🏠 새집 인테리어의 시작"
+                    hookText="이사 예산 아꼈다면, 이제 공간을 예쁘게 채워볼 시간! 좁은 집도 넓게 쓰는 스마트한 수납 가구와 인테리어 소품 특가입니다."
+                />
+
                 <p className="mt-12 text-center text-slate-400 text-xs px-8 leading-relaxed">
                     본 정보는 관련 기관의 공고를 바탕으로 작성되었습니다. <br />
                     정확한 자격 조건 및 신청 방법은 반드시 공식 홈페이지(복지로) 공고문을 확인해 주시기 바랍니다.

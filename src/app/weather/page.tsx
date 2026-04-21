@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata: Metadata = {
   title: "오늘의 날씨 정보 및 기상청 날씨누리 바로가기 | 전국 동네 예보",
@@ -96,6 +97,11 @@ export default function WeatherPage() {
             </Link>
           ))}
         </div>
+        <CoupangAds 
+          keyword="장우산" 
+          title="☔ 비 오는 날 완벽 대비!"
+          hookText="오늘의 예보를 확인하셨나요? 갑작스런 비에도 걱정 없는 튼튼한 장우산 & 레인코트 특가 리스트입니다."
+        />
 
         {/* Footer Info */}
         <div className="mt-16 text-center">

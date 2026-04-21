@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Script from "next/script";
 import { Map, CustomOverlayMap } from "react-kakao-maps-sdk";
+import CoupangAds from "@/components/CoupangAds";
 
 // Update the component to fetch from the newly created `/api/yellow-dust` endpoint.
 // Let's remove REGION_LOCATIONS since the API route returns lat/lng.
@@ -120,20 +121,11 @@ export default function YellowDustMapPage() {
           </Link>
         </div>
 
-        {/* Coupang Partner Link */}
-        <div className="flex justify-center mb-10">
-          <Link 
-            href="https://link.coupang.com/a/es8W9X"
-            className="group flex items-center gap-3 px-6 py-3 bg-white hover:bg-neutral-100 text-neutral-900 rounded-full font-bold text-base shadow-md border border-neutral-200 transition-all active:scale-95"
-          >
-            <span className="flex items-center gap-2">
-              <span>⚠️ 심각한 황사·미세먼지 대비! 가족 건강 지키는 공기청정기 특가 확인하기</span>
-            </span>
-            <svg className="w-4 h-4 text-neutral-400 group-hover:text-orange-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </Link>
-        </div>
+        <CoupangAds 
+          keyword="KF94 마스크" 
+          title="⚠️ 미세먼지·황사 완벽 차단!"
+          hookText="오늘 공기 질이 좋지 않네요. 우리 가족 호흡기 건강을 위한 최적의 KF94 마스크 & 공기청정기 추천 리스트입니다."
+        />
 
         {/* Error Message Display */}
         {error && (

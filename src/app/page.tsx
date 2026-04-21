@@ -5,6 +5,7 @@ import CategorySummary from '@/components/CategorySummary';
 import ScrollIndicator from '@/components/ScrollIndicator';
 import { HeaderAd, InContentAd, FooterAd } from '@/components/AdSense';
 import { getCategorizedPosts } from '@/utils/categoryData';
+import CoupangAds from '@/components/CoupangAds';
 
 export default function Home() {
   const categorizedData = getCategorizedPosts();
@@ -195,6 +196,16 @@ export default function Home() {
             </div>
           </section>
         </main>
+        {/* 쇼핑 추천 섹션 */}
+        <section className="bg-white py-12">
+            <div className="max-w-7xl mx-auto px-4">
+                <CoupangAds 
+                    keyword="애플워치" 
+                    title="💎 프리미엄 추천 라이프"
+                    hookText="나를 위한 특별한 선물, 최신 프리미엄 가전과 생활 필수템을 특가로 만나보세요."
+                />
+            </div>
+        </section>
 
         {/* 푸터 광고 */}
         <FooterAd />

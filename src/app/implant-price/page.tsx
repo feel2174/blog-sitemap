@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '임플란트 가격비교 조회 사이트',
@@ -41,6 +42,12 @@ export default function ImplantPricePage() {
                     <svg className="w-8 h-8 text-white group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"/></svg>
                 </Link>
             </div>
+
+            <CoupangAds 
+                keyword="워터픽 구강세정기" 
+                title="🦷 임플란트 관리의 핵심!"
+                hookText="비싼 임플란트 시술 후 가장 중요한 것은 철저한 위생 관리입니다. 구석구석 깨끗하게 관리해주는 구강세정기 베스트 제품입니다."
+            />
         </div>
     );
 }

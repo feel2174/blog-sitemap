@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '동물등록증 신청 및 재발급 방법 (정부24 바로가기)',
@@ -129,6 +130,11 @@ export default function AnimalRegistrationPage() {
                     animation: shimmer 1.5s infinite;
                 }
             `}} />
+            <CoupangAds 
+                keyword="강아지 인식표" 
+                title="🐕 우리 아이 안전을 위해"
+                hookText="등록만큼 중요한 것이 실제 인식표 착용입니다. 우리 소중한 아이를 지켜주는 예쁘고 튼튼한 인식표와 자동 리드줄을 확인해보세요."
+            />
         </div>
     );
 }

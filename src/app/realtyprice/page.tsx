@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '부동산 공시가격 조회 - 공동주택, 개별주택, 토지 공시지가 열람',
@@ -113,10 +114,15 @@ export default function RealtyPricePage() {
             </div>
             
             {/* Footer */}
-            <div className="mt-12 text-slate-400 text-xs text-center border-t border-slate-200 pt-6 w-full max-w-2xl">
-                <p>Copyright © 부동산 공시가격 서비스. All rights reserved.</p>
+            <CoupangAds 
+                keyword="부동산 인테리어 도서" 
+                title="🏡 내 집 마련의 꿈을 현실로"
+                hookText="부동산 투자 전략부터 인테리어 꿀팁까지! 전문가들이 엄선한 부동산 성공 노하우가 담긴 베스트 도서 리스트입니다."
+            />
+
+            <div className="mt-16 text-slate-400 text-[10px] sm:text-xs font-semibold tracking-wider uppercase bg-white/50 backdrop-blur-sm px-6 py-2 rounded-full border border-slate-100">
+                © 2026 REAL ESTATE PRICE INFO HUB.
             </div>
-            
         </div>
     );
 }

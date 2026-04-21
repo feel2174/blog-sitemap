@@ -1,7 +1,6 @@
-import Link from 'next/link';
-import React from 'react';
 import { Metadata } from 'next';
-import Image from 'next/image';
+import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata: Metadata = {
   title: 'SBTI 무료 테스트 | 나의 성적 행동 유형 확인하기 (Sexual Behavior Type Indicator)',
@@ -69,38 +68,11 @@ export default function SBTIPage() {
           </div>
         </Link>
       </div>
-      <div className="w-full max-w-xl relative z-10 mt-12">
-        <Link
-          href="https://link.coupang.com/a/es9HQ8"
-          className="group flex flex-col items-center gap-6 p-8 bg-gradient-to-r from-purple-900/40 to-pink-900/40 backdrop-blur-md border border-pink-500/30 rounded-[2.5rem] hover:bg-gradient-to-r hover:from-purple-900/60 hover:to-pink-900/60 transition-all duration-300 shadow-xl overflow-hidden"
-        >
-          {/* Image Overlay/Insertion */}
-          <div className="relative w-full h-48 sm:h-64 rounded-2xl overflow-hidden mb-2 shadow-inner">
-            <Image 
-              src="/couple.webp" 
-              alt="Relationship improvement" 
-              fill
-              className="object-cover group-hover:scale-105 transition-transform duration-700"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 to-transparent"></div>
-          </div>
-
-          <div className="text-center relative z-10">
-            <h4 className="text-xl sm:text-2xl font-black text-white mb-2">
-              🔮 우리 사이 더 특별하게!
-            </h4>
-            <p className="text-pink-300/80 font-bold text-lg">
-              커플 필수템 대화카드 & 밸런스 게임 확인하기
-            </p>
-          </div>
-          <div className="flex items-center gap-2 text-white/50 group-hover:text-pink-400 transition-colors">
-            <span>추천 제품 보러가기</span>
-            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7-7 7M5 19l7-7-7-7" />
-            </svg>
-          </div>
-        </Link>
-      </div>
+      <CoupangAds 
+        keyword="커플 대화 카드" 
+        title="🔮 우리 사이 더 특별하게!"
+        hookText="커플 필수템 대화카드 & 밸런스 게임으로 평소 나누지 못한 진솔한 이야기를 나눠보세요."
+      />
       {/* Info Section */}
       <div className="w-full max-w-4xl relative z-10">
         <div className="bg-slate-800/50 backdrop-blur-xl border border-white/5 rounded-[3rem] p-10 sm:p-16">

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '오늘의 별자리 운세 | 별자리 찾기',
@@ -128,6 +129,11 @@ export default function HoroscopePage() {
             {/* Bottom/Top Glow Gradients */}
             <div className="fixed top-[-20%] left-[-10%] w-[50%] h-[50%] bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
             <div className="fixed bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-purple-600/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
+            <CoupangAds 
+                keyword="풍수 인테리어" 
+                title="✨ 집안에 복을 부르는 비결"
+                hookText="좋은 기운은 불러오고 나쁜 기운은 막아보세요! 복을 부르는 풍수 인테리어 소품과 해바라기 액자 특가 리스트입니다."
+            />
         </div>
     );
 }

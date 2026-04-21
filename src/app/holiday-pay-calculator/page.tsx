@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export default function HolidayPayCalculator() {
     const [workedHours, setWorkedHours] = useState<string>('');
@@ -146,6 +147,12 @@ export default function HolidayPayCalculator() {
                     </p>
                 )}
             </div>
+
+            <CoupangAds 
+                keyword="재테크 도서" 
+                title="💰 내 급여, 더 똑똑하게 관리하기"
+                hookText="수당만큼 중요한 것이 번 돈을 지키는 것입니다! 사회초년생부터 고수까지 추천하는 재테크 및 자산관리 베스트 도서 모음입니다."
+            />
 
             <style jsx global>{`
                 @keyframes loading-bar {

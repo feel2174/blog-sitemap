@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -63,7 +64,7 @@ export default function EnneagramTestPage() {
       </div>
 
       {/* Test Selection Grid */}
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
         {testLinks.map((test) => (
           <Link
             key={test.id}
@@ -99,6 +100,16 @@ export default function EnneagramTestPage() {
             </div>
           </Link>
         ))}
+      </div>
+
+      <CoupangAds 
+        keyword="심리학 베스트셀러" 
+        title="📖 나를 찾는 마음 공부"
+        hookText="진정한 나를 이해하고 타인과 공감하고 싶으신가요? 자아 성찰과 관계 개선에 도움을 주는 심리학 도서 베스트 추천입니다."
+      />
+
+      <div className="mt-16 text-[#6B7280] text-sm font-medium z-10 bg-white/60 backdrop-blur-md py-3 px-8 rounded-full border border-[#D1D5DB] shadow-sm mb-16">
+        <span>⚡ 본 테스트는 에니어그램 공식 정보로 연결됩니다.</span>
       </div>
 
       {/* Guide Section */}

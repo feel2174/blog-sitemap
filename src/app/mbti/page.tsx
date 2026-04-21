@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: 'MBTI 및 각종 심리 테스트 모음',
@@ -89,6 +90,12 @@ export default function MBTILandingPage() {
                         </Link>
                     </div>
                 </div>
+
+                <CoupangAds 
+                    keyword="MBTI 질문지" 
+                    title="🔍 내 성격, 더 정밀하게 파악하기"
+                    hookText="결과가 반전될 수도? 더욱 상세한 심리 분석과 MBTI별 맞춤 아이템을 확인할 수 있는 도서 및 교구 모음입니다."
+                />
 
                 {/* Footer Info */}
                 <div className="mt-16 text-zinc-500 text-xs leading-relaxed">

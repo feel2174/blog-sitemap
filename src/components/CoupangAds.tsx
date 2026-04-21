@@ -62,18 +62,19 @@ export default function CoupangAds({ keyword, title, hookText }: CoupangAdsProps
               {hookText || "품절 주의! 지금 가장 많이 찾는 실시간 랭킹 제품입니다."}
             </p>
           </div>
-          <button className="text-neutral-400 font-bold hover:text-orange-500 transition-colors flex items-center gap-1 group">
+          <a 
+            href="https://www.coupang.com" 
+            className="text-neutral-400 font-bold hover:text-orange-500 transition-colors flex items-center gap-1 group"
+          >
             더보기 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
-          </button>
+          </a>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-          {products.map((p) => (
+          {products.map((p, index) => (
             <a 
-              key={p.productId} 
+              key={`${p.productId}-${index}`} 
               href={p.productUrl} 
-              target="_blank" 
-              rel="noopener noreferrer"
               className="group flex flex-col bg-neutral-50 rounded-3xl overflow-hidden border border-transparent hover:border-orange-200 transition-all hover:bg-white hover:shadow-xl"
             >
               <div className="relative aspect-square w-full bg-white overflow-hidden">

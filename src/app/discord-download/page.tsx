@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '디스코드 공식 다운로드 안내 | Windows, Mac, 모바일 앱 설치',
@@ -124,8 +125,13 @@ export default function DiscordDownloadPage() {
                     </div>
                 </div>
             </div>
+                <CoupangAds 
+                    keyword="게이밍 헤드셋" 
+                    title="🎧 디스코드 필수 게이밍 기어"
+                    hookText="명확한 오더와 선명한 보이스! 팀 승리를 이끄는 가성비 게이밍 헤드셋과 마이크 추천 리스트입니다."
+                />
 
-            {/* Footer */}
+                {/* Footer */}
             <footer className="mt-16 text-slate-400 text-sm font-semibold tracking-wider uppercase">
                 © 2026 DISCORD DOWNLOAD INFO HUB.
             </footer>

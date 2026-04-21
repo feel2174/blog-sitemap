@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '2026 데이터자격시험 일정 안내 (SQLD, ADsP, ADP, 빅분기 등)',
@@ -125,6 +126,12 @@ export default function DataQSchedulePage() {
                         </p>
                     </div>
                 </div>
+
+                <CoupangAds 
+                    keyword="자격증 플래너" 
+                    title="✍️ 올해는 반드시 합격!"
+                    hookText="데이터 자격증 시험 공부, 장비가 반입니다! 집중력을 높여주는 스터디 플래너와 문구용품 확인해 보세요."
+                />
 
                 <footer className="mt-20 text-center w-full">
                     <div className="h-px w-32 mx-auto bg-gradient-to-r from-transparent via-neutral-800 to-transparent mb-6" />

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata: Metadata = {
   title: '근로장려금 및 자녀장려금 신청방법 및 자격 요건 안내 | 국세청 홈택스 바로가기',
@@ -107,6 +108,12 @@ export default function SubsidyPage() {
           </p>
         </div>
       </div>
+
+      <CoupangAds 
+          keyword="재테크 가계부" 
+          title="💰 모인 지원금, 똑똑하게 불리기"
+          hookText="어렵게 받은 지원금, 종잣돈으로 키워보세요! 돈 모으는 습관을 만들어주는 재테크 도서와 가계부 리스트입니다."
+      />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '네이버페이 대출 갈아타기 바로가기 (전월세, 신용, 주담대, 자동차)',
@@ -64,6 +65,11 @@ export default function LoanRefinancePage() {
                     </div>
                 </Link>
             </div>
+            <CoupangAds 
+                keyword="자산 관리 플래너" 
+                title="📈 대출 다이어트의 시작"
+                hookText="이자 아끼고 자산을 지키는 첫걸음! 효율적인 자산 관리를 도와주는 금융 플래너와 경제 입문서 베스트 리스트입니다."
+            />
         </div>
     );
 }

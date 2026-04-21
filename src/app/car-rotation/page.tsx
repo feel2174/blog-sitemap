@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 // 5부제 규칙
 // 월: 1,6 / 화: 2,7 / 수: 3,8 / 목: 4,9 / 금: 5,0 / 주말: 없음
@@ -211,6 +212,11 @@ export default function CarRotationPage() {
                     </Link>
                 </div>
 
+                <CoupangAds 
+                    keyword="차량용 공기청정기" 
+                    title="🚗 쾌적한 내 차를 위한 아이템"
+                    hookText="주 1회 운행 휴무일, 차 안 공기 관리도 잊지 마세요! 미세먼지 걱정 없는 차량용 공기청정기와 방향제 특가입니다."
+                />
             </div>
         </div>
     );

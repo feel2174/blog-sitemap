@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '오늘의 띠별 운세 | 12지신 운세',
@@ -100,6 +101,12 @@ export default function ZodiacPage() {
             <div className="mt-16 text-stone-400 text-sm flex items-center gap-2 font-medium z-10 bg-white/50 backdrop-blur-sm py-2 px-4 rounded-full border border-stone-200">
                 <span>💡 운세 정보는 오늘의 띠별 운세로 연결됩니다.</span>
             </div>
+
+            <CoupangAds 
+                keyword="타로 카드" 
+                title="🔮 운세를 더 특별하게"
+                hookText="나의 미래가 궁금하시나요? 오늘의 운을 더 특별하게 만들어줄 타로 카드와 힐링 아이템으로 마음을 다스려보세요."
+            />
         </div>
     );
 }

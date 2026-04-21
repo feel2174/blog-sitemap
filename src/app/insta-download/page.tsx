@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '인스타그램 사진 및 동영상 다운로드 사이트 모음 (릴스, 스토리 저장)',
@@ -136,6 +137,11 @@ export default function InstaDownloadPage() {
                     </p>
                 </div>
             </div>
+            <CoupangAds 
+                keyword="스마트폰 삼각대" 
+                title="📸 인스타 꿀팁만큼 중요한 장비!"
+                hookText="인플루언서들의 감성샷 비결은 장비빨? 흔들림 없이 고화질 릴스를 찍을 수 있는 인기 삼각대와 조명 모음입니다."
+            />
 
             {/* Footer */}
             <footer className="mt-16 text-slate-400 text-sm font-semibold tracking-wider uppercase">
