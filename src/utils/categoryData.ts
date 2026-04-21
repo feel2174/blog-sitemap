@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 22,
+      "count": 23,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -163,6 +163,12 @@ const categorizedData: CategorizedData = {
         "link": "/work-child-subsidy",
         "category": "government_support",
         "matched_keywords": ["근로장려금", "자녀장려금", "장려금신청", "국세청", "홈택스", "반기신청", "정기신청"]
+      },
+      {
+        "title": "국민비서 구삐(Guppi) 신청 및 공식 홈페이지 바로가기 | 생활정보 알림 서비스",
+        "link": "/kookmin-secretary",
+        "category": "government_support",
+        "matched_keywords": ["국민비서", "구삐", "Guppi", "행정알림", "정부알림", "민원알림", "생활정보"]
       }
     ],
     "finance_investment": [
