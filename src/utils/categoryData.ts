@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 27,
+      "count": 28,
       "description": "라이프스타일"
     }
   },
@@ -519,6 +519,12 @@ const categorizedData: CategorizedData = {
         "link": "/starbucks",
         "category": "lifestyle",
         "matched_keywords": ["스타벅스", "별다방", "사이렌오더", "스타벅스카드", "잔액조회", "앱다운로드"]
+      },
+      {
+        "title": "가요무대 이번 주 출연진 및 방청 신청 안내 | KBS 공식 홈페이지 바로가기",
+        "link": "/gayo-stage",
+        "category": "lifestyle",
+        "matched_keywords": ["가요무대", "가요무대출연진", "방청신청", "트로트", "KBS", "부모님선물"]
       }
     ]
   }
