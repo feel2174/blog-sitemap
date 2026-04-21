@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '전국 택배 배송조회 통합 안내 🚚',
@@ -155,6 +156,12 @@ export default function DeliveryTrackingPage() {
                     운송장 번호를 미리 복사해두시면 이동 후 즉시 붙여넣어 더욱 빠르게 조회하실 수 있습니다.
                 </div>
             </div>
+
+            <CoupangAds 
+                keyword="리빙박스" 
+                title="📦 택배 받고 정리까지 완벽하게"
+                hookText="쇼핑의 즐거움은 정리가 끝날 때 비로소 완성됩니다! 집안 곳곳 깔끔하게 수납 가능한 리빙박스와 압축백 특가 리스트를 확인해보세요."
+            />
 
             {/* 푸터 */}
             <div className="mt-16 text-slate-400 text-[13px] font-medium text-center pb-8 opacity-80">

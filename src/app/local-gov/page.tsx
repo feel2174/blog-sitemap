@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import GovSearchClient from './GovSearchClient';
 import SupportTable from './SupportTable';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '전국 주요 시/도청 민생지원금 바로가기 가이드',
@@ -81,6 +82,12 @@ export default function LocalGovLandingPage() {
                         </div>
                     </div>
                 </footer>
+
+                <CoupangAds 
+                    keyword="사무용품" 
+                    title="📎 완벽한 업무 효율을 위해"
+                    hookText="민생 지원 정보 꼼꼼히 챙기고, 일상의 효율도 높여보세요! 책상 위를 깔끔하게 정리해줄 데스크테리어 아이템과 필수 사무용품 추천 리스트입니다."
+                />
             </div>
         </div>
     );

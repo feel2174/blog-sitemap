@@ -4,6 +4,7 @@ import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import CoupangAds from '@/components/CoupangAds';
 
 // 2026년 기준 중위소득 데이터 (100% 기준)
 const MEDIAN_INCOME_2026 = [
@@ -207,6 +208,12 @@ export default function MedianIncomeCalculator() {
                     </section>
                 </div>
             </main>
+
+            <CoupangAds 
+                keyword="재테크 가계부" 
+                title="💰 자산 관리의 시작은 기록부터"
+                hookText="중위소득 확인하고 지원금 혜택을 챙기셨나요? 이제는 효율적인 자산 관리가 필요할 때! 수입과 지출을 한눈에 관리하는 스마트한 가계부와 금융 플래너 리스트입니다."
+            />
 
             <Footer />
         </div>

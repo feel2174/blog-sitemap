@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '사진으로 꽃 이름 찾기 어플 추천 BEST 4 (바로가기)',
@@ -163,6 +164,11 @@ export default function FlowerSearchAppsPage() {
                     100% { transform: rotate(0deg); }
                 }
             `}} />
+            <CoupangAds 
+                keyword="꽃병" 
+                title="🪴 찾은 꽃, 집안에도 들여볼까요?"
+                hookText="이름을 찾은 그 꽃, 집안 인테리어로도 제격입니다! 어떤 꽃과도 잘 어울리는 감성 유리 꽃병과 실내 식물을 위한 영양제 리스트를 확인해보세요."
+            />
 
         </div>
     );

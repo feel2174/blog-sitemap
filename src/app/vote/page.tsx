@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export default function VotePage() {
     const [isBookmarked, setIsBookmarked] = useState(false);
@@ -173,6 +174,12 @@ export default function VotePage() {
                         MBN 무명전설에 참여해주셔서 감사합니다.
                     </p>
                 </div>
+
+                <CoupangAds 
+                    keyword="응원봉" 
+                    title="🚩 우리 가수 기 살려주기!"
+                    hookText="투표로 응원하고, 현장에서는 더 뜨겁게! 우리 가수를 돋보이게 해줄 화려한 응원봉과 공연 필수 아이템들을 만나보세요."
+                />
             </div>
 
             {/* Notification Toast */}

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 import CountdownTimer from '@/components/CountdownTimer';
 
 export const metadata = {
@@ -140,6 +141,11 @@ export default function TicketLoungePage() {
                     ⚠️ 서버 접속 오류 방지를 위해, 미리 사용할 앱을 설치하고 반드시 로그인까지 완료해 두세요!
                 </div>
                 
+                <CoupangAds 
+                    keyword="망원경" 
+                    title="📸 티켓팅 성공 후 필수품"
+                    hookText="힘들게 구한 티켓, 내 가수를 더 가까이서 보고 싶다면? 고선명 망원경과 장시간 대기를 위한 고성능 보조배터리 특가 리스트입니다."
+                />
             </div>
             
             <CountdownTimer />

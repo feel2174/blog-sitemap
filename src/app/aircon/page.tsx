@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '에어컨 사전점검 및 고객센터 안내',
@@ -106,6 +107,12 @@ export default function AirconLandingPage() {
                         에어컨 사전점검으로 다가오는 여름을 <br className="md:hidden" /> 시원하게 준비하세요.
                     </p>
                 </div>
+                
+                <CoupangAds 
+                    keyword="에어컨 세정제" 
+                    title="🌬️ 상쾌한 여름을 위한 에어컨 케어"
+                    hookText="에어컨 켜기 전 필수 체크! 퀘퀘한 냄새 잡는 전용 세정제와 자가 교체용 항균 필터, 실외기 커버 특가 리스트입니다."
+                />
             </div>
         </div>
     );

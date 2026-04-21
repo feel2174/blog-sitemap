@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '넷플릭스 (Netflix) 바로가기 및 앱 다운로드',
@@ -81,6 +82,14 @@ export default function NetflixLandingPage() {
                     <p className="mt-2 text-zinc-600">
                         앱 설치 및 원활한 이용을 위해 <br className="md:hidden" /> 안정적인 네트워크 환경을 권장합니다.
                     </p>
+                </div>
+
+                <div className="mt-10 w-full">
+                    <CoupangAds 
+                        keyword="빔프로젝터" 
+                        title="🎬 집안에 나만의 시네마"
+                        hookText="보고 싶은 영화는 많은데 화면이 아쉽다면? 넷플릭스 영화를 200인치 대화면으로 즐길 수 있는 고성능 빔프로젝터와 영화관 팝콘 특가 모음!"
+                    />
                 </div>
             </div>
         </div>

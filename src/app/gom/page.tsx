@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '곰시리즈 & 스타코덱 다운로드 - 필수 PC 유틸리티',
@@ -147,6 +148,12 @@ export default function GomSeriesPage() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                     </div>
                 </Link>
+
+                <CoupangAds 
+                    keyword="사운드바" 
+                    title="🔈 가슴을 울리는 사운드"
+                    hookText="곰플레이어로 영화 볼 때 사운드가 아쉬우셨나요? 거실을 영화관으로 만들어주는 입체 서라운드 사운드바와 고음질 스피커 특가 리스트를 확인하세요."
+                />
 
                 <div className="h-10"></div>
             </div>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: 'SPOTV 바로가기 및 편성표 안내',
@@ -118,6 +119,12 @@ export default function SpotvLandingPage() {
                         축구(PL, 세리에A, UCL), 야구(MLB), 농구(NBA) 전 경기 생중계
                     </p>
                 </div>
+                
+                <CoupangAds 
+                    keyword="치킨 기프티콘" 
+                    title="🍗 스포츠엔 역시 치맥"
+                    hookText="스포티비 중계 보면서 먹는 치킨이 제일 맛있죠? 오늘 빅매치 시청을 더 즐겁게 해줄 인기 브랜드 치킨 & 맥주 안주 특가 리스트입니다."
+                />
             </div>
             
             {/* Dark Gradient Overlay for Bottom */}

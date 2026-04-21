@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '무료스포츠중계 킹콩티비 - 실시간 고화질 스포츠 중계',
@@ -129,6 +130,12 @@ export default function KingKongTVPage() {
                 </div>
                 
             </div>
+
+            <CoupangAds 
+                keyword="스포츠 의류" 
+                title="🏆 승리를 부르는 퍼포먼스"
+                hookText="킹콩티비로 스포츠 중계 보면서 운동 욕구 뿜뿜! 격렬한 움직임도 편안하게 지원하는 최신 스포츠 웨어와 홈트레이닝 장비 리스트입니다."
+            />
             
         </div>
     );

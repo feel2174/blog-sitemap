@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '2026 메이저 마라톤 일정 안내 (서울, 춘천, JTBC 마라톤)',
@@ -122,6 +123,12 @@ export default function MarathonSchedulePage() {
                         </p>
                     </div>
                 </div>
+
+                <CoupangAds 
+                    keyword="러닝화" 
+                    title="🏃 완주를 위한 완벽한 파트너"
+                    hookText="기록 단축의 비밀은 발끝에서 시작됩니다! 마라톤 완주를 도와주는 초경량 카본 러닝화와 무릎 보호를 위한 스포츠 테이핑 특가 리스트."
+                />
 
                 <footer className="mt-20 text-center w-full">
                     <p className="text-neutral-700 text-[10px] font-medium tracking-[0.5em] uppercase">

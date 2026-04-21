@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '아웃백 스테이크하우스 할인 꿀팁 총정리 | 상품권, 할인카드, 제휴사 안내',
@@ -182,6 +183,12 @@ export default function OutbackDiscountPage() {
                         </li>
                     </ul>
                 </div>
+
+                <CoupangAds 
+                    keyword="외식 상품권" 
+                    title="🥩 아웃백 가기 전 필수 체크"
+                    hookText="스테이크 썰기 전 상품권 챙기셨나요? 더 합리적인 가격으로 즐기는 패밀리 레스토랑 상품권과 집에서도 즐기는 프리미엄 스테이크 밀키트 특가!"
+                />
 
                 {/* Brand Experience Footer */}
                 <div className="mt-20 text-center">

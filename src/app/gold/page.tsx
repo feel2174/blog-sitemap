@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '실시간 금시세 조회 - KRX, 한국금거래소, 네이버, 삼성, 우리은행',
@@ -104,6 +105,12 @@ export default function GoldLandingPage() {
                         </Link>
                     ))}
                 </div>
+
+                <CoupangAds 
+                    keyword="금고" 
+                    title="💎 내 자실을 더 안전하게"
+                    hookText="금테크 성공하셨나요? 실물 금과 소중한 자산을 도난이나 화재로부터 안전하게 지켜줄 프리미엄 내화 금고 특가 리스트입니다."
+                />
 
                 {/* Footer Section */}
                 <footer className="mt-20">

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '유튜브 리밴스드(YouTube ReVanced) 설치 가이드 - 최신 완벽 정리',
@@ -191,6 +192,12 @@ export default function RevancedGuidePage() {
                     </Link>
 
                 </div>
+
+                <CoupangAds 
+                    keyword="무선 이어폰" 
+                    title="🎧 끊김 없는 유튜브 감상을 위해"
+                    hookText="리밴스드로 광고 없이 영상을 즐기고 계신가요? 고음질 노이즈 캔슬링 이어폰과 헤드셋으로 몰입감을 한층 더 높여보세요."
+                />
 
                 {/* Footer Padding */}
                 <div className="h-10"></div>

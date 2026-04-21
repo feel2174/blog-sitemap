@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '주요 증권사 비대면 계좌개설 바로가기 모음 (키움, 삼성, 미래에셋 등)',
@@ -117,6 +118,12 @@ export default function StockAccountPage() {
                     </div>
                 </div>
             </main>
+            
+            <CoupangAds 
+                keyword="주식 투자 도서" 
+                title="📈 성공적인 투자의 시작"
+                hookText="계좌 개설하고 이제 무엇을 사야 할지 고민되시나요? 기초부터 실전 매매 기법까지 담은 전문가들의 주식 투자 필독서 리스트입니다."
+            />
             
             <footer className="text-center py-10 text-slate-400 font-bold border-t border-slate-200 uppercase tracking-widest text-sm bg-white">
                 © 2026 FINANCE ACCOUNT OPENING HUB

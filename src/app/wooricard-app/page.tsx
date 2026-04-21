@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '우리카드 우리WON카드 앱 설치 및 다운로드 바로가기',
@@ -97,9 +98,15 @@ export default function WooriCardAppLandingPage() {
                     </p>
                 </div>
 
-                <div className="mt-12 text-slate-400 text-xs">
+                <div className="mt-12 text-slate-400 text-xs text-center w-full">
                     © WOORI CARD. All rights reserved.
                 </div>
+
+                <CoupangAds 
+                    keyword="카드지갑" 
+                    title="💳 카드 생활의 품격"
+                    hookText="우리카드 WON 앱으로 스마트하게 관리하고, 세련된 지갑으로 스타일까지 완성하세요. 슬림한 카드 홀더부터 명품 지갑까지 큐레이션했습니다."
+                />
             </div>
         </div>
     );

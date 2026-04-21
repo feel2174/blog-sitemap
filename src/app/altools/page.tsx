@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '알툴즈 (ALTools) 공식 다운로드 센터 - 알집, 알키퍼, 알PDF 등',
@@ -80,6 +81,12 @@ export default function AltoolsPage() {
                     안전하게 바로 다운로드하여 사용하실 수 있습니다.
                 </p>
             </div>
+
+            <CoupangAds 
+                keyword="PC 부품" 
+                title="⚙️ PC 속도를 더 빠르게!"
+                hookText="소프트웨어 관리만큼 하드웨어 업그레이드도 중요합니다. 내 컴퓨터 성능을 한 단계 높여줄 가성비 SSD, RAM부터 먼지 제거 스프레이까지 지금 확인하세요."
+            />
 
             {/* Footer */}
             <div className="mt-16 text-slate-400 text-xs text-center pb-8">

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata: Metadata = {
   title: '서울재즈페스티벌 2026 예매 및 공식 정보 안내',
@@ -131,6 +132,12 @@ export default function SeoulJazzFestivalPage() {
             </p>
           </div>
         </div>
+
+        <CoupangAds 
+            keyword="돗자리" 
+            title="🎷 페스티벌의 낭만을 더해줄 필수템"
+            hookText="서재페 가서 인생 사진 건지고 싶다면? 감성 가득한 방수 피크닉 매트와 장시간 신선함을 유지해줄 보냉백, 휴대용 선풍기 특가 리스트입니다."
+        />
 
         {/* Footer */}
         <footer className="mt-24 text-center">

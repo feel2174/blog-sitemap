@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '타이젬 바둑 바로가기 및 모바일 앱 다운로드',
@@ -82,6 +83,12 @@ export default function TygemLandingPage() {
                         앱 설치 및 원활한 이용을 위해 <br className="md:hidden" /> 안정적인 네트워크 환경을 권장합니다.
                     </p>
                 </div>
+
+                <CoupangAds 
+                    keyword="바둑판" 
+                    title="⚪ 고수의 선택, 바둑 명인 아이템"
+                    hookText="타이젬 바둑과 함께 실력 향상! 입문자부터 유단자까지 모두 만족하는 원목 바둑판 세트와 실력 증진 바둑 도서 추천 리스트입니다."
+                />
             </div>
         </div>
     );

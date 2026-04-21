@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '동행복권 바로가기 | 로또 6/45, 연금복권 720+, 스피또 당첨 확인',
@@ -175,6 +176,12 @@ export default function LotteryPage() {
                     </ul>
                 </div>
             </div>
+            
+            <CoupangAds 
+                keyword="금고" 
+                title="🔐 1등 당첨 후를 대비하는 자세"
+                hookText="당첨되셨나요? 축하드립니다! 소중한 당첨 영수증과 자산을 더 안전하게 보관할 수 있는 가정용 내화 금고와 스마트 자산관리 용품들을 확인해 보세요."
+            />
             
             <footer className="mt-20 text-slate-400 text-sm font-medium">
                 © 2026 Lotteries Information Hub. Since 2026.

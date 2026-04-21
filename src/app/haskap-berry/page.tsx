@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '하스카프베리 묘목 판매처 바로가기',
@@ -70,6 +71,12 @@ export default function HaskapBerryPage() {
                     </Link>
                 </div>
             </div>
+
+            <CoupangAds 
+                keyword="베리 파우더" 
+                title="🍇 슈퍼푸드 하스카프의 힘"
+                hookText="직접 키우는 묘목만큼이나 건강한 하스카프 베리의 영양! 간편하게 즐길 수 있는 농축액부터 파우더, 선물세트까지 건강 기능 식품 리스트를 확인해보세요."
+            />
 
             {/* Bottom Background Decoration */}
             <div className="fixed bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-red-50 to-transparent pointer-events-none -z-10"></div>

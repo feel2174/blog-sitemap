@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '반디집(Bandizip) 및 반디소프트 필수 프로그램 다운로드',
@@ -147,7 +148,11 @@ export default function BandisoftPage() {
                     ))}
                 </div>
 
-              
+                <CoupangAds 
+                    keyword="외장 SSD" 
+                    title="💾 소중한 파일, 더 안전하게 보관하세요"
+                    hookText="반디집으로 압축한 백업 파일, 어디에 보관하시나요? 대용량 파일도 눈 깜짝할 새 옮겨주는 초고속 외장 SSD와 안전한 USB 메모리 특가 리스트입니다."
+                />
 
             </div>
             

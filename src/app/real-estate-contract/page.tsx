@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import CoupangAds from '@/components/CoupangAds';
 
 
 // Metadata cannot be in a client component, but Next.js allows it if we export it from a separate server-side file or layout.
@@ -132,6 +133,12 @@ export default function RealEstateContractPage() {
           </div>
         </div>
       </main>
+
+      <CoupangAds 
+          keyword="부동산 투자 도서" 
+          title="🏡 성공적인 부동산 투자의 시작"
+          hookText="완벽한 계약서 작성만큼 중요한 것이 안목입니다! 기초부터 실전 투자 전략까지 담은 전문가들의 추천 도서 리스트입니다."
+      />
 
       <Footer />
 

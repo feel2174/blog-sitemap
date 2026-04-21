@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '2026년 전기차 구매보조금 지원 안내',
@@ -121,6 +122,12 @@ export default function EVSubsidyPage() {
                         <li>거주 중인 각 지자체의 예산 편성 및 규정에 따라 지방비 지원금 한도는 다를 수 있으니 유의하시기 바랍니다.</li>
                     </ul>
                 </div>
+
+                <CoupangAds 
+                    keyword="전기차 충전기" 
+                    title="🔌 쾌적한 전기차 라이프를 위해"
+                    hookText="보조금 받고 내 차 마련했다면? 집에서도 편하게 충전하는 휴대용 충전기 & 실용적인 카테리어 아이템 확인해보세요."
+                />
 
                 <footer className="mt-16 text-center w-full">
                     <div className="h-px w-full max-w-[200px] mx-auto bg-gradient-to-r from-transparent via-white/10 to-transparent mb-6" />

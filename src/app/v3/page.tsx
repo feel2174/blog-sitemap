@@ -1,4 +1,5 @@
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '안랩 V3 Lite & 무료백신 다운로드 | 공식 홈페이지 바로가기',
@@ -146,6 +147,12 @@ export default function V3Page() {
                     </div>
                 </div>
             </div>
+
+            <CoupangAds 
+                keyword="USB 메모리" 
+                title="🔐 오프라인 보안의 완성"
+                hookText="V3로 온라인 보안을 지켰다면, 오프라인 보안은 어떠신가요? 소중한 개인정보와 자료를 안전하게 암호화하여 보관할 수 있는 보안 USB와 외장하드 특가 리스트입니다."
+            />
 
             {/* Footer */}
             <footer className="mt-24 pb-12 text-slate-400 text-sm font-medium flex flex-col items-center gap-4">

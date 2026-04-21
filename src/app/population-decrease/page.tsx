@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import data from './data.json';
+import CoupangAds from '@/components/CoupangAds';
 
 const KoreaMap = ({ 
   activeProvince, 
@@ -462,6 +463,11 @@ export default function PopulationDecreasePage() {
                   <p className="text-slate-500 text-sm leading-relaxed">20~25만원의 혜택은 주거비 지원 등 지자체별 사업에 따라 다를 수 있습니다. 상세 모집 요강 및 신청은 해당 시·군·구청 홈페이지 또는 [복지로]를 이용해 주세요.</p>
                </div>
             </div>
+            <CoupangAds 
+                keyword="지도" 
+                title="🗺️ 새로운 곳으로의 여행"
+                hookText="인구 감소 지역도 관광객의 발길이 닿으면 활기를 되찾을 수 있습니다. 우리나라 구석구석을 탐험하며 지역 상권에 힘이 되어줄 여행 용품과 지도 세트를 확인해보세요."
+            />
           </div>
 
          

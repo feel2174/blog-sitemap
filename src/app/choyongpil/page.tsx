@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '가왕(歌王) 조용필 노래모음 무료 재생 | 히트곡 대표곡 연속 듣기',
@@ -113,6 +114,14 @@ export default function ChoYongPilLandingPage() {
 
                 <div className="mt-12 text-zinc-600 text-[10px] tracking-[0.4em] uppercase font-bold">
                     K-Pop Legend Cho Yong Pil
+                </div>
+
+                <div className="mt-10 w-full">
+                    <CoupangAds 
+                        keyword="블루투스 스피커" 
+                        title="🔊 가왕의 목소리를 더 생생하게"
+                        hookText="명품 보이스를 그대로 느껴보세요! 거실 어디서나 고품격 사운드를 들려주는 프리미엄 블루투스 스피커와 무선 이어폰 특가 리스트입니다."
+                    />
                 </div>
             </div>
         </div>

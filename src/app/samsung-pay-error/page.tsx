@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { Metadata } from 'next';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata: Metadata = {
   title: '삼성페이 오류 해결 방법 | 카드 재등록, 고객센터, 공식 홈페이지 안내',
@@ -124,6 +125,12 @@ export default function SamsungPayErrorPage() {
           </div>
         </div>
       </div>
+
+      <CoupangAds 
+        keyword="갤럭시 케이스" 
+        title="📱 소중한 갤럭시를 위한 선택"
+        hookText="삼성페이의 편리함을 극대화해줄 세련된 맥세이프 호환 케이스와 카드 지갑, 그리고 액정을 지켜줄 프리미엄 보호 필름 특가 리스트입니다."
+      />
 
       {/* Footer */}
       <footer className="mt-20 text-slate-400 text-sm font-semibold tracking-wider">

@@ -48,8 +48,8 @@ export default function CoupangAds({ keyword, title, hookText }: CoupangAdsProps
 
   return (
     <div className="my-16 w-full max-w-5xl mx-auto px-4">
-      <div className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-neutral-100">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+      <div className="bg-white rounded-[1.5rem] md:rounded-[2.5rem] p-4 sm:p-6 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-neutral-100">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-10 gap-4">
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-orange-50 text-orange-600 rounded-full text-sm font-bold">
               <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
@@ -70,7 +70,7 @@ export default function CoupangAds({ keyword, title, hookText }: CoupangAdsProps
           </a>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 gap-4 md:gap-6">
           {products.map((p, index) => (
             <a 
               key={`${p.productId}-${index}`} 

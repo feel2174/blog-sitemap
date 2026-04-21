@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '다음 팟플레이어 최신버전 및 구버전 다운로드 - 공식 및 광고없는 버전',
@@ -138,6 +139,12 @@ export default function PotPlayerPage() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                     </div>
                 </Link>
+
+                <CoupangAds 
+                    keyword="블루투스 이어폰" 
+                    title="🎬 영화관 같은 감동을 귀 안으로"
+                    hookText="팟플레이어로 즐기는 영화 한 편, 더 몰입감 있게 즐기려면? 웅장한 저음부터 섬세한 고음까지 완벽하게 재현하는 가성비 블루투스 이어폰과 헤드셋 특가!"
+                />
 
                 <div className="h-10"></div>
             </div>

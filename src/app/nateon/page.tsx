@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '네이트온(NateOn) 공식 다운로드 | PC, Mac, 모바일 앱 바로가기',
@@ -137,6 +138,12 @@ export default function NateOnPage() {
                     </div>
                 </div>
             </div>
+
+            <CoupangAds 
+                keyword="사무용 키보드" 
+                title="🏢 업무 능률을 수직 상승시키는 도구"
+                hookText="네이트온으로 업무 보실 때 손목이 아프진 않으신가요? 타건감이 살아있는 저소음 키보드와 인체공학 마우스 특가 리스트로 업무 환경을 업그레이드하세요."
+            />
 
             {/* Footer */}
             <footer className="mt-24 text-slate-400 text-sm font-semibold tracking-widest uppercase">

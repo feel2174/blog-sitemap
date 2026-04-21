@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: 'SC제일은행 모바일뱅킹 앱 설치 및 고객센터 바로가기',
@@ -98,9 +99,15 @@ export default function SCBankAppLandingPage() {
                     </p>
                 </div>
 
-                <div className="mt-12 text-slate-400 text-xs">
+                <div className="mt-12 text-slate-400 text-xs text-center w-full">
                     © Standard Chartered Bank Korea Limited. All rights reserved.
                 </div>
+
+                <CoupangAds 
+                    keyword="가죽 지갑" 
+                    title="💼 비즈니스의 품격"
+                    hookText="글로벌 뱅킹 서비스와 어울리는 세련된 카드 지갑으로 비즈니스의 품격을 높여보세요. 선물용으로도 좋은 프리미엄 가죽 제품 리스트입니다."
+                />
             </div>
         </div>
     );

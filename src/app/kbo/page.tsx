@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: 'KBO 리그 생중계 시청 안내 | 2026 프로야구 무료 중계 바로가기',
@@ -155,6 +156,12 @@ export default function KboLandingPage() {
                         <div className="h-[1px] w-8 bg-zinc-800 self-center" />
                     </div>
                 </div>
+
+                <CoupangAds 
+                    keyword="야구 글러브" 
+                    title="⚾ 오늘은 우리 팀이 이긴다"
+                    hookText="직관 준비 끝내셨나요? 응원 열기를 더해줄 유니폼과 글러브, 야구장 필수템 선글라스와 간식까지 특가 리스트를 확인하세요."
+                />
             </div>
 
             {/* Bottom Glow */}

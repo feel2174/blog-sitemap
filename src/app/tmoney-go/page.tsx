@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '티머니GO 고객센터 및 앱 다운로드 안내 (고속/시외버스 연동)',
@@ -144,6 +145,12 @@ export default function TmoneyGoPage() {
                         </p>
                     </div>
                 </div>
+
+                <CoupangAds 
+                    keyword="보조배터리" 
+                    title="🔋 이동 중 배터리 걱정 끝!"
+                    hookText="티머니GO로 고속버스 여행 가시나요? 긴 이동 시간 동안 스마트폰을 든든하게 지켜줄 고속 충전 보조배터리와 편안한 목베개 특가 리스트입니다."
+                />
 
                 <footer className="mt-28 text-center w-full">
                     <p className="text-neutral-800 text-[11px] font-bold tracking-[0.8em] uppercase opacity-40">

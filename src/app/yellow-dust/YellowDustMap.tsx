@@ -121,12 +121,6 @@ export default function YellowDustMapPage() {
           </Link>
         </div>
 
-        <CoupangAds 
-          keyword="KF94 마스크" 
-          title="⚠️ 미세먼지·황사 완벽 차단!"
-          hookText="오늘 공기 질이 좋지 않네요. 우리 가족 호흡기 건강을 위한 최적의 KF94 마스크 & 공기청정기 추천 리스트입니다."
-        />
-
         {/* Error Message Display */}
         {error && (
           <div className="mb-8 p-4 bg-red-900/20 border border-red-500/50 rounded-2xl text-center">
@@ -247,6 +241,12 @@ export default function YellowDustMapPage() {
             )}
           </div>
         </div>
+
+        <CoupangAds 
+          keyword="KF94 마스크" 
+          title="⚠️ 미세먼지·황사 완벽 차단!"
+          hookText="오늘 공기 질이 좋지 않네요. 우리 가족 호흡기 건강을 위한 최적의 KF94 마스크 & 공기청정기 추천 리스트입니다."
+        />
 
       </div>
     </div>

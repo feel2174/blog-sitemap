@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: 'PC 모바일 게임 앱플레이어 통합 다운로드 라운지',
@@ -149,6 +150,12 @@ export default function AppPlayerPage() {
                     본인의 PC 사양(VT 활성화 필수)과 플레이하려는 게임에 가장 잘 맞는 버전을 공식 홈페이지에서 안전하게 다운로드하세요.
                 </div>
             </div>
+
+            <CoupangAds 
+                keyword="게이밍 마우스" 
+                title="🎮 승률을 높이는 장비빨"
+                hookText="앱플레이어로 즐기는 모바일 게임, 더 정교하게 컨트롤하고 싶다면? 무한 연타에도 끄떡없는 고감도 게이밍 마우스와 기계식 키보드 특가 리스트입니다."
+            />
 
             {/* 푸터 */}
             <div className="mt-20 text-zinc-600 text-[13px] font-medium text-center pb-8 border-t border-zinc-900 w-full max-w-5xl pt-8 relative z-10">

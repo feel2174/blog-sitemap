@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '전국 주요 홈쇼핑 TV 편성표 모음 (CJ, 롯데, 현대, GS, 홈앤쇼핑, NS)',
@@ -142,6 +143,12 @@ export default function HomeShoppingSchedulePage() {
                         </p>
                     </div>
                 </div>
+
+                <CoupangAds 
+                    keyword="에어프라이어" 
+                    title="🛒 방송에서 본 그 상품, 여기 다 있네!"
+                    hookText="홈쇼핑 매진 임박 방송 놓치셨나요? 베스트셀러 가전부터 주방 필수템까지 지금 바로 특가로 만나보세요."
+                />
 
                 <footer className="mt-28 text-center w-full">
                     <p className="text-neutral-800 text-[11px] font-bold tracking-[0.8em] uppercase opacity-40">

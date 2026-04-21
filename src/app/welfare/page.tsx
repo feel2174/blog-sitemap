@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '복지서비스 모의계산',
@@ -125,6 +126,12 @@ export default function WelfareLandingPage() {
                         나와 가족을 위한 복지혜택 혜택 여부를 <br className="md:hidden" /> 미리 확인해 보세요.
                     </p>
                 </div>
+
+                <CoupangAds 
+                    keyword="비타민 영양제" 
+                    title="💊 건강이 가장 큰 복지입니다"
+                    hookText="복지 서비스 꼼꼼히 챙기고, 건강도 미리미리 챙기세요! 어르신 맞춤형 영양제와 명절 선물로도 좋은 프리미엄 건강 세트 리스트입니다."
+                />
             </div>
         </div>
     );

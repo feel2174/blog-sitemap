@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '내 주변 ATM 위치 검색 및 금융맵 앱 다운로드 안내',
@@ -134,6 +135,12 @@ export default function AtmLocationPage() {
                         </p>
                     </div>
                 </div>
+
+                <CoupangAds 
+                    keyword="가죽 지갑" 
+                    title="💳 현금도 카드도 스타일있게"
+                    hookText="ATM 위치 확인하셨나요? 현금 보관도 넉넉하고 정산도 간편한 명품 가죽 지갑과 슬림 카드 지갑 특가 리스트입니다."
+                />
 
                 <footer className="mt-28 text-center w-full">
                     <p className="text-neutral-800 text-[11px] font-bold tracking-[0.8em] uppercase opacity-50">

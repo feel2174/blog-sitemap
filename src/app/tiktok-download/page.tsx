@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '틱톡 영상 다운로드 사이트 소개 (워터마크 없는 빠른 다운로더)',
@@ -167,6 +168,12 @@ export default function TiktokDownloadPage() {
                     </p>
                 </div>
             </div>
+
+            <CoupangAds 
+                keyword="짐벌" 
+                title="🤳 틱톡 감성, 흔들림 없이 저장"
+                hookText="나도 틱톡커처럼 찍고 싶다면? 고화질 영상을 워터마크 없이 소장하는 것만큼 중요한 건 흔들림 없는 촬영! 인기 짐벌과 조명 특가 리스트입니다."
+            />
 
             {/* Footer */}
             <footer className="mt-20 flex flex-col items-center">

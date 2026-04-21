@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { Metadata } from 'next';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata: Metadata = {
   title: '안전신문고 사이트 및 앱 다운로드 | 생활 속 위험 신고하기',
@@ -124,6 +125,12 @@ export default function SafetyReportPage() {
             </div>
           </div>
         </div>
+
+        <CoupangAds 
+            keyword="소화기" 
+            title="🚒 안전은 미리 준비하는 것"
+            hookText="신고만큼 중요한 것은 초기 대응! 우리 집과 차량의 안전을 지켜줄 휴대용 소화기와 투척용 소화기, 재난 대비 안전 키트 필수 리스트입니다."
+        />
 
         {/* Footer */}
         <footer className="mt-24 text-center text-slate-400 text-sm font-bold tracking-[0.2em] uppercase">

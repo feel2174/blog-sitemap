@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import CoupangAds from '@/components/CoupangAds';
 
 export const metadata = {
     title: '전국 지자체 종량제봉투 인터넷 주문 (지정판매소 전용)',
@@ -115,6 +116,11 @@ export default function GarbageBagsPage() {
                 </div>
             </div>
             
+            <CoupangAds 
+                keyword="분리수거함" 
+                title="♻️ 우리 집 깔끔 수납의 시작"
+                hookText="쓰레기 봉투만큼 중요한 것이 깔끔한 정리! 냄새 걱정 없는 자동 센서 쓰레기통과 인테리어를 해치지 않는 슬림 분리수거함 특가 리스트입니다."
+            />
         </div>
     );
 }
