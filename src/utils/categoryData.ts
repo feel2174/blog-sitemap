@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 26,
+      "count": 27,
       "description": "라이프스타일"
     }
   },
@@ -513,6 +513,12 @@ const categorizedData: CategorizedData = {
         "link": "/pragmata",
         "category": "lifestyle",
         "matched_keywords": ["프래그마타", "PRAGMATA", "캡콤신작", "프래그마타다운로드", "캡콤", "SF게임"]
+      },
+      {
+        "title": "스타벅스(Starbucks) 앱 다운로드 및 공식 홈페이지 바로가기 | 카드 잔액조회 안내",
+        "link": "/starbucks",
+        "category": "lifestyle",
+        "matched_keywords": ["스타벅스", "별다방", "사이렌오더", "스타벅스카드", "잔액조회", "앱다운로드"]
       }
     ]
   }
