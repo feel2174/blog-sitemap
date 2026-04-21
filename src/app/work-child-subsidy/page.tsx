@@ -99,6 +99,30 @@ export default function SubsidyPage() {
         ))}
       </div>
 
+      {/* Quick Access Button */}
+      <div className="max-w-5xl mx-auto px-4 mb-12">
+        <Link 
+          href="https://hometax.go.kr/"
+          className="group flex items-center justify-between bg-white border border-slate-200 p-6 md:p-8 rounded-[2rem] shadow-sm hover:shadow-xl hover:border-blue-500 transition-all duration-300"
+        >
+          <div className="flex items-center gap-6">
+            <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+              📞
+            </div>
+            <div className="text-left">
+              <h3 className="text-xl font-black text-slate-800 mb-1 group-hover:text-blue-600 transition-colors">국세청 고객센터 바로가기</h3>
+              <p className="text-slate-500 font-medium">홈택스 상담 및 증명서 발급 등 공식 도움말 서비스를 확인하세요.</p>
+            </div>
+          </div>
+          <div className="hidden sm:flex items-center gap-2 text-blue-600 font-black">
+            이동하기
+            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M14 5l7 7-7 7M5 12h18" />
+            </svg>
+          </div>
+        </Link>
+      </div>
+
       {/* Notice Section */}
       <div className="max-w-5xl mx-auto px-4 pb-24 text-center">
         <div className="p-8 bg-slate-100 rounded-3xl border border-slate-200">
