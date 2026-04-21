@@ -7,7 +7,28 @@ const nextConfig: NextConfig = {
   generateEtags: true,
   reactStrictMode: true,
   images: {
-    domains: ['zucca100.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'zucca100.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.coupangcdn.com',
+      },
+      {
+        protocol: 'http',
+        hostname: '*.coupangcdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'thumbnail.coupangcdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'static.coupangcdn.com',
+      }
+    ],
     formats: ['image/webp', 'image/avif'],
   },
   async headers() {

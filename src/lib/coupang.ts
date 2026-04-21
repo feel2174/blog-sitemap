@@ -15,8 +15,9 @@ export async function getCoupangProducts(keyword: string) {
   const path = `${BASE_URL}/products/search`;
   const query = `keyword=${encodeURIComponent(keyword)}&limit=4`;
   
-  const date = new Date().toISOString().split('.')[0].replace(/[-:]/g, '').slice(2, 10) + 'T' + 
-               new Date().toISOString().split('T')[1].split('.')[0].replace(/[-:]/g, '') + 'Z';
+  const now = new Date();
+  const date = now.toISOString().split('.')[0].replace(/[-:]/g, '').slice(2) + 'Z';
+  // Example: 2024-04-21T04:01:20.000Z -> 240421T040120Z
   
   // Create signature
   const message = date + method + path + query;
@@ -27,7 +28,8 @@ export async function getCoupangProducts(keyword: string) {
   const authorization = `CEA algorithm=HmacSHA256, access-key=${ACCESS_KEY}, signed-date=${date}, signature=${signature}`;
 
   try {
-    const response = await fetch(`${DOMAIN}${path}?${query}`, {
+    const fullUrl = `${DOMAIN}${path}?${query}`;
+    const response = await fetch(fullUrl, {
       method,
       headers: {
         "Authorization": authorization,
@@ -36,6 +38,12 @@ export async function getCoupangProducts(keyword: string) {
     });
 
     const result = await response.json();
+    
+    if (!response.ok) {
+      console.error("Coupang API Error Response:", result);
+      return [];
+    }
+
     return result.data?.productData || [];
   } catch (error) {
     console.error("Coupang API call failed", error);
