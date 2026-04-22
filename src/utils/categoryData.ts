@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 29,
+      "count": 30,
       "description": "라이프스타일"
     }
   },
@@ -549,6 +549,12 @@ const categorizedData: CategorizedData = {
         "link": "/arex",
         "category": "lifestyle",
         "matched_keywords": ["공항철도", "AREX", "직통열차", "공항철도예매", "인천공항", "서울역"]
+      },
+      {
+        "title": "전국 고속버스 및 시외버스 통합 예매 안내 | 동서울터미널, 코버스, 티머니",
+        "link": "/bus-ticket",
+        "category": "lifestyle",
+        "matched_keywords": ["버스예매", "고속버스", "시외버스", "동서울터미널", "코버스", "티머니"]
       }
     ]
   }
