@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 30,
+      "count": 31,
       "description": "라이프스타일"
     }
   },
@@ -561,6 +561,12 @@ const categorizedData: CategorizedData = {
         "link": "/bus-ticket",
         "category": "lifestyle",
         "matched_keywords": ["버스예매", "고속버스", "시외버스", "동서울터미널", "코버스", "티머니"]
+      },
+      {
+        "title": "일본 여행 필수 네비게이션 앱 추천 | 구글맵 & 야후네비 이용 가이드",
+        "link": "/japan-navigation",
+        "category": "lifestyle",
+        "matched_keywords": ["일본여행", "일본네비", "구글맵", "야후네비", "길찾기", "일본렌터카"]
       }
     ]
   }
