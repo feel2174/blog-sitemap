@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 24,
+      "count": 25,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -175,6 +175,12 @@ const categorizedData: CategorizedData = {
         "link": "/lllcard",
         "category": "government_support",
         "matched_keywords": ["평생교육이용권", "lllcard", "바우처", "지원금", "교육비", "자기계발"]
+      },
+      {
+        "title": "공공생리대 및 생리용품 그냥드림 지원사업 안내 | 신청 방법 및 지원 대상",
+        "link": "/public-sanitary-pads",
+        "category": "government_support",
+        "matched_keywords": ["공공생리대", "생리용품지원", "그냥드림", "바우처", "여성청소년"]
       }
     ],
     "finance_investment": [
