@@ -41,7 +41,7 @@ export default function FoodbankLandingPage() {
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 -mt-24 relative z-20">
                     
                     {/* Primary Actions Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
                         
                         {/* Foodbank Official */}
                         <Link
@@ -50,16 +50,37 @@ export default function FoodbankLandingPage() {
                         >
                             <div className="absolute inset-0 bg-gradient-to-br from-amber-50 to-white opacity-0 group-hover:opacity-100 transition-opacity"></div>
                             <div className="relative z-10">
-                                <div className="w-24 h-24 bg-amber-500 rounded-[2rem] flex items-center justify-center text-white text-4xl mb-8 shadow-2xl group-hover:rotate-12 transition-transform">
+                                <div className="w-20 h-20 bg-amber-500 rounded-[2rem] flex items-center justify-center text-white text-3xl mb-8 shadow-2xl group-hover:rotate-12 transition-transform">
                                     🏛️
                                 </div>
-                                <h3 className="text-2xl font-black text-slate-900 mb-4">전국푸드뱅크 홈페이지</h3>
-                                <p className="text-slate-500 font-semibold mb-10 break-keep text-lg leading-relaxed">
-                                    식품 및 생활용품 기부 안내,<br />전국 지점 위치 및 이용 신청 안내
+                                <h3 className="text-xl font-black text-slate-900 mb-4">전국푸드뱅크 홈페이지</h3>
+                                <p className="text-slate-500 font-semibold mb-10 break-keep text-sm leading-relaxed">
+                                    기부 안내 및 이용 신청 안내
                                 </p>
-                                <span className="inline-flex items-center gap-3 font-black text-amber-600 group-hover:underline text-xl">
-                                    공식 홈페이지 방문하기
-                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                                <span className="inline-flex items-center gap-2 font-black text-amber-600 group-hover:underline text-base">
+                                    홈페이지 방문
+                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                                </span>
+                            </div>
+                        </Link>
+
+                        {/* Foodbank Map */}
+                        <Link
+                            href="https://www.foodbank1377.org/introduce/foodbankMap.do?gngvType=Y"
+                            className="group bg-white rounded-[3rem] p-10 flex flex-col items-center text-center shadow-[0_30px_70px_-15px_rgba(245,158,11,0.12)] border border-amber-50 hover:border-orange-500 transition-all duration-700 hover:-translate-y-3 relative overflow-hidden"
+                        >
+                            <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-white opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            <div className="relative z-10">
+                                <div className="w-20 h-20 bg-orange-500 rounded-[2rem] flex items-center justify-center text-white text-3xl mb-8 shadow-2xl group-hover:scale-110 transition-transform">
+                                    📍
+                                </div>
+                                <h3 className="text-xl font-black text-slate-900 mb-4">내 주변 푸드뱅크 찾기</h3>
+                                <p className="text-slate-500 font-semibold mb-10 break-keep text-sm leading-relaxed">
+                                    전국 지점의 상세 위치와<br />연락처를 지도로 확인하세요.
+                                </p>
+                                <span className="inline-flex items-center gap-2 font-black text-orange-600 group-hover:underline text-base">
+                                    푸드뱅크 지도 보기
+                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
                                 </span>
                             </div>
                         </Link>
@@ -69,15 +90,15 @@ export default function FoodbankLandingPage() {
                             className="group bg-white rounded-[3rem] p-10 flex flex-col items-center text-center shadow-[0_30px_70px_-15px_rgba(245,158,11,0.08)] border border-amber-50 relative overflow-hidden"
                         >
                             <div className="relative z-10">
-                                <div className="w-24 h-24 bg-amber-100 rounded-[2rem] flex items-center justify-center text-amber-600 text-4xl mb-8 shadow-inner">
+                                <div className="w-20 h-20 bg-amber-100 rounded-[2rem] flex items-center justify-center text-amber-600 text-3xl mb-8 shadow-inner">
                                     📦
                                 </div>
-                                <h3 className="text-2xl font-black text-slate-900 mb-4">경기 그냥드림 코너</h3>
-                                <p className="text-slate-500 font-semibold mb-10 break-keep text-lg leading-relaxed">
-                                    생활이 어려운 도민이라면<br />누구나 식품과 생필품을 지원받을 수 있는<br />긴급 나눔 공간입니다.
+                                <h3 className="text-xl font-black text-slate-900 mb-4">경기 그냥드림 코너</h3>
+                                <p className="text-slate-500 font-semibold mb-10 break-keep text-sm leading-relaxed">
+                                    생활이 어려운 도민이라면<br />누구나 식품과 생필품 지원
                                 </p>
-                                <div className="text-amber-500 font-bold text-sm bg-amber-50 px-6 py-2 rounded-full">
-                                    대표번호: 1377 (전국 동일)
+                                <div className="text-amber-500 font-bold text-xs bg-amber-50 px-4 py-2 rounded-full mt-2">
+                                    대표번호: 1377
                                 </div>
                             </div>
                         </div>
