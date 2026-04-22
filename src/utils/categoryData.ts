@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 25,
+      "count": 26,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -181,6 +181,12 @@ const categorizedData: CategorizedData = {
         "link": "/public-sanitary-pads",
         "category": "government_support",
         "matched_keywords": ["공공생리대", "생리용품지원", "그냥드림", "바우처", "여성청소년"]
+      },
+      {
+        "title": "전국푸드뱅크 및 경기 그냥드림 코너 안내 | 나눔 신청 및 기부 방법",
+        "link": "/foodbank",
+        "category": "government_support",
+        "matched_keywords": ["푸드뱅크", "전국푸드뱅크", "그냥드림", "식품나눔", "복지지원"]
       }
     ],
     "finance_investment": [
