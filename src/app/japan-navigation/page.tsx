@@ -95,7 +95,7 @@ export default function JapanNavigationPage() {
                                 <div className="space-y-4">
                                     <h4 className="text-red-400 font-bold text-lg">구글맵 활용법</h4>
                                     <p className="text-gray-400 leading-relaxed text-sm">
-                                        일본 지하철은 노선이 매우 복잡합니다. 구글맵의 '출입구 번호' 안내와 '빠른 환승 칸' 정보를 활용하면 시간을 획기적으로 단축할 수 있습니다.
+                                        일본 지하철은 노선이 매우 복잡합니다. 구글맵의 &apos;출입구 번호&apos; 안내와 &apos;빠른 환승 칸&apos; 정보를 활용하면 시간을 획기적으로 단축할 수 있습니다.
                                     </p>
                                 </div>
                                 <div className="space-y-4">
