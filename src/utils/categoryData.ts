@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 23,
+      "count": 24,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -169,6 +169,12 @@ const categorizedData: CategorizedData = {
         "link": "/kookmin-secretary",
         "category": "government_support",
         "matched_keywords": ["국민비서", "구삐", "Guppi", "행정알림", "정부알림", "민원알림", "생활정보"]
+      },
+      {
+        "title": "2026년 평생교육이용권(lllcard.kr) 신청 및 사용처 안내 | 연 35만원 지원",
+        "link": "/lllcard",
+        "category": "government_support",
+        "matched_keywords": ["평생교육이용권", "lllcard", "바우처", "지원금", "교육비", "자기계발"]
       }
     ],
     "finance_investment": [
