@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 28,
+      "count": 29,
       "description": "라이프스타일"
     }
   },
@@ -537,6 +537,12 @@ const categorizedData: CategorizedData = {
         "link": "/gayo-stage",
         "category": "lifestyle",
         "matched_keywords": ["가요무대", "가요무대출연진", "방청신청", "트로트", "KBS", "부모님선물"]
+      },
+      {
+        "title": "AREX 공항철도 직통열차 예매 및 시간표 안내 | 서울역-인천공항 43분",
+        "link": "/arex",
+        "category": "lifestyle",
+        "matched_keywords": ["공항철도", "AREX", "직통열차", "공항철도예매", "인천공항", "서울역"]
       }
     ]
   }
