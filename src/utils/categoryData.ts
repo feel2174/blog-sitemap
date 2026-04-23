@@ -4,15 +4,15 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 28,
+      "count": 29,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 22,
-      "description": "금융 & 투자 정보"
+      "count": 17,
+      "description": "금융 & 투자"
     },
     "health_wellness": {
-      "count": 10,
+      "count": 8,
       "description": "건강 & 웰빙"
     },
     "technology": {
@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 31,
+      "count": 32,
       "description": "라이프스타일"
     }
   },
@@ -533,10 +533,16 @@ const categorizedData: CategorizedData = {
         "matched_keywords": ["SBTI", "성적행동유형", "테스트", "심리테스트", "무료테스트"]
       },
       {
-        "title": "에어컨 청소 가격 비교 | 숨고, 미소, 업체별 비용 총정리",
-        "link": "/aircon-cleaning-price",
+        "title": "2026 스타벅스 텀블러 할인 및 개인컵 혜택 완벽 가이드",
+        "link": "/starbucks-discount",
         "category": "lifestyle",
-        "matched_keywords": ["에어컨청소", "가격비교", "비용", "숨고", "미소"]
+        "matched_keywords": ["스타벅스", "개인컵할인", "텀블러할인", "에코별", "스타벅스혜택"]
+      },
+      {
+        "title": "사직서 양식 무료 다운로드 | HWP, PDF 표준 서식 및 작성 가이드",
+        "link": "/resignation-letter",
+        "category": "lifestyle",
+        "matched_keywords": ["사직서", "사직서양식", "퇴사", "무료다운로드", "한글양식", "PDF양식"]
       },
       {
         "title": "드라마 21세기 대군부인 OTT 다시보기 | 웨이브, 디즈니플러스 바로가기",
