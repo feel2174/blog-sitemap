@@ -33,44 +33,9 @@ export default function KFCChickenNightPage() {
                     </div>
                 </div>
 
-                {/* Info Cards Grid */}
-                <div className="max-w-6xl mx-auto px-4 sm:px-6 -mt-24 relative z-20">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-                        
-                        {/* Time Card */}
-                        <div className="bg-white rounded-[2.5rem] p-10 shadow-2xl border border-slate-100 flex flex-col items-center text-center">
-                            <div className="w-20 h-20 bg-red-50 text-[#E4002B] rounded-3xl flex items-center justify-center text-4xl mb-8">⏰</div>
-                            <h3 className="text-2xl font-black text-slate-900 mb-4">행사 시간</h3>
-                            <p className="text-slate-500 font-bold leading-relaxed break-keep">
-                                매일 밤 <span className="text-[#E4002B]">21:00 ~ 22:00</span> (1시간)<br />
-                                일부 매장은 제외될 수 있습니다.
-                            </p>
-                        </div>
-
-                        {/* Benefit Card */}
-                        <div className="bg-white rounded-[2.5rem] p-10 shadow-2xl border border-slate-100 flex flex-col items-center text-center">
-                            <div className="w-20 h-20 bg-yellow-50 text-yellow-600 rounded-3xl flex items-center justify-center text-4xl mb-8">✨</div>
-                            <h3 className="text-2xl font-black text-slate-900 mb-4">혜택 내용</h3>
-                            <p className="text-slate-500 font-bold leading-relaxed break-keep">
-                                치킨 단품 1조각 구매 시<br />
-                                <span className="text-red-600">동일한 치킨 1조각 더 증정!</span>
-                            </p>
-                        </div>
-
-                        {/* Order Card */}
-                        <div className="bg-white rounded-[2.5rem] p-10 shadow-2xl border border-slate-100 flex flex-col items-center text-center">
-                            <div className="w-20 h-20 bg-blue-50 text-blue-600 rounded-3xl flex items-center justify-center text-4xl mb-8">📱</div>
-                            <h3 className="text-2xl font-black text-slate-900 mb-4">주문 방법</h3>
-                            <p className="text-slate-500 font-bold leading-relaxed break-keep">
-                                매장 방문, 징거벨 오더,<br />
-                                <span className="text-blue-600">KFC 공식 앱 배달</span> 주문 시 가능
-                            </p>
-                        </div>
-
-                    </div>
-
-                    {/* App Promotion Section */}
-                    <div className="bg-slate-900 rounded-[3.5rem] p-10 md:p-20 text-white shadow-3xl mb-16 relative overflow-hidden">
+                {/* App Promotion Section (CTA at the top) */}
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 -mt-32 relative z-20 mb-16">
+                    <div className="bg-slate-900 rounded-[3.5rem] p-10 md:p-20 text-white shadow-3xl relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-80 h-80 bg-[#E4002B] rounded-full opacity-20 translate-x-1/3 -translate-y-1/3 blur-3xl"></div>
                         
                         <div className="relative z-10 flex flex-col lg:flex-row items-center gap-16">
@@ -106,6 +71,43 @@ export default function KFCChickenNightPage() {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                {/* Content Wrapper */}
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-20">
+                    {/* Info Cards Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                        
+                        {/* Time Card */}
+                        <div className="bg-white rounded-[2.5rem] p-10 shadow-2xl border border-slate-100 flex flex-col items-center text-center">
+                            <div className="w-20 h-20 bg-red-50 text-[#E4002B] rounded-3xl flex items-center justify-center text-4xl mb-8">⏰</div>
+                            <h3 className="text-2xl font-black text-slate-900 mb-4">행사 시간</h3>
+                            <p className="text-slate-500 font-bold leading-relaxed break-keep">
+                                매일 밤 <span className="text-[#E4002B]">21:00 ~ 22:00</span> (1시간)<br />
+                                일부 매장은 제외될 수 있습니다.
+                            </p>
+                        </div>
+
+                        {/* Benefit Card */}
+                        <div className="bg-white rounded-[2.5rem] p-10 shadow-2xl border border-slate-100 flex flex-col items-center text-center">
+                            <div className="w-20 h-20 bg-yellow-50 text-yellow-600 rounded-3xl flex items-center justify-center text-4xl mb-8">✨</div>
+                            <h3 className="text-2xl font-black text-slate-900 mb-4">혜택 내용</h3>
+                            <p className="text-slate-500 font-bold leading-relaxed break-keep">
+                                치킨 단품 1조각 구매 시<br />
+                                <span className="text-red-600">동일한 치킨 1조각 더 증정!</span>
+                            </p>
+                        </div>
+
+                        {/* Order Card */}
+                        <div className="bg-white rounded-[2.5rem] p-10 shadow-2xl border border-slate-100 flex flex-col items-center text-center">
+                            <div className="w-20 h-20 bg-blue-50 text-blue-600 rounded-3xl flex items-center justify-center text-4xl mb-8">📱</div>
+                            <h3 className="text-2xl font-black text-slate-900 mb-4">주문 방법</h3>
+                            <p className="text-slate-500 font-bold leading-relaxed break-keep">
+                                매장 방문, 징거벨 오더,<br />
+                                <span className="text-blue-600">KFC 공식 앱 배달</span> 주문 시 가능
+                            </p>
+                        </div>
+                    </div>
 
                     {/* Official Link & Notice */}
                     <div className="text-center mb-20">
@@ -131,7 +133,6 @@ export default function KFCChickenNightPage() {
                         title="🔥 KFC 치킨을 더 맛있게 즐기는 법"
                         hookText="홈메이드 치킨 소스부터 함께 곁들이기 좋은 시원한 제로 음료까지, 치킨 파티를 완성해줄 추천 상품들입니다."
                     />
-
                 </div>
             </main>
 
