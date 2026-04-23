@@ -16,7 +16,7 @@ const categorizedData: CategorizedData = {
       "description": "건강 & 웰빙"
     },
     "technology": {
-      "count": 9,
+      "count": 10,
       "description": "기술 & IT"
     },
     "lifestyle": {
@@ -409,6 +409,12 @@ const categorizedData: CategorizedData = {
         "link": "/pass",
         "category": "technology",
         "matched_keywords": ["PASS", "본인인증", "SKTPASS", "KTPASS", "U+PASS", "모바일신분증"]
+      },
+      {
+        "title": "반디집(Bandizip) 및 반디소프트 필수 프로그램 다운로드",
+        "link": "/bandisoft",
+        "category": "technology",
+        "matched_keywords": ["반디집", "반디소프트", "압축프로그램", "꿀뷰", "꿀캠", "반디뷰", "다운로드"]
       }
     ],
     "lifestyle": [
