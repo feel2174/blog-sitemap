@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 33,
+      "count": 34,
       "description": "라이프스타일"
     }
   },
@@ -609,6 +609,12 @@ const categorizedData: CategorizedData = {
         "link": "/kfc-chicken-night",
         "category": "lifestyle",
         "matched_keywords": ["KFC", "치킨나이트", "1+1", "치킨할인", "야식", "KFC앱"]
+      },
+      {
+        "title": "버거킹 공식 앱 다운로드 및 멤버십 혜택 안내 | 와퍼 할인 쿠폰 확인",
+        "link": "/burgerking",
+        "category": "lifestyle",
+        "matched_keywords": ["버거킹", "BurgerKing", "버거킹앱", "버거킹쿠폰", "와퍼할인", "킹오더"]
       }
     ]
   }
