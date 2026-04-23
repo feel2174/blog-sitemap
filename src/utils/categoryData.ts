@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 26,
+      "count": 27,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -16,7 +16,7 @@ const categorizedData: CategorizedData = {
       "description": "건강 & 웰빙"
     },
     "technology": {
-      "count": 8,
+      "count": 9,
       "description": "기술 & IT"
     },
     "lifestyle": {
@@ -187,6 +187,12 @@ const categorizedData: CategorizedData = {
         "link": "/foodbank",
         "category": "government_support",
         "matched_keywords": ["푸드뱅크", "전국푸드뱅크", "그냥드림", "식품나눔", "복지지원"]
+      },
+      {
+        "title": "2026년 휴일근로수당 계산기 | 공휴일·대체공휴일 가산 수당 완벽 가이드",
+        "link": "/holiday-work-calculator",
+        "category": "government_support",
+        "matched_keywords": ["휴일근로수당", "계산기", "공휴일수당", "가산수당", "5인이상"]
       }
     ],
     "finance_investment": [
@@ -379,6 +385,12 @@ const categorizedData: CategorizedData = {
         "link": "/tiktok-download",
         "category": "technology",
         "matched_keywords": ["틱톡", "틱톡영상", "워터마크제거", "스냅틱", "다운로드", "SnapTik"]
+      },
+      {
+        "title": "PASS 본인인증 앱 다운로드 및 안내 | SKT, KT, U+ 통신사별 바로가기",
+        "link": "/pass",
+        "category": "technology",
+        "matched_keywords": ["PASS", "본인인증", "SKTPASS", "KTPASS", "U+PASS", "모바일신분증"]
       }
     ],
     "lifestyle": [
