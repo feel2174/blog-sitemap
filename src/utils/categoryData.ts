@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 20,
+      "count": 22,
       "description": "금융 & 투자 정보"
     },
     "health_wellness": {
@@ -291,6 +291,18 @@ const categorizedData: CategorizedData = {
         "link": "/loan-refinance",
         "category": "finance_investment",
         "matched_keywords": ["대출갈아타기", "네이버페이대출", "전세자금대출", "신용대출", "주택담보대출", "자동차대출"]
+      },
+      {
+        "title": "비교견적서 양식 무료 다운로드 | HWP, PDF 표준 서식",
+        "link": "/comparison-quote",
+        "category": "finance_investment",
+        "matched_keywords": ["비교견적서", "견적서양식", "무료다운로드", "한글양식", "PDF양식", "비교견적"]
+      },
+      {
+        "title": "깔끔한 견적서 양식 무료 다운로드 | 엑셀, 한글, 워드, PDF",
+        "link": "/quote",
+        "category": "finance_investment",
+        "matched_keywords": ["견적서", "견적서양식", "엑셀견적서", "한글견적서", "워드견적서", "무료다운로드", "표준서식"]
       }
     ],
     "health_wellness": [

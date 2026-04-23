@@ -123,7 +123,7 @@ export default function ElectionSurveyBlockPage() {
                                     <div className="bg-slate-50 p-6 rounded-2xl border-l-4 border-blue-600">
                                         <h4 className="text-lg font-bold text-slate-900 mb-2">법적 근거 (공직선거법 제108조의2)</h4>
                                         <p className="text-slate-600 leading-relaxed text-sm break-keep">
-                                            여론조사기관은 선거 관련 조사를 위해 통신사에 '가상번호' 제공을 요청할 수 있으며, 이는 합법적인 절차입니다. 통신사는 실제 번호가 아닌 임시 가상번호를 제공합니다.
+                                            여론조사기관은 선거 관련 조사를 위해 통신사에 &apos;가상번호&apos; 제공을 요청할 수 있으며, 이는 합법적인 절차입니다. 통신사는 실제 번호가 아닌 임시 가상번호를 제공합니다.
                                         </p>
                                     </div>
                                     <div className="bg-slate-50 p-6 rounded-2xl border-l-4 border-red-600">
