@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 32,
+      "count": 33,
       "description": "라이프스타일"
     }
   },
@@ -603,6 +603,12 @@ const categorizedData: CategorizedData = {
         "link": "/japan-navigation",
         "category": "lifestyle",
         "matched_keywords": ["일본여행", "일본네비", "구글맵", "야후네비", "길찾기", "일본렌터카"]
+      },
+      {
+        "title": "KFC 치킨나이트 1+1 혜택 안내 | 매일 밤 9시~10시 치킨 파티",
+        "link": "/kfc-chicken-night",
+        "category": "lifestyle",
+        "matched_keywords": ["KFC", "치킨나이트", "1+1", "치킨할인", "야식", "KFC앱"]
       }
     ]
   }
