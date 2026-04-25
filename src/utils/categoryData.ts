@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 29,
+      "count": 30,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -26,6 +26,12 @@ const categorizedData: CategorizedData = {
   },
   "categories": {
     "government_support": [
+      {
+        "title": "정당 온라인 입당 및 탈당 신청 통합 안내 | 더불어민주당 · 국민의힘",
+        "link": "/party-membership",
+        "category": "government_support",
+        "matched_keywords": ["더불어민주당", "국민의힘", "입당", "탈당", "정당가입"]
+      },
       {
         "title": "민생회복 소비쿠폰 2026 | 전 국민 15만원~45만원 지급, 신청방법부터 사용처까지",
         "link": "https://zucca100.com/%eb%af%bc%ec%83%9d%ed%9a%8c%eb%b3%b5-%ec%86%8c%eb%b9%84%ec%bf%a0%ed%8f%b0-2025-%ec%a0%84-%ea%b5%ad%eb%af%bc-15%eb%a7%8c%ec%9b%9045%eb%a7%8c%ec%9b%90-%ec%a7%80%ea%b8%89-%ec%8b%a0%ec%b2%ad/",
@@ -199,7 +205,7 @@ const categorizedData: CategorizedData = {
         "link": "/election-survey-block",
         "category": "government_support",
         "matched_keywords": ["여론조사", "전화차단", "선거전화", "수신거부", "가상번호"]
-      }
+      },
     ],
     "finance_investment": [
       {
