@@ -299,6 +299,12 @@ const categorizedData: CategorizedData = {
         "matched_keywords": ["대출갈아타기", "네이버페이대출", "전세자금대출", "신용대출", "주택담보대출", "자동차대출"]
       },
       {
+        "title": "상가임대차계약서 양식 무료 다운로드 | HWP, PDF 표준 서식",
+        "link": "/commercial-lease-contract",
+        "category": "finance_investment",
+        "matched_keywords": ["상가임대차계약서", "임대차계약서", "계약서양식", "무료다운로드", "한글양식", "PDF양식"]
+      },
+      {
         "title": "비교견적서 양식 무료 다운로드 | HWP, PDF 표준 서식",
         "link": "/comparison-quote",
         "category": "finance_investment",
