@@ -12,7 +12,7 @@ const categorizedData: CategorizedData = {
       "description": "금융 & 투자"
     },
     "health_wellness": {
-      "count": 8,
+      "count": 9,
       "description": "건강 & 웰빙"
     },
     "technology": {
@@ -365,6 +365,12 @@ const categorizedData: CategorizedData = {
         "link": "/weather",
         "category": "health_wellness",
         "matched_keywords": ["날씨", "오늘의날씨", "기상청", "날씨누리", "동네예보", "일기예보"]
+      },
+      {
+        "title": "갱년기 증상 완화 및 영양제 추천 가이드 | 여성/남성 맞춤 정보",
+        "link": "/menopause-guide",
+        "category": "health_wellness",
+        "matched_keywords": ["갱년기", "여성갱년기", "남성갱년기", "갱년기영양제", "갱년기증상", "건강관리"]
       }
     ],
     "technology": [
