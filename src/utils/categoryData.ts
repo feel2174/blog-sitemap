@@ -12,7 +12,7 @@ const categorizedData: CategorizedData = {
       "description": "금융 & 투자"
     },
     "health_wellness": {
-      "count": 9,
+      "count": 10,
       "description": "건강 & 웰빙"
     },
     "technology": {
@@ -371,6 +371,12 @@ const categorizedData: CategorizedData = {
         "link": "/menopause-guide",
         "category": "health_wellness",
         "matched_keywords": ["갱년기", "여성갱년기", "남성갱년기", "갱년기영양제", "갱년기증상", "건강관리"]
+      },
+      {
+        "title": "연속혈당측정기(CGM) 추천 및 혈당 관리 가이드 | 채혈 없는 당뇨·다이어트 필수품",
+        "link": "/cgm-monitor",
+        "category": "health_wellness",
+        "matched_keywords": ["연속혈당측정기", "CGM", "혈당스파이크", "당뇨관리", "혈당다이어트", "리브레"]
       }
     ],
     "technology": [
