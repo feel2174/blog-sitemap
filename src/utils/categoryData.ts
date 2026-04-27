@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 36,
+      "count": 37,
       "description": "라이프스타일"
     }
   },
@@ -663,6 +663,12 @@ const categorizedData: CategorizedData = {
         "link": "/secret-audit",
         "category": "lifestyle",
         "matched_keywords": ["은밀한감사", "tvN드라마", "신혜선", "공명", "티빙다시보기", "웨이브다시보기", "은밀한감사재방송"]
+      },
+      {
+        "title": "장기렌트 필수 앱 차즘(Chazm) 다운로드 및 이벤트 안내",
+        "link": "/chazm",
+        "category": "lifestyle",
+        "matched_keywords": ["차즘", "chazm", "장기렌트", "차량장기렌트", "차즘앱", "차즘고객센터"]
       }
     ]
   }
