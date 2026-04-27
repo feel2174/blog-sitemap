@@ -44,7 +44,17 @@ export async function getCoupangProducts(keyword: string) {
       return [];
     }
 
-    return result.data?.productData || [];
+    // Search API returns products in the data array
+    // Some other APIs might return data as an object containing productData
+    let productList = [];
+    if (Array.isArray(result.data)) {
+      productList = result.data;
+    } else if (result.data && Array.isArray(result.data.productData)) {
+      productList = result.data.productData;
+    }
+
+    console.log(`Coupang API success: found ${productList.length} products for "${keyword}"`);
+    return productList;
   } catch (error) {
     console.error("Coupang API call failed", error);
     return [];

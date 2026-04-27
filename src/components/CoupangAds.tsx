@@ -47,7 +47,7 @@ export default function CoupangAds({ keyword, title, hookText }: CoupangAdsProps
   if (products.length === 0) return null;
 
   return (
-    <div className="my-16 w-full max-w-5xl mx-auto px-4">
+    <div className="my-16 w-full max-w-5xl mx-auto px-4 relative z-20">
       <div className="bg-white rounded-[1.5rem] md:rounded-[2.5rem] p-4 sm:p-6 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-neutral-100">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-10 gap-4">
           <div className="space-y-2">

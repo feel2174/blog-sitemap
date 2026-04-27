@@ -14,8 +14,8 @@ export default function CommercialLeaseContractPage() {
         >
             {/* Premium Gradients & Overlays (Blue/Gray Vibe for Business/Legal) */}
             <div className="absolute inset-0 z-[1] pointer-events-none" style={{ backgroundImage: 'url(/commercial-lease-contract-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', opacity: '0.3' }} />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#0a0f1a]/90 via-[#0a0f1a]/80 to-[#050505] z-[2]" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent z-[3]" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0a0f1a]/90 via-[#0a0f1a]/80 to-transparent z-[2] pointer-events-none" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent z-[3] pointer-events-none" />
 
             <div className="relative z-10 w-full max-w-2xl mx-auto flex flex-col items-center mt-10">
                 {/* Header Section */}

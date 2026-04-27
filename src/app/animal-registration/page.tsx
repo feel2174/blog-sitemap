@@ -13,8 +13,8 @@ export default function AnimalRegistrationPage() {
             style={{ fontFamily: '"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif' }}
         >
             {/* Premium Gradients & Overlays (Green/Nature Vibe for Animals) */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black z-[1]" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent z-[2]" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent z-[1] pointer-events-none" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent z-[2] pointer-events-none" />
 
             <div className="relative z-10 w-full max-w-2xl mx-auto flex flex-col items-center">
                 {/* Header Section */}
