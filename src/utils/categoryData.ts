@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 30,
+      "count": 31,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -205,6 +205,12 @@ const categorizedData: CategorizedData = {
         "link": "/election-survey-block",
         "category": "government_support",
         "matched_keywords": ["여론조사", "전화차단", "선거전화", "수신거부", "가상번호"]
+      },
+      {
+        "title": "각 은행별 고유가 피해지원금 신청 바로가기 | 신한, 우리, 농협 등",
+        "link": "/oil-price-support",
+        "category": "government_support",
+        "matched_keywords": ["고유가", "피해지원금", "은행지원금", "정부지원금", "유류비지원", "유가보조금"]
       },
     ],
     "finance_investment": [
