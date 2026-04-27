@@ -27,20 +27,9 @@ export default function RealEstateContractPage() {
     let timer: NodeJS.Timeout;
     if (showInterstitial && counter > 0) {
       timer = setTimeout(() => setCounter(counter - 1), 1000);
-    } else if (showInterstitial && counter === 0) {
-      // Start actual download
-      const link = document.createElement('a');
-      link.href = downloadLink;
-      link.download = downloadLink.split('/').pop() || '계약서';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      
-      // Keep it for a bit then hide
-      timer = setTimeout(() => setShowInterstitial(false), 1000);
     }
     return () => clearTimeout(timer);
-  }, [showInterstitial, counter, downloadLink]);
+  }, [showInterstitial, counter]);
 
   return (
     <div className="min-h-screen bg-gray-50 font-['Pretendard']">
@@ -78,7 +67,7 @@ export default function RealEstateContractPage() {
                   특약 사항 추가가 필요한 경우 권장합니다.
                 </p>
                 <button
-                  onClick={() => handleDownloadClick('/contract/부동산_매매계약서_양식.hwp')}
+                  onClick={() => handleDownloadClick('/contract/contract1.hwp')}
                   className="w-full py-5 bg-blue-600 text-white font-black rounded-2xl shadow-lg hover:bg-blue-700 transition-all flex items-center justify-center gap-2"
                 >
                   HWP 다운로드
@@ -103,7 +92,7 @@ export default function RealEstateContractPage() {
                   출력 후 수기로 작성하실 때 편리합니다.
                 </p>
                 <button
-                  onClick={() => handleDownloadClick('/contract/부동산_매매계약서_양식.pdf')}
+                  onClick={() => handleDownloadClick('/contract/contract.pdf')}
                   className="w-full py-5 bg-red-600 text-white font-black rounded-2xl shadow-lg hover:bg-red-700 transition-all flex items-center justify-center gap-2"
                 >
                   PDF 다운로드
@@ -146,12 +135,31 @@ export default function RealEstateContractPage() {
       {showInterstitial && (
         <div className="fixed inset-0 z-[100] bg-black/95 flex flex-col items-center justify-center p-4">
           <div className="max-w-md w-full text-white text-center">
-            <div className="w-24 h-24 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-10"></div>
-            <h2 className="text-3xl font-black mb-6">잠시만 기다려주세요</h2>
-            <p className="text-zinc-400 text-lg mb-10 break-keep">
-                후원 광고 확인 후 <br className="hidden sm:block" />
-                다운로드가 자동으로 시작됩니다. ({counter}초)
-            </p>
+            {counter > 0 ? (
+              <>
+                <div className="w-24 h-24 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-10"></div>
+                <h2 className="text-3xl font-black mb-6">잠시만 기다려주세요</h2>
+                <p className="text-zinc-400 text-lg mb-10 break-keep">
+                    후원 광고 확인 후 <br className="hidden sm:block" />
+                    다운로드가 자동으로 시작됩니다. ({counter}초)
+                </p>
+              </>
+            ) : (
+              <>
+                <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-10 text-4xl shadow-lg shadow-blue-500/20">
+                  ✅
+                </div>
+                <h2 className="text-3xl font-black mb-6">다운로드 준비 완료</h2>
+                <a 
+                  href={downloadLink}
+                  download
+                  onClick={() => setShowInterstitial(false)}
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-2xl mb-10 transition-colors shadow-lg"
+                >
+                  📥 파일 다운로드
+                </a>
+              </>
+            )}
             <div className="p-8 bg-zinc-800 rounded-3xl border border-zinc-700 shadow-2xl">
               <p className="text-xs text-zinc-500 mb-4 uppercase tracking-widest font-black">Advertisement</p>
               {/* This space is where the AdSense interstitial is expected to triggered or shown */}
