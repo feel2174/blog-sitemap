@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 34,
+      "count": 35,
       "description": "라이프스타일"
     }
   },
@@ -645,6 +645,12 @@ const categorizedData: CategorizedData = {
         "link": "/burgerking",
         "category": "lifestyle",
         "matched_keywords": ["버거킹", "BurgerKing", "버거킹앱", "버거킹쿠폰", "와퍼할인", "킹오더"]
+      },
+      {
+        "title": "전국 파크골프장 위치 및 파크골프 용품 추천 가이드 | 시니어 스포츠",
+        "link": "/park-golf",
+        "category": "lifestyle",
+        "matched_keywords": ["파크골프", "파크골프장", "파크골프용품", "파크골프채", "시니어스포츠", "파크골프장위치"]
       }
     ]
   }
