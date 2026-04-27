@@ -19,6 +19,11 @@ const bankLinks = [
     { name: '동백전', url: 'https://busandong100.kr/cs/noticeDesc?seq=29801', color: 'bg-emerald-50 text-[#009B8B] border-[#009B8B]/20 hover:border-[#009B8B]/50' },
     { name: '네이버페이', url: 'https://pay.naver.com/gov/energyrelief', color: 'bg-green-50 text-[#03C75A] border-[#03C75A]/20 hover:border-[#03C75A]/50' },
     { name: '케이뱅크', url: 'https://www.kbanknow.com/ib20/mnu/PBKMAN000000', color: 'bg-indigo-50 text-[#000066] border-[#000066]/20 hover:border-[#000066]/50' },
+    { name: '현대카드', url: 'https://www.hyundaicard.com/cpb/gs/CPBGS2501_01.hc', color: 'bg-zinc-100 text-zinc-900 border-zinc-900/20 hover:border-zinc-900/50' },
+    { name: '롯데카드', url: 'https://jiwon3.lottecard.co.kr/app/LPEMRFA_P300.lc', color: 'bg-red-50 text-[#ED1C24] border-[#ED1C24]/20 hover:border-[#ED1C24]/50' },
+    { name: '삼성카드', url: 'https://www.samsungcard.com/personal/main/UHPPCO0101M0.jsp', color: 'bg-blue-50 text-[#0055c1] border-[#0055c1]/20 hover:border-[#0055c1]/50' },
+    { name: '국민카드', url: 'https://m.kbcard.com/BON/DVIEW/MBHV1103', color: 'bg-yellow-50 text-[#60584c] border-[#ffcc00]/50 hover:border-[#ffcc00]/80' },
+    { name: '신한카드', url: 'https://www.shinhancard.com/pconts/html/myPage/governmentSupport/MOBFM591N/MOBFM591R02.html', color: 'bg-blue-50 text-[#0046FF] border-[#0046FF]/20 hover:border-[#0046FF]/50' },
 ];
 
 export default function OilPriceSupportPage() {
