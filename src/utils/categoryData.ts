@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 35,
+      "count": 36,
       "description": "라이프스타일"
     }
   },
@@ -657,6 +657,12 @@ const categorizedData: CategorizedData = {
         "link": "/park-golf",
         "category": "lifestyle",
         "matched_keywords": ["파크골프", "파크골프장", "파크골프용품", "파크골프채", "시니어스포츠", "파크골프장위치"]
+      },
+      {
+        "title": "tvN 드라마 은밀한 감사 다시보기 및 편성표 안내 | 신혜선, 공명 주연",
+        "link": "/secret-audit",
+        "category": "lifestyle",
+        "matched_keywords": ["은밀한감사", "tvN드라마", "신혜선", "공명", "티빙다시보기", "웨이브다시보기", "은밀한감사재방송"]
       }
     ]
   }
