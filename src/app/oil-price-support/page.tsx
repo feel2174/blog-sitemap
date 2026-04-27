@@ -18,6 +18,7 @@ const bankLinks = [
     { name: '부산은행', url: 'https://www.busan.go.kr/relief/', color: 'bg-rose-50 text-[#E60024] border-[#E60024]/20 hover:border-[#E60024]/50' },
     { name: '동백전', url: 'https://busandong100.kr/cs/noticeDesc?seq=29801', color: 'bg-emerald-50 text-[#009B8B] border-[#009B8B]/20 hover:border-[#009B8B]/50' },
     { name: '네이버페이', url: 'https://pay.naver.com/gov/energyrelief', color: 'bg-green-50 text-[#03C75A] border-[#03C75A]/20 hover:border-[#03C75A]/50' },
+    { name: '케이뱅크', url: 'https://www.kbanknow.com/ib20/mnu/PBKMAN000000', color: 'bg-indigo-50 text-[#000066] border-[#000066]/20 hover:border-[#000066]/50' },
 ];
 
 export default function OilPriceSupportPage() {
