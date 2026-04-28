@@ -455,6 +455,12 @@ const categorizedData: CategorizedData = {
         "matched_keywords": ["무료웹툰", "웹툰주소", "조아툰", "블랙툰", "툰코", "웹툰모아", "최신주소"]
       },
       {
+        "title": "쿠팡플레이(Coupang Play) 공식 홈페이지 및 앱 다운로드 안내",
+        "link": "/coupang-play",
+        "category": "lifestyle",
+        "matched_keywords": ["쿠팡플레이", "CoupangPlay", "OTT", "SNL코리아", "스포츠중계", "와우회원"]
+      },
+      {
         "title": "엔터테인먼트 관련 글 1",
         "link": "https://zucca100.com/entertainment-1",
         "category": "lifestyle",
