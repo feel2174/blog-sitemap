@@ -449,6 +449,12 @@ const categorizedData: CategorizedData = {
     ],
     "lifestyle": [
       {
+        "title": "2026 무료웹툰 최신 주소 모음 | 조아툰, 블랙툰, 툰코 등 실시간 주소 확인",
+        "link": "/free-webtoon",
+        "category": "lifestyle",
+        "matched_keywords": ["무료웹툰", "웹툰주소", "조아툰", "블랙툰", "툰코", "웹툰모아", "최신주소"]
+      },
+      {
         "title": "엔터테인먼트 관련 글 1",
         "link": "https://zucca100.com/entertainment-1",
         "category": "lifestyle",
