@@ -441,6 +441,12 @@ const categorizedData: CategorizedData = {
         "matched_keywords": ["PASS", "본인인증", "SKTPASS", "KTPASS", "U+PASS", "모바일신분증"]
       },
       {
+        "title": "한글(HWP) 뷰어 무료 다운로드 | Windows, Mac, Android, iOS 공식 버전",
+        "link": "/hwp-viewer",
+        "category": "technology",
+        "matched_keywords": ["한글뷰어", "HWP뷰어", "한컴오피스", "다운로드", "무료뷰어", "문서열람"]
+      },
+      {
         "title": "반디집(Bandizip) 및 반디소프트 필수 프로그램 다운로드",
         "link": "/bandisoft",
         "category": "technology",
