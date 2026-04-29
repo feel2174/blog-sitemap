@@ -27,6 +27,12 @@ const categorizedData: CategorizedData = {
   "categories": {
     "government_support": [
       {
+        "title": "국세청 홈택스 & 손택스 다운로드 및 연말정산 안내",
+        "link": "/hometax",
+        "category": "government_support",
+        "matched_keywords": ["국세청", "홈택스", "손택스", "연말정산", "세금신고"]
+      },
+      {
         "title": "정당 온라인 입당 및 탈당 신청 통합 안내 | 더불어민주당 · 국민의힘",
         "link": "/party-membership",
         "category": "government_support",
