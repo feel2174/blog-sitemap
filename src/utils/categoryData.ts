@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 37,
+      "count": 38,
       "description": "라이프스타일"
     }
   },
@@ -472,6 +472,12 @@ const categorizedData: CategorizedData = {
       }
     ],
     "lifestyle": [
+      {
+        "title": "알리익스프레스 & 테무 앱 다운로드 안내 | 글로벌 쇼핑을 한 손에",
+        "link": "/aliexpress-temu",
+        "category": "lifestyle",
+        "matched_keywords": ["알리익스프레스", "테무", "AliExpress", "Temu", "알리다운로드", "테무다운로드", "쇼핑앱", "해외직구"]
+      },
       {
         "title": "2026 무료웹툰 최신 주소 모음 | 조아툰, 블랙툰, 툰코 등 실시간 주소 확인",
         "link": "/free-webtoon",
