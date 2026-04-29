@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 31,
+      "count": 32,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -205,6 +205,12 @@ const categorizedData: CategorizedData = {
         "link": "/election-survey-block",
         "category": "government_support",
         "matched_keywords": ["여론조사", "전화차단", "선거전화", "수신거부", "가상번호"]
+      },
+      {
+        "title": "2026 종합소득세 환급금 조회 및 신청 방법 안내 | 금융소득 종합과세 대상자 조회",
+        "link": "/income-tax",
+        "category": "government_support",
+        "matched_keywords": ["종합소득세", "환급금", "금융소득", "종합과세", "홈택스", "계산기", "5월"]
       },
       {
         "title": "각 은행별 고유가 피해지원금 신청 바로가기 | 신한, 우리, 농협 등",
