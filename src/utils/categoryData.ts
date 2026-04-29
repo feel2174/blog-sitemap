@@ -227,6 +227,12 @@ const categorizedData: CategorizedData = {
         "matched_keywords": ["ISA", "계좌"]
       },
       {
+        "title": "뱅크샐러드 다운로드 및 PC 홈페이지 바로가기 (무료 유전자 검사)",
+        "link": "/banksalad",
+        "category": "finance_investment",
+        "matched_keywords": ["뱅크샐러드", "뱅크샐러드앱", "자산관리", "무료유전자검사"]
+      },
+      {
         "title": "하나저축은행 사잇돌2 대출 후기: 신용점수 낮아도 3천만원까지 가능할까?",
         "link": "https://zucca100.com/%ed%95%98%eb%82%98%ec%a0%80%ec%b6%95%ec%9d%80%ed%96%89-%ec%82%ac%ec%9e%87%eb%8f%8c2-%eb%8c%80%ec%b6%9c-%ed%9b%84%ea%b8%b0-%ec%8b%a0%ec%9a%a9%ec%a0%90%ec%88%98-%eb%82%ae%ec%95%84%eb%8f%84-3%ec%b2%9c/",
         "category": "finance_investment",
