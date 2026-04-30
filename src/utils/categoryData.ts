@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 32,
+      "count": 33,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -26,6 +26,12 @@ const categorizedData: CategorizedData = {
   },
   "categories": {
     "government_support": [
+      {
+        "title": "경남도민생활지원금 신청 및 안내 | 혜택 확인 바로가기",
+        "link": "/gyeongnam-support",
+        "category": "government_support",
+        "matched_keywords": ["경남도민생활지원금", "경상남도지원금", "경남생활지원금", "지원금신청", "경남재난지원금"]
+      },
       {
         "title": "국세청 홈택스 & 손택스 다운로드 및 연말정산 안내",
         "link": "/hometax",
