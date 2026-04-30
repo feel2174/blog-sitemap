@@ -42,6 +42,16 @@ export default function VotePage() {
     const ActionButtons = () => (
         <div className="w-full max-w-xs flex flex-col gap-3 px-4">
             <Link 
+                href="https://zucca100.com/%eb%ac%b4%eb%aa%85%ec%a0%84%ec%84%a4-%ec%a0%84%ea%b5%ad%ed%88%ac%ec%96%b4-%ec%bd%98%ec%84%9c%ed%8a%b8-%ed%8b%b0%ec%bc%93-%ec%98%88%eb%a7%a4-%eb%b0%94%eb%a1%9c%ea%b0%80%ea%b8%b0/" 
+                className="group relative w-full py-4 bg-gradient-to-r from-fuchsia-600 to-purple-600 rounded-2xl overflow-hidden transition-transform active:scale-95 shadow-xl border border-white/10"
+            >
+                <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:animate-[shine_1.5s_infinite] pointer-events-none" />
+                <span className="relative z-10 text-lg font-black text-white flex items-center justify-center gap-2">
+                    🎟️ 전국투어 콘서트 예매
+                </span>
+            </Link>
+
+            <Link 
                 href="https://m.entertain.naver.com/poll/polling?id=363" 
                 className="group relative w-full py-5 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-800 rounded-2xl overflow-hidden animate-[pulse-blue_3s_infinite] transition-transform active:scale-95 shadow-xl border border-white/10"
             >
