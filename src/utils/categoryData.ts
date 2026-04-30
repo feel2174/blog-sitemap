@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 33,
+      "count": 34,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -26,6 +26,12 @@ const categorizedData: CategorizedData = {
   },
   "categories": {
     "government_support": [
+      {
+        "title": "2026년 근로장려금 & 자녀장려금 신청 완벽 가이드 | 최대 330만원 지급",
+        "link": "/earned-income-tax-credit-2026-guide",
+        "category": "government_support",
+        "matched_keywords": ["근로장려금", "자녀장려금", "2026년근로장려금", "정부지원금", "장려금신청", "근로장려금신청"]
+      },
       {
         "title": "경남도민생활지원금 신청 및 안내 | 혜택 확인 바로가기",
         "link": "/gyeongnam-support",
