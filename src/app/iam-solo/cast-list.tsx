@@ -11,10 +11,12 @@ export default function CastList() {
         { name: '정숙', url: 'https://www.instagram.com/wlrkdwn/', bg: 'from-fuchsia-100 to-purple-200', text: 'text-purple-600', hover: 'hover:border-purple-400 hover:shadow-purple-200' },
         { name: '순자', url: 'https://www.instagram.com/boxing_podo/', bg: 'from-red-100 to-rose-100', text: 'text-red-500', hover: 'hover:border-red-300 hover:shadow-red-200' },
         { name: '옥순', url: 'https://www.instagram.com/noajoa_/', bg: 'from-pink-50 to-pink-200', text: 'text-pink-600', hover: 'hover:border-pink-300 hover:shadow-pink-200' },
-        { name: '현숙', url: 'https://www.instagram.com/itsgabventures/', bg: 'from-rose-50 to-orange-100', text: 'text-orange-500', hover: 'hover:border-orange-300 hover:shadow-orange-200' }
+        { name: '현숙', url: 'https://www.instagram.com/itsgabventures/', bg: 'from-rose-50 to-orange-100', text: 'text-orange-500', hover: 'hover:border-orange-300 hover:shadow-orange-200' },
+        { name: '정희', url: 'https://www.instagram.com/obfairy_', bg: 'from-orange-50 to-rose-100', text: 'text-orange-500', hover: 'hover:border-orange-300 hover:shadow-orange-200' }
     ];
 
     const maleCast = [
+        { name: '경수', url: 'https://www.instagram.com/root_optical/', bg: 'from-blue-100 to-cyan-200', text: 'text-blue-600', hover: 'hover:border-blue-400 hover:shadow-blue-200' },
         { name: '영수', url: 'https://www.instagram.com/_dryhands/', bg: 'from-blue-100 to-cyan-200', text: 'text-blue-600', hover: 'hover:border-blue-400 hover:shadow-blue-200' },
         { name: '영호', url: 'https://www.instagram.com/jhw1773/', bg: 'from-sky-100 to-blue-200', text: 'text-sky-600', hover: 'hover:border-sky-300 hover:shadow-sky-200' },
         { name: '영식', url: 'https://www.instagram.com/shimpodo/', bg: 'from-indigo-100 to-purple-200', text: 'text-indigo-600', hover: 'hover:border-indigo-400 hover:shadow-indigo-200' },
@@ -28,19 +30,19 @@ export default function CastList() {
             <div className="w-full max-w-5xl text-center mb-10 relative">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-3xl opacity-40 bg-pink-400 w-64 h-64 rounded-full pointer-events-none"></div>
                 <div className="absolute top-10 right-1/4 translate-x-12 blur-3xl opacity-40 bg-sky-300 w-48 h-48 rounded-full pointer-events-none"></div>
-                
+
                 <div className="relative z-10">
                     <div className="inline-flex items-center justify-center p-4 bg-white/80 backdrop-blur-sm rounded-full shadow-sm border border-pink-100 mb-6 drop-shadow-sm">
                         <span className="text-3xl animate-pulse">💖</span>
                     </div>
-                    
+
                     <h1 className="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight mb-5 leading-tight flex flex-col sm:inline-block">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500">나는 SOLO</span>
                         <span className="sm:ml-4 text-3xl sm:text-5xl text-slate-800">{season}기 인스타</span>
                     </h1>
-                    
+
                     <p className="text-slate-600 font-medium text-base sm:text-lg max-w-2xl mx-auto break-keep leading-relaxed mt-2">
-                        화제의 <strong className="text-pink-500">나는솔로 {season}기</strong> 출연진들의 일상을 엿볼 수 있는 <br className="hidden sm:block"/>
+                        화제의 <strong className="text-pink-500">나는솔로 {season}기</strong> 출연진들의 일상을 엿볼 수 있는 <br className="hidden sm:block" />
                         개인 인스타그램(Instagram) 프로필 바로가기 주소 모음입니다.
                     </p>
                 </div>
@@ -48,13 +50,13 @@ export default function CastList() {
 
             {/* Season Selector */}
             <div className="relative z-20 mb-16 p-2 bg-white/50 backdrop-blur-md rounded-3xl border border-pink-100 shadow-xl flex gap-2">
-                <button 
+                <button
                     onClick={() => setSeason(30)}
                     className={`px-8 py-3 rounded-2xl font-black text-lg transition-all duration-300 ${season === 30 ? 'bg-gradient-to-r from-rose-500 to-pink-500 text-white shadow-lg shadow-pink-200' : 'text-slate-400 hover:text-rose-500 hover:bg-rose-50'}`}
                 >
                     30기
                 </button>
-                <button 
+                <button
                     onClick={() => setSeason(31)}
                     className={`px-8 py-3 rounded-2xl font-black text-lg transition-all duration-300 ${season === 31 ? 'bg-gradient-to-r from-rose-500 to-pink-500 text-white shadow-lg shadow-pink-200' : 'text-slate-400 hover:text-rose-500 hover:bg-rose-50'}`}
                 >
@@ -64,7 +66,7 @@ export default function CastList() {
 
             {/* Content Container */}
             <div className="w-full max-w-4xl relative z-10 transition-opacity duration-300">
-                
+
                 {/* Female Cast Section */}
                 <div className="mb-16">
                     <div className="flex items-center gap-4 mb-8">
@@ -77,7 +79,7 @@ export default function CastList() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                         {femaleCast.map((person, index) => (
-                            <Link 
+                            <Link
                                 key={index}
                                 href={person.url}
                                 className={`group bg-white rounded-3xl p-6 border-2 border-transparent shadow shadow-slate-100 ${person.hover} transition-all duration-300 flex flex-col items-center justify-center text-center`}
@@ -109,7 +111,7 @@ export default function CastList() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 justify-center">
                         {maleCast.map((person, index) => (
-                            <Link 
+                            <Link
                                 key={index}
                                 href={person.url}
                                 className={`group bg-white rounded-3xl p-6 border-2 border-transparent shadow shadow-slate-100 ${person.hover} transition-all duration-300 flex flex-col items-center justify-center text-center`}
@@ -133,7 +135,7 @@ export default function CastList() {
             {/* Bottom Notice */}
             <div className="w-full max-w-3xl mt-10 p-6 bg-white/60 backdrop-blur-md rounded-3xl border border-slate-200/60 text-center relative z-10 shadow-sm">
                 <p className="text-sm sm:text-base text-slate-500 leading-relaxed font-medium">
-                    본 페이지는 시청자들을 위한 참고용 링크 모음입니다. <br className="hidden sm:block"/>
+                    본 페이지는 시청자들을 위한 참고용 링크 모음입니다. <br className="hidden sm:block" />
                     출연진을 향한 <strong className="text-rose-500">무분별한 비난이나 악플은 자제</strong> 부탁드립니다. 🙏
                 </p>
             </div>
