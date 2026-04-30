@@ -40,21 +40,21 @@ export default function EarnedIncomeTaxCreditContent() {
           
           <div className="flex flex-col gap-3">
             <a 
-              href="https://hometax.go.kr/" 
+              href="https://hometax.go.kr/websquare/websquare.html?w2xPath=/ui/pp/index_pp.xml&menuCd=UTEWFZH0A001" 
               className="flex justify-between items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 rounded-xl text-[17px] font-bold transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <span><span className="text-amber-400 mr-1">단독가구</span> 165만원 지급</span>
               <span className="w-7 h-7 bg-white/20 rounded-full flex items-center justify-center text-sm">❯</span>
             </a>
             <a 
-              href="https://hometax.go.kr/" 
+              href="https://hometax.go.kr/websquare/websquare.html?w2xPath=/ui/pp/index_pp.xml&menuCd=UTEWFZH0A001" 
               className="flex justify-between items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 rounded-xl text-[17px] font-bold transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <span><span className="text-amber-400 mr-1">홑벌이 가구</span> 285만원 지급</span>
               <span className="w-7 h-7 bg-white/20 rounded-full flex items-center justify-center text-sm">❯</span>
             </a>
             <a 
-              href="https://hometax.go.kr/" 
+              href="https://hometax.go.kr/websquare/websquare.html?w2xPath=/ui/pp/index_pp.xml&menuCd=UTEWFZH0A001" 
               className="flex justify-between items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 rounded-xl text-[17px] font-bold transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <span><span className="text-amber-400 mr-1">맞벌이 가구</span> 330만원 지급</span>
@@ -71,21 +71,21 @@ export default function EarnedIncomeTaxCreditContent() {
 
           <div className="flex flex-col gap-3">
             <a 
-              href="https://hometax.go.kr/" 
+              href="https://hometax.go.kr/websquare/websquare.html?w2xPath=/ui/pp/index_pp.xml&menuCd=UTEWFZH0A001" 
               className="flex justify-between items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 rounded-xl text-[17px] font-bold transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <span>단독가구 대상자</span>
               <span className="w-7 h-7 bg-white/20 rounded-full flex items-center justify-center text-sm">❯</span>
             </a>
             <a 
-              href="https://hometax.go.kr/" 
+              href="https://hometax.go.kr/websquare/websquare.html?w2xPath=/ui/pp/index_pp.xml&menuCd=UTEWFZH0A001" 
               className="flex justify-between items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 rounded-xl text-[17px] font-bold transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <span>홑벌이 가구 부양자녀 대상자</span>
               <span className="w-7 h-7 bg-white/20 rounded-full flex items-center justify-center text-sm">❯</span>
             </a>
             <a 
-              href="https://hometax.go.kr/" 
+              href="https://hometax.go.kr/websquare/websquare.html?w2xPath=/ui/pp/index_pp.xml&menuCd=UTEWFZH0A001" 
               className="flex justify-between items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 rounded-xl text-[17px] font-bold transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <span>맞벌이 가구 부양자녀 대상자</span>
