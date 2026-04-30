@@ -1,30 +1,11 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CoupangAds from '@/components/CoupangAds';
 
 export default function EarnedIncomeTaxCreditContent() {
-  const [showInterstitial, setShowInterstitial] = useState(false);
-  const [targetLink, setTargetLink] = useState('');
-  const [counter, setCounter] = useState(3);
-
-  const handleLinkClick = (e: React.MouseEvent, url: string) => {
-    e.preventDefault();
-    setTargetLink(url);
-    setShowInterstitial(true);
-    setCounter(3);
-  };
-
-  useEffect(() => {
-    let timer: NodeJS.Timeout;
-    if (showInterstitial && counter > 0) {
-      timer = setTimeout(() => setCounter(counter - 1), 1000);
-    }
-    return () => clearTimeout(timer);
-  }, [showInterstitial, counter]);
-
   return (
     <div className="min-h-screen bg-slate-50 font-['Pretendard']">
       <Header />
@@ -60,7 +41,6 @@ export default function EarnedIncomeTaxCreditContent() {
           <div className="flex flex-col gap-3">
             <a 
               href="https://hometax.go.kr/" 
-              onClick={(e) => handleLinkClick(e, 'https://hometax.go.kr/')}
               className="flex justify-between items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 rounded-xl text-[17px] font-bold transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <span><span className="text-amber-400 mr-1">단독가구</span> 165만원 지급</span>
@@ -68,7 +48,6 @@ export default function EarnedIncomeTaxCreditContent() {
             </a>
             <a 
               href="https://hometax.go.kr/" 
-              onClick={(e) => handleLinkClick(e, 'https://hometax.go.kr/')}
               className="flex justify-between items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 rounded-xl text-[17px] font-bold transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <span><span className="text-amber-400 mr-1">홑벌이 가구</span> 285만원 지급</span>
@@ -76,7 +55,6 @@ export default function EarnedIncomeTaxCreditContent() {
             </a>
             <a 
               href="https://hometax.go.kr/" 
-              onClick={(e) => handleLinkClick(e, 'https://hometax.go.kr/')}
               className="flex justify-between items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 rounded-xl text-[17px] font-bold transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <span><span className="text-amber-400 mr-1">맞벌이 가구</span> 330만원 지급</span>
@@ -94,7 +72,6 @@ export default function EarnedIncomeTaxCreditContent() {
           <div className="flex flex-col gap-3">
             <a 
               href="https://hometax.go.kr/" 
-              onClick={(e) => handleLinkClick(e, 'https://hometax.go.kr/')}
               className="flex justify-between items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 rounded-xl text-[17px] font-bold transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <span>단독가구 대상자</span>
@@ -102,7 +79,6 @@ export default function EarnedIncomeTaxCreditContent() {
             </a>
             <a 
               href="https://hometax.go.kr/" 
-              onClick={(e) => handleLinkClick(e, 'https://hometax.go.kr/')}
               className="flex justify-between items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 rounded-xl text-[17px] font-bold transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <span>홑벌이 가구 부양자녀 대상자</span>
@@ -110,7 +86,6 @@ export default function EarnedIncomeTaxCreditContent() {
             </a>
             <a 
               href="https://hometax.go.kr/" 
-              onClick={(e) => handleLinkClick(e, 'https://hometax.go.kr/')}
               className="flex justify-between items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 rounded-xl text-[17px] font-bold transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <span>맞벌이 가구 부양자녀 대상자</span>
@@ -196,59 +171,6 @@ export default function EarnedIncomeTaxCreditContent() {
 
       <Footer />
 
-      {/* Interstitial Ad Screen */}
-      {showInterstitial && (
-        <div className="fixed inset-0 z-[100] bg-slate-950/95 flex flex-col items-center justify-center p-4 backdrop-blur-sm">
-          <div className="max-w-md w-full text-white text-center">
-            {counter > 0 ? (
-              <>
-                <div className="relative w-24 h-24 mx-auto mb-10">
-                  <div className="absolute inset-0 border-4 border-blue-500/20 rounded-full"></div>
-                  <div className="absolute inset-0 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-                  <div className="absolute inset-0 flex items-center justify-center text-2xl font-black">
-                    {counter}
-                  </div>
-                </div>
-                <h2 className="text-3xl font-black mb-6">해당 페이지로 이동 중입니다</h2>
-                <p className="text-slate-400 text-lg mb-10 break-keep">
-                    안전한 링크 연결을 위해 <br className="hidden sm:block" />
-                    잠시만 기다려주세요.
-                </p>
-              </>
-            ) : (
-              <>
-                <div className="w-24 h-24 bg-blue-600 rounded-3xl flex items-center justify-center mx-auto mb-10 text-4xl shadow-2xl shadow-blue-600/40 animate-bounce">
-                  🚀
-                </div>
-                <h2 className="text-3xl font-black mb-6">준비가 완료되었습니다</h2>
-                <a 
-                  href={targetLink}
-                  rel="noopener noreferrer"
-                  onClick={() => setShowInterstitial(false)}
-                  className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white text-slate-900 font-black rounded-2xl mb-10 hover:bg-blue-50 transition-all shadow-xl hover:scale-105 active:scale-95"
-                >
-                  지금 바로 이동하기
-                </a>
-              </>
-            )}
-            
-            <div className="p-8 bg-slate-900 rounded-[2.5rem] border border-white/5 shadow-2xl relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
-              <p className="text-[10px] text-slate-500 mb-6 uppercase tracking-[0.2em] font-black">Sponsored Content</p>
-              <div className="w-full h-48 bg-slate-800/50 rounded-2xl flex items-center justify-center border border-white/5 italic text-slate-500 text-sm">
-                광고 확인 후 서비스가 계속됩니다
-              </div>
-            </div>
-            
-            <button 
-                onClick={() => setShowInterstitial(false)}
-                className="mt-10 text-slate-500 text-sm font-bold hover:text-white transition-colors underline underline-offset-4"
-            >
-                건너뛰기 (Skip)
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
