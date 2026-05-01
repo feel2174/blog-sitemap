@@ -355,6 +355,12 @@ const categorizedData: CategorizedData = {
     ],
     "health_wellness": [
       {
+        "title": "나는솔로 29기 영철 정숙 방문! 경주 대추밭백한의원 예약 바로가기",
+        "link": "/daechu-clinic",
+        "category": "health_wellness",
+        "matched_keywords": ["대추밭백한의원", "경주한의원", "나는솔로29기", "영철정숙", "난임치료", "임신한의원"]
+      },
+      {
         "title": "건강한 여름 다이어트 완전 가이드: 강박 없이 시작하는 여름 맞이 식단",
         "link": "https://zucca100.com/%ea%b1%b4%ea%b0%95%ed%95%9c-%ec%97%ac%eb%a6%84-%eb%8b%a4%ec%9d%b4%ec%96%b4%ed%8a%b8-%ec%99%84%ec%a0%84-%ea%b0%80%ec%9d%b4%eb%93%9c-%ea%b0%95%eb%b0%95-%ec%97%86%ec%9d%b4-%ec%8b%9c%ec%9e%91%ed%95%98/",
         "category": "health_wellness",
