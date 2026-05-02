@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 34,
+      "count": 35,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -235,6 +235,12 @@ const categorizedData: CategorizedData = {
         "link": "/oil-price-support",
         "category": "government_support",
         "matched_keywords": ["고유가", "피해지원금", "은행지원금", "정부지원금", "유류비지원", "유가보조금"]
+      },
+      {
+        "title": "일사편리 부동산정보조회 | 토지대장, 건축물대장 종합 열람",
+        "link": "/kras",
+        "category": "government_support",
+        "matched_keywords": ["일사편리", "부동산정보조회", "토지대장", "건축물대장", "개별공시지가", "국토교통부"]
       },
     ],
     "finance_investment": [
