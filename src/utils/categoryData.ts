@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 38,
+      "count": 39,
       "description": "라이프스타일"
     }
   },
@@ -729,6 +729,12 @@ const categorizedData: CategorizedData = {
         "link": "/chazm",
         "category": "lifestyle",
         "matched_keywords": ["차즘", "chazm", "장기렌트", "차량장기렌트", "차즘앱", "차즘고객센터"]
+      },
+      {
+        "title": "공임나라 예약 및 표준 공임비 확인 | 엔진교체, 타이어교체, 차량정비",
+        "link": "/gongimnara",
+        "category": "lifestyle",
+        "matched_keywords": ["공임나라", "엔진교체", "타이어교체", "차량정비", "표준공임비", "엔진오일교환", "공임나라예약"]
       }
     ]
   }
