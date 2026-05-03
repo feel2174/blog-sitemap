@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 39,
+      "count": 40,
       "description": "라이프스타일"
     }
   },
@@ -496,6 +496,12 @@ const categorizedData: CategorizedData = {
       }
     ],
     "lifestyle": [
+      {
+        "title": "무료 스포츠중계 블루티비 | 실시간 고화질 스포츠 중계 (해외축구, 야구, 농구)",
+        "link": "/bluetv",
+        "category": "lifestyle",
+        "matched_keywords": ["블루티비", "무료스포츠중계", "스포츠중계", "해외축구중계", "실시간중계"]
+      },
       {
         "title": "알리익스프레스 & 테무 앱 다운로드 안내 | 글로벌 쇼핑을 한 손에",
         "link": "/aliexpress-temu",
