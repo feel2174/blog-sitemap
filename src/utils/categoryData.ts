@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 40,
+      "count": 41,
       "description": "라이프스타일"
     }
   },
@@ -747,6 +747,12 @@ const categorizedData: CategorizedData = {
         "link": "/gongimnara",
         "category": "lifestyle",
         "matched_keywords": ["공임나라", "엔진교체", "타이어교체", "차량정비", "표준공임비", "엔진오일교환", "공임나라예약"]
+      },
+      {
+        "title": "연애기숙학교 돌싱N모솔 출연진 인스타 주소 총정리 | 티빙, 쿠팡플레이 보러가기",
+        "link": "/dolsing-n-mosol",
+        "category": "lifestyle",
+        "matched_keywords": ["돌싱N모솔", "연애기숙학교", "출연진", "인스타", "티빙", "쿠팡플레이", "mbcevery1"]
       }
     ]
   }
