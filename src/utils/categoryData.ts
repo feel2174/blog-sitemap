@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 35,
+      "count": 36,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -242,6 +242,12 @@ const categorizedData: CategorizedData = {
         "category": "government_support",
         "matched_keywords": ["일사편리", "부동산정보조회", "토지대장", "건축물대장", "개별공시지가", "국토교통부"]
       },
+      {
+        "title": "서울사랑상품권(서울페이+) 앱 다운로드 및 누리집 바로가기",
+        "link": "/seoul-pay",
+        "category": "government_support",
+        "matched_keywords": ["서울사랑상품권", "서울페이+", "서울페이플러스", "앱다운로드", "누리집", "상품권구매"]
+      }
     ],
     "finance_investment": [
       {
