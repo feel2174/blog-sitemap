@@ -62,15 +62,15 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">zu</span>
+                <span className="text-white font-bold text-sm">info</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold">zucca100.com</span>
+                <span className="text-xl font-bold">유용한 혜택 정보</span>
                 <span className="text-sm text-gray-400">혜택 정보 사이트맵</span>
               </div>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              정부 지원금부터 세금 환급까지, 실제 받을 수 있는 혜택 정보를 카테고리별로 정리한 zucca100.com의 사이트맵입니다. 
+              정부 지원금부터 세금 환급까지, 실제 받을 수 있는 혜택 정보를 카테고리별로 정리한 사이트맵입니다. 
               즐겨찾기 추가 후 더 많은 정보를 확인해보세요.
             </p>
             
@@ -125,7 +125,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2025 zucca100.com. 모든 권리 보유.
+            © 2025 유용한 혜택 정보. 모든 권리 보유.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">

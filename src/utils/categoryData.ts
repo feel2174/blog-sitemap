@@ -16,7 +16,7 @@ const categorizedData: CategorizedData = {
       "description": "건강 & 웰빙"
     },
     "technology": {
-      "count": 10,
+      "count": 11,
       "description": "기술 & IT"
     },
     "lifestyle": {
@@ -493,6 +493,12 @@ const categorizedData: CategorizedData = {
         "link": "/bandisoft",
         "category": "technology",
         "matched_keywords": ["반디집", "반디소프트", "압축프로그램", "꿀뷰", "꿀캠", "반디뷰", "다운로드"]
+      },
+      {
+        "title": "셋로그(Setlog) 앱 다운로드 및 설치 안내 | 안드로이드, 아이폰 바로가기",
+        "link": "/setlog",
+        "category": "technology",
+        "matched_keywords": ["셋로그", "Setlog", "앱다운로드", "채팅앱", "안드로이드", "아이폰"]
       }
     ],
     "lifestyle": [
