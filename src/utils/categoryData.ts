@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 41,
+      "count": 42,
       "description": "라이프스타일"
     }
   },
@@ -508,6 +508,12 @@ const categorizedData: CategorizedData = {
       }
     ],
     "lifestyle": [
+      {
+        "title": "Esports World Cup LoL 생중계 및 경기 일정 안내 | 네이버 e스포츠",
+        "link": "/ewc-lol",
+        "category": "lifestyle",
+        "matched_keywords": ["EWC", "e스포츠", "롤중계", "리그오브레전드", "T1", "경기일정"]
+      },
       {
         "title": "무료 스포츠중계 블루티비 | 실시간 고화질 스포츠 중계 (해외축구, 야구, 농구)",
         "link": "/bluetv",
