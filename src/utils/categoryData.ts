@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 42,
+      "count": 43,
       "description": "라이프스타일"
     }
   },
@@ -508,6 +508,12 @@ const categorizedData: CategorizedData = {
       }
     ],
     "lifestyle": [
+      {
+        "title": "2026 경복궁 야간개장 예매 인터파크 티켓팅 바로가기",
+        "link": "/gyeongbokgung-night",
+        "category": "lifestyle",
+        "matched_keywords": ["경복궁", "야간개장", "인터파크", "국가유산청"]
+      },
       {
         "title": "Esports World Cup LoL 생중계 및 경기 일정 안내 | 네이버 e스포츠",
         "link": "/ewc-lol",
