@@ -8,13 +8,10 @@ export default function GyeongbokgungContent() {
     <div className="min-h-screen bg-[#050505] text-white selection:bg-[#cda661] selection:text-black font-sans pb-20">
       {/* Background Image */}
       <div className="fixed inset-0 z-0">
-        <Image
+        <img
           src="/gyeongbokgung-bg.png"
           alt="경복궁 야간개장 배경"
-          fill
-          priority
-          quality={100}
-          className="object-cover opacity-30"
+          className="object-cover w-full h-full opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/80 to-[#050505]"></div>
       </div>
