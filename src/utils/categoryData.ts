@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 36,
+      "count": 37,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -247,6 +247,12 @@ const categorizedData: CategorizedData = {
         "link": "/seoul-pay",
         "category": "government_support",
         "matched_keywords": ["서울사랑상품권", "서울페이+", "서울페이플러스", "앱다운로드", "누리집", "상품권구매"]
+      },
+      {
+        "title": "2026 청년내일저축계좌 신청 및 모의계산 완벽 가이드",
+        "link": "/youth-savings",
+        "category": "government_support",
+        "matched_keywords": ["청년내일저축계좌", "모의계산", "청년저축", "지원금신청", "복지로", "청년도약계좌"]
       }
     ],
     "finance_investment": [
