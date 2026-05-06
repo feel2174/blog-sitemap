@@ -16,7 +16,7 @@ const categorizedData: CategorizedData = {
       "description": "건강 & 웰빙"
     },
     "technology": {
-      "count": 11,
+      "count": 12,
       "description": "기술 & IT"
     },
     "lifestyle": {
@@ -505,6 +505,12 @@ const categorizedData: CategorizedData = {
         "link": "/setlog",
         "category": "technology",
         "matched_keywords": ["셋로그", "Setlog", "앱다운로드", "채팅앱", "안드로이드", "아이폰"]
+      },
+      {
+        "title": "애니데스크(AnyDesk) 무료 다운로드 | Windows 원격 제어 프로그램",
+        "link": "/anydesk",
+        "category": "technology",
+        "matched_keywords": ["애니데스크", "AnyDesk", "원격제어", "원격프로그램", "다운로드", "PC원격"]
       }
     ],
     "lifestyle": [
