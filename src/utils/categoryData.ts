@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 44,
+      "count": 45,
       "description": "라이프스타일"
     }
   },
@@ -795,6 +795,12 @@ const categorizedData: CategorizedData = {
         "link": "/charlie-puth",
         "category": "lifestyle",
         "matched_keywords": ["찰리푸스", "CharliePuth", "내한공연", "티켓예매", "라이브네이션", "콘서트"]
+      },
+      {
+        "title": "2026 무한도전 런(무도런) 마라톤 신청 및 쿠팡플레이 예매 안내",
+        "link": "/mudo-run",
+        "category": "lifestyle",
+        "matched_keywords": ["무한도전", "무도런", "마라톤", "쿠팡플레이", "티켓예매", "무한도전런"]
       }
     ]
   }
