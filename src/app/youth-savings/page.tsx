@@ -52,6 +52,15 @@ export default function YouthSavingsPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
                     </svg>
                 </Link>
+                <Link
+                    href="https://zucca100.com/2026-reference-median-income-table-100-150-200/"
+                    className="flex items-center justify-center w-full px-6 py-4 bg-emerald-50 border border-emerald-200 text-emerald-800 font-[900] text-lg rounded-2xl shadow-sm hover:bg-emerald-100 transition-all duration-300 mt-1"
+                >
+                    2026년 기준 중위소득 표 (50%~150%) 확인
+                    <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </Link>
             </div>
 
             {/* Info Section */}
