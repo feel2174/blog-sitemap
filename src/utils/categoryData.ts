@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 43,
+      "count": 44,
       "description": "라이프스타일"
     }
   },
@@ -789,6 +789,12 @@ const categorizedData: CategorizedData = {
         "link": "/dolsing-n-mosol",
         "category": "lifestyle",
         "matched_keywords": ["돌싱N모솔", "연애기숙학교", "출연진", "인스타", "티빙", "쿠팡플레이", "mbcevery1"]
+      },
+      {
+        "title": "2026 찰리푸스(Charlie Puth) 내한공연 티켓 예매 일정 및 정보",
+        "link": "/charlie-puth",
+        "category": "lifestyle",
+        "matched_keywords": ["찰리푸스", "CharliePuth", "내한공연", "티켓예매", "라이브네이션", "콘서트"]
       }
     ]
   }
