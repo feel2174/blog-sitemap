@@ -159,7 +159,66 @@ export default function VotePage() {
                     <InfoButtons />
                 </div>
 
-                {/* 3. Main Poster Image */}
+             
+
+                {/* 4. Bottom Action Buttons */}
+                {/* <div className="w-full flex flex-col items-center mb-12">
+                    <ActionButtons />
+                    <InfoButtons />
+                </div> */}
+
+                {/* 4.5. Tour Schedule */}
+                <div className="w-full max-w-sm flex flex-col items-center px-4 mb-12">
+                    <div className="w-full text-center mb-6">
+                        <h3 className="text-xl font-black text-white mb-1 tracking-tight">무명전설 전국투어 일정</h3>
+                        <p className="text-xs text-blue-400 font-medium tracking-widest uppercase">2026 National Tour Concert</p>
+                    </div>
+                    
+                    <div className="w-full flex flex-col gap-3">
+                        {[
+                            { city: '안양', date: '2026.06.13', venue: '안양 정관장 아레나', hasLink: true },
+                            { city: '창원', date: '2026.06.20', venue: '창원컨벤션센터', hasLink: true },
+                            { city: '서울', date: '2026.06.27 ~ 06.28', venue: '올림픽홀', hasLink: true },
+                            { city: '울산', date: '2026.07.04', venue: '울산전시컨벤션센터', hasLink: true },
+                            { city: '춘천', date: '2026.07.11', venue: '강원대학교 백령아트센터', hasLink: true },
+                            { city: '대구', date: '2026.07.18', venue: 'EXCO 동관 Hall 5, 6', hasLink: false },
+                            { city: '수원', date: '2026.07.25', venue: '경희대학교 국제캠퍼스 선승관', hasLink: false },
+                            { city: '대전', date: '2026.08.01', venue: '대전컨벤션센터 제2전시장', hasLink: false },
+                        ].map((item, idx) => (
+                            <div key={idx} className="w-full bg-zinc-900/50 border border-white/10 rounded-xl p-4 flex flex-col gap-2 relative overflow-hidden group hover:border-blue-500/30 transition-colors">
+                                <div className="absolute top-0 left-0 w-1 h-full bg-blue-500/50" />
+                                <div className="flex justify-between items-center pl-2">
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-lg font-black text-blue-400">{item.city}</span>
+                                        <span className="text-[11px] font-medium text-zinc-400 bg-white/5 px-2 py-0.5 rounded-full">{item.date}</span>
+                                    </div>
+                                    {item.hasLink ? (
+                                        <Link 
+                                            href="https://zucca100.com/%eb%ac%b4%eb%aa%85%ec%a0%84%ec%84%a4-%ec%a0%84%ea%b5%ad%ed%88%ac%ec%96%b4-%ec%bd%98%ec%84%9c%ed%8a%b8-%ed%8b%b0%ec%bc%93-%ec%98%88%eb%a7%a4-%eb%b0%94%eb%a1%9c%ea%b0%80%ea%b8%b0/"
+                                            className="text-[11px] font-bold text-white bg-gradient-to-r from-fuchsia-600 to-purple-600 px-3 py-1.5 rounded-lg active:scale-95 transition-transform shadow-lg"
+                                        >
+                                            예매링크
+                                        </Link>
+                                    ) : (
+                                        <span className="text-[11px] font-medium text-zinc-500 bg-white/5 px-3 py-1.5 rounded-lg">
+                                            오픈예정
+                                        </span>
+                                    )}
+                                </div>
+                                <div className="pl-2">
+                                    <span className="text-[13px] font-medium text-zinc-300 flex items-center gap-1.5">
+                                        <svg className="w-3.5 h-3.5 text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                        {item.venue}
+                                    </span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+   {/* 3. Main Poster Image */}
                 <div className="w-full max-w-[420px] mb-10 relative rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,1)] border border-white/10 animate-[float_6s_ease-in-out_infinite]">
                     <Image 
                         src="/legend.png" 
@@ -170,13 +229,6 @@ export default function VotePage() {
                     />
                     <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#050b18] to-transparent pointer-events-none" />
                 </div>
-
-                {/* 4. Bottom Action Buttons */}
-                <div className="w-full flex flex-col items-center mb-12">
-                    <ActionButtons />
-                    <InfoButtons />
-                </div>
-
                 {/* 5. Footer Description */}
                 <div className="w-full text-center px-4 mb-12">
                      <p className="text-zinc-400 text-sm md:text-base font-medium leading-relaxed max-w-xs mx-auto opacity-80">
