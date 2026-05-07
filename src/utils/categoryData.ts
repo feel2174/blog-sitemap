@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 38,
+      "count": 39,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -26,6 +26,12 @@ const categorizedData: CategorizedData = {
   },
   "categories": {
     "government_support": [
+      {
+        "title": "2026 한일가왕전 재방송 다시보기 안내 | MBN 편성표 및 티빙·웨이브 바로가기",
+        "link": "/korea-japan-singer-replay",
+        "category": "government_support",
+        "matched_keywords": ["한일가왕전", "재방송", "다시보기", "편성표", "MBN", "티빙", "웨이브"]
+      },
       {
         "title": "2026 한일가왕전 투표 채널 바로가기 및 틱톡 라이트 다운로드 안내",
         "link": "/korea-japan-singer",
