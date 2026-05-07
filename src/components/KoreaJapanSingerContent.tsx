@@ -10,21 +10,18 @@ const LINKS = [
   {
     name: '2026 한일가왕전 투표 채널 바로가기',
     url: 'https://www.tiktok.com/@k_trot_king',
-    description: '틱톡 공식 채널에서 당신의 소중한 한 표를 행사하세요. 실시간 투표 현황과 비하인드 영상을 확인할 수 있습니다.',
     icon: '🗳️',
     color: 'from-pink-600 to-rose-700'
   },
   {
     name: '틱톡 라이트 (Android) 다운로드',
     url: 'https://play.google.com/store/apps/details?id=com.ss.android.ugc.tiktok.lite&hl=ko&gl=kr',
-    description: '안드로이드 기기에서 가볍고 빠른 틱톡 라이트로 투표에 참여하세요. 저용량으로 데이터 절약이 가능합니다.',
     icon: '🤖',
     color: 'from-blue-500 to-cyan-600'
   },
   {
     name: '틱톡 라이트 (iOS) 다운로드',
     url: 'https://apps.apple.com/kr/app/tiktok-lite/id6447160980',
-    description: '아이폰 및 아이패드 사용자를 위한 틱톡 라이트 앱 다운로드. 간편하게 로그인하고 한일가왕전 투표를 시작하세요.',
     icon: '🍎',
     color: 'from-gray-700 to-gray-900'
   }
@@ -82,9 +79,6 @@ export default function KoreaJapanSingerContent() {
                       {link.name}
                     </h3>
                   </div>
-                  <p className="text-slate-500 font-medium mb-8 flex-grow leading-relaxed break-keep text-center text-sm">
-                    {link.description}
-                  </p>
                   <button
                     onClick={() => handleLinkClick(link.url)}
                     className={`w-full py-4 rounded-2xl bg-gradient-to-r ${link.color} text-white font-black shadow-lg group-hover:shadow-xl transition-all flex items-center justify-center gap-2 mt-auto`}
