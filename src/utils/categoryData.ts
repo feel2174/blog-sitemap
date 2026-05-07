@@ -517,6 +517,12 @@ const categorizedData: CategorizedData = {
         "link": "/anydesk",
         "category": "technology",
         "matched_keywords": ["애니데스크", "AnyDesk", "원격제어", "원격프로그램", "다운로드", "PC원격"]
+      },
+      {
+        "title": "엡손 브라더 신도리코 삼성 프린터 드라이버 다운로드 및 설치 안내",
+        "link": "/printer-driver",
+        "category": "technology",
+        "matched_keywords": ["프린터", "프린터드라이버", "엡손", "브라더", "신도리코", "삼성프린터", "드라이버다운로드"]
       }
     ],
     "lifestyle": [
