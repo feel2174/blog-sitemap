@@ -253,6 +253,12 @@ const categorizedData: CategorizedData = {
         "link": "/youth-savings",
         "category": "government_support",
         "matched_keywords": ["청년내일저축계좌", "모의계산", "청년저축", "지원금신청", "복지로", "청년도약계좌"]
+      },
+      {
+        "title": "국민성장펀드(혁신성장펀드) 자세히보기 및 산업은행 가이드북 안내",
+        "link": "/national-growth-fund",
+        "category": "government_support",
+        "matched_keywords": ["국민성장펀드", "혁신성장펀드", "산업은행", "가이드북", "스타트업지원", "벤처지원"]
       }
     ],
     "finance_investment": [
