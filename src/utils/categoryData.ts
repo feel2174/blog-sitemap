@@ -813,6 +813,12 @@ const categorizedData: CategorizedData = {
         "link": "/realtor-exam",
         "category": "lifestyle",
         "matched_keywords": ["공인중개사", "기출문제", "정답해설", "공인중개사시험", "자격증", "다운로드"]
+      },
+      {
+        "title": "동대문엽기떡볶이 멤버십 앱 다운로드 및 혜택 안내",
+        "link": "/yupdduk-app",
+        "category": "lifestyle",
+        "matched_keywords": ["엽기떡볶이", "엽떡", "엽떡앱", "엽떡멤버십", "배달앱", "다운로드"]
       }
     ]
   }
