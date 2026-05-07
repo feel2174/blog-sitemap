@@ -3,7 +3,7 @@ import React from 'react';
 
 export const metadata = {
     title: '프린터 드라이버 다운로드 센터',
-    description: '엡손, 브라더, 신도리코, 삼성 등 주요 제조사의 프린터 드라이버를 쉽게 다운로드하세요.',
+    description: '캐논, 엡손, 브라더, 신도리코, 삼성 등 주요 제조사의 프린터 드라이버를 쉽게 다운로드하세요.',
 };
 
 const drivers = [
@@ -26,6 +26,11 @@ const drivers = [
         name: "삼성프린터 드라이버",
         url: "https://www.samsungsvc.co.kr/download",
         color: "#1428A0"
+    },
+    {
+        name: "캐논 프린터 드라이버",
+        url: "https://svc.kr.canon/solution/solutionList",
+        color: "#FF0000"
     }
 ];
 
