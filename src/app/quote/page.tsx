@@ -12,7 +12,7 @@ export default function QuotePage() {
 
     const handleDownloadClick = (url: string) => {
         setDownloadLink(url);
-        setShowInterstitial(true);
+        /* interstitial disabled */
         setCounter(3);
     };
 

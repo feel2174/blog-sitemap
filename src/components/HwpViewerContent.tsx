@@ -44,7 +44,7 @@ export default function HwpViewerContent() {
   const [counter, setCounter] = useState(3);
 
   const handleDownloadClick = () => {
-    setShowInterstitial(true);
+    /* interstitial disabled */
     setCounter(3);
   };
 

@@ -6,6 +6,7 @@ import ScrollIndicator from '@/components/ScrollIndicator';
 import { HeaderAd, InContentAd, FooterAd } from '@/components/AdSense';
 import { getCategorizedPosts } from '@/utils/categoryData';
 import CoupangAds from '@/components/CoupangAds';
+import InfinitePostList from '@/components/InfinitePostList';
 
 export default function Home() {
   const categorizedData = getCategorizedPosts();
@@ -112,6 +113,11 @@ export default function Home() {
                 </a>
               </div>
             </div>
+          </section>
+
+          {/* Infinite Scroll Support Grants Section */}
+          <section className="pt-12 pb-8 bg-gray-50">
+            <InfinitePostList posts={categories.government_support || []} />
           </section>
 
           {/* Category Summary Section */}

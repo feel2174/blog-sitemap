@@ -12,7 +12,7 @@ export default function ResignationLetterPage() {
 
     const handleDownloadClick = (url: string) => {
         setDownloadLink(url);
-        setShowInterstitial(true);
+        /* interstitial disabled */
         setCounter(3);
     };
 

@@ -19,7 +19,7 @@ export default function RealEstateContractPage() {
 
   const handleDownloadClick = (url: string) => {
     setDownloadLink(url);
-    setShowInterstitial(true);
+    /* interstitial disabled */
     setCounter(3);
   };
 

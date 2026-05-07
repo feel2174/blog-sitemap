@@ -13,8 +13,8 @@ export default function CoupangPlayContent() {
   const [counter, setCounter] = useState(3);
 
   const handleLinkClick = (url: string) => {
-    setTargetLink(url);
-    setShowInterstitial(true);
+    window.location.href = url;
+    return;
     setCounter(3);
   };
 
