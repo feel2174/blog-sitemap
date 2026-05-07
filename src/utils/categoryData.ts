@@ -807,6 +807,12 @@ const categorizedData: CategorizedData = {
         "link": "/mudo-run",
         "category": "lifestyle",
         "matched_keywords": ["무한도전", "무도런", "마라톤", "쿠팡플레이", "티켓예매", "무한도전런"]
+      },
+      {
+        "title": "공인중개사 기출문제 및 정답해설 무료 다운로드",
+        "link": "/realtor-exam",
+        "category": "lifestyle",
+        "matched_keywords": ["공인중개사", "기출문제", "정답해설", "공인중개사시험", "자격증", "다운로드"]
       }
     ]
   }
