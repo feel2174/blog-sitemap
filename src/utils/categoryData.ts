@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 37,
+      "count": 38,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -26,6 +26,12 @@ const categorizedData: CategorizedData = {
   },
   "categories": {
     "government_support": [
+      {
+        "title": "2026 한일가왕전 투표 채널 바로가기 및 틱톡 라이트 다운로드 안내",
+        "link": "/korea-japan-singer",
+        "category": "government_support",
+        "matched_keywords": ["한일가왕전", "2026한일가왕전", "틱톡라이트", "투표", "가왕전"]
+      },
       {
         "title": "2026년 근로장려금 & 자녀장려금 신청 완벽 가이드 | 최대 330만원 지급",
         "link": "/earned-income-tax-credit-2026-guide",
