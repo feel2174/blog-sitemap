@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 40,
+      "count": 41,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -26,6 +26,12 @@ const categorizedData: CategorizedData = {
   },
   "categories": {
     "government_support": [
+      {
+        "title": "공시지가 이의신청 방법 및 양식 다운로드 | 개별·공동주택 공시가격 바로가기",
+        "link": "/realtyprice-objection",
+        "category": "government_support",
+        "matched_keywords": ["공시지가", "이의신청", "공시가격", "개별공시지가", "공동주택공시가격", "이의신청양식", "이의신청방법"]
+      },
       {
         "title": "2026 고3 5월 모의고사 등급컷 | EBS·이투스·메가스터디 학력평가 결과 바로가기",
         "link": "/grade-cut-may",
