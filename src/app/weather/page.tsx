@@ -19,6 +19,13 @@ export default function WeatherPage() {
       color: "bg-blue-500",
     },
     {
+      title: "장마 예보 및 예측 정보",
+      description: "기상청 공식 장마 시작·종료 예측과 강수 전망을 확인하세요.",
+      url: "https://www.weather.go.kr/w/index.do",
+      icon: "🌧️",
+      color: "bg-teal-500",
+    },
+    {
       title: "전국 동네 예보",
       description: "내가 사는 동네의 시간별 상세 예보를 확인해보세요.",
       url: "https://www.weather.go.kr/w/wnuri-fct2021/main/current-weather.do",
@@ -46,7 +53,8 @@ export default function WeatherPage() {
       icon: "🏜️",
       color: "bg-orange-500",
       internal: true,
-    }
+    },
+
   ];
 
   return (
@@ -55,7 +63,7 @@ export default function WeatherPage() {
       <div className="relative bg-gradient-to-br from-blue-600 to-indigo-700 py-24 px-4 overflow-hidden border-b border-white/10 shadow-2xl">
         <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 translate-y-24 -translate-x-24 w-[500px] h-[500px] bg-blue-400/10 rounded-full blur-3xl pointer-events-none"></div>
-        
+
         <div className="max-w-4xl mx-auto flex flex-col items-center text-center relative z-10">
           <div className="w-20 h-20 bg-white/20 backdrop-blur-md rounded-3xl flex items-center justify-center mb-8 shadow-xl border border-white/30 animate-bounce">
             <span className="text-4xl text-white">🌤️</span>
@@ -73,7 +81,7 @@ export default function WeatherPage() {
       <div className="max-w-4xl mx-auto -mt-12 px-4 relative z-20">
         <div className="grid gap-6">
           {weatherLinks.map((link, idx) => (
-            <Link 
+            <Link
               key={idx}
               href={link.url}
               className="group flex flex-col sm:flex-row items-center gap-6 p-8 bg-white rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-white hover:border-blue-200 hover:shadow-[0_40px_80px_rgba(37,99,235,0.1)] transition-all duration-500 hover:-translate-y-1.5"
@@ -97,18 +105,18 @@ export default function WeatherPage() {
             </Link>
           ))}
         </div>
-        <CoupangAds 
-          keyword="장우산" 
+        <CoupangAds
+          keyword="장우산"
           title="☔ 비 오는 날 완벽 대비!"
           hookText="오늘의 예보를 확인하셨나요? 갑작스런 비에도 걱정 없는 튼튼한 장우산 & 레인코트 특가 리스트입니다."
         />
 
         {/* Footer Info */}
         <div className="mt-16 text-center">
-            <p className="text-slate-400 text-sm font-medium">
-              본 서비스는 기상청 공식 정보를 보다 쉽게 접근하기 위해 제공되는 링크 안내 페이지입니다. <br />
-              정확한 기상 발령 사항은 반드시 기상청 날씨누리 홈페이지를 참고해 주세요.
-            </p>
+          <p className="text-slate-400 text-sm font-medium">
+            본 서비스는 기상청 공식 정보를 보다 쉽게 접근하기 위해 제공되는 링크 안내 페이지입니다. <br />
+            정확한 기상 발령 사항은 반드시 기상청 날씨누리 홈페이지를 참고해 주세요.
+          </p>
         </div>
       </div>
     </div>
