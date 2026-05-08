@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 45,
+      "count": 46,
       "description": "라이프스타일"
     }
   },
@@ -556,6 +556,12 @@ const categorizedData: CategorizedData = {
       }
     ],
     "lifestyle": [
+      {
+        "title": "홈플러스 영업중단 점포 37곳 리스트 (2026년 5월) | 잠정 휴점 매장 안내",
+        "link": "/homeplus-closure",
+        "category": "lifestyle",
+        "matched_keywords": ["홈플러스", "영업중단", "폐점", "홈플러스폐점", "기업회생", "홈플러스상품권", "휴점매장"]
+      },
       {
         "title": "2026 경복궁 야간개장 예매 인터파크 티켓팅 바로가기",
         "link": "/gyeongbokgung-night",
