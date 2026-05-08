@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 39,
+      "count": 40,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -26,6 +26,12 @@ const categorizedData: CategorizedData = {
   },
   "categories": {
     "government_support": [
+      {
+        "title": "2026 고3 5월 모의고사 등급컷 | EBS·이투스·메가스터디 학력평가 결과 바로가기",
+        "link": "/grade-cut-may",
+        "category": "government_support",
+        "matched_keywords": ["5월모의고사", "등급컷", "고3모의고사", "학력평가", "등급컷확인", "EBS등급컷", "메가스터디등급컷", "이투스등급컷"]
+      },
       {
         "title": "2026 한일가왕전 재방송 다시보기 안내 | MBN 편성표 및 티빙·웨이브 바로가기",
         "link": "/korea-japan-singer-replay",
