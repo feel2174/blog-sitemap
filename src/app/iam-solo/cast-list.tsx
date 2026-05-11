@@ -18,7 +18,7 @@ export default function CastList() {
     const maleCast = [
         { name: '경수', url: 'https://www.instagram.com/root_optical/', bg: 'from-blue-100 to-cyan-200', text: 'text-blue-600', hover: 'hover:border-blue-400 hover:shadow-blue-200' },
         { name: '영수', url: 'https://www.instagram.com/_dryhands/', bg: 'from-blue-100 to-cyan-200', text: 'text-blue-600', hover: 'hover:border-blue-400 hover:shadow-blue-200' },
-        { name: '영호', url: 'https://www.instagram.com/jhw1773/', bg: 'from-sky-100 to-blue-200', text: 'text-sky-600', hover: 'hover:border-sky-300 hover:shadow-sky-200' },
+        { name: '영호', url: 'https://www.instagram.com/joijonhon/', bg: 'from-sky-100 to-blue-200', text: 'text-sky-600', hover: 'hover:border-sky-300 hover:shadow-sky-200' },
         { name: '영식', url: 'https://www.instagram.com/shimpodo/', bg: 'from-indigo-100 to-purple-200', text: 'text-indigo-600', hover: 'hover:border-indigo-400 hover:shadow-indigo-200' },
         { name: '광수', url: 'https://www.instagram.com/ps_mooon/', bg: 'from-cyan-100 to-blue-100', text: 'text-cyan-600', hover: 'hover:border-cyan-300 hover:shadow-cyan-200' },
         { name: '상철', url: 'https://www.instagram.com/rtmx_11/', bg: 'from-slate-100 to-blue-200', text: 'text-slate-600', hover: 'hover:border-slate-400 hover:shadow-slate-200' }
