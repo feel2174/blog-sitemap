@@ -97,6 +97,46 @@ export default function StockAccountPage() {
                                         <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"/></svg>
                                     </span>
                                 </Link>
+
+                                <Link href="https://www.kbsec.com/go.able?linkcd=m06020000" className="flex flex-col items-center justify-center p-6 bg-gradient-to-br from-[#FFCC00] to-[#E6B800] text-slate-900 rounded-3xl transition-all duration-300 hover:scale-105 hover:shadow-[0_15px_30px_-5px_rgba(255,204,0,0.4)] group">
+                                    <span className="text-xl font-black mb-1">KB증권</span>
+                                    <span className="text-xs text-slate-800 font-bold tracking-wider flex items-center">
+                                        바로 개설하기
+                                        <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"/></svg>
+                                    </span>
+                                </Link>
+
+                                <Link href="https://www.kakaopaysec.com/guide/account/dynamicPage.do" className="flex flex-col items-center justify-center p-6 bg-gradient-to-br from-[#FEE500] to-[#E5CE00] text-slate-900 rounded-3xl transition-all duration-300 hover:scale-105 hover:shadow-[0_15px_30px_-5px_rgba(254,229,0,0.4)] group">
+                                    <span className="text-xl font-black mb-1">카카오증권</span>
+                                    <span className="text-xs text-slate-800 font-bold tracking-wider flex items-center">
+                                        바로 개설하기
+                                        <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"/></svg>
+                                    </span>
+                                </Link>
+
+                                <Link href="https://m.shinhansec.com/mweb/acct/mact/amact0013" className="flex flex-col items-center justify-center p-6 bg-gradient-to-br from-[#0046FF] to-[#0038CC] text-white rounded-3xl transition-all duration-300 hover:scale-105 hover:shadow-[0_15px_30px_-5px_rgba(0,70,255,0.4)] group">
+                                    <span className="text-xl font-black mb-1">신한투자증권</span>
+                                    <span className="text-xs text-white/80 font-bold tracking-wider flex items-center">
+                                        바로 개설하기
+                                        <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"/></svg>
+                                    </span>
+                                </Link>
+
+                                <Link href="https://www.hanaw.com/main/customer/openAccount/CS_180100_P.cmd" className="flex flex-col items-center justify-center p-6 bg-gradient-to-br from-[#008485] to-[#006A6A] text-white rounded-3xl transition-all duration-300 hover:scale-105 hover:shadow-[0_15px_30px_-5px_rgba(0,132,133,0.4)] group">
+                                    <span className="text-xl font-black mb-1">하나증권</span>
+                                    <span className="text-xs text-white/80 font-bold tracking-wider flex items-center">
+                                        바로 개설하기
+                                        <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"/></svg>
+                                    </span>
+                                </Link>
+
+                                <Link href="https://www.eugenefn.com/comm/msgDetail.do?msgId=508968&menu_id=03060500&menu_level=3&boardYn=Y&boardUrl=/serv/svsc/svsc501r" className="flex flex-col items-center justify-center p-6 bg-gradient-to-br from-[#005E9E] to-[#004B7E] text-white rounded-3xl transition-all duration-300 hover:scale-105 hover:shadow-[0_15px_30px_-5px_rgba(0,94,158,0.4)] group">
+                                    <span className="text-xl font-black mb-1">유진투자증권</span>
+                                    <span className="text-xs text-white/80 font-bold tracking-wider flex items-center">
+                                        바로 개설하기
+                                        <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"/></svg>
+                                    </span>
+                                </Link>
                             </div>
                         </div>
                     </div>
