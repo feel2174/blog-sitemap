@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 17,
+      "count": 18,
       "description": "금융 & 투자"
     },
     "health_wellness": {
@@ -286,6 +286,12 @@ const categorizedData: CategorizedData = {
       }
     ],
     "finance_investment": [
+      {
+        "title": "어카운트인포 (계좌정보통합관리) 웹 바로가기 및 앱 다운로드",
+        "link": "/account-info",
+        "category": "finance_investment",
+        "matched_keywords": ["어카운트인포", "계좌정보통합관리", "휴면계좌조회", "카드포인트통합조회", "금융결제원"]
+      },
       {
         "title": "ISA 계좌 단점 총정리 | 개설 전 꼭 확인해야 할 7가지 주의사항",
         "link": "https://zucca100.com/isa-%ea%b3%84%ec%a2%8c-%eb%8b%a8%ec%a0%90-%ec%b4%9d%ec%a0%95%eb%a6%ac-%ea%b0%9c%ec%84%a4-%ec%a0%84-%ea%bc%ad-%ed%99%95%ec%9d%b8%ed%95%b4%ec%95%bc-%ed%95%a0-7%ea%b0%80%ec%a7%80-%ec%a3%bc%ec%9d%98/",
