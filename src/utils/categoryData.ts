@@ -16,7 +16,7 @@ const categorizedData: CategorizedData = {
       "description": "건강 & 웰빙"
     },
     "technology": {
-      "count": 12,
+      "count": 14,
       "description": "기술 & IT"
     },
     "lifestyle": {
@@ -470,6 +470,18 @@ const categorizedData: CategorizedData = {
       }
     ],
     "technology": [
+      {
+        "title": "직장인 필수 엑셀 함수 총정리 (VLOOKUP, SUMIFS, XLOOKUP 등)",
+        "link": "/excel-functions",
+        "category": "technology",
+        "matched_keywords": ["엑셀", "엑셀함수", "VLOOKUP", "XLOOKUP", "SUMIFS", "실무엑셀"]
+      },
+      {
+        "title": "마누스 AI (Manus AI) 앱 다운로드 및 할인 정보 안내 (안드로이드, iOS)",
+        "link": "/manus-ai",
+        "category": "technology",
+        "matched_keywords": ["마누스AI", "ManusAI", "마누스", "AI앱", "마누스할인", "앱다운로드"]
+      },
       {
         "title": "iOS 26 베타 삭제하는 방법 | ios 26 베타에서 정식 버전으로 다운그레이드 하는 방법",
         "link": "https://zucca100.com/ios-26-%eb%b2%a0%ed%83%80-%ec%82%ad%ec%a0%9c%ed%95%98%eb%8a%94-%eb%b0%a9%eb%b2%95-ios-26-%eb%b2%a0%ed%83%80%ec%97%90%ec%84%9c-%ec%a0%95%ec%8b%9d-%eb%b2%84%ec%a0%84%ec%9c%bc%eb%a1%9c-%eb%8b%a4/",
