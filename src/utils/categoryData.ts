@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 46,
+      "count": 47,
       "description": "라이프스타일"
     }
   },
@@ -574,6 +574,12 @@ const categorizedData: CategorizedData = {
       }
     ],
     "lifestyle": [
+      {
+        "title": "사과게임 (과일박스) 싱글 및 멀티 플레이 (온라인 대전) 바로가기",
+        "link": "/apple-game",
+        "category": "lifestyle",
+        "matched_keywords": ["사과게임", "과일박스", "Fruit Box", "사과게임싱글", "사과게임멀티", "두뇌게임"]
+      },
       {
         "title": "홈플러스 영업중단 점포 37곳 리스트 (2026년 5월) | 잠정 휴점 매장 안내",
         "link": "/homeplus-closure",
