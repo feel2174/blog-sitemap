@@ -145,6 +145,14 @@ export default function StockAccountPage() {
                                         <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"/></svg>
                                     </span>
                                 </Link>
+
+                                <Link href="https://m.hanwhawm.com:9090/M/nftf/main/index.cmd#noback" className="flex flex-col items-center justify-center p-6 bg-gradient-to-br from-[#F37321] to-[#D85C0A] text-white rounded-3xl transition-all duration-300 hover:scale-105 hover:shadow-[0_15px_30px_-5px_rgba(243,115,33,0.4)] group">
+                                    <span className="text-xl font-black mb-1">한화투자증권</span>
+                                    <span className="text-xs text-white/80 font-bold tracking-wider flex items-center">
+                                        바로 개설하기
+                                        <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"/></svg>
+                                    </span>
+                                </Link>
                             </div>
                         </div>
                     </div>
