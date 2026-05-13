@@ -34,15 +34,6 @@ export default function AccountInfoPage() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
             ),
             color: 'from-slate-600 to-slate-800'
-        },
-        {
-            title: '전국 지방선거 사전투표소 찾기',
-            desc: '중앙선거관리위원회 접속',
-            url: 'https://www.nec.go.kr/site/lvt/main.do#',
-            icon: (
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8l-4 4 4 4"></path><path d="M16 12H8"></path></svg>
-            ),
-            color: 'from-rose-500 to-red-700'
         }
     ];
 
