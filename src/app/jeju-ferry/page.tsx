@@ -64,6 +64,31 @@ export default function JejuFerryPage() {
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-slate-500 group-hover:text-cyan-300 group-hover:translate-x-1 transition-all"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
                         </div>
                     </Link>
+
+                    <Link 
+                        href="https://www.icpa.or.kr/icferry/mobile/index.do"
+                        className="group relative flex items-center p-7 bg-slate-900/60 hover:bg-slate-800/90 border border-white/10 hover:border-teal-500/50 rounded-[2.5rem] transition-all duration-500 backdrop-blur-3xl shadow-2xl hover:shadow-teal-900/20 hover:-translate-y-2 active:scale-95 overflow-hidden"
+                        style={{ animation: 'fadeIn 0.6s ease-out backwards 150ms' }}
+                    >
+                        <div className="absolute left-0 top-0 w-2 h-full bg-gradient-to-b from-teal-500 to-emerald-600 opacity-40 group-hover:opacity-100 transition-all duration-500 group-hover:w-3" />
+                        
+                        <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-500 to-emerald-600 text-white shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:-rotate-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg>
+                        </div>
+                        
+                        <div className="ml-6 flex-1 pr-6 overflow-hidden">
+                            <h3 className="text-xl font-bold text-white group-hover:text-teal-200 transition-colors truncate">
+                                인천 제주도 배편 예약
+                            </h3>
+                            <p className="text-slate-400 text-sm mt-1.5 font-light group-hover:text-slate-300 transition-colors">
+                                인천항만공사 공식 사이트
+                            </p>
+                        </div>
+                        
+                        <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-teal-500/20 transition-colors shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-slate-500 group-hover:text-teal-300 group-hover:translate-x-1 transition-all"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                        </div>
+                    </Link>
                 </div>
 
                 {/* Coupang Ad Section */}
