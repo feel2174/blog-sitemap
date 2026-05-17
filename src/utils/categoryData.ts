@@ -879,6 +879,12 @@ const categorizedData: CategorizedData = {
         "link": "/yupdduk-app",
         "category": "lifestyle",
         "matched_keywords": ["엽기떡볶이", "엽떡", "엽떡앱", "엽떡멤버십", "배달앱", "다운로드"]
+      },
+      {
+        "title": "상품권 사용처 바로가기 | 신세계·롯데·문화·현대·SK 상품권 가맹점 안내",
+        "link": "/gift-voucher",
+        "category": "lifestyle",
+        "matched_keywords": ["상품권사용처", "신세계상품권", "롯데상품권", "문화상품권", "현대상품권", "SK상품권", "상품권가맹점", "상품권어디서"]
       }
     ]
   }
