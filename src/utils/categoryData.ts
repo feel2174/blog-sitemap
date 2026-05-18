@@ -891,6 +891,12 @@ const categorizedData: CategorizedData = {
         "link": "/myungjunsul-fancafe",
         "category": "lifestyle",
         "matched_keywords": ["무명전설", "팬카페", "성리", "장한별", "최우진", "정연호", "한가락", "김태웅", "문은석", "김한율", "이루네", "이대환"]
+      },
+      {
+        "title": "전국 KTX 시간표 조회 및 예매 안내 | 코레일 공식 홈페이지 바로가기",
+        "link": "/ktx-timetable",
+        "category": "lifestyle",
+        "matched_keywords": ["KTX", "KTX시간표", "코레일", "기차시간표", "열차시간표", "기차표예매", "KTX예매"]
       }
     ]
   }
