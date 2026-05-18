@@ -885,6 +885,12 @@ const categorizedData: CategorizedData = {
         "link": "/gift-voucher",
         "category": "lifestyle",
         "matched_keywords": ["상품권사용처", "신세계상품권", "롯데상품권", "문화상품권", "현대상품권", "SK상품권", "상품권가맹점", "상품권어디서"]
+      },
+      {
+        "title": "무명전설 출연진 팬카페 모음 | 성리, 장한별, 최우진, 정연호 등 10인 공식 팬카페 바로가기",
+        "link": "/myungjunsul-fancafe",
+        "category": "lifestyle",
+        "matched_keywords": ["무명전설", "팬카페", "성리", "장한별", "최우진", "정연호", "한가락", "김태웅", "문은석", "김한율", "이루네", "이대환"]
       }
     ]
   }
