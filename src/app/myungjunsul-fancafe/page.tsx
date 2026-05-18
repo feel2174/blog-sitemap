@@ -155,52 +155,56 @@ export default function MyungjunsulFancafePage() {
       {/* Cards */}
       <div className="max-w-2xl mx-auto px-4 py-10 flex flex-col gap-4">
         {FANCAFES.map((v, i) => (
-          <button
-            key={i}
-            onClick={() => handleClick(v.url)}
-            className={`w-full group bg-white rounded-2xl p-5 sm:p-6 shadow-lg ${v.shadow} border border-slate-100 flex items-center gap-4 sm:gap-5 transition-all duration-200 hover:scale-[1.015] active:scale-[0.98] ring-2 ring-transparent hover:${v.ring} text-left`}
-          >
-            {/* Icon */}
-            <div
-              className={`flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br ${v.gradient} flex items-center justify-center text-2xl sm:text-3xl shadow-md`}
+          <div key={i} className="relative group/wrapper">
+            {/* Pulse Glow Effect */}
+            <div className={`absolute -inset-0.5 rounded-2xl bg-gradient-to-r ${v.gradient} opacity-40 blur-md animate-pulse group-hover/wrapper:opacity-70 transition duration-500`}></div>
+            
+            <button
+              onClick={() => handleClick(v.url)}
+              className={`relative w-full group bg-white rounded-2xl p-5 sm:p-6 shadow-lg ${v.shadow} border border-slate-100 flex items-center gap-4 sm:gap-5 transition-all duration-200 hover:scale-[1.015] active:scale-[0.98] ring-1 ring-slate-200/50 text-left`}
             >
-              {v.emoji}
-            </div>
-
-            {/* Text */}
-            <div className="flex-grow min-w-0">
-              <span
-                className={`inline-block text-[10px] font-black px-2 py-0.5 rounded-full mb-1.5 ${v.badge}`}
+              {/* Icon */}
+              <div
+                className={`flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br ${v.gradient} flex items-center justify-center text-2xl sm:text-3xl shadow-md`}
               >
-                {v.badgeText}
-              </span>
-              <h2 className="text-base sm:text-lg font-black text-slate-800 leading-tight mb-0.5">
-                {v.name}
-              </h2>
-              <p className="text-xs sm:text-sm text-slate-400 font-medium truncate">
-                {v.desc}
-              </p>
-            </div>
+                {v.emoji}
+              </div>
 
-            {/* Arrow */}
-            <div
-              className={`flex-shrink-0 w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-gradient-to-br group-hover:${v.gradient} group-hover:text-white transition-all duration-200`}
-            >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+              {/* Text */}
+              <div className="flex-grow min-w-0">
+                <span
+                  className={`inline-block text-[10px] font-black px-2 py-0.5 rounded-full mb-1.5 ${v.badge}`}
+                >
+                  {v.badgeText}
+                </span>
+                <h2 className="text-base sm:text-lg font-black text-slate-800 leading-tight mb-0.5">
+                  {v.name}
+                </h2>
+                <p className="text-xs sm:text-sm text-slate-400 font-medium truncate">
+                  {v.desc}
+                </p>
+              </div>
+
+              {/* Arrow */}
+              <div
+                className={`flex-shrink-0 w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-gradient-to-br group-hover:${v.gradient} group-hover:text-white transition-all duration-200`}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2.5"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </div>
-          </button>
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2.5"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
         ))}
       </div>
 
