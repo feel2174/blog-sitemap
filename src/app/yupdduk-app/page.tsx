@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import { FaApple, FaGooglePlay } from 'react-icons/fa';
 
 export const metadata = {
     title: '동대문엽기떡볶이 앱 다운로드',
@@ -29,27 +30,27 @@ export default function YupddukAppPage() {
                 </p>
                 
                 {/* 앱 다운로드 버튼 */}
-                <div className="flex flex-col gap-3 w-full max-w-[180px]">
+                <div className="flex flex-col gap-3 w-full max-w-[200px]">
                     <Link 
                         href="https://apps.apple.com/kr/app/%EC%97%BD%EA%B8%B0%EB%96%A1%EB%B3%B6%EC%9D%B4/id1190023113"
-                        className="w-full transition-transform hover:scale-105 active:scale-95"
+                        className="w-full flex items-center justify-center gap-2 bg-black text-white rounded-xl py-3 px-4 hover:bg-gray-800 transition-all transform hover:scale-105 active:scale-95"
                     >
-                        <img 
-                            src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" 
-                            alt="Download on the App Store" 
-                            className="w-full h-auto"
-                        />
+                        <FaApple className="text-[28px]" />
+                        <div className="flex flex-col items-start text-left">
+                            <span className="text-[10px] leading-[1] text-gray-300">Download on the</span>
+                            <span className="text-[18px] font-semibold leading-[1.1] tracking-tight">App Store</span>
+                        </div>
                     </Link>
                     
                     <Link 
                         href="https://play.google.com/store/apps/details?id=com.yupdduk.morder&hl=ko"
-                        className="w-full transition-transform hover:scale-105 active:scale-95"
+                        className="w-full flex items-center justify-center gap-2 bg-black text-white rounded-xl py-3 px-4 hover:bg-gray-800 transition-all transform hover:scale-105 active:scale-95"
                     >
-                        <img 
-                            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
-                            alt="Get it on Google Play" 
-                            className="w-full h-auto"
-                        />
+                        <FaGooglePlay className="text-[24px]" />
+                        <div className="flex flex-col items-start text-left">
+                            <span className="text-[10px] leading-[1] text-gray-300">GET IT ON</span>
+                            <span className="text-[18px] font-semibold leading-[1.1] tracking-tight">Google Play</span>
+                        </div>
                     </Link>
                 </div>
             </div>

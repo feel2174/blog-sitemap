@@ -128,10 +128,10 @@ export default function Footer() {
             © 2025 유용한 혜택 정보. 모든 권리 보유.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
+            <Link href="/privacy" prefetch={false} className="text-gray-400 hover:text-white text-sm transition-colors">
               개인정보처리방침
             </Link>
-            <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
+            <Link href="/terms" prefetch={false} className="text-gray-400 hover:text-white text-sm transition-colors">
               이용약관
             </Link>
           </div>

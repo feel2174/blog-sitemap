@@ -2,11 +2,18 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  experimental: {
+    staleTimes: {
+      dynamic: 300, // 동적 데이터 5분 캐시
+      static: 600,  // 정적 데이터 10분 캐시
+    },
+  },
   poweredByHeader: false,
   compress: true,
   generateEtags: true,
   reactStrictMode: true,
   images: {
+    minimumCacheTTL: 31536000,
     remotePatterns: [
       {
         protocol: 'https',
@@ -41,6 +48,15 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     return [
+      {
+        source: '/(.*\\.(?:svg|png|jpg|jpeg|gif|webp|avif|ico|woff|woff2|eot|ttf|otf))',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
       {
         source: '/(.*)',
         headers: [
