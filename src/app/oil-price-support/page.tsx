@@ -60,6 +60,23 @@ export default function OilPriceSupportPage() {
                     </p>
                 </div>
 
+                {/* Usage Guide Button */}
+                <Link
+                    href="https://www.korea.kr/multi/visualNewsView.do?newsId=148964625&pWise=main&pWiseMain=R1"
+                    className="w-full mb-6 group relative flex items-center justify-between bg-gradient-to-r from-amber-500 to-orange-500 p-4 sm:p-5 rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 active:scale-95"
+                >
+                    <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white backdrop-blur-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                        </div>
+                        <div className="flex flex-col text-left">
+                            <span className="text-white/90 text-[11px] font-bold tracking-tight mb-0.5">정부 공식 안내</span>
+                            <span className="text-white font-black text-base sm:text-lg tracking-tight">고유가 지원금 사용처 확인하기</span>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-white opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-transform"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </Link>
+
                 {/* Mobile Optimized Grid Layout */}
                 <div className="w-full grid grid-cols-2 gap-3 mb-10">
                     {bankLinks.map((bank, index) => (
