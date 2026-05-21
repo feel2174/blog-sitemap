@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaMoneyCheckAlt, FaCreditCard, FaMobileAlt, FaBuilding, FaExclamationTriangle, FaInfoCircle, FaCheckCircle, FaWallet } from 'react-icons/fa';
+import { FaMoneyCheckAlt, FaCreditCard, FaMobileAlt, FaBuilding, FaExclamationTriangle, FaInfoCircle, FaCheckCircle, FaWallet, FaChevronRight } from 'react-icons/fa';
 
 export const metadata = {
     title: '2026년 고유가 피해지원금 잔액조회 및 사용처 안내',
@@ -30,6 +30,33 @@ export default function HighOilPriceSupportPage() {
 
             <main className="max-w-3xl mx-auto px-5 space-y-8">
                 
+                {/* Quick Service Links */}
+                <section className="flex flex-col sm:flex-row gap-3 w-full">
+                    <a 
+                        href="https://zucca100.com/%ea%b3%a0%ec%9c%a0%ea%b0%80%ec%a7%80%ec%9b%90%ea%b8%88-%eb%af%bc%ec%83%9d%ec%a7%80%ec%9b%90%ea%b8%88-3%ec%b0%a8-%ec%8b%a0%ec%b2%ad-%eb%b0%94%eb%a1%9c%ea%b0%80%ea%b8%b0/"
+                        className="flex-1 group relative flex items-center justify-between p-4 rounded-2xl bg-blue-600 text-white shadow-[0_0_15px_rgba(37,99,235,0.4)] hover:bg-blue-700 transition-colors animate-pulse"
+                    >
+                        <span className="font-bold text-[15px] tracking-tight">고유가 지원금 신청하기</span>
+                        <FaChevronRight className="group-hover:translate-x-1 transition-transform" />
+                    </a>
+                    
+                    <a 
+                        href="https://zucca100.com/%ea%b5%ad%eb%af%bc%ec%8b%a0%eb%ac%b8%ea%b3%a0-%ea%b3%a0%ec%9c%a0%ea%b0%80-%ec%9d%b4%ec%9d%98%ec%8b%a0%ec%b2%ad-%ec%9d%b4%ec%9d%98%ec%a0%9c%ea%b8%b0-%eb%b0%94%eb%a1%9c%ea%b0%80%ea%b8%b0/"
+                        className="flex-1 group relative flex items-center justify-between p-4 rounded-2xl bg-teal-600 text-white shadow-[0_0_15px_rgba(13,148,136,0.4)] hover:bg-teal-700 transition-colors animate-pulse [animation-delay:200ms]"
+                    >
+                        <span className="font-bold text-[15px] tracking-tight">고유가 지원금 이의신청 바로가기</span>
+                        <FaChevronRight className="group-hover:translate-x-1 transition-transform" />
+                    </a>
+
+                    <a 
+                        href="https://m.kbcard.com/BON/DVIEW/MBAM0005"
+                        className="flex-1 group relative flex items-center justify-between p-4 rounded-2xl bg-indigo-600 text-white shadow-[0_0_15px_rgba(79,70,229,0.4)] hover:bg-indigo-700 transition-colors animate-pulse [animation-delay:400ms]"
+                    >
+                        <span className="font-bold text-[15px] tracking-tight">고유가 지원금 사용처 찾기</span>
+                        <FaChevronRight className="group-hover:translate-x-1 transition-transform" />
+                    </a>
+                </section>
+
                 {/* Table of Contents */}
                 <section className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
                     <h2 className="text-lg font-bold flex items-center gap-2 mb-4 text-slate-700 border-b pb-3">
