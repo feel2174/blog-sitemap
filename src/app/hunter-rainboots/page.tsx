@@ -103,6 +103,50 @@ export default function HunterRainbootsPage() {
                             </svg>
                         </div>
                     </Link>
+
+                    {/* Kids Size */}
+                    <Link 
+                        href="https://link.coupang.com/a/dWJrxGXeRU"
+                        className="group relative flex items-center justify-between w-full py-5 px-6 sm:px-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl overflow-hidden hover:bg-white/10 hover:border-yellow-400/50 transition-all duration-300 hover:shadow-[0_10px_40px_rgba(250,204,21,0.2)] hover:-translate-y-1"
+                    >
+                        <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/0 via-yellow-500/10 to-yellow-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="flex items-center gap-5 relative z-10">
+                            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center shadow-inner border border-slate-600/50 group-hover:border-yellow-400/50 transition-colors">
+                                <FaWater className="text-yellow-400 text-2xl group-hover:scale-110 transition-transform" />
+                            </div>
+                            <div className="flex flex-col items-start">
+                                <span className="text-sm font-semibold text-yellow-400/80 mb-1 tracking-wide">KIDS SIZE</span>
+                                <span className="text-lg sm:text-xl font-bold text-white tracking-wide">헌터 레인부츠 키즈 구매처 바로가기</span>
+                            </div>
+                        </div>
+                        <div className="relative z-10 w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-yellow-500 group-hover:border-yellow-400 transition-colors duration-300 shrink-0 ml-2">
+                            <svg className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </Link>
+
+                    {/* Mens Tall Size */}
+                    <Link 
+                        href="https://link.coupang.com/a/dWJtqLDA5I"
+                        className="group relative flex items-center justify-between w-full py-5 px-6 sm:px-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl overflow-hidden hover:bg-white/10 hover:border-emerald-400/50 transition-all duration-300 hover:shadow-[0_10px_40px_rgba(52,211,153,0.2)] hover:-translate-y-1"
+                    >
+                        <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/0 via-emerald-500/10 to-emerald-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="flex items-center gap-5 relative z-10">
+                            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center shadow-inner border border-slate-600/50 group-hover:border-emerald-400/50 transition-colors">
+                                <FaCloudRain className="text-emerald-400 text-2xl group-hover:scale-110 transition-transform" />
+                            </div>
+                            <div className="flex flex-col items-start">
+                                <span className="text-sm font-semibold text-emerald-400/80 mb-1 tracking-wide">MENS TALL SIZE</span>
+                                <span className="text-lg sm:text-xl font-bold text-white tracking-wide">헌터 레인부츠 남성용 톨 구매처 바로가기</span>
+                            </div>
+                        </div>
+                        <div className="relative z-10 w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-emerald-500 group-hover:border-emerald-400 transition-colors duration-300 shrink-0 ml-2">
+                            <svg className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </Link>
                 </div>
                 
                 <p className="mt-12 text-xs text-slate-400/60 max-w-sm break-keep">
