@@ -28,10 +28,10 @@ export default function LeverageEtfPage() {
         <div className="absolute bottom-[20%] left-[20%] w-[60vw] h-[60vw] rounded-full bg-zinc-900/10 blur-[150px] mix-blend-screen"></div>
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-20 lg:py-28">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-16 lg:py-24">
         
         {/* Hero Header */}
-        <div className="text-center mb-16 space-y-6">
+        <div className="text-center mb-10 space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md text-blue-400 text-sm font-semibold tracking-wider uppercase mb-2">
             <FaChartLine className="animate-pulse text-blue-500" />
             NEW SINGLE STOCK LEVERAGE ETF
@@ -46,8 +46,39 @@ export default function LeverageEtfPage() {
           
           <p className="text-zinc-400 text-base sm:text-lg max-w-3xl mx-auto font-light leading-relaxed break-keep">
             대한민국 반도체 양대 산맥인 삼성전자와 SK하이닉스 주가를 추종하는 단일종목 2배 레버리지 ETF가 국내 증시에 출시되었습니다.
-            상품 정보부터 거래를 위한 필수 사전 교육, 계좌 개설 방법까지 한눈에 확인하세요.
+            아래 필수 단계를 통해 빠르게 거래를 준비해 보세요.
           </p>
+        </div>
+
+        {/* Quick Actions Buttons Section (Directly below intro for maximum mobile CTR) */}
+        <div className="max-w-2xl mx-auto mb-16 p-6 rounded-3xl bg-white/[0.02] border border-white/10 backdrop-blur-md text-center">
+          <p className="text-xs sm:text-sm text-zinc-400 mb-4 font-semibold tracking-wide">⚡ 거래 시작을 위한 필수 링크 바로가기</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            {/* CTA Button 1 - Pulse Animation */}
+            <Link 
+              href="https://zucca100.com/stock-account/"
+              className="relative flex items-center justify-between gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-extrabold text-sm sm:text-base border border-blue-400/30 shadow-[0_4px_20px_rgba(37,99,235,0.35)] hover:shadow-[0_4px_25px_rgba(37,99,235,0.55)] transition-all duration-300 group hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <span className="absolute inset-0 rounded-2xl bg-blue-500/20 animate-ping opacity-75 pointer-events-none"></span>
+              <span className="relative z-10">비대면 계좌개설 바로가기</span>
+              <FaChevronRight className="relative z-10 text-xs group-hover:translate-x-1 transition-transform" />
+            </Link>
+
+            {/* CTA Button 2 - Pulse Animation */}
+            <Link 
+              href="https://www.kifin.or.kr/common/edu/1/detail.do"
+              className="relative flex items-center justify-between gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-orange-600 to-red-600 text-white font-extrabold text-sm sm:text-base border border-orange-400/30 shadow-[0_4px_20px_rgba(249,115,22,0.35)] hover:shadow-[0_4px_25px_rgba(249,115,22,0.55)] transition-all duration-300 group hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <span className="absolute inset-0 rounded-2xl bg-orange-500/20 animate-ping opacity-75 pointer-events-none"></span>
+              <span className="relative z-10 flex items-center gap-2">
+                <FaGraduationCap className="text-white text-lg" />
+                레버리지 교육 바로가기
+              </span>
+              <FaChevronRight className="relative z-10 text-xs group-hover:translate-x-1 transition-transform" />
+            </Link>
+
+          </div>
         </div>
 
         {/* Section 1: Product Grid Card */}
@@ -105,7 +136,7 @@ export default function LeverageEtfPage() {
               <div className="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-[#07080d] border-2 border-blue-500 flex items-center justify-center text-sm font-bold text-blue-400 shadow-[0_0_10px_rgba(59,130,246,0.3)]">
                 1
               </div>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <div>
                   <h3 className="text-xl font-bold text-white flex items-center gap-2">
                     비대면 증권 계좌 개설
@@ -117,15 +148,13 @@ export default function LeverageEtfPage() {
                   </p>
                 </div>
                 
-                {/* CTA Button 1 - Pulse Animation */}
-                <div className="pt-2">
+                <div className="pt-1">
                   <Link 
                     href="https://zucca100.com/stock-account/"
-                    className="relative inline-flex items-center justify-between gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-extrabold text-sm sm:text-base border border-blue-400/30 shadow-[0_4px_20px_rgba(37,99,235,0.35)] hover:shadow-[0_4px_25px_rgba(37,99,235,0.55)] transition-all duration-300 group hover:scale-[1.02] active:scale-[0.98]"
+                    className="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 font-bold transition-colors group"
                   >
-                    <span className="absolute inset-0 rounded-2xl bg-blue-500/20 animate-ping opacity-75 pointer-events-none"></span>
-                    <span className="relative z-10">비대면 증권 계좌개설 바로가기</span>
-                    <FaChevronRight className="relative z-10 text-xs group-hover:translate-x-1 transition-transform" />
+                    <span>증권 계좌개설 방법 & 개설처 바로가기</span>
+                    <FaArrowRight className="text-xs group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </div>
@@ -136,7 +165,7 @@ export default function LeverageEtfPage() {
               <div className="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-[#07080d] border-2 border-orange-500 flex items-center justify-center text-sm font-bold text-orange-400 shadow-[0_0_10px_rgba(249,115,22,0.3)]">
                 2
               </div>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <div>
                   <h3 className="text-xl font-bold text-white flex items-center gap-2">
                     금융투자교육원 레버리지 사전 교육 이수
@@ -153,18 +182,13 @@ export default function LeverageEtfPage() {
                   </ul>
                 </div>
 
-                {/* CTA Button 2 - Pulse Animation */}
-                <div className="pt-2">
+                <div className="pt-1">
                   <Link 
                     href="https://www.kifin.or.kr/common/edu/1/detail.do"
-                    className="relative inline-flex items-center justify-between gap-3 px-6 py-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700 text-zinc-100 font-extrabold text-sm sm:text-base border border-zinc-700 shadow-md transition-all duration-300 group hover:scale-[1.02] active:scale-[0.98]"
+                    className="inline-flex items-center gap-2 text-sm text-orange-400 hover:text-orange-300 font-bold transition-colors group"
                   >
-                    <span className="absolute inset-0 rounded-2xl bg-zinc-500/10 animate-ping opacity-40 pointer-events-none"></span>
-                    <span className="relative z-10 flex items-center gap-2">
-                      <FaGraduationCap className="text-orange-400 text-lg" />
-                      레버리지 교육 바로가기
-                    </span>
-                    <FaChevronRight className="relative z-10 text-xs group-hover:translate-x-1 transition-transform text-zinc-400" />
+                    <span>금융투자교육원 교육 수강 바로가기</span>
+                    <FaArrowRight className="text-xs group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </div>
