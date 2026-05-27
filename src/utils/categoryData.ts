@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 18,
+      "count": 21,
       "description": "금융 & 투자"
     },
     "health_wellness": {
@@ -286,6 +286,12 @@ const categorizedData: CategorizedData = {
       }
     ],
     "finance_investment": [
+      {
+        "title": "삼성전자 · SK하이닉스 단일종목 레버리지 ETF 출시 안내 및 투자 방법",
+        "link": "/samsung-sk-leverage-etf",
+        "category": "finance_investment",
+        "matched_keywords": ["삼성전자", "SK하이닉스", "레버리지", "ETF", "단일종목", "레버리지교육", "증권계좌"]
+      },
       {
         "title": "어카운트인포 (계좌정보통합관리) 웹 바로가기 및 앱 다운로드",
         "link": "/account-info",
