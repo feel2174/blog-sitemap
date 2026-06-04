@@ -59,88 +59,55 @@ const infoItems = [
 
 export default function HorseRacingParkPage() {
   return (
-    <div className="min-h-screen bg-[#11130f] text-white">
+    <div className="min-h-screen bg-[#f7f3ea] text-[#1f241b]">
       <Header />
 
-      <main>
-        <section className="relative overflow-hidden px-4 pb-16 pt-28 sm:px-6 lg:px-8">
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(17,19,15,0.94),rgba(33,37,27,0.82)),radial-gradient(circle_at_20%_20%,rgba(245,158,11,0.20),transparent_32%),radial-gradient(circle_at_85%_15%,rgba(20,184,166,0.16),transparent_28%)]" />
-            <div className="absolute bottom-0 left-0 right-0 h-56 bg-[repeating-linear-gradient(100deg,rgba(255,255,255,0.05)_0,rgba(255,255,255,0.05)_2px,transparent_2px,transparent_24px)] opacity-60" />
+      <main className="px-4 pb-12 pt-20 sm:px-6 lg:px-8">
+        <section className="mx-auto max-w-3xl">
+          <div className="mb-4 rounded-2xl bg-[#11130f] px-5 py-4 text-white shadow-xl">
+            <p className="text-xs font-black uppercase tracking-[0.2em] text-amber-200">KRA Official Links</p>
+            <h1 className="mt-2 text-2xl font-black leading-tight tracking-tight sm:text-4xl">
+              경마공원 공식 바로가기
+            </h1>
+            <p className="mt-2 text-sm font-semibold leading-6 text-zinc-300">
+              주차정보, 더비온 앱 다운로드, 렛츠런파크를 바로 확인하세요.
+            </p>
           </div>
 
-          <div className="relative mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-            <div>
-              <p className="mb-5 inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-amber-200 backdrop-blur">
-                KRA Official Links
-              </p>
-              <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight sm:text-6xl">
-                경마공원 방문 전 필요한 링크를 한 번에 확인하세요
-              </h1>
-              <p className="mt-6 max-w-2xl text-base font-medium leading-8 text-zinc-300 sm:text-lg">
-                주차정보, 더비온 앱 다운로드, 렛츠런파크 모바일 바로가기를 큼직한 버튼으로 정리했습니다.
-                모든 버튼은 현재 탭에서 공식 페이지로 이동하도록 구성했습니다.
-              </p>
-            </div>
-
-            <div className="relative min-h-[320px] overflow-hidden rounded-[2rem] border border-white/10 bg-[#1c2118] shadow-2xl">
-              <div className="absolute inset-x-0 bottom-0 h-36 bg-[linear-gradient(180deg,transparent,rgba(0,0,0,0.55)),repeating-linear-gradient(90deg,#755b2d_0,#755b2d_16px,#846735_16px,#846735_32px)]" />
-              <div className="absolute left-1/2 top-12 h-52 w-52 -translate-x-1/2 rounded-full border-[18px] border-emerald-400/25" />
-              <div className="absolute left-1/2 top-[5.5rem] h-36 w-36 -translate-x-1/2 rounded-full border-[14px] border-amber-300/30" />
-              <div className="absolute left-8 top-8 rounded-2xl bg-white/10 px-5 py-4 backdrop-blur">
-                <p className="text-xs font-bold uppercase tracking-[0.18em] text-zinc-300">LetsRun Park</p>
-                <p className="mt-1 text-2xl font-black text-white">Parking · App · Main</p>
-              </div>
-              <div className="absolute bottom-8 right-8 h-24 w-24 rounded-full bg-white text-[#11130f] shadow-xl">
-                <div className="flex h-full w-full items-center justify-center text-center text-sm font-black leading-tight">
-                  공식
-                  <br />
-                  바로가기
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-[#f7f3ea] px-4 py-14 text-[#1f241b] sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-5xl">
-            <div className="grid gap-4">
+          <div className="grid gap-3">
               {primaryLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
-                  className={`group relative overflow-hidden rounded-2xl border border-[#dfd5c2] bg-white p-6 shadow-[0_14px_40px_-24px_rgba(0,0,0,0.45)] transition-all duration-300 ${link.border} hover:-translate-y-1 hover:shadow-[0_24px_55px_-30px_rgba(0,0,0,0.55)]`}
+                  className={`group relative overflow-hidden rounded-2xl border-2 border-[#dfd5c2] bg-white p-4 shadow-[0_14px_40px_-24px_rgba(0,0,0,0.45)] transition-all duration-300 sm:p-5 ${link.border} hover:-translate-y-1 hover:shadow-[0_24px_55px_-30px_rgba(0,0,0,0.55)]`}
                   aria-label={`${link.label} 공식 페이지로 이동`}
                 >
-                  <div className={`absolute left-0 top-0 h-full w-2 bg-gradient-to-b ${link.accent}`} />
-                  <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-                    <div className="pl-2">
-                      <p className="text-sm font-black uppercase tracking-[0.18em] text-stone-400">Official Shortcut</p>
-                      <h2 className="mt-2 text-2xl font-black tracking-tight sm:text-3xl">{link.label}</h2>
-                      <p className="mt-3 max-w-2xl text-sm font-semibold leading-6 text-stone-600 sm:text-base">{link.description}</p>
+                  <div className={`absolute left-0 top-0 h-full w-2 bg-gradient-to-b ${link.accent}`} aria-hidden="true" />
+                  <div className="flex items-center justify-between gap-4 pl-2">
+                    <div className="min-w-0">
+                      <p className="text-[11px] font-black uppercase tracking-[0.16em] text-stone-400">Official Shortcut</p>
+                      <h2 className="mt-1 text-xl font-black tracking-tight sm:text-2xl">{link.label}</h2>
+                      <p className="mt-2 text-sm font-semibold leading-5 text-stone-600">{link.description}</p>
                     </div>
-                    <span className={`inline-flex shrink-0 items-center justify-center rounded-xl bg-gradient-to-r ${link.accent} px-6 py-4 text-base font-black text-white shadow-lg transition-transform duration-300 group-hover:translate-x-1`}>
-                      바로가기
-                      <svg className="ml-3 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <span className={`inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-r ${link.accent} text-white shadow-lg transition-transform duration-300 group-hover:translate-x-1 sm:h-auto sm:w-auto sm:px-5 sm:py-3 sm:text-sm sm:font-black`}>
+                      <span className="hidden sm:inline">바로가기</span>
+                      <svg className="h-5 w-5 sm:ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-6-6 6 6-6 6" />
                       </svg>
                     </span>
                   </div>
                 </a>
               ))}
-            </div>
           </div>
         </section>
 
-        <section className="bg-white px-4 py-16 text-[#1f241b] sm:px-6 lg:px-8">
-          <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-3">
+        <section className="mx-auto mt-8 grid max-w-3xl gap-3 md:grid-cols-3">
             {infoItems.map((item) => (
-              <article key={item.title} className="border-l-4 border-amber-400 bg-stone-50 p-6">
-                <h3 className="text-xl font-black">{item.title}</h3>
-                <p className="mt-4 text-sm font-medium leading-7 text-stone-600">{item.body}</p>
+              <article key={item.title} className="border-l-4 border-amber-400 bg-white p-4 shadow-sm">
+                <h3 className="text-base font-black">{item.title}</h3>
+                <p className="mt-2 text-sm font-medium leading-6 text-stone-600">{item.body}</p>
               </article>
             ))}
-          </div>
         </section>
       </main>
 
