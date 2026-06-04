@@ -21,6 +21,12 @@ export default function RealEstateContractPage() {
     setDownloadLink(url);
     /* interstitial disabled */
     setCounter(3);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = url.split('/').pop() || '부동산매매계약서';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   useEffect(() => {

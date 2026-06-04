@@ -14,6 +14,12 @@ export default function ResignationLetterPage() {
         setDownloadLink(url);
         /* interstitial disabled */
         setCounter(3);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = url.split('/').pop() || '사직서';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
 
     useEffect(() => {

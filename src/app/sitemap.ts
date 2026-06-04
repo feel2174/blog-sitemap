@@ -30,6 +30,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }))
+
+  const staticPages = [
+    {
+      url: `${baseUrl}/horse-racing-park`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    },
+  ]
   
-  return [mainPage, ...categoryPages, ...blogPosts]
+  return [mainPage, ...categoryPages, ...blogPosts, ...staticPages]
 } 
