@@ -5,7 +5,7 @@ const passportApplyUrl = 'https://www.kh.or.kr/visit/kor/tour/passport/step1.do'
 export const metadata: Metadata = {
   title: '국가유산청 여권 신청 바로가기 | 국가유산 방문자 여권',
   description:
-    '국가유산 방문자 여권 신청 페이지로 바로 이동할 수 있는 원페이지 바로가기입니다. 새 창이 아닌 현재 창에서 공식 신청 페이지로 이동합니다.',
+    '국가유산 방문자 여권 신청 페이지로 바로 이동할 수 있는 원페이지 바로가기입니다.',
   keywords: ['국가유산청 여권', '국가유산 방문자 여권', '국가유산 여권 신청', '국가유산 방문 캠페인'],
   alternates: {
     canonical: '/heritage-passport',
@@ -20,16 +20,16 @@ export const metadata: Metadata = {
 
 const notes = [
   {
-    title: '공식 신청 페이지',
-    body: '버튼은 한국문화재재단 국가유산 방문자 여권 신청 단계로 연결됩니다.',
+    title: '공식 신청',
+    body: '한국문화재재단 국가유산 방문자 여권 신청 단계로 연결됩니다.',
   },
   {
-    title: '현재 창 이동',
-    body: '새 창을 열지 않고 현재 보고 있는 창에서 신청 페이지로 바로 이동합니다.',
+    title: '방문 준비',
+    body: '방문 코스와 여권 활용 안내는 공식 페이지에서 함께 확인할 수 있습니다.',
   },
   {
     title: '신청 전 확인',
-    body: '신청 조건, 발급 안내, 개인정보 입력 항목은 이동 후 공식 페이지에서 확인하세요.',
+    body: '신청 조건, 발급 안내, 개인정보 입력 항목을 이동 후 확인하세요.',
   },
 ];
 
@@ -48,7 +48,7 @@ export default function HeritagePassportPage() {
           <p className="text-sm font-black uppercase tracking-[0.18em] text-amber-700">Korea Heritage Passport</p>
           <h1 className="mt-2 text-3xl font-black leading-tight sm:text-5xl">국가유산청 여권 신청 바로가기</h1>
           <p className="mt-3 text-base font-semibold leading-7 text-stone-600">
-            국가유산 방문자 여권 신청을 빠르게 시작할 수 있도록 공식 신청 페이지로 바로 연결합니다.
+            국가유산 방문자 여권 신청을 빠르게 시작할 수 있도록 공식 신청 페이지로 연결합니다.
           </p>
 
           <a
@@ -77,7 +77,7 @@ export default function HeritagePassportPage() {
           </div>
 
           <p className="mt-5 text-xs font-semibold leading-6 text-stone-500">
-            본 페이지는 공식 신청 화면으로 빠르게 이동하기 위한 바로가기 안내 페이지입니다. 신청 내용과 운영 정책은 연결된 공식 페이지의 안내를 기준으로 확인하세요.
+            신청 내용과 운영 정책은 연결된 공식 페이지의 안내를 기준으로 확인하세요.
           </p>
         </div>
       </section>
