@@ -327,6 +327,23 @@ export default function JensenHuangKoreaAiStocksPage() {
               </p>
             </article>
           </div>
+
+          <div className="mx-auto mt-5 max-w-6xl">
+            <a
+              href="https://zucca100.com/jensen-huang-schedule/"
+              className="flex w-full items-center justify-between gap-4 rounded-2xl bg-blue-600 px-5 py-5 text-left text-white shadow-xl transition-transform hover:-translate-y-0.5 active:scale-[0.99] sm:mx-auto sm:max-w-xl"
+            >
+              <span className="min-w-0">
+                <span className="block text-xs font-black uppercase tracking-[0.18em] text-blue-100">Schedule Calendar</span>
+                <span className="mt-1 block text-lg font-black leading-snug">젠슨황 방한 일정</span>
+              </span>
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-blue-700">
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-6-6 6 6-6 6" />
+                </svg>
+              </span>
+            </a>
+          </div>
         </section>
       </main>
     </div>
