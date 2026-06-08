@@ -1,15 +1,21 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import FreeWebtoonContent from '@/components/FreeWebtoonContent';
 
 export const metadata: Metadata = {
-  title: '2026 무료웹툰 최신 주소 모음 | 조아툰, 블랙툰, 툰코 등 실시간 주소 확인',
-  description: '조아툰, 블랙툰, 툰코, 웹툰모아 등 인기 무료 웹툰 사이트의 최신 접속 주소를 실시간으로 제공합니다. 막힘 없는 최신 주소로 인기 웹툰을 무료로 즐기세요.',
-  keywords: ['무료웹툰', '웹툰최신주소', '조아툰', '블랙툰', '툰코', '웹툰모아', '무료웹툰사이트', '웹툰다시보기'],
+  title: '무료 웹툰 플랫폼 바로가기 | 네이버웹툰 카카오웹툰 리디웹툰',
+  description:
+    '네이버웹툰, 카카오웹툰, 리디웹툰 공식 웹툰 서비스를 한 화면에서 빠르게 이동할 수 있는 바로가기 페이지입니다.',
+  keywords: ['무료 웹툰', '네이버웹툰', '카카오웹툰', '리디웹툰', '웹툰 바로가기', '웹툰 추천'],
+  alternates: {
+    canonical: '/free-webtoon',
+  },
   openGraph: {
-    title: '2026 무료웹툰 최신 주소 모음 | 실시간 업데이트',
-    description: '인기 무료 웹툰 사이트 최신 주소 총정리. 조아툰, 블랙툰, 툰코 등 접속 주소 실시간 확인.',
+    title: '무료 웹툰 플랫폼 바로가기',
+    description: '네이버웹툰, 카카오웹툰, 리디웹툰 바로가기를 한 화면에서 확인하세요.',
+    url: 'https://zucca100.com/free-webtoon',
+    type: 'article',
     images: ['/free-webtoon-bg.png'],
-  }
+  },
 };
 
 export default function FreeWebtoonPage() {
