@@ -207,6 +207,21 @@ export default function Worldcup2026Page() {
               </article>
             ))}
           </div>
+
+          <a
+            href="/worldcup-2026-schedule"
+            className="group mt-3 flex items-center justify-between gap-3 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-700 p-4 text-white shadow-lg transition-transform hover:-translate-y-0.5 active:scale-[0.99]"
+          >
+            <span className="min-w-0">
+              <span className="block text-xs font-black uppercase tracking-[0.16em] opacity-80">Full Schedule</span>
+              <strong className="mt-1 block text-base font-black leading-snug">
+                조별리그 72경기 전체 일정표 보러가기
+              </strong>
+            </span>
+            <svg className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-6-6 6 6-6 6" />
+            </svg>
+          </a>
         </div>
       </section>
 
