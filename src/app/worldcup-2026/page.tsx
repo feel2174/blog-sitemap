@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import CoupangAds from '@/components/CoupangAds';
 
 const koreaMatches = [
   {
@@ -341,6 +342,12 @@ export default function Worldcup2026Page() {
           </article>
         </div>
       </section>
+
+      <CoupangAds
+        keyword="월드컵 응원용품"
+        title="월드컵 응원과 시청 준비 아이템"
+        hookText="경기 일정 확인 후 집관, 단체 응원, 야식 타임에 함께 준비하기 좋은 월드컵 응원용품과 시청 아이템을 확인해보세요."
+      />
     </main>
   );
 }

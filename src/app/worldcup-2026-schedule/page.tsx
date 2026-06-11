@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import CoupangAds from '@/components/CoupangAds';
 
 type Match = {
   time: string;
@@ -485,6 +486,12 @@ export default function Worldcup2026SchedulePage() {
           </article>
         </div>
       </section>
+
+      <CoupangAds
+        keyword="월드컵 응원용품"
+        title="월드컵 응원과 시청 준비 아이템"
+        hookText="조별리그 일정과 중계 시간을 확인했다면, 집관과 응원에 필요한 간식, 응원용품, 시청 아이템도 함께 준비해보세요."
+      />
     </main>
   );
 }
