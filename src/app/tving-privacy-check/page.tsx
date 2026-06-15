@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 const checkUrl = 'https://mkt.tving.com/s/033F1188694';
+const lawsuitUrl = 'https://zucca100.com/tving-law-suit/';
 
 const guideCards = [
   {
@@ -86,23 +87,31 @@ export default function TvingPrivacyCheckPage() {
               </p>
             </div>
 
-            <a
-              href={checkUrl}
-              className="flex w-full items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-red-600 to-slate-950 px-5 py-5 text-left text-white shadow-xl transition-transform hover:-translate-y-0.5 active:scale-[0.99]"
-              aria-label="티빙 개인정보 유출 조회 페이지로 이동"
-            >
-              <span className="min-w-0">
-                <span className="block text-xs font-black uppercase tracking-[0.18em] text-red-100">Check Now</span>
-                <span className="mt-1 block text-xl font-black leading-snug sm:text-2xl">
-                  개인정보 유출 여부 조회하기
+            <div className="grid gap-3">
+              <a
+                href={checkUrl}
+                className="flex w-full items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-red-600 to-slate-950 px-5 py-5 text-left text-white shadow-xl transition-transform hover:-translate-y-0.5 active:scale-[0.99]"
+                aria-label="티빙 개인정보 유출 조회 페이지로 이동"
+              >
+                <span className="min-w-0">
+                  <span className="block text-xs font-black uppercase tracking-[0.18em] text-red-100">Check Now</span>
+                  <span className="mt-1 block text-xl font-black leading-snug sm:text-2xl">
+                    개인정보 유출 여부 조회하기
+                  </span>
                 </span>
-              </span>
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-red-700">
-                <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-6-6 6 6-6 6" />
-                </svg>
-              </span>
-            </a>
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-red-700">
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-6-6 6 6-6 6" />
+                  </svg>
+                </span>
+              </a>
+              <a
+                href={lawsuitUrl}
+                className="flex w-full items-center justify-center rounded-2xl border border-red-200 bg-red-50 px-5 py-4 text-center text-base font-black text-red-700 shadow-sm transition hover:bg-red-100 active:scale-[0.99]"
+              >
+                티빙 개인정보 유출 소송페이지 바로가기
+              </a>
+            </div>
           </div>
 
           <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm font-bold leading-6 text-amber-900">
