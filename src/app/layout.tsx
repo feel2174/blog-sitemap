@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import Image from "next/image";
 import { Analytics } from "@vercel/analytics/react";
+import TaboolaWidgets from "@/components/TaboolaWidgets";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -85,6 +86,50 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#3b82f6" />
         <meta name="msapplication-TileColor" content="#3b82f6" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function () {
+  var PUBLISHER_ID = 'zucca-network';
+  var PAGE_TYPE = 'article';
+
+  var LOADER_URL = '//cdn.taboola.com/libtrc/' + PUBLISHER_ID + '/loader.js';
+  var LOADER_PRIVACY_URL = '//static.btloader.com/libtrc/' + PUBLISHER_ID + '/loader_privacy.js';
+  var PIXEL_URL = 'https://static.covani.com/libtrc/t5?type=pixel&publisher=' + PUBLISHER_ID;
+  var SCRIPT_ID = 'tb_loader_script';
+
+  window._taboola = window._taboola || [];
+
+  var pageTypePush = {};
+  pageTypePush[PAGE_TYPE] = 'auto';
+  _taboola.push(pageTypePush);
+
+  new Image().src = PIXEL_URL;
+
+  var firstScript = document.getElementsByTagName('script')[0];
+
+  function injectLoader(id, src, fallbackSrc) {
+    if (document.getElementById(id)) return;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = src;
+    s.id = id;
+    if (fallbackSrc) {
+      s.onerror = function () {
+        if (s.parentNode) s.parentNode.removeChild(s);
+        injectLoader(SCRIPT_ID + '_fb', fallbackSrc, null);
+      };
+    }
+    firstScript.parentNode.insertBefore(s, firstScript);
+  }
+
+  injectLoader(SCRIPT_ID, LOADER_URL, LOADER_PRIVACY_URL);
+
+  if (window.performance && typeof window.performance.mark === 'function') {
+    window.performance.mark('tbl_ic');
+  }
+})();`,
+          }}
+        />
       </head>
       <body className="font-['Pretendard']">
         {/* Google AdSense */}
@@ -108,6 +153,7 @@ export default function RootLayout({
           </div>
         </div>
         {children}
+        <TaboolaWidgets />
         <Analytics />
       </body>
     </html>
