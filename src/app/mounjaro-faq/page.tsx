@@ -83,16 +83,16 @@ export default function MounjaroFaqPage() {
         <div className="mx-auto max-w-3xl">
           <a
             href="https://www.modoodoc.com/"
-            className="group mb-10 flex items-center justify-between gap-4 rounded-2xl border border-white/20 bg-white/10 p-4 shadow-lg backdrop-blur transition hover:-translate-y-0.5 hover:bg-white/20"
+            className="group mb-10 flex items-center justify-between gap-4 rounded-2xl border-2 border-emerald-300 bg-white p-4 shadow-xl shadow-emerald-950/30 transition hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-emerald-50 focus:outline-none focus:ring-4 focus:ring-emerald-200"
           >
             <span className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-300 text-xl">⌖</span>
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-700 text-xl text-white shadow-md shadow-emerald-900/20">⌖</span>
               <span>
-                <span className="block text-xs font-bold tracking-widest text-emerald-200">NEARBY CLINIC SEARCH</span>
-                <span className="block text-base font-bold sm:text-lg">우리동네 위고비/마운자로 병원검색</span>
+                <span className="block text-xs font-extrabold tracking-widest text-emerald-700">NEARBY CLINIC SEARCH</span>
+                <span className="mt-0.5 block text-base font-extrabold text-slate-950 sm:text-lg">우리동네 위고비/마운자로 병원검색</span>
               </span>
             </span>
-            <span className="text-2xl transition-transform group-hover:translate-x-1">→</span>
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-700 text-xl font-bold text-white transition-transform group-hover:translate-x-1">→</span>
           </a>
 
           <p className="mb-3 text-sm font-semibold tracking-widest text-emerald-200">MOUNJARO GUIDE</p>
