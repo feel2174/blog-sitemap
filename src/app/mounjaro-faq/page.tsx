@@ -133,6 +133,20 @@ export default function MounjaroFaqPage() {
             <li><a href="https://nedrug.mfds.go.kr/">의약품안전나라 의약품 통합정보</a></li>
           </ul>
         </section>
+
+        <a
+          href="https://www.modoodoc.com/"
+          className="group mt-8 flex items-center justify-between gap-4 rounded-2xl border-2 border-emerald-600 bg-emerald-700 p-5 text-white shadow-lg shadow-emerald-900/20 transition hover:-translate-y-0.5 hover:bg-emerald-800 focus:outline-none focus:ring-4 focus:ring-emerald-200"
+        >
+          <span className="flex items-center gap-3">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl text-emerald-800">⌖</span>
+            <span>
+              <span className="block text-xs font-extrabold tracking-widest text-emerald-100">NEARBY CLINIC SEARCH</span>
+              <span className="mt-0.5 block text-base font-extrabold sm:text-lg">우리동네 위고비/마운자로 병원검색</span>
+            </span>
+          </span>
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-xl font-bold text-emerald-800 transition-transform group-hover:translate-x-1">→</span>
+        </a>
       </section>
     </main>
   );
