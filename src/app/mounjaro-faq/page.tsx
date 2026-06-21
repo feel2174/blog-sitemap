@@ -82,7 +82,7 @@ export default function MounjaroFaqPage() {
       <section className="border-b border-emerald-100 bg-gradient-to-br from-emerald-950 via-teal-900 to-cyan-900 px-5 py-12 text-white sm:py-16">
         <div className="mx-auto max-w-3xl">
           <a
-            href="https://www.modoodoc.com/"
+            href="https://my-doctor.io/medical-cost/%EB%A7%88%EC%9A%B4%EC%9E%90%EB%A1%9C"
             className="group mb-10 flex items-center justify-between gap-4 rounded-2xl border-2 border-emerald-300 bg-white p-4 shadow-xl shadow-emerald-950/30 transition hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-emerald-50 focus:outline-none focus:ring-4 focus:ring-emerald-200"
           >
             <span className="flex items-center gap-3">
@@ -125,17 +125,15 @@ export default function MounjaroFaqPage() {
         </div>
 
         <section className="mt-12 rounded-2xl bg-slate-900 p-6 text-slate-100 sm:p-8">
-          <h2 className="text-xl font-bold">참고한 의약품 정보</h2>
+          <h2 className="text-xl font-bold">진료 전 참고사항</h2>
           <p className="mt-2 text-sm leading-6 text-slate-300">허가사항은 국가·제품·개정 시점에 따라 달라질 수 있습니다. 진료 시에는 국내 제품 첨부문서와 의료진 안내를 최종 기준으로 확인하세요.</p>
           <ul className="mt-4 space-y-2 text-sm text-emerald-300 underline underline-offset-4">
-            <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/">미국 FDA Drugs@FDA 의약품 정보</a></li>
-            <li><a href="https://www.mounjaro.com/">Mounjaro 공식 제품 정보</a></li>
-            <li><a href="https://nedrug.mfds.go.kr/">의약품안전나라 의약품 통합정보</a></li>
+            <li><a href="https://my-doctor.io/medical-cost/%EB%A7%88%EC%9A%B4%EC%9E%90%EB%A1%9C">마운자로 진료·비용 정보 확인</a></li>
           </ul>
         </section>
 
         <a
-          href="https://www.modoodoc.com/"
+          href="https://my-doctor.io/medical-cost/%EB%A7%88%EC%9A%B4%EC%9E%90%EB%A1%9C"
           className="group mt-8 flex items-center justify-between gap-4 rounded-2xl border-2 border-emerald-600 bg-emerald-700 p-5 text-white shadow-lg shadow-emerald-900/20 transition hover:-translate-y-0.5 hover:bg-emerald-800 focus:outline-none focus:ring-4 focus:ring-emerald-200"
         >
           <span className="flex items-center gap-3">
