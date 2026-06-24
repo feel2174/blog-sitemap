@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 41,
+      "count": 42,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -277,6 +277,12 @@ const categorizedData: CategorizedData = {
         "link": "/youth-savings",
         "category": "government_support",
         "matched_keywords": ["청년내일저축계좌", "모의계산", "청년저축", "지원금신청", "복지로", "청년도약계좌"]
+      },
+      {
+        "title": "청년미래적금 신청 조건 총정리 | 최대 19% 체감 금리 효과와 5부제 일정",
+        "link": "/youth-future-savings",
+        "category": "government_support",
+        "matched_keywords": ["청년미래적금", "청년미래적금 신청", "청년미래적금 조건", "19% 적금", "청년도약계좌 갈아타기", "청년 적금"]
       },
       {
         "title": "국민성장펀드(혁신성장펀드) 자세히보기 및 산업은행 가이드북 안내",
