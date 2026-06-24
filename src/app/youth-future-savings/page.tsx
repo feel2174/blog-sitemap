@@ -145,13 +145,16 @@ export default function YouthFutureSavingsPage() {
               </p>
             </section>
 
-            <section className="rounded-lg bg-[#ECFDF5] p-5 ring-1 ring-emerald-100">
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <section className="overflow-hidden rounded-lg bg-[#ECFDF5] ring-1 ring-emerald-100">
+              <div className="grid gap-5 p-5 sm:grid-cols-[1fr_auto] sm:items-center sm:p-6">
                 <div>
-                  <p className="text-sm font-black text-emerald-700">중간 CTA</p>
+                  <p className="text-sm font-black text-emerald-700">신청 전 가장 많이 보는 계산 포인트</p>
                   <h2 className="mt-1 break-keep text-2xl font-black tracking-normal text-slate-950">
                     월 50만원 넣으면 만기 얼마인지 먼저 계산하세요
                   </h2>
+                  <p className="mt-2 break-keep text-sm font-semibold leading-6 text-slate-700">
+                    납입액, 정부기여금, 비과세 혜택을 같이 봐야 청년미래적금의 실제 체감 효과가 보입니다.
+                  </p>
                 </div>
                 <CTAButton>청년미래적금 조건조회, 신청 전 30초 체크</CTAButton>
               </div>
@@ -208,7 +211,7 @@ export default function YouthFutureSavingsPage() {
           </article>
 
           <section className="mt-10 rounded-lg bg-[#111827] p-6 text-white shadow-xl sm:p-8">
-            <p className="text-sm font-black text-[#FDBA74]">하단 CTA</p>
+            <p className="text-sm font-black text-[#FDBA74]">신청기간이 짧은 정책형 적금</p>
             <h2 className="mt-2 break-keep text-3xl font-black tracking-normal">
               청년미래적금 신청 마감 전, 내 조건부터 바로 확인
             </h2>
