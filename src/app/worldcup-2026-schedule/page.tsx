@@ -228,6 +228,38 @@ const knockoutRounds = [
   },
 ];
 
+const roundOf32Days = [
+  { date: '6월 28일', note: '32강 시작일 · A조 2위 라인 포함', highlight: true },
+  { date: '6월 29일', note: '조 1·2위와 3위 상위 팀 대진 계속 진행' },
+  { date: '6월 30일', note: '32강 중반부, 각 조 순위별 대진 소화' },
+  { date: '7월 1일', note: '16강 진출 팀 윤곽이 빠르게 좁혀지는 구간' },
+  { date: '7월 2일', note: '캐나다·미국·멕시코 개최 도시 경기 주목' },
+  { date: '7월 3일', note: '32강 마지막 경기일, 16강 전체 대진 확정' },
+];
+
+const tournamentFlow = [
+  ['32강', '6월 28일~7월 3일', '12개 조 1·2위 24팀 + 3위 상위 8팀'],
+  ['16강', '7월 4일~7월 7일', '32강 승자 16팀'],
+  ['8강', '7월 9일~7월 11일', '16강 승자 8팀'],
+  ['4강', '7월 14일~7월 15일', '8강 승자 4팀'],
+  ['결승', '7월 19일', '메트라이프 스타디움에서 우승팀 결정'],
+];
+
+const worldcupFaq = [
+  {
+    q: '2026 월드컵 32강에는 몇 팀이 올라가나요?',
+    a: '12개 조 1위와 2위 24팀, 그리고 조 3위 중 성적 상위 8팀까지 총 32팀이 토너먼트에 진출합니다.',
+  },
+  {
+    q: '한국이 A조 2위를 하면 어디에서 경기하나요?',
+    a: 'FIFA 일정상 A조 2위 라인은 6월 28일 LA 스타디움에서 캐나다와 맞붙는 흐름으로 잡혀 있습니다.',
+  },
+  {
+    q: '32강 이후 일정은 언제 확정되나요?',
+    a: '조별리그 최종 순위가 확정된 뒤 상대와 킥오프 시간이 순차적으로 확정됩니다. 날짜 범위는 이미 발표되어 있습니다.',
+  },
+];
+
 const sources = [
   {
     label: 'FIFA 공식 경기 일정',
@@ -315,6 +347,18 @@ export default function Worldcup2026SchedulePage() {
             <LiveButton label="월드컵 실시간 중계 바로가기" />
           </div>
 
+          <div className="mt-5 grid gap-3 sm:grid-cols-3">
+            <a href="#round-of-32" className="rounded-2xl bg-slate-950 px-4 py-4 text-sm font-black text-white shadow-sm transition hover:bg-slate-800">
+              32강 시작일 먼저 확인하기
+            </a>
+            <a href="#korea-round-of-32" className="rounded-2xl bg-emerald-600 px-4 py-4 text-sm font-black text-white shadow-sm transition hover:bg-emerald-700">
+              한국 32강 라인 한눈에 보기
+            </a>
+            <a href="#knockout-flow" className="rounded-2xl bg-blue-600 px-4 py-4 text-sm font-black text-white shadow-sm transition hover:bg-blue-700">
+              16강~결승 일정 바로 확인하기
+            </a>
+          </div>
+
           <div className="mt-5 grid gap-3 sm:grid-cols-2">
             <a
               href="https://zucca100.com/%ed%95%9c%ea%b5%ad-%ec%9b%94%eb%93%9c%ec%bb%b5-%ec%9d%bc%ec%a0%95-%ec%a4%91%ea%b3%84-%eb%b3%b4%eb%8a%94%eb%b2%95-%ec%8b%9c%ea%b0%84-%eb%ac%b4%eb%a3%8c-%ec%a4%91%ea%b3%84-%eb%b0%94%eb%a1%9c%ea%b0%80/"
@@ -334,6 +378,79 @@ export default function Worldcup2026SchedulePage() {
                 미국·캐나다·멕시코 현지 저녁 경기가 한국시간 새벽~오후에 열립니다. 한국 경기는 모두 오전
                 10~11시입니다.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="round-of-32" className="px-4 py-8 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-blue-700">Round of 32</p>
+            <h2 className="mt-1 text-3xl font-black">월드컵 32강 일정 10초 요약</h2>
+            <p className="mt-3 text-base font-semibold leading-7 text-slate-600">
+              2026 북중미 월드컵은 48개국 조별리그 이후 바로 32강 토너먼트로 넘어갑니다. 각 조 1·2위 24팀과
+              조 3위 상위 8팀까지 총 32팀이 살아남고, 32강은 6월 28일부터 7월 3일까지 진행됩니다.
+            </p>
+
+            <div className="mt-5 grid gap-3 md:grid-cols-3">
+              <div className="rounded-2xl bg-slate-950 p-4 text-white">
+                <strong className="block text-2xl font-black">32팀</strong>
+                <span className="mt-1 block text-sm font-semibold text-slate-300">조 1·2위 + 3위 상위 8팀</span>
+              </div>
+              <div className="rounded-2xl bg-emerald-50 p-4 text-emerald-950 ring-1 ring-emerald-200">
+                <strong className="block text-2xl font-black">6월 28일</strong>
+                <span className="mt-1 block text-sm font-semibold">32강 첫 경기일</span>
+              </div>
+              <div className="rounded-2xl bg-blue-50 p-4 text-blue-950 ring-1 ring-blue-200">
+                <strong className="block text-2xl font-black">7월 19일</strong>
+                <span className="mt-1 block text-sm font-semibold">결승전</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <table className="w-full border-collapse text-left text-sm">
+              <thead className="bg-slate-950 text-white">
+                <tr>
+                  <th className="px-4 py-3">32강 날짜</th>
+                  <th className="px-4 py-3">확인 포인트</th>
+                </tr>
+              </thead>
+              <tbody>
+                {roundOf32Days.map((day) => (
+                  <tr key={day.date} className={day.highlight ? 'bg-emerald-50' : 'bg-white'}>
+                    <td className="border-t border-slate-200 px-4 py-3 font-black">{day.date}</td>
+                    <td className="border-t border-slate-200 px-4 py-3 font-semibold text-slate-700">{day.note}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="korea-round-of-32" className="px-4 pb-8 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl rounded-3xl bg-gradient-to-br from-emerald-700 to-slate-950 p-5 text-white shadow-xl sm:p-6">
+          <p className="text-sm font-black uppercase tracking-[0.16em] text-emerald-200">Korea Scenario</p>
+          <h2 className="mt-1 text-3xl font-black">한국 32강 가능 라인: A조 2위면 LA에서 캐나다</h2>
+          <p className="mt-3 text-base font-semibold leading-7 text-emerald-50">
+            한국 독자가 가장 많이 찾는 흐름은 “한국이 A조에서 어디로 가는지”입니다. FIFA 일정상 A조 2위는
+            6월 28일 LA 스타디움에서 캐나다와 만나는 라인으로 잡혀 있습니다. 조 1위, 3위 진출 시에는 대진표
+            배치가 달라질 수 있으므로 최종 순위 확정 뒤 다시 확인해야 합니다.
+          </p>
+          <div className="mt-5 grid gap-3 md:grid-cols-3">
+            <div className="rounded-2xl bg-white/10 p-4 ring-1 ring-white/15">
+              <strong className="block text-lg font-black">한국 A조 2위</strong>
+              <span className="mt-1 block text-sm font-semibold text-emerald-100">가장 검색량이 큰 예상 시나리오</span>
+            </div>
+            <div className="rounded-2xl bg-white/10 p-4 ring-1 ring-white/15">
+              <strong className="block text-lg font-black">6월 28일</strong>
+              <span className="mt-1 block text-sm font-semibold text-emerald-100">LA 스타디움 32강 라인</span>
+            </div>
+            <div className="rounded-2xl bg-white/10 p-4 ring-1 ring-white/15">
+              <strong className="block text-lg font-black">상대: 캐나다</strong>
+              <span className="mt-1 block text-sm font-semibold text-emerald-100">A조 2위 라인 기준</span>
             </div>
           </div>
         </div>
@@ -417,7 +534,7 @@ export default function Worldcup2026SchedulePage() {
         </div>
       </section>
 
-      <section className="px-4 pb-8 sm:px-6 lg:px-8">
+      <section id="knockout-flow" className="px-4 pb-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-2xl font-black">토너먼트 일정 (32강 ~ 결승)</h2>
           <p className="mt-2 text-sm font-semibold text-slate-600">
@@ -452,10 +569,34 @@ export default function Worldcup2026SchedulePage() {
             ))}
           </div>
 
+          <div className="mt-5 grid gap-3 md:grid-cols-5">
+            {tournamentFlow.map(([stage, date, detail]) => (
+              <article key={stage} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                <h3 className="text-lg font-black text-slate-950">{stage}</h3>
+                <p className="mt-2 text-sm font-black text-blue-700">{date}</p>
+                <p className="mt-2 text-xs font-semibold leading-5 text-slate-500">{detail}</p>
+              </article>
+            ))}
+          </div>
+
           <p className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm font-bold leading-6 text-amber-900">
             32강 이후 개별 경기의 킥오프 시간은 대진 확정 후 FIFA 공식 일정에서 발표될 예정입니다. 방송
             편성과 현지 사정에 따라 일정이 변경될 수 있으니 시청 전 최신 일정을 확인하세요.
           </p>
+        </div>
+      </section>
+
+      <section className="px-4 pb-10 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+          <h2 className="text-2xl font-black">월드컵 32강 일정 FAQ</h2>
+          <div className="mt-4 grid gap-3 md:grid-cols-3">
+            {worldcupFaq.map((item) => (
+              <article key={item.q} className="rounded-2xl bg-slate-50 p-4">
+                <h3 className="text-base font-black">{item.q}</h3>
+                <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">{item.a}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

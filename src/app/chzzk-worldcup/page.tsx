@@ -101,6 +101,13 @@ const overviewCards = [
   },
 ];
 
+const roundOf32Highlights = [
+  ['32강 시작', '6월 28일'],
+  ['32강 종료', '7월 3일'],
+  ['한국 관심 라인', 'A조 2위 시 LA 스타디움에서 캐나다'],
+  ['결승', '7월 19일'],
+];
+
 const sources = [
   {
     label: 'FIFA 공식 경기 일정',
@@ -189,6 +196,38 @@ export default function ChzzkWorldcupPage() {
             ))}
           </div>
 
+          <div className="mt-5 rounded-3xl border border-emerald-200 bg-white p-5 shadow-sm">
+            <div className="grid gap-5 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+              <div>
+                <p className="text-sm font-black uppercase tracking-[0.16em] text-emerald-700">Round of 32</p>
+                <h2 className="mt-1 text-2xl font-black">월드컵 32강 일정과 한국 라인 먼저 확인</h2>
+                <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
+                  2026 북중미 월드컵은 조 1·2위와 3위 상위 8팀까지 총 32팀이 토너먼트에 진출합니다.
+                  한국이 A조 2위로 32강에 오르면 6월 28일 LA 스타디움에서 캐나다와 만나는 라인이 잡혀 있습니다.
+                </p>
+              </div>
+              <div className="grid gap-2 sm:grid-cols-2">
+                {roundOf32Highlights.map(([title, body]) => (
+                  <div key={title} className="rounded-2xl bg-slate-50 p-3">
+                    <strong className="block text-sm font-black text-slate-900">{title}</strong>
+                    <span className="mt-1 block text-xs font-semibold leading-5 text-slate-600">{body}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="mt-4 grid gap-2 sm:grid-cols-3">
+              <a href="#stage-schedule" className="rounded-xl bg-slate-950 px-4 py-3 text-center text-sm font-black text-white">
+                32강 시작일 먼저 확인하기
+              </a>
+              <a href="#korea-round-of-32" className="rounded-xl bg-emerald-600 px-4 py-3 text-center text-sm font-black text-white">
+                한국 32강 라인 한눈에 보기
+              </a>
+              <a href="/worldcup-2026-schedule#knockout-flow" className="rounded-xl bg-blue-600 px-4 py-3 text-center text-sm font-black text-white">
+                16강~결승 일정 바로 확인하기
+              </a>
+            </div>
+          </div>
+
           <a
             href="https://zucca100.com/%ed%95%9c%ea%b5%ad-%ec%9b%94%eb%93%9c%ec%bb%b5-%ec%9d%bc%ec%a0%95-%ec%a4%91%ea%b3%84-%eb%b3%b4%eb%8a%94%eb%b2%95-%ec%8b%9c%ea%b0%84-%eb%ac%b4%eb%a3%8c-%ec%a4%91%ea%b3%84-%eb%b0%94%eb%a1%9c%ea%b0%80/"
             className="group mt-3 flex items-center justify-between gap-3 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-700 p-4 text-white shadow-lg transition-transform hover:-translate-y-0.5 active:scale-[0.99]"
@@ -227,10 +266,18 @@ export default function ChzzkWorldcupPage() {
               </article>
             ))}
           </div>
+          <div id="korea-round-of-32" className="mt-4 rounded-2xl border border-emerald-200 bg-white p-4 shadow-sm">
+            <p className="text-sm font-black text-emerald-700">한국 32강 가능 라인</p>
+            <h3 className="mt-1 text-xl font-black">A조 2위 시 6월 28일 LA 스타디움에서 캐나다와 맞붙는 흐름</h3>
+            <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
+              한국의 조별리그 순위가 확정되기 전에는 여러 경우의 수가 있지만, 검색 수요가 가장 큰 A조 2위 시나리오는
+              LA 스타디움 32강 라인입니다. 조 1위나 3위 상위 진출이면 상대와 도시가 달라질 수 있습니다.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="px-4 pb-8 sm:px-6 lg:px-8">
+      <section id="stage-schedule" className="px-4 pb-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-2xl font-black">월드컵 주요 일정</h2>
           <div className="mt-4 space-y-3">
