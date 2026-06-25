@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 47,
+      "count": 48,
       "description": "라이프스타일"
     }
   },
@@ -633,6 +633,12 @@ const categorizedData: CategorizedData = {
         "link": "/coupang-play",
         "category": "lifestyle",
         "matched_keywords": ["쿠팡플레이", "CoupangPlay", "OTT", "SNL코리아", "스포츠중계", "와우회원"]
+      },
+      {
+        "title": "빅뱅 콘서트 예매 바로가기 | BIGBANG 2026 WORLD TOUR IN GOYANG",
+        "link": "/bigbang-2026-world-tour",
+        "category": "lifestyle",
+        "matched_keywords": ["빅뱅", "BIGBANG", "빅뱅콘서트", "빅뱅예매", "쿠팡플레이", "고양종합운동장", "월드투어"]
       },
       {
         "title": "엔터테인먼트 관련 글 1",
