@@ -132,6 +132,19 @@ export default function RootLayout({
         />
       </head>
       <body className="font-['Pretendard']">
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-YF4WG4NT61"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YF4WG4NT61');
+          `}
+        </Script>
         {/* Google AdSense */}
         <Script
           async
