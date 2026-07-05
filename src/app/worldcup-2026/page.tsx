@@ -8,7 +8,7 @@ const koreaMatches = [
     time: '오전 11:00',
     opponent: '대한민국 vs 체코',
     venue: '에스타디오 아크론 (멕시코 과달라하라)',
-    status: '확정',
+    status: '2:1 승',
   },
   {
     round: '조별리그 2차전',
@@ -16,7 +16,7 @@ const koreaMatches = [
     time: '오전 10:00',
     opponent: '멕시코 vs 대한민국',
     venue: '에스타디오 아크론 (멕시코 과달라하라)',
-    status: '확정',
+    status: '패',
   },
   {
     round: '조별리그 3차전',
@@ -24,7 +24,7 @@ const koreaMatches = [
     time: '오전 10:00',
     opponent: '남아공 vs 대한민국',
     venue: '에스타디오 BBVA (멕시코 몬테레이)',
-    status: '확정',
+    status: '패',
   },
 ];
 
@@ -34,35 +34,35 @@ const stageSchedule = [
     localDate: '6월 11일 (목)',
     kstDate: '6월 12일 (금) 오전 4시',
     matches: '멕시코 vs 남아공 · 멕시코시티 스타디움(에스타디오 아즈테카)',
-    status: '확정',
+    status: '종료',
   },
   {
     stage: '조별리그',
     localDate: '6월 11일 ~ 6월 27일',
     kstDate: '6월 12일 ~ 6월 28일 새벽·오전',
-    matches: '48개국 12개 조, 총 72경기',
-    status: '확정',
+    matches: '48개국 12개 조, 총 72경기 · 한국은 1승 2패로 조 3위 탈락',
+    status: '종료',
   },
   {
     stage: '32강 토너먼트',
     localDate: '6월 28일 ~ 7월 3일',
     kstDate: '6월 29일 ~ 7월 4일 새벽·오전',
-    matches: '대진 미정 · 조별리그 결과에 따라 확정',
-    status: '대진 미정',
+    matches: '16경기 종료 · 16강 진출 16개국 확정 (한국 진출 실패)',
+    status: '종료',
   },
   {
     stage: '16강 토너먼트',
     localDate: '7월 4일 ~ 7월 7일',
     kstDate: '7월 5일 ~ 7월 8일 새벽·오전',
-    matches: '대진 미정 · 32강 결과에 따라 확정',
-    status: '대진 미정',
+    matches: '2경기 종료(모로코·프랑스 승리) · 6경기 진행 예정',
+    status: '진행중',
   },
   {
     stage: '8강 토너먼트',
     localDate: '7월 9일 ~ 7월 11일',
     kstDate: '7월 10일 ~ 7월 12일 새벽·오전',
-    matches: '폭스버러 · 잉글우드 · 마이애미가든스 · 캔자스시티 / 대진 미정',
-    status: '대진 미정',
+    matches: '모로코 vs 프랑스(7월 10일 오전 5시) 확정 · 나머지 3경기 대진 미정',
+    status: '1경기 확정',
   },
   {
     stage: '4강 토너먼트',
@@ -107,9 +107,9 @@ const overviewCards = [
 ];
 
 const roundOf32Highlights = [
-  ['진출 방식', '12개 조 1·2위 24팀 + 3위 상위 8팀'],
-  ['32강 기간', '6월 28일 ~ 7월 3일'],
-  ['한국 핵심 라인', 'A조 2위 시 6월 28일 LA 스타디움에서 캐나다'],
+  ['32강 결과', '16경기 종료 · 승부차기 3회, 연장 2회'],
+  ['16강 기간', '7월 4일 ~ 7월 7일(현지시간)'],
+  ['8강 첫 확정', '모로코 vs 프랑스 · 7월 10일 오전 5시'],
   ['결승', '7월 19일 메트라이프 스타디움'],
 ];
 
@@ -127,34 +127,34 @@ const sources = [
     desc: '2026 월드컵 전체 경기 결과 및 일정 공식 페이지',
   },
   {
-    label: '뉴시스 보도',
-    href: 'https://www.newsis.com/view/NISX20260610_0003662923',
-    desc: '개막전 멕시코-남아공 한국시간 6월 12일 오전 4시 킥오프 보도',
+    label: '이데일리 - 한국 32강 진출 무산',
+    href: 'https://www.edaily.co.kr/News/Read?newsId=02482966645485984&mediaCodeNo=257',
+    desc: '한국의 조별리그 탈락과 이란과의 순위 비교 보도',
   },
   {
-    label: '한국 경기 일정 정리',
-    href: 'https://bluesharehub.com/world-cup-2026-korea-schedule/',
-    desc: '한국 조별리그 3경기 한국시간 일정 정리',
+    label: '파이낸셜뉴스 - 16강 대진 완성',
+    href: 'https://www.fnnews.com/news/202607041620424888',
+    desc: '32강 결과와 16강 대진 확정 소식',
   },
 ];
 
 export const metadata: Metadata = {
-  title: '2026 북중미 월드컵 일정 총정리 (한국시간 기준)',
+  title: '2026 북중미 월드컵 일정 총정리 (32강 결과·16강 진행 상황)',
   description:
-    '2026 북중미 월드컵 전체 일정을 한국시간 기준으로 정리했습니다. 한국 조별리그 A조 경기 시간, 32강·16강·8강·4강·결승 토너먼트 일정과 실시간 중계 바로가기를 확인하세요.',
+    '2026 북중미 월드컵 32강 결과와 16강 진행 상황을 한국시간 기준으로 정리했습니다. 한국 조별리그 결과와 32강 탈락 배경, 16강·8강 대진까지 확인하세요.',
   keywords: [
     '2026 월드컵 일정',
     '북중미 월드컵',
-    '월드컵 한국 경기 시간',
-    '월드컵 토너먼트 일정',
-    '월드컵 실시간 중계',
+    '한국 월드컵 탈락',
+    '월드컵 32강 결과',
+    '월드컵 16강 일정',
   ],
   alternates: {
     canonical: '/worldcup-2026',
   },
   openGraph: {
-    title: '2026 북중미 월드컵 일정 총정리 (한국시간 기준)',
-    description: '한국 A조 경기 시간부터 결승전까지, 2026 월드컵 전체 일정을 한 화면에서 확인하세요.',
+    title: '2026 북중미 월드컵 일정 총정리 (32강 결과·16강 진행 상황)',
+    description: '한국 조별리그 결과부터 32강 전체 결과, 16강 진행 상황까지 2026 월드컵을 한 화면에서 확인하세요.',
     url: 'https://zucca100.com/worldcup-2026',
     type: 'article',
   },
@@ -185,11 +185,11 @@ export default function Worldcup2026Page() {
       <section className="bg-white px-4 pb-7 pt-5 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-3 flex flex-wrap gap-2 text-xs font-black">
-            <span className="rounded-full bg-slate-950 px-3 py-1.5 text-white">2026.06 기준</span>
+            <span className="rounded-full bg-slate-950 px-3 py-1.5 text-white">2026.07 기준</span>
             <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-emerald-700">
-              북중미 월드컵
+              32강 결과 완료
             </span>
-            <span className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-blue-700">한국시간 기준 정리</span>
+            <span className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-blue-700">16강 진행중</span>
           </div>
 
           <div className="grid gap-5 lg:grid-cols-[1fr_0.95fr] lg:items-end">
@@ -199,8 +199,9 @@ export default function Worldcup2026Page() {
                 2026 북중미 월드컵 일정 총정리
               </h1>
               <p className="mt-3 max-w-3xl text-base font-semibold leading-7 text-slate-600">
-                한국 A조 경기 시간부터 32강·16강·8강·4강·결승 토너먼트까지, 한국시간 기준 전체 일정을 한
-                화면에서 확인하세요. 조별리그 이후 대진이 확정되지 않은 경기는 미정으로 표기했습니다.
+                32강 토너먼트 16경기가 모두 끝나고 16강이 진행 중입니다. 한국 A조 경기 결과부터
+                32강 전체 결과, 16강·8강 진행 상황까지 한국시간 기준으로 한 화면에서 확인하세요. 한국은
+                조별리그 3위(1승 2패)로 32강 진출에 실패했습니다.
               </p>
             </div>
 
@@ -219,12 +220,11 @@ export default function Worldcup2026Page() {
           <div className="mt-5 rounded-3xl border border-emerald-200 bg-emerald-50 p-5 shadow-sm">
             <div className="grid gap-5 lg:grid-cols-[1fr_0.9fr] lg:items-center">
               <div>
-                <p className="text-sm font-black uppercase tracking-[0.16em] text-emerald-700">Round of 32</p>
-                <h2 className="mt-1 text-2xl font-black">월드컵 32강 일정 10초 요약</h2>
+                <p className="text-sm font-black uppercase tracking-[0.16em] text-emerald-700">Round of 32 · 종료</p>
+                <h2 className="mt-1 text-2xl font-black">월드컵 32강 결과 10초 요약</h2>
                 <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">
-                  2026 북중미 월드컵은 12개 조 1·2위와 3위 상위 8개 팀까지 총 32팀이 토너먼트에 진출합니다.
-                  32강은 6월 28일~7월 3일, 16강은 7월 4일~7일, 8강은 7월 9일~11일, 4강은 7월 14일~15일,
-                  결승은 7월 19일입니다.
+                  32강 16경기(6월 28일~7월 3일 현지시간)가 모두 끝나 16강 진출 16개국이 확정됐습니다.
+                  16강은 7월 4일~7일(현지시간) 진행 중이며, 8강 첫 대진(모로코 vs 프랑스)도 이미 확정됐습니다.
                 </p>
               </div>
               <div className="grid gap-2 sm:grid-cols-2">
@@ -238,13 +238,13 @@ export default function Worldcup2026Page() {
             </div>
             <div className="mt-4 grid gap-2 sm:grid-cols-3">
               <a href="#stage-schedule" className="rounded-xl bg-slate-950 px-4 py-3 text-center text-sm font-black text-white">
-                32강 시작일 먼저 확인하기
+                단계별 진행 상황 확인하기
               </a>
               <a href="#korea-round-of-32" className="rounded-xl bg-emerald-600 px-4 py-3 text-center text-sm font-black text-white">
-                한국 32강 라인 한눈에 보기
+                한국 조별리그 탈락 이유 보기
               </a>
-              <a href="/worldcup-2026-schedule#knockout-flow" className="rounded-xl bg-blue-600 px-4 py-3 text-center text-sm font-black text-white">
-                16강~결승 일정 바로 확인하기
+              <a href="/worldcup-2026-schedule#round-of-16" className="rounded-xl bg-blue-600 px-4 py-3 text-center text-sm font-black text-white">
+                16강 대진·일정 바로 확인하기
               </a>
             </div>
           </div>
@@ -268,16 +268,22 @@ export default function Worldcup2026Page() {
 
       <section className="px-4 py-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-2xl font-black">대한민국 조별리그 일정 (A조 · 한국시간)</h2>
+          <h2 className="text-2xl font-black">대한민국 조별리그 결과 (A조 · 한국시간)</h2>
           <p className="mt-2 text-sm font-semibold text-slate-600">
-            세 경기 모두 멕시코에서 열려 한국시간 오전에 시청할 수 있습니다.
+            세 경기 모두 멕시코에서 열렸습니다. 한국은 1승 2패(승점 3, 골득실 -1)로 조 3위를 기록했습니다.
           </p>
           <div className="mt-4 grid gap-3 md:grid-cols-3">
             {koreaMatches.map((match) => (
               <article key={match.round} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
                 <div className="flex items-center justify-between gap-2">
                   <span className="rounded-full bg-slate-950 px-3 py-1 text-xs font-black text-white">{match.round}</span>
-                  <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs font-black text-emerald-700">
+                  <span
+                    className={`rounded-full border px-2.5 py-1 text-xs font-black ${
+                      match.status === '패'
+                        ? 'border-rose-200 bg-rose-50 text-rose-700'
+                        : 'border-emerald-200 bg-emerald-50 text-emerald-700'
+                    }`}
+                  >
                     {match.status}
                   </span>
                 </div>
@@ -302,12 +308,13 @@ export default function Worldcup2026Page() {
             </div>
           </div>
 
-          <div id="korea-round-of-32" className="mt-4 rounded-2xl border border-emerald-200 bg-white p-4 shadow-sm">
-            <p className="text-sm font-black text-emerald-700">한국 32강 가능 시나리오</p>
-            <h3 className="mt-1 text-xl font-black">A조 2위라면 6월 28일 LA 스타디움에서 캐나다와 만나는 라인</h3>
-            <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-              FIFA 일정 기준으로 A조 2위는 32강 첫날 LA 스타디움 라인에 배치되어 캐나다와 맞붙는 흐름입니다.
-              조 1위 또는 3위 상위 진출 시에는 이동 도시와 상대가 달라질 수 있어 조별리그 최종 순위 확인이 필요합니다.
+          <div id="korea-round-of-32" className="mt-4 rounded-2xl border border-slate-200 bg-slate-900 p-4 text-white shadow-sm">
+            <p className="text-sm font-black text-emerald-300">한국 32강 진출 실패</p>
+            <h3 className="mt-1 text-xl font-black">이란에 골득실 밀려 조 3위 팀 10위, 8년 만의 조별리그 탈락</h3>
+            <p className="mt-2 text-sm font-semibold leading-6 text-slate-200">
+              32강은 조 1·2위 24팀과 조 3위 중 성적 상위 8팀이 오르는 방식이었습니다. 한국은 조 3위
+              12개 팀 가운데 골득실에서 앞선 이란(6위)에 밀려 10위에 그쳐 32강 티켓을 놓쳤습니다. 전체
+              48개국 중 34위로 대회를 마쳤으며, 2018 러시아 대회 이후 8년 만의 조별리그 탈락입니다.
             </p>
           </div>
         </div>
@@ -315,10 +322,10 @@ export default function Worldcup2026Page() {
 
       <section id="stage-schedule" className="px-4 pb-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-2xl font-black">단계별 전체 일정</h2>
+          <h2 className="text-2xl font-black">단계별 진행 상황</h2>
           <p className="mt-2 text-sm font-semibold text-slate-600">
-            조별리그 이후 토너먼트 대진은 경기 결과에 따라 순차 확정됩니다. 확정 전 경기는 일정만 기재하고
-            대진은 미정으로 표기했습니다.
+            조별리그와 32강은 종료됐고 16강이 진행 중입니다. 8강 이후 대진은 앞선 라운드 결과에 따라
+            순차 확정되며, 확정 전 경기는 일정만 기재하고 대진은 미정으로 표기했습니다.
           </p>
 
           <div className="mt-4 space-y-3">
@@ -331,9 +338,11 @@ export default function Worldcup2026Page() {
                   <h3 className="text-base font-black">{stage.stage}</h3>
                   <span
                     className={`mt-1.5 inline-block rounded-full px-2.5 py-1 text-xs font-black ${
-                      stage.status === '확정'
+                      stage.status === '종료'
                         ? 'border border-emerald-200 bg-emerald-50 text-emerald-700'
-                        : 'border border-amber-200 bg-amber-50 text-amber-800'
+                        : stage.status === '진행중'
+                          ? 'border border-blue-200 bg-blue-50 text-blue-700'
+                          : 'border border-amber-200 bg-amber-50 text-amber-800'
                     }`}
                   >
                     {stage.status}
@@ -358,8 +367,8 @@ export default function Worldcup2026Page() {
           </div>
 
           <p className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm font-bold leading-6 text-amber-900">
-            32강 이후 토너먼트의 개별 경기 킥오프 시간은 대진 확정 후 FIFA 공식 일정에서 발표될 예정입니다.
-            한국이 토너먼트에 진출하면 상대 팀과 경기 시간이 추가로 확정됩니다.
+            8강 이후 토너먼트의 개별 경기 킥오프 시간은 대진 확정 후 FIFA 공식 일정에서 발표될 예정입니다.
+            한국은 조별리그 3위로 탈락해 이후 토너먼트에는 참가하지 않습니다.
           </p>
         </div>
       </section>
