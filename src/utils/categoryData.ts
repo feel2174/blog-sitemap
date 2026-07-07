@@ -243,6 +243,12 @@ const categorizedData: CategorizedData = {
         "matched_keywords": ["휴일근로수당", "계산기", "공휴일수당", "가산수당", "5인이상"]
       },
       {
+        "title": "2026 자동차세 계산기 | 배기량·차령·연납 할인 반영 예상 세액 조회",
+        "link": "/car-tax-calculator",
+        "category": "government_support",
+        "matched_keywords": ["자동차세", "계산기", "자동차세연납", "배기량", "전기차자동차세"]
+      },
+      {
         "title": "여론조사 전화 차단 방법 완벽 가이드 | SKT, KT, U+ 통신사별 수신거부",
         "link": "/election-survey-block",
         "category": "government_support",
