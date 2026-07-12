@@ -56,28 +56,28 @@ const stageSchedule = [
     stage: '16강',
     localDate: '7월 4일 ~ 7월 7일',
     kstDate: '7월 5일 ~ 7월 8일',
-    matches: '2경기 종료(모로코·프랑스 승리) · 6경기 진행 예정',
-    status: '진행중',
+    matches: '8경기 모두 종료 · 노르웨이가 브라질 꺾는 이변 · 8강 8개국 확정',
+    status: '종료',
   },
   {
     stage: '8강',
     localDate: '7월 9일 ~ 7월 11일',
     kstDate: '7월 10일 ~ 7월 12일',
-    matches: '모로코 vs 프랑스(7월 10일 오전 5시) 확정 · 나머지 대진 미정',
-    status: '1경기 확정',
+    matches: '4경기 모두 종료 · 프랑스·스페인·잉글랜드·아르헨티나 준결승 진출',
+    status: '종료',
   },
   {
-    stage: '4강',
+    stage: '준결승',
     localDate: '7월 14일 ~ 7월 15일',
     kstDate: '7월 15일 ~ 7월 16일',
-    matches: '대진 미정',
-    status: '대진 미정',
+    matches: '프랑스 vs 스페인 · 잉글랜드 vs 아르헨티나',
+    status: '대진 확정',
   },
   {
     stage: '결승전',
     localDate: '7월 19일(일)',
     kstDate: '7월 20일(월) 오전 4시',
-    matches: '메트라이프 스타디움',
+    matches: '메트라이프 스타디움 · 대진 미정',
     status: '대진 미정',
   },
 ];
@@ -102,10 +102,10 @@ const overviewCards = [
 ];
 
 const roundOf32Highlights = [
-  ['32강 결과', '16경기 종료(승부차기 3·연장 2)'],
-  ['16강 기간', '7월 4일 ~ 7월 7일'],
-  ['8강 첫 확정', '모로코 vs 프랑스 · 7월 10일'],
-  ['결승', '7월 19일'],
+  ['8강 결과', '4경기 종료 · 준결승 4팀 확정'],
+  ['준결승 1', '프랑스 vs 스페인 · 7월 15일'],
+  ['준결승 2', '잉글랜드 vs 아르헨티나 · 7월 16일'],
+  ['결승', '7월 20일'],
 ];
 
 const sources = [
@@ -120,23 +120,23 @@ const sources = [
     desc: '네이버 치지직 공식 홈',
   },
   {
-    label: '파이낸셜뉴스 - 16강 대진 완성',
-    href: 'https://www.fnnews.com/news/202607041620424888',
-    desc: '32강 결과와 16강 대진 확정 소식',
+    label: '머니투데이 - 8강 대진 완성',
+    href: 'https://www.mt.co.kr/sports/2026/07/08/2026070808254113524',
+    desc: '16강 결과와 8강 대진 확정, 준결승 일정 소식',
   },
 ];
 
 export const metadata: Metadata = {
-  title: '치지직 월드컵 중계 바로가기 | 2026 월드컵 32강 결과·16강 일정',
+  title: '치지직 월드컵 중계 바로가기 | 2026 월드컵 8강 결과·준결승 일정',
   description:
-    '치지직 월드컵 중계 바로가기와 2026 북중미 월드컵 32강 결과, 16강 대진·일정을 한국시간 기준으로 정리했습니다. 한국 조별리그 결과도 함께 확인하세요.',
-  keywords: ['치지직 월드컵 중계', '치지직 스포츠', '월드컵 16강', '2026 월드컵 32강 결과', '한국 월드컵 일정'],
+    '치지직 월드컵 중계 바로가기와 2026 북중미 월드컵 16강 결과, 8강·준결승 일정을 한국시간 기준으로 정리했습니다. 한국 조별리그 결과도 함께 확인하세요.',
+  keywords: ['치지직 월드컵 중계', '치지직 스포츠', '월드컵 8강', '2026 월드컵 준결승', '한국 월드컵 일정'],
   alternates: {
     canonical: '/chzzk-worldcup',
   },
   openGraph: {
-    title: '치지직 월드컵 중계 바로가기 | 32강 결과·16강 일정',
-    description: '치지직 월드컵 중계 링크와 32강 결과, 16강 대진·일정을 한 화면에서 확인하세요.',
+    title: '치지직 월드컵 중계 바로가기 | 8강 결과·준결승 일정',
+    description: '치지직 월드컵 중계 링크와 16강 결과, 8강·준결승 일정을 한 화면에서 확인하세요.',
     url: 'https://zucca100.com/chzzk-worldcup',
     type: 'article',
   },
@@ -169,9 +169,9 @@ export default function ChzzkWorldcupPage() {
           <div className="mb-3 flex flex-wrap gap-2 text-xs font-black">
             <span className="rounded-full bg-slate-950 px-3 py-1.5 text-white">CHZZK</span>
             <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-emerald-700">
-              32강 결과 완료
+              8강 결과 완료
             </span>
-            <span className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-blue-700">16강 진행중</span>
+            <span className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-blue-700">준결승 대진 확정</span>
           </div>
 
           <div className="grid gap-5 lg:grid-cols-[1fr_0.95fr] lg:items-end">
@@ -179,8 +179,8 @@ export default function ChzzkWorldcupPage() {
               <p className="text-sm font-black uppercase tracking-[0.18em] text-emerald-600">FIFA World Cup 26</p>
               <h1 className="mt-2 text-3xl font-black leading-tight sm:text-5xl">치지직 월드컵 중계 바로가기</h1>
               <p className="mt-3 max-w-3xl text-base font-semibold leading-7 text-slate-600">
-                치지직에서 월드컵 중계와 관련 라이브 콘텐츠를 빠르게 확인하고, 32강 전체 결과와 16강 진행
-                상황, 대한민국 조별리그 결과를 함께 살펴보세요.
+                치지직에서 월드컵 중계와 관련 라이브 콘텐츠를 빠르게 확인하고, 8강 전체 결과와 준결승
+                대진·일정을 함께 살펴보세요.
               </p>
             </div>
 
@@ -199,12 +199,12 @@ export default function ChzzkWorldcupPage() {
           <div className="mt-5 rounded-3xl border border-emerald-200 bg-white p-5 shadow-sm">
             <div className="grid gap-5 lg:grid-cols-[1fr_0.9fr] lg:items-center">
               <div>
-                <p className="text-sm font-black uppercase tracking-[0.16em] text-emerald-700">Round of 32 · 종료</p>
-                <h2 className="mt-1 text-2xl font-black">월드컵 32강 결과와 16강 진행 상황</h2>
+                <p className="text-sm font-black uppercase tracking-[0.16em] text-emerald-700">Quarter Final · 종료</p>
+                <h2 className="mt-1 text-2xl font-black">월드컵 8강 결과와 준결승</h2>
                 <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-                  32강 16경기가 모두 끝나 16강 진출 16개국이 확정됐습니다. 한국은 조별리그 3위(1승 2패)로
-                  32강 진출에 실패했습니다. 16강은 7월 4일~7일(현지시간) 진행 중이며 8강 첫 대진(모로코
-                  vs 프랑스)도 이미 확정됐습니다.
+                  8강 4경기가 모두 끝나 준결승 4팀(프랑스·스페인·잉글랜드·아르헨티나)이 확정됐습니다.
+                  16강에선 노르웨이가 브라질을 꺾는 이변도 나왔습니다. 한국은 조별리그 3위(1승 2패)로
+                  32강 진출에 실패했습니다.
                 </p>
               </div>
               <div className="grid gap-2 sm:grid-cols-2">

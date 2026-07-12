@@ -199,20 +199,20 @@ const knockoutRounds = [
   {
     stage: '16강 토너먼트 (8경기)',
     kstDate: '7월 5일 (일) ~ 7월 8일 (수)',
-    detail: '2경기 종료(모로코·프랑스 승리) · 나머지 6경기 진행 예정',
-    status: '진행중',
+    detail: '8경기 모두 종료 · 노르웨이가 브라질 꺾는 이변 · 8강 진출 8개국 확정',
+    status: '종료',
   },
   {
     stage: '8강 토너먼트 (4경기)',
     kstDate: '7월 10일 (금) ~ 7월 12일 (일)',
-    detail: '1경기 확정: 모로코 vs 프랑스(7월 10일 오전 5시) · 나머지 3경기는 16강 종료 후 확정',
-    status: '1경기 확정',
+    detail: '4경기 모두 종료 · 프랑스·스페인·잉글랜드·아르헨티나 준결승 진출',
+    status: '종료',
   },
   {
-    stage: '4강 토너먼트 (2경기)',
+    stage: '준결승 (2경기)',
     kstDate: '7월 15일 (수) ~ 7월 16일 (목)',
-    detail: '알링턴(AT&T 스타디움) · 애틀랜타(메르세데스-벤츠 스타디움) / 대진 미정',
-    status: '대진 미정',
+    detail: '프랑스 vs 스페인(댈러스) · 잉글랜드 vs 아르헨티나(애틀랜타)',
+    status: '대진 확정',
   },
   {
     stage: '3·4위전',
@@ -272,8 +272,9 @@ const roundOf16Matches = [
     time: '오전 5:00',
     teams: '브라질 vs 노르웨이',
     venue: '이스트러더퍼드',
-    result: null,
-    status: '예정',
+    result: '노르웨이 2 : 1 브라질',
+    status: '종료',
+    tag: '이변',
   },
   {
     no: 4,
@@ -281,8 +282,8 @@ const roundOf16Matches = [
     time: '오전 9:00',
     teams: '멕시코 vs 잉글랜드',
     venue: '멕시코시티',
-    result: null,
-    status: '예정',
+    result: '잉글랜드 3 : 2 멕시코',
+    status: '종료',
   },
   {
     no: 5,
@@ -290,8 +291,8 @@ const roundOf16Matches = [
     time: '오전 4:00',
     teams: '포르투갈 vs 스페인',
     venue: '댈러스',
-    result: null,
-    status: '예정',
+    result: '스페인 1 : 0 포르투갈',
+    status: '종료',
     tag: '이베리아 더비',
   },
   {
@@ -300,8 +301,8 @@ const roundOf16Matches = [
     time: '오전 9:00',
     teams: '미국 vs 벨기에',
     venue: '시애틀',
-    result: null,
-    status: '예정',
+    result: '벨기에 4 : 1 미국',
+    status: '종료',
   },
   {
     no: 7,
@@ -309,8 +310,8 @@ const roundOf16Matches = [
     time: '오전 1:00',
     teams: '아르헨티나 vs 이집트',
     venue: '애틀랜타',
-    result: null,
-    status: '예정',
+    result: '아르헨티나 3 : 2 이집트',
+    status: '종료',
   },
   {
     no: 8,
@@ -318,6 +319,68 @@ const roundOf16Matches = [
     time: '오전 5:00',
     teams: '스위스 vs 콜롬비아',
     venue: '밴쿠버',
+    result: '스위스 0 : 0 콜롬비아 (PK 4-3)',
+    status: '종료',
+  },
+];
+
+const quarterFinalMatches = [
+  {
+    no: 1,
+    date: '7월 10일(금)',
+    time: '오전 5:00',
+    teams: '프랑스 vs 모로코',
+    venue: '보스턴',
+    result: '프랑스 2 : 0 모로코',
+    status: '종료',
+  },
+  {
+    no: 2,
+    date: '7월 11일(토)',
+    time: '오전 4:00',
+    teams: '스페인 vs 벨기에',
+    venue: '로스앤젤레스',
+    result: '스페인 2 : 1 벨기에',
+    status: '종료',
+  },
+  {
+    no: 3,
+    date: '7월 12일(일)',
+    time: '오전 6:00',
+    teams: '노르웨이 vs 잉글랜드',
+    venue: '마이애미가든스',
+    result: '잉글랜드 2 : 1 노르웨이',
+    status: '종료',
+  },
+  {
+    no: 4,
+    date: '7월 12일(일)',
+    time: '오전 10:00',
+    teams: '아르헨티나 vs 스위스',
+    venue: '캔자스시티',
+    result: '아르헨티나 3 : 1 스위스 (연장)',
+    status: '종료',
+    tag: '메시 활약',
+  },
+];
+
+const semiFinalMatches = [
+  {
+    no: 1,
+    date: '7월 15일(수)',
+    time: '오전 4:00',
+    teams: '프랑스 vs 스페인',
+    venue: '댈러스',
+    result: null,
+    status: '예정',
+    tag: '유럽 빅매치',
+  },
+  {
+    no: 2,
+    date: '7월 16일(목)',
+    time: '오전 4:00',
+    teams: '잉글랜드 vs 아르헨티나',
+    venue: '애틀랜타',
     result: null,
     status: '예정',
   },
@@ -325,24 +388,24 @@ const roundOf16Matches = [
 
 const tournamentFlow = [
   ['32강', '6월 28일~7월 3일', '종료 · 16강 진출 16개국 확정'],
-  ['16강', '7월 4일~7월 7일', '2경기 종료 · 6경기 진행 예정'],
-  ['8강', '7월 9일~7월 11일', '모로코 vs 프랑스 확정 · 나머지 3경기 대진 미정'],
-  ['4강', '7월 14일~7월 15일', '8강 승자 4팀'],
+  ['16강', '7월 4일~7월 7일', '8경기 모두 종료 · 브라질 탈락 이변'],
+  ['8강', '7월 9일~7월 11일', '4경기 모두 종료 · 준결승 4팀 확정'],
+  ['4강', '7월 14일~7월 15일', '프랑스 vs 스페인 · 잉글랜드 vs 아르헨티나'],
   ['결승', '7월 19일', '메트라이프 스타디움에서 우승팀 결정'],
 ];
 
 const worldcupFaq = [
   {
-    q: '2026 월드컵 32강 결과는 어떻게 되나요?',
-    a: '32강 16경기가 모두 끝났습니다. 승부차기 3경기(파라과이, 모로코, 이집트), 연장전 2경기(벨기에, 아르헨티나)가 나왔고 16강 진출 16개국이 확정됐습니다.',
+    q: '2026 월드컵 8강 결과는 어떻게 되나요?',
+    a: '프랑스 2-0 모로코, 스페인 2-1 벨기에, 잉글랜드 2-1 노르웨이, 아르헨티나 3-1 스위스(연장)로 4경기가 모두 끝났습니다. 프랑스·스페인·잉글랜드·아르헨티나가 준결승에 진출했습니다.',
   },
   {
-    q: '한국은 32강에 진출했나요?',
-    a: '아니요. 한국은 A조에서 1승 2패(승점 3, 골득실 -1)로 조 3위에 그쳤고, 조 3위 팀 중 상위 8팀만 32강에 오르는 규정에서 10위로 밀려 진출하지 못했습니다. 2018 러시아 대회 이후 8년 만의 조별리그 탈락입니다.',
+    q: '준결승 대진과 일정은 어떻게 되나요?',
+    a: '준결승 1경기는 7월 15일(수) 오전 4시 프랑스 vs 스페인(댈러스), 2경기는 7월 16일(목) 오전 4시 잉글랜드 vs 아르헨티나(애틀랜타)입니다. 결승은 7월 20일(월) 오전 4시 메트라이프 스타디움에서 열립니다.',
   },
   {
-    q: '16강 일정과 8강 대진은 언제 확정되나요?',
-    a: '16강은 7월 5일부터 8일까지(한국시간) 진행됩니다. 8강은 16강 승자끼리 맞붙는 구조로, 모로코 vs 프랑스(7월 10일)가 가장 먼저 확정됐고 나머지는 16강 종료 후 순차 확정됩니다.',
+    q: '16강 최대 이변은 무엇이었나요?',
+    a: '우승 후보 브라질이 노르웨이에 1-2로 패해 탈락한 것이 가장 큰 이변이었습니다. 개최국 미국도 벨기에에 1-4로 대패하며 16강에서 짐을 쌌습니다.',
   },
 ];
 
@@ -353,14 +416,14 @@ const sources = [
     desc: '2026 월드컵 전체 경기 결과 및 일정 공식 페이지',
   },
   {
-    label: '파이낸셜뉴스 - 16강 대진 완성',
-    href: 'https://www.fnnews.com/news/202607041620424888',
-    desc: '32강 결과와 16강 대진 확정 소식',
+    label: '머니투데이 - 8강 대진 완성',
+    href: 'https://www.mt.co.kr/sports/2026/07/08/2026070808254113524',
+    desc: '16강 결과와 8강 대진(유럽 6·남미 1·아프리카 1) 확정 소식',
   },
   {
-    label: '파이낸셜뉴스 - 모로코·프랑스 8강 확정',
-    href: 'https://www.fnnews.com/news/202607050902090477',
-    desc: '16강 첫 경기 결과와 8강 첫 대진 확정 소식',
+    label: '경향신문 - 프랑스 2-0 모로코',
+    href: 'https://www.khan.co.kr/article/202607100723001',
+    desc: '프랑스의 3회 연속 준결승 진출, 음바페 8호골 보도',
   },
   {
     label: '이데일리 - 한국 32강 진출 무산',
@@ -370,22 +433,22 @@ const sources = [
 ];
 
 export const metadata: Metadata = {
-  title: '2026 월드컵 32강 결과·16강 일정 총정리 (한국시간)',
+  title: '2026 월드컵 8강 결과·준결승 대진·일정 총정리 (한국시간)',
   description:
-    '2026 북중미 월드컵 32강 16경기 전체 결과와 16강 대진·일정을 한국시간 기준으로 정리했습니다. 한국의 조별리그 탈락 배경, 8강 첫 확정 대진(모로코 vs 프랑스)까지 확인하세요.',
+    '2026 북중미 월드컵 8강 전체 결과와 준결승 대진, 결승 일정을 한국시간 기준으로 정리했습니다. 브라질 탈락 이변부터 프랑스·스페인·잉글랜드·아르헨티나 준결승 진출까지 확인하세요.',
   keywords: [
-    '2026 월드컵 32강 결과',
-    '월드컵 16강 일정',
-    '월드컵 16강 대진',
-    '한국 월드컵 탈락',
-    '월드컵 8강 대진',
+    '2026 월드컵 8강 결과',
+    '월드컵 준결승 일정',
+    '월드컵 준결승 대진',
+    '월드컵 4강',
+    '월드컵 결승 일정',
   ],
   alternates: {
     canonical: '/worldcup-2026-schedule',
   },
   openGraph: {
-    title: '2026 월드컵 32강 결과·16강 일정 총정리 (한국시간)',
-    description: '32강 전체 결과부터 16강 대진, 8강 첫 확정 매치업까지 한국시간 기준으로 확인하세요.',
+    title: '2026 월드컵 8강 결과·준결승 대진·일정 총정리 (한국시간)',
+    description: '8강 전체 결과부터 준결승 대진, 결승 일정까지 한국시간 기준으로 확인하세요.',
     url: 'https://zucca100.com/worldcup-2026-schedule',
     type: 'article',
   },
@@ -418,9 +481,9 @@ export default function Worldcup2026SchedulePage() {
           <div className="mb-3 flex flex-wrap gap-2 text-xs font-black">
             <span className="rounded-full bg-slate-950 px-3 py-1.5 text-white">한국시간 기준</span>
             <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-emerald-700">
-              32강 결과 완료
+              8강 결과 완료
             </span>
-            <span className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-blue-700">16강 진행중</span>
+            <span className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-blue-700">준결승 대진 확정</span>
           </div>
 
           <div className="grid gap-5 lg:grid-cols-[1fr_0.95fr] lg:items-end">
@@ -430,8 +493,9 @@ export default function Worldcup2026SchedulePage() {
                 2026 월드컵 전체 경기 일정표
               </h1>
               <p className="mt-3 max-w-3xl text-base font-semibold leading-7 text-slate-600">
-                조별리그 72경기와 32강 토너먼트 16경기가 모두 끝나고 16강이 진행 중입니다. 32강 전체 결과와
-                16강 대진·일정을 한국시간 기준으로 정리했습니다. 대한민국은 조별리그 3위(1승 2패)로 32강
+                8강까지 모두 끝나고 준결승 대진이 확정됐습니다. 프랑스·스페인·잉글랜드·아르헨티나가
+                4강에 올랐고, 노르웨이가 브라질을 꺾는 이변도 나왔습니다. 32강부터 준결승까지 전체
+                결과·일정을 한국시간 기준으로 정리했습니다. 대한민국은 조별리그 3위(1승 2패)로 32강
                 진출에는 실패했습니다.
               </p>
             </div>
@@ -440,14 +504,14 @@ export default function Worldcup2026SchedulePage() {
           </div>
 
           <div className="mt-5 grid gap-3 sm:grid-cols-3">
-            <a href="#round-of-32" className="rounded-2xl bg-slate-950 px-4 py-4 text-sm font-black text-white shadow-sm transition hover:bg-slate-800">
-              32강 전체 결과 보기
+            <a href="#round-of-16" className="rounded-2xl bg-slate-950 px-4 py-4 text-sm font-black text-white shadow-sm transition hover:bg-slate-800">
+              16강 전체 결과 보기
             </a>
-            <a href="#round-of-16" className="rounded-2xl bg-emerald-600 px-4 py-4 text-sm font-black text-white shadow-sm transition hover:bg-emerald-700">
-              16강 대진·일정 보기
+            <a href="#quarter-final" className="rounded-2xl bg-emerald-600 px-4 py-4 text-sm font-black text-white shadow-sm transition hover:bg-emerald-700">
+              8강 결과·대진 보기
             </a>
-            <a href="#knockout-flow" className="rounded-2xl bg-blue-600 px-4 py-4 text-sm font-black text-white shadow-sm transition hover:bg-blue-700">
-              8강~결승 일정 바로 확인하기
+            <a href="#semi-final" className="rounded-2xl bg-blue-600 px-4 py-4 text-sm font-black text-white shadow-sm transition hover:bg-blue-700">
+              준결승·결승 일정 보기
             </a>
           </div>
 
@@ -527,12 +591,12 @@ export default function Worldcup2026SchedulePage() {
       <section id="round-of-16" className="px-4 pb-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="rounded-3xl border border-blue-200 bg-white p-5 shadow-sm sm:p-6">
-            <p className="text-sm font-black uppercase tracking-[0.16em] text-blue-700">Round of 16 · 진행중</p>
-            <h2 className="mt-1 text-3xl font-black">16강 대진·일정 (한국시간)</h2>
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-blue-700">Round of 16 · 종료</p>
+            <h2 className="mt-1 text-3xl font-black">16강 전체 결과 (한국시간)</h2>
             <p className="mt-3 text-base font-semibold leading-7 text-slate-600">
-              16강은 7월 5일부터 8일까지(한국시간) 8경기가 열립니다. 모로코와 프랑스가 먼저 8강에
-              올랐고, 나머지 6경기가 순차적으로 진행됩니다. 7일 포르투갈-스페인전은 &lsquo;이베리아
-              더비&rsquo;로 이번 16강 최고 빅매치로 꼽힙니다.
+              16강 8경기가 7월 5일부터 8일까지(한국시간) 모두 끝났습니다. 최대 이변은 노르웨이가 우승
+              후보 브라질을 2-1로 꺾은 경기였고, 스페인은 &lsquo;이베리아 더비&rsquo;에서 포르투갈을
+              1-0으로 눌렀습니다. 개최국 미국은 벨기에에 1-4로 대패하며 탈락했습니다.
             </p>
           </div>
 
@@ -576,8 +640,108 @@ export default function Worldcup2026SchedulePage() {
           </div>
 
           <p className="mt-4 rounded-2xl border border-blue-200 bg-blue-50 p-4 text-sm font-bold leading-6 text-blue-900">
-            8강 대진은 16강 승자끼리 다시 맞붙는 구조로, 모로코 vs 프랑스(7월 10일 오전 5시)가 가장 먼저
-            확정됐습니다. 나머지 8강 대진은 남은 16강 경기 결과에 따라 순차적으로 확정됩니다.
+            16강을 통과한 8개국(프랑스·모로코·스페인·벨기에·노르웨이·잉글랜드·아르헨티나·스위스)이
+            8강에서 맞붙습니다. 유럽 6팀, 남미 1팀(아르헨티나), 아프리카 1팀(모로코) 구도입니다.
+          </p>
+        </div>
+      </section>
+
+      <section id="quarter-final" className="px-4 pb-8 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="rounded-3xl border border-emerald-200 bg-white p-5 shadow-sm sm:p-6">
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-emerald-700">Quarter Final · 종료</p>
+            <h2 className="mt-1 text-3xl font-black">8강 전체 결과 (한국시간)</h2>
+            <p className="mt-3 text-base font-semibold leading-7 text-slate-600">
+              8강 4경기가 7월 10일부터 12일까지(한국시간) 모두 끝났습니다. 프랑스가 모로코를 2-0으로
+              완파하고, 스페인은 벨기에를 2-1, 잉글랜드는 노르웨이를 2-1로 꺾었으며, 아르헨티나는
+              스위스를 연장 접전 끝에 3-1로 눌러 4강 4팀이 모두 확정됐습니다.
+            </p>
+          </div>
+
+          <div className="mt-4 space-y-2">
+            {quarterFinalMatches.map((match) => (
+              <article
+                key={match.no}
+                className={`grid gap-2 rounded-2xl border p-4 shadow-sm sm:grid-cols-[110px_1fr_auto] sm:items-center ${
+                  match.status === '종료' ? 'border-emerald-200 bg-emerald-50' : 'border-slate-200 bg-white'
+                }`}
+              >
+                <div className="text-sm font-black text-slate-800">
+                  {match.date}
+                  <div className="text-xs font-semibold text-slate-500">{match.time}</div>
+                </div>
+                <div>
+                  <p className="text-base font-black text-slate-900">
+                    {match.teams}
+                    {match.tag && (
+                      <span className="ml-2 rounded-full bg-blue-600 px-2 py-0.5 text-[10px] font-black text-white align-middle">
+                        {match.tag}
+                      </span>
+                    )}
+                  </p>
+                  <p className="mt-1 text-xs font-semibold text-slate-500">
+                    {match.venue}
+                    {match.result && <span className="ml-2 font-black text-emerald-700">{match.result}</span>}
+                  </p>
+                </div>
+                <span
+                  className={`inline-block rounded-full px-2.5 py-1 text-xs font-black ${
+                    match.status === '종료'
+                      ? 'border border-emerald-200 bg-white text-emerald-700'
+                      : 'border border-amber-200 bg-amber-50 text-amber-800'
+                  }`}
+                >
+                  {match.status}
+                </span>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="semi-final" className="px-4 pb-8 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="rounded-3xl border border-blue-200 bg-white p-5 shadow-sm sm:p-6">
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-blue-700">Semi Final · 대진 확정</p>
+            <h2 className="mt-1 text-3xl font-black">준결승·결승 일정 (한국시간)</h2>
+            <p className="mt-3 text-base font-semibold leading-7 text-slate-600">
+              준결승 1경기는 7월 15일 프랑스 vs 스페인(댈러스), 2경기는 7월 16일 잉글랜드 vs
+              아르헨티나(애틀랜타)로 확정됐습니다. 이후 3·4위전(7월 19일)과 결승전(7월 20일)이
+              이어집니다.
+            </p>
+          </div>
+
+          <div className="mt-4 space-y-2">
+            {semiFinalMatches.map((match) => (
+              <article
+                key={match.no}
+                className="grid gap-2 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:grid-cols-[110px_1fr_auto] sm:items-center"
+              >
+                <div className="text-sm font-black text-slate-800">
+                  {match.date}
+                  <div className="text-xs font-semibold text-slate-500">{match.time}</div>
+                </div>
+                <div>
+                  <p className="text-base font-black text-slate-900">
+                    {match.teams}
+                    {match.tag && (
+                      <span className="ml-2 rounded-full bg-blue-600 px-2 py-0.5 text-[10px] font-black text-white align-middle">
+                        {match.tag}
+                      </span>
+                    )}
+                  </p>
+                  <p className="mt-1 text-xs font-semibold text-slate-500">{match.venue}</p>
+                </div>
+                <span className="inline-block rounded-full border border-amber-200 bg-amber-50 px-2.5 py-1 text-xs font-black text-amber-800">
+                  {match.status}
+                </span>
+              </article>
+            ))}
+          </div>
+
+          <p className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm font-bold leading-6 text-amber-900">
+            3·4위전은 7월 19일(일) 오전 6시 마이애미가든스, 결승전은 7월 20일(월) 오전 4시
+            이스트러더퍼드(메트라이프 스타디움)에서 열립니다. 준결승 결과에 따라 대진이 확정됩니다.
           </p>
         </div>
       </section>
@@ -691,8 +855,8 @@ export default function Worldcup2026SchedulePage() {
         <div className="mx-auto max-w-6xl">
           <h2 className="text-2xl font-black">토너먼트 진행 상황 (32강 ~ 결승)</h2>
           <p className="mt-2 text-sm font-semibold text-slate-600">
-            32강은 종료, 16강은 진행중입니다. 8강 이후 대진은 앞선 라운드 결과에 따라 순차 확정되며,
-            확정 전 경기는 일정만 기재하고 대진은 미정으로 표기했습니다.
+            32강·16강·8강은 종료, 준결승 대진까지 확정됐습니다. 3·4위전과 결승 대진은 준결승 결과에
+            따라 확정되며, 확정 전 경기는 일정만 기재하고 대진은 미정으로 표기했습니다.
           </p>
 
           <div className="mt-4 space-y-3">
@@ -749,7 +913,7 @@ export default function Worldcup2026SchedulePage() {
 
       <section className="px-4 pb-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
-          <h2 className="text-2xl font-black">월드컵 32강 결과·16강 일정 FAQ</h2>
+          <h2 className="text-2xl font-black">월드컵 8강 결과·준결승 일정 FAQ</h2>
           <div className="mt-4 grid gap-3 md:grid-cols-3">
             {worldcupFaq.map((item) => (
               <article key={item.q} className="rounded-2xl bg-slate-50 p-4">

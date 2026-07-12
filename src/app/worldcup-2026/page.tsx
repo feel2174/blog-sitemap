@@ -54,22 +54,22 @@ const stageSchedule = [
     stage: '16강 토너먼트',
     localDate: '7월 4일 ~ 7월 7일',
     kstDate: '7월 5일 ~ 7월 8일 새벽·오전',
-    matches: '2경기 종료(모로코·프랑스 승리) · 6경기 진행 예정',
-    status: '진행중',
+    matches: '8경기 모두 종료 · 노르웨이가 브라질 꺾는 이변 · 8강 8개국 확정',
+    status: '종료',
   },
   {
     stage: '8강 토너먼트',
     localDate: '7월 9일 ~ 7월 11일',
     kstDate: '7월 10일 ~ 7월 12일 새벽·오전',
-    matches: '모로코 vs 프랑스(7월 10일 오전 5시) 확정 · 나머지 3경기 대진 미정',
-    status: '1경기 확정',
+    matches: '4경기 모두 종료 · 프랑스·스페인·잉글랜드·아르헨티나 준결승 진출',
+    status: '종료',
   },
   {
-    stage: '4강 토너먼트',
+    stage: '준결승',
     localDate: '7월 14일 ~ 7월 15일',
     kstDate: '7월 15일 ~ 7월 16일 새벽·오전',
-    matches: '알링턴(AT&T 스타디움) · 애틀랜타(메르세데스-벤츠 스타디움) / 대진 미정',
-    status: '대진 미정',
+    matches: '프랑스 vs 스페인(댈러스) · 잉글랜드 vs 아르헨티나(애틀랜타)',
+    status: '대진 확정',
   },
   {
     stage: '3·4위전',
@@ -107,10 +107,10 @@ const overviewCards = [
 ];
 
 const roundOf32Highlights = [
-  ['32강 결과', '16경기 종료 · 승부차기 3회, 연장 2회'],
-  ['16강 기간', '7월 4일 ~ 7월 7일(현지시간)'],
-  ['8강 첫 확정', '모로코 vs 프랑스 · 7월 10일 오전 5시'],
-  ['결승', '7월 19일 메트라이프 스타디움'],
+  ['8강 결과', '4경기 종료 · 준결승 4팀 확정'],
+  ['준결승 1', '프랑스 vs 스페인 · 7월 15일 오전 4시'],
+  ['준결승 2', '잉글랜드 vs 아르헨티나 · 7월 16일 오전 4시'],
+  ['결승', '7월 20일 메트라이프 스타디움'],
 ];
 
 const groupA = [
@@ -132,29 +132,29 @@ const sources = [
     desc: '한국의 조별리그 탈락과 이란과의 순위 비교 보도',
   },
   {
-    label: '파이낸셜뉴스 - 16강 대진 완성',
-    href: 'https://www.fnnews.com/news/202607041620424888',
-    desc: '32강 결과와 16강 대진 확정 소식',
+    label: '머니투데이 - 8강 대진 완성',
+    href: 'https://www.mt.co.kr/sports/2026/07/08/2026070808254113524',
+    desc: '16강 결과와 8강 대진 확정, 준결승 일정 소식',
   },
 ];
 
 export const metadata: Metadata = {
-  title: '2026 북중미 월드컵 일정 총정리 (32강 결과·16강 진행 상황)',
+  title: '2026 북중미 월드컵 일정 총정리 (16강 결과·8강·준결승)',
   description:
-    '2026 북중미 월드컵 32강 결과와 16강 진행 상황을 한국시간 기준으로 정리했습니다. 한국 조별리그 결과와 32강 탈락 배경, 16강·8강 대진까지 확인하세요.',
+    '2026 북중미 월드컵 16강 결과와 8강 진행 상황, 준결승·결승 일정을 한국시간 기준으로 정리했습니다. 브라질 탈락 이변과 프랑스·스페인·잉글랜드 준결승 진출까지 확인하세요.',
   keywords: [
     '2026 월드컵 일정',
     '북중미 월드컵',
-    '한국 월드컵 탈락',
-    '월드컵 32강 결과',
-    '월드컵 16강 일정',
+    '월드컵 8강 결과',
+    '월드컵 준결승 일정',
+    '월드컵 16강 결과',
   ],
   alternates: {
     canonical: '/worldcup-2026',
   },
   openGraph: {
-    title: '2026 북중미 월드컵 일정 총정리 (32강 결과·16강 진행 상황)',
-    description: '한국 조별리그 결과부터 32강 전체 결과, 16강 진행 상황까지 2026 월드컵을 한 화면에서 확인하세요.',
+    title: '2026 북중미 월드컵 일정 총정리 (16강 결과·8강·준결승)',
+    description: '16강 전체 결과부터 8강 진행 상황, 준결승·결승 일정까지 2026 월드컵을 한 화면에서 확인하세요.',
     url: 'https://zucca100.com/worldcup-2026',
     type: 'article',
   },
@@ -187,9 +187,9 @@ export default function Worldcup2026Page() {
           <div className="mb-3 flex flex-wrap gap-2 text-xs font-black">
             <span className="rounded-full bg-slate-950 px-3 py-1.5 text-white">2026.07 기준</span>
             <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-emerald-700">
-              32강 결과 완료
+              8강 결과 완료
             </span>
-            <span className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-blue-700">16강 진행중</span>
+            <span className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-blue-700">준결승 대진 확정</span>
           </div>
 
           <div className="grid gap-5 lg:grid-cols-[1fr_0.95fr] lg:items-end">
@@ -199,9 +199,10 @@ export default function Worldcup2026Page() {
                 2026 북중미 월드컵 일정 총정리
               </h1>
               <p className="mt-3 max-w-3xl text-base font-semibold leading-7 text-slate-600">
-                32강 토너먼트 16경기가 모두 끝나고 16강이 진행 중입니다. 한국 A조 경기 결과부터
-                32강 전체 결과, 16강·8강 진행 상황까지 한국시간 기준으로 한 화면에서 확인하세요. 한국은
-                조별리그 3위(1승 2패)로 32강 진출에 실패했습니다.
+                8강까지 모두 끝나고 준결승 대진이 확정됐습니다. 프랑스·스페인·잉글랜드·아르헨티나가
+                4강에 올랐고, 노르웨이가 브라질을 꺾는 이변도 나왔습니다. 8강 전체 결과부터 준결승·결승
+                일정까지 한국시간 기준으로 확인하세요. 한국은 조별리그 3위(1승 2패)로 32강 진출에
+                실패했습니다.
               </p>
             </div>
 
@@ -220,11 +221,11 @@ export default function Worldcup2026Page() {
           <div className="mt-5 rounded-3xl border border-emerald-200 bg-emerald-50 p-5 shadow-sm">
             <div className="grid gap-5 lg:grid-cols-[1fr_0.9fr] lg:items-center">
               <div>
-                <p className="text-sm font-black uppercase tracking-[0.16em] text-emerald-700">Round of 32 · 종료</p>
-                <h2 className="mt-1 text-2xl font-black">월드컵 32강 결과 10초 요약</h2>
+                <p className="text-sm font-black uppercase tracking-[0.16em] text-emerald-700">Quarter Final · 종료</p>
+                <h2 className="mt-1 text-2xl font-black">월드컵 8강 결과·준결승 10초 요약</h2>
                 <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">
-                  32강 16경기(6월 28일~7월 3일 현지시간)가 모두 끝나 16강 진출 16개국이 확정됐습니다.
-                  16강은 7월 4일~7일(현지시간) 진행 중이며, 8강 첫 대진(모로코 vs 프랑스)도 이미 확정됐습니다.
+                  8강 4경기가 모두 끝나 준결승 4팀이 확정됐습니다. 프랑스·스페인·잉글랜드·아르헨티나가
+                  4강에 올랐고, 준결승은 프랑스 vs 스페인, 잉글랜드 vs 아르헨티나로 짜였습니다.
                 </p>
               </div>
               <div className="grid gap-2 sm:grid-cols-2">
@@ -324,8 +325,8 @@ export default function Worldcup2026Page() {
         <div className="mx-auto max-w-6xl">
           <h2 className="text-2xl font-black">단계별 진행 상황</h2>
           <p className="mt-2 text-sm font-semibold text-slate-600">
-            조별리그와 32강은 종료됐고 16강이 진행 중입니다. 8강 이후 대진은 앞선 라운드 결과에 따라
-            순차 확정되며, 확정 전 경기는 일정만 기재하고 대진은 미정으로 표기했습니다.
+            조별리그·32강·16강·8강이 모두 종료됐고 준결승 대진까지 확정됐습니다. 3·4위전과 결승 대진은
+            준결승 결과에 따라 확정되며, 확정 전 경기는 미정으로 표기했습니다.
           </p>
 
           <div className="mt-4 space-y-3">
@@ -367,8 +368,8 @@ export default function Worldcup2026Page() {
           </div>
 
           <p className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm font-bold leading-6 text-amber-900">
-            8강 이후 토너먼트의 개별 경기 킥오프 시간은 대진 확정 후 FIFA 공식 일정에서 발표될 예정입니다.
-            한국은 조별리그 3위로 탈락해 이후 토너먼트에는 참가하지 않습니다.
+            3·4위전과 결승 대진은 준결승 결과에 따라 확정됩니다. 한국은 조별리그 3위로 탈락해 이후
+            토너먼트에는 참가하지 않습니다.
           </p>
         </div>
       </section>
