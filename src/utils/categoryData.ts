@@ -8,7 +8,7 @@ const categorizedData: CategorizedData = {
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
-      "count": 21,
+      "count": 22,
       "description": "금융 & 투자"
     },
     "health_wellness": {
@@ -298,6 +298,12 @@ const categorizedData: CategorizedData = {
       }
     ],
     "finance_investment": [
+      {
+        "title": "대한민국 모든 은행 & 금융기관 공식 홈페이지 통합 바로가기 모음",
+        "link": "/korea-all-banks",
+        "category": "finance_investment",
+        "matched_keywords": ["은행", "시중은행", "지방은행", "저축은행", "증권사", "홈페이지 바로가기", "카카오뱅크", "토스뱅크", "국민은행", "신한은행", "하나은행", "우리은행", "농협은행"]
+      },
       {
         "title": "삼성전자 · SK하이닉스 단일종목 레버리지 ETF 출시 안내 및 투자 방법",
         "link": "/samsung-sk-leverage-etf",
