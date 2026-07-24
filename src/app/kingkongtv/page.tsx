@@ -2,6 +2,8 @@ import Link from 'next/link';
 import React from 'react';
 import CoupangAds from '@/components/CoupangAds';
 
+const chzzkCupUrl = 'https://zucca100.com/chzzk-cup/';
+
 export const metadata = {
  title: '무료스포츠중계 킹콩티비 - 실시간 고화질 스포츠 중계',
  description: 'PC와 모바일에서 실시간으로 끊김 없이 고화질로 즐기는 무료스포츠중계 킹콩티비. 해외축구, MLB, NBA 등 전 세계 모든 스포츠 중계.',
@@ -83,6 +85,15 @@ export default function KingKongTVPage() {
  </Link>
 
  {/* 리그 바로가기 */}
+ <Link
+ href={chzzkCupUrl}
+ className="flex items-center justify-center w-full py-[16px] px-[15px] no-underline rounded-[18px] relative z-10 bg-[#00ffa3] hover:bg-[#33ffb5] text-[#06120d] border border-[#7dffd0] shadow-[0_0_24px_rgba(0,255,163,0.25)] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+ >
+ <span className="text-[18px] sm:text-[19px] font-[900] tracking-[-0.5px]">
+ 치지직에서 월드컵중계 보기
+ </span>
+ </Link>
+
  <div className="grid grid-cols-2 gap-3 w-full mt-2 relative z-10">
  <Link 
  href="https://kingkongtv.org/"

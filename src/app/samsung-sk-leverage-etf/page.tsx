@@ -4,18 +4,68 @@ import {
   FaChartLine, 
   FaChevronRight, 
   FaGraduationCap, 
-  FaWallet, 
+  FaBuilding, 
   FaBookOpen, 
   FaExclamationTriangle, 
-  FaInfoCircle, 
   FaCheckCircle,
-  FaArrowRight
+  FaArrowRight,
+  FaUniversity,
+  FaExchangeAlt
 } from 'react-icons/fa';
 
 export const metadata = {
-  title: '삼성전자 · SK하이닉스 단일종목 레버리지 ETF 출시 안내 및 투자 방법',
-  description: '국내 증시에 상장된 삼성전자와 SK하이닉스 단일종목 레버리지 ETF 상품 정보, 필수 레버리지 교육 이수 및 비대면 증권 계좌개설 신청 방법을 자세히 안내합니다.',
+  title: '삼성전자 · SK하이닉스 단일종목 레버리지 ETF 출시 안내 및 전 은행·증권사 바로가기',
+  description: '국내 상장된 삼성전자·SK하이닉스 단일종목 레버리지 ETF 가이드, 필수 레버리지 교육 이수 및 국내 모든 은행·증권사 비대면 계좌개설 바로가기를 제공합니다.',
 };
+
+// 1. 주요 증권사 (Leverage ETF 거래)
+const brokerageLinks = [
+  { name: '키움증권', url: 'https://www3.kiwoom.com/m/newaccount/VNewAccountIntroView', color: 'from-[#e4005c] to-[#c4004c]' },
+  { name: '삼성증권', url: 'https://www.onestopsamsungpop.co.kr/?skipSection=stock_main', color: 'from-[#0e44a4] to-[#0a2e73]' },
+  { name: '미래에셋증권', url: 'https://securities.miraeasset.com/mka/mka1001/n01.do', color: 'from-[#f27421] to-[#d45c0f]' },
+  { name: '한국투자증권', url: 'https://securities.koreainvestment.com/main/A_CO_10004.jsp', color: 'from-[#0055a5] to-[#003c78]' },
+  { name: 'KB증권', url: 'https://www.kbsec.com/go.able?linkcd=m06020000', color: 'from-[#e5a800] to-[#b38300]' },
+  { name: '나무 (NH투자)', url: 'https://www.mynamuhbegin.com/', color: 'from-[#00b05b] to-[#008f48]' },
+  { name: '토스증권', url: 'https://www.tossinvest.com/', color: 'from-[#0050FF] to-[#0038D1]' },
+  { name: '신한투자증권', url: 'https://m.shinhansec.com/mweb/acct/mact/amact0013', color: 'from-[#0046FF] to-[#0038CC]' },
+  { name: '하나증권', url: 'https://www.hanaw.com/main/customer/openAccount/CS_180100_P.cmd', color: 'from-[#008485] to-[#006A6A]' },
+  { name: '메리츠증권', url: 'https://meritzevent.com/super365/', color: 'from-[#c90035] to-[#a00020]' },
+  { name: '카카오페이증권', url: 'https://www.kakaopaysec.com/guide/account/dynamicPage.do', color: 'from-[#d9b800] to-[#b39700]' },
+  { name: '유진투자증권', url: 'https://www.eugenefn.com/comm/msgDetail.do?msgId=508968&menu_id=03060500&menu_level=3&boardYn=Y&boardUrl=/serv/svsc/svsc501r', color: 'from-[#005E9E] to-[#004B7E]' },
+  { name: '유안타증권', url: 'https://www.myasset.com/myasset/hello/open/HU_0100000_P1.cmd', color: 'from-[#EC1D3B] to-[#C1001D]' },
+  { name: '한화투자증권', url: 'https://m.hanwhawm.com:9090/M/nftf/main/index.cmd#noback', color: 'from-[#F37321] to-[#D85C0A]' },
+];
+
+// 2. 5대 시중은행 & 인터넷전문은행
+const majorBankLinks = [
+  { name: 'KB국민은행', url: 'https://m.kbcard.com/BON/DVIEW/MBHV1103' },
+  { name: '신한은행', url: 'https://www.shinhancard.com/pconts/html/myPage/governmentSupport/MOBFM591N/MOBFM591R02.html' },
+  { name: '하나은행', url: 'https://m.hanacard.co.kr/MKEVT1010M.web?EVN_SEQ=60332' },
+  { name: '우리은행', url: 'https://pc.wooricard.com/dcpc/yh1/mcd/mcd04/fcstistlfee/H1MCD204S85.do?1777219246389' },
+  { name: 'NH농협은행', url: 'https://banking.nonghyup.com/nhbank.html' },
+  { name: 'IBK기업은행', url: 'https://www.ibk.co.kr/' },
+  { name: '카카오뱅크', url: 'https://www.kakaobank.com/' },
+  { name: '케이뱅크', url: 'https://www.kbanknow.com/ib20/mnu/PBKMAN000000' },
+  { name: '토스뱅크', url: 'https://www.tossbank.com/' },
+  { name: 'SC제일은행', url: 'https://www.standardchartered.co.kr/np/kr/cm/cc/ContactCenterInfo.jsp' },
+];
+
+// 3. 지방은행, 저축은행 및 금융기관
+const regionalOtherBankLinks = [
+  { name: 'BNK부산은행', url: 'https://www.busan.go.kr/relief/' },
+  { name: 'BNK경남은행', url: 'https://www.knbank.co.kr/' },
+  { name: 'DGB대구은행 (iM뱅크)', url: 'https://www.dgb.co.kr/' },
+  { name: '광주은행', url: 'https://www.kjbank.com/ib20/mnu/BHPBKIF050101?ib20_wc=BHPBKIF050101V10:BHPBKIF050101V20&DIV100_S1=2&BLTHG_NO=32386&INBN_POPUP_BLBD_DVCD=NWS&ROW_NUM1=1' },
+  { name: '전북은행', url: 'https://www.jbbank.co.kr/' },
+  { name: '제주은행', url: 'https://www.e-jejubank.com/' },
+  { name: 'Sh수협은행', url: 'https://www.suhyup-bank.com/' },
+  { name: '새마을금고', url: 'https://www.kfcc.co.kr/' },
+  { name: '신협', url: 'https://www.cu.co.kr/' },
+  { name: '우체국예금', url: 'https://www.epostbank.go.kr/' },
+  { name: 'SBI저축은행', url: 'https://www.sbisb.co.kr/' },
+  { name: 'OK저축은행', url: 'https://www.oksavingsbank.com/' },
+  { name: '다올저축은행', url: 'https://www.daolbank.co.kr/' },
+];
 
 export default function LeverageEtfPage() {
   return (
@@ -28,11 +78,11 @@ export default function LeverageEtfPage() {
         <div className="absolute bottom-[20%] left-[20%] w-[60vw] h-[60vw] rounded-full bg-zinc-900/10 blur-[150px] mix-blend-screen"></div>
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-16 lg:py-24">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-12 lg:py-20">
         
         {/* Hero Header */}
-        <div className="text-center mb-10 space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md text-blue-400 text-sm font-semibold tracking-wider uppercase mb-2">
+        <div className="text-center mb-8 space-y-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md text-blue-400 text-sm font-semibold tracking-wider uppercase mb-1">
             <FaChartLine className="animate-pulse text-blue-500" />
             NEW SINGLE STOCK LEVERAGE ETF
           </div>
@@ -45,40 +95,138 @@ export default function LeverageEtfPage() {
           </h1>
           
           <p className="text-zinc-400 text-base sm:text-lg max-w-3xl mx-auto font-light leading-relaxed break-keep">
-            대한민국 반도체 양대 산맥인 삼성전자와 SK하이닉스 주가를 추종하는 단일종목 2배 레버리지 ETF가 국내 증시에 출시되었습니다.
-            아래 필수 단계를 통해 빠르게 거래를 준비해 보세요.
+            대한민국 반도체 대표주 삼성전자와 SK하이닉스 주가를 추종하는 단일종목 2배 레버리지 ETF가 국내 증시에 공식 상장되었습니다.
+            아래 바로가기 버튼을 통해 레버리지 교육 이수 및 원하는 금융기관 계좌 개설을 빠르게 진행하세요.
           </p>
         </div>
 
-        {/* Quick Actions Buttons Section (Directly below intro for maximum mobile CTR) */}
-        <div className="max-w-2xl mx-auto mb-16 p-6 rounded-3xl bg-white/[0.02] border border-white/10 backdrop-blur-md text-center">
-          <p className="text-xs sm:text-sm text-zinc-400 mb-4 font-semibold tracking-wide">⚡ 거래 시작을 위한 필수 링크 바로가기</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            
-            {/* CTA Button 1 - Pulse Animation */}
-            <Link 
-              href="https://zucca100.com/stock-account/"
-              className="relative flex items-center justify-between gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-extrabold text-sm sm:text-base border border-blue-400/30 shadow-[0_4px_20px_rgba(37,99,235,0.35)] hover:shadow-[0_4px_25px_rgba(37,99,235,0.55)] transition-all duration-300 group hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <span className="absolute inset-0 rounded-2xl bg-blue-500/20 animate-ping opacity-75 pointer-events-none"></span>
-              <span className="relative z-10">비대면 계좌개설 바로가기</span>
-              <FaChevronRight className="relative z-10 text-xs group-hover:translate-x-1 transition-transform" />
-            </Link>
+        {/* ======================================================== */}
+        {/* HIGH-CTR ALL BANK & BROKERAGE BUTTON LIST SECTION        */}
+        {/* DIRECTLY BELOW INTRO FOR MAXIMUM ACCESSIBILITY ON MOBILE   */}
+        {/* ======================================================== */}
+        <div className="space-y-8 mb-16">
+          
+          {/* Top Primary CTAs */}
+          <div className="max-w-3xl mx-auto p-5 sm:p-6 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-md text-center shadow-2xl">
+            <p className="text-xs sm:text-sm text-blue-300 mb-4 font-bold tracking-wide flex items-center justify-center gap-2">
+              <span>⚡</span> 거래 시작 필수 2단계 바로가기
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Primary Button 1 */}
+              <Link 
+                href="https://zucca100.com/stock-account/"
+                className="relative flex items-center justify-between gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-extrabold text-sm sm:text-base border border-blue-400/40 shadow-[0_4px_20px_rgba(37,99,235,0.35)] hover:shadow-[0_4px_25px_rgba(37,99,235,0.6)] transition-all duration-300 group hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <span className="absolute inset-0 rounded-2xl bg-blue-500/20 animate-ping opacity-75 pointer-events-none"></span>
+                <span className="relative z-10 flex items-center gap-2">
+                  <FaExchangeAlt className="text-blue-200" />
+                  비대면 계좌개설 바로가기
+                </span>
+                <FaChevronRight className="relative z-10 text-xs group-hover:translate-x-1 transition-transform" />
+              </Link>
 
-            {/* CTA Button 2 - Pulse Animation */}
-            <Link 
-              href="https://www.kifin.or.kr/common/edu/1/detail.do"
-              className="relative flex items-center justify-between gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-orange-600 to-red-600 text-white font-extrabold text-sm sm:text-base border border-orange-400/30 shadow-[0_4px_20px_rgba(249,115,22,0.35)] hover:shadow-[0_4px_25px_rgba(249,115,22,0.55)] transition-all duration-300 group hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <span className="absolute inset-0 rounded-2xl bg-orange-500/20 animate-ping opacity-75 pointer-events-none"></span>
-              <span className="relative z-10 flex items-center gap-2">
-                <FaGraduationCap className="text-white text-lg" />
-                레버리지 교육 바로가기
-              </span>
-              <FaChevronRight className="relative z-10 text-xs group-hover:translate-x-1 transition-transform" />
-            </Link>
-
+              {/* Primary Button 2 */}
+              <Link 
+                href="https://www.kifin.or.kr/common/edu/1/detail.do"
+                className="relative flex items-center justify-between gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-orange-600 to-red-600 text-white font-extrabold text-sm sm:text-base border border-orange-400/40 shadow-[0_4px_20px_rgba(249,115,22,0.35)] hover:shadow-[0_4px_25px_rgba(249,115,22,0.6)] transition-all duration-300 group hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <span className="absolute inset-0 rounded-2xl bg-orange-500/20 animate-ping opacity-75 pointer-events-none"></span>
+                <span className="relative z-10 flex items-center gap-2">
+                  <FaGraduationCap className="text-white text-lg" />
+                  레버리지 교육 바로가기
+                </span>
+                <FaChevronRight className="relative z-10 text-xs group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
           </div>
+
+          {/* 1. 증권사 계좌개설 버튼 리스트 */}
+          <div className="bg-white/[0.02] border border-white/10 rounded-3xl p-5 sm:p-8 backdrop-blur-md">
+            <div className="flex items-center justify-between mb-6 pb-3 border-b border-white/10">
+              <h2 className="text-xl sm:text-2xl font-bold flex items-center gap-3 text-white">
+                <FaExchangeAlt className="text-blue-400" />
+                주요 증권사 비대면 계좌개설 바로가기
+              </h2>
+              <span className="text-xs text-blue-400 font-semibold bg-blue-500/10 px-3 py-1 rounded-full border border-blue-500/20">
+                총 {brokerageLinks.length}개 증권사
+              </span>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+              {brokerageLinks.map((broker, idx) => (
+                <Link
+                  key={idx}
+                  href={broker.url}
+                  className={`group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-gradient-to-br ${broker.color} text-white font-bold text-sm sm:text-base shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] border border-white/10`}
+                >
+                  <span className="text-center mb-1">{broker.name}</span>
+                  <span className="text-[11px] text-white/80 font-normal flex items-center gap-1 group-hover:underline">
+                    개설 바로가기
+                    <FaChevronRight className="text-[9px] group-hover:translate-x-0.5 transition-transform" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* 2. 5대 시중은행 & 인터넷전문은행 버튼 리스트 */}
+          <div className="bg-white/[0.02] border border-white/10 rounded-3xl p-5 sm:p-8 backdrop-blur-md">
+            <div className="flex items-center justify-between mb-6 pb-3 border-b border-white/10">
+              <h2 className="text-xl sm:text-2xl font-bold flex items-center gap-3 text-white">
+                <FaBuilding className="text-emerald-400" />
+                5대 시중은행 & 인터넷전문은행 바로가기
+              </h2>
+              <span className="text-xs text-emerald-400 font-semibold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
+                총 {majorBankLinks.length}개 은행
+              </span>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+              {majorBankLinks.map((bank, idx) => (
+                <Link
+                  key={idx}
+                  href={bank.url}
+                  className="group flex flex-col items-center justify-center p-3.5 sm:p-4 rounded-2xl bg-zinc-800/80 hover:bg-emerald-600 text-zinc-100 hover:text-white font-bold text-xs sm:text-sm border border-white/10 hover:border-emerald-400 transition-all duration-300 hover:scale-[1.03] active:scale-[0.97]"
+                >
+                  <span className="text-center">{bank.name}</span>
+                  <span className="text-[10px] text-zinc-400 group-hover:text-emerald-100 font-normal mt-1 flex items-center gap-0.5">
+                    바로가기
+                    <FaChevronRight className="text-[8px]" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* 3. 지방은행, 저축은행 & 기타 금융기관 버튼 리스트 */}
+          <div className="bg-white/[0.02] border border-white/10 rounded-3xl p-5 sm:p-8 backdrop-blur-md">
+            <div className="flex items-center justify-between mb-6 pb-3 border-b border-white/10">
+              <h2 className="text-xl sm:text-2xl font-bold flex items-center gap-3 text-white">
+                <FaUniversity className="text-orange-400" />
+                지방은행 · 저축은행 · 금융기관 바로가기
+              </h2>
+              <span className="text-xs text-orange-400 font-semibold bg-orange-500/10 px-3 py-1 rounded-full border border-orange-500/20">
+                총 {regionalOtherBankLinks.length}개 기관
+              </span>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+              {regionalOtherBankLinks.map((bank, idx) => (
+                <Link
+                  key={idx}
+                  href={bank.url}
+                  className="group flex flex-col items-center justify-center p-3.5 sm:p-4 rounded-2xl bg-zinc-800/80 hover:bg-orange-600 text-zinc-100 hover:text-white font-bold text-xs sm:text-sm border border-white/10 hover:border-orange-400 transition-all duration-300 hover:scale-[1.03] active:scale-[0.97]"
+                >
+                  <span className="text-center">{bank.name}</span>
+                  <span className="text-[10px] text-zinc-400 group-hover:text-orange-100 font-normal mt-1 flex items-center gap-0.5">
+                    바로가기
+                    <FaChevronRight className="text-[8px]" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
         </div>
 
         {/* Section 1: Product Grid Card */}
@@ -144,7 +292,7 @@ export default function LeverageEtfPage() {
                   </h3>
                   <p className="text-zinc-400 mt-2 text-sm sm:text-base leading-relaxed break-keep">
                     레버리지 ETF를 매매하기 위해서는 국내 주식 및 ETF 거래가 가능한 증권 계좌가 필요합니다. 
-                    신규 개설 시 수수료 우대 혜택 및 각종 개설 리워드를 주는 증권사 목록을 확인하고 비대면으로 간편하게 계좌를 개설해 보세요.
+                    상단의 증권사 바로가기 버튼을 활용해 개설을 완료하세요.
                   </p>
                 </div>
                 
@@ -153,7 +301,7 @@ export default function LeverageEtfPage() {
                     href="https://zucca100.com/stock-account/"
                     className="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 font-bold transition-colors group"
                   >
-                    <span>증권 계좌개설 방법 & 개설처 바로가기</span>
+                    <span>증권 계좌개설 상세 가이드 바로가기</span>
                     <FaArrowRight className="text-xs group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
