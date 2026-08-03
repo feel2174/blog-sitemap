@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 42,
+      "count": 43,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -295,6 +295,12 @@ const categorizedData: CategorizedData = {
         "link": "/national-growth-fund",
         "category": "government_support",
         "matched_keywords": ["국민성장펀드", "혁신성장펀드", "산업은행", "가이드북", "스타트업지원", "벤처지원"]
+      },
+      {
+        "title": "한국도로공사 미납 통행료 조회 바로가기 | 고속도로 하이패스 미납 조회 및 납부 방법",
+        "link": "/unpaid-toll-fee",
+        "category": "government_support",
+        "matched_keywords": ["미납통행료", "한국도로공사", "하이패스미납", "통행료조회", "고속도로미납", "민자고속도로", "통행료납부"]
       }
     ],
     "finance_investment": [
