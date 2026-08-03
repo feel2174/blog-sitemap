@@ -21,14 +21,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://zucca100.com'),
+  metadataBase: new URL('https://plus.zucca100.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "정부 지원금 & 환급 한눈에 보기 | 블로그 사이트맵",
     description: "2026년 민생회복 지원금, 소비쿠폰, 세금 환급 등 정부 혜택 정보를 카테고리별로 정리한 사이트맵",
-    url: 'https://zucca100.com',
+    url: 'https://plus.zucca100.com',
     siteName: 'zucca100 블로그',
     locale: 'ko_KR',
     type: 'website',

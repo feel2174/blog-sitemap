@@ -41,12 +41,12 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "zucca100 블로그",
-    "url": "https://zucca100.com",
+    "url": "https://plus.zucca100.com",
     "description": "정부 지원금 & 환급 정보를 카테고리별로 정리한 블로그",
     "publisher": {
       "@type": "Organization",
       "name": "zucca100",
-      "url": "https://zucca100.com"
+      "url": "https://plus.zucca100.com"
     },
     "mainEntity": {
       "@type": "ItemList",
@@ -59,7 +59,7 @@ export default function Home() {
           "@type": "CreativeWork",
           "name": info.description,
           "description": `${info.count}개의 혜택 정보`,
-          "url": `https://zucca100.com/#${categoryKey}`
+          "url": `https://plus.zucca100.com/#${categoryKey}`
         }
       }))
     }

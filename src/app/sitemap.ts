@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const categorizedData = getCategorizedPosts();
   const { categories } = categorizedData;
   
-  const baseUrl = 'https://zucca100.com'
+  const baseUrl = 'https://plus.zucca100.com'
   
   // 메인 페이지
   const mainPage = {
