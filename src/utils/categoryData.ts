@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 49,
+      "count": 50,
       "description": "라이프스타일"
     }
   },
@@ -598,6 +598,12 @@ const categorizedData: CategorizedData = {
       }
     ],
     "lifestyle": [
+      {
+        "title": "가평 청리움 예약 바로가기 | 힐링 스테이, 요금, 예약 가이드",
+        "link": "/cheongrium-gapyeong",
+        "category": "lifestyle",
+        "matched_keywords": ["청리움", "가평청리움", "청리움예약", "힐링스테이", "가평숙소", "글램핑", "가평여행"]
+      },
       {
         "title": "레일크루즈 해랑열차 예약 바로가기 | 가격, 코스, 객실 요금 완벽 가이드",
         "link": "/haerang-train",
