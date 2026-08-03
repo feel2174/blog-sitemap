@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 50,
+      "count": 51,
       "description": "라이프스타일"
     }
   },
@@ -598,6 +598,12 @@ const categorizedData: CategorizedData = {
       }
     ],
     "lifestyle": [
+      {
+        "title": "함양 대봉산 모노레일 예약 방법 바로가기 | 요금, 코스, 짚라인 가이드",
+        "link": "/daebongsan-monorail",
+        "category": "lifestyle",
+        "matched_keywords": ["대봉산", "모노레일", "대봉산모노레일", "함양모노레일", "대봉산휴양밸리", "짚라인", "모노레일예약"]
+      },
       {
         "title": "가평 청리움 예약 바로가기 | 힐링 스테이, 요금, 예약 가이드",
         "link": "/cheongrium-gapyeong",
