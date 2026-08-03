@@ -4,7 +4,7 @@ import { CategorizedData } from './categoryDataTypes';
 const categorizedData: CategorizedData = {
   "summary": {
     "government_support": {
-      "count": 43,
+      "count": 44,
       "description": "정부 지원금 & 환급"
     },
     "finance_investment": {
@@ -301,6 +301,12 @@ const categorizedData: CategorizedData = {
         "link": "/unpaid-toll-fee",
         "category": "government_support",
         "matched_keywords": ["미납통행료", "한국도로공사", "하이패스미납", "통행료조회", "고속도로미납", "민자고속도로", "통행료납부"]
+      },
+      {
+        "title": "2026 실업급여(구직급여) 신청 조건 금액 바로가기 | 고용24 수급자격 가이드",
+        "link": "/unemployment-benefit",
+        "category": "government_support",
+        "matched_keywords": ["실업급여", "구직급여", "실업급여신청", "실업급여조건", "실업급여금액", "고용24", "워크넷", "고용보험"]
       }
     ],
     "finance_investment": [
