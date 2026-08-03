@@ -20,7 +20,7 @@ const categorizedData: CategorizedData = {
       "description": "기술 & IT"
     },
     "lifestyle": {
-      "count": 48,
+      "count": 49,
       "description": "라이프스타일"
     }
   },
@@ -598,6 +598,12 @@ const categorizedData: CategorizedData = {
       }
     ],
     "lifestyle": [
+      {
+        "title": "레일크루즈 해랑열차 예약 바로가기 | 가격, 코스, 객실 요금 완벽 가이드",
+        "link": "/haerang-train",
+        "category": "lifestyle",
+        "matched_keywords": ["해랑열차", "레일크루즈", "코레일", "관광열차", "열차예약", "기차여행", "해랑"]
+      },
       {
         "title": "사과게임 (과일박스) 싱글 및 멀티 플레이 (온라인 대전) 바로가기",
         "link": "/apple-game",
