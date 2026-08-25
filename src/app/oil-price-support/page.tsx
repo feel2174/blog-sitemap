@@ -481,8 +481,6 @@ export default function OilPriceSupportPage() {
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                     <Link
                         href="https://www.fsms.go.kr"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className="group relative flex items-center justify-between bg-gradient-to-r from-blue-600 to-indigo-600 p-4 rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98]"
                     >
                         <div className="flex items-center gap-3">
@@ -499,8 +497,6 @@ export default function OilPriceSupportPage() {
 
                     <Link
                         href="https://www.hometax.go.kr"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className="group relative flex items-center justify-between bg-gradient-to-r from-teal-600 to-emerald-600 p-4 rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98]"
                     >
                         <div className="flex items-center gap-3">
@@ -519,8 +515,6 @@ export default function OilPriceSupportPage() {
                 {/* Usage Official Guide Banner */}
                 <Link
                     href="https://www.korea.kr/multi/visualNewsView.do?newsId=148964625&pWise=main&pWiseMain=R1"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="w-full mb-6 group relative flex items-center justify-between bg-gradient-to-r from-amber-500 to-orange-500 p-3.5 sm:p-4 rounded-2xl transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98]"
                 >
                     <div className="flex items-center gap-3">
@@ -613,8 +607,6 @@ export default function OilPriceSupportPage() {
                             <Link
                                 key={index}
                                 href={item.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
                                 className={`group relative flex flex-col justify-between bg-white border ${item.borderHover} p-4 rounded-2xl transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98] text-left`}
                             >
                                 <div>
