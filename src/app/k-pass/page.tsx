@@ -6,6 +6,7 @@ import CoupangAds from '@/components/CoupangAds';
 
 interface BankCardRefundInfo {
     name: string;
+    bankShort: string;
     type: string;
     refundSchedule: string;
     creditMethod: string;
@@ -14,11 +15,13 @@ interface BankCardRefundInfo {
     color: string;
     badgeColor: string;
     officialUrl: string;
+    bankDirectUrl: string;
 }
 
 const bankCardList: BankCardRefundInfo[] = [
     {
         name: '신한카드 (신한 K-패스)',
+        bankShort: '신한카드',
         type: '신한 SOL페이 / 신한은행',
         refundSchedule: '매월 10일 ~ 13일경 (영업일 기준)',
         creditMethod: '결제일 청구대금에서 환급금 자동 차감 (청구할인)',
@@ -27,9 +30,11 @@ const bankCardList: BankCardRefundInfo[] = [
         color: 'border-blue-200 hover:border-blue-500 bg-blue-50/40',
         badgeColor: 'bg-blue-100 text-blue-800 border-blue-200',
         officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://www.shinhancard.com',
     },
     {
         name: 'NH농협카드 (농협 K-패스)',
+        bankShort: 'NH농협카드',
         type: 'NH pay / 농협은행·축협',
         refundSchedule: '매월 11일 ~ 14일경 (영업일 기준)',
         creditMethod: '해당 월 신용카드 청구서에 마이너스(-) 할인 반영',
@@ -38,9 +43,11 @@ const bankCardList: BankCardRefundInfo[] = [
         color: 'border-emerald-200 hover:border-emerald-500 bg-emerald-50/40',
         badgeColor: 'bg-emerald-100 text-emerald-800 border-emerald-200',
         officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://card.nonghyup.com',
     },
     {
         name: 'KB국민카드 (KB K-패스)',
+        bankShort: 'KB국민카드',
         type: 'KB Pay / 국민은행',
         refundSchedule: '매월 12일 ~ 15일경 (영업일 기준)',
         creditMethod: '결제대금 차감 후 잔여금 발생 시 환급 계좌 입금',
@@ -49,9 +56,11 @@ const bankCardList: BankCardRefundInfo[] = [
         color: 'border-amber-200 hover:border-amber-500 bg-amber-50/40',
         badgeColor: 'bg-amber-100 text-amber-900 border-amber-200',
         officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://card.kbcard.com',
     },
     {
         name: '우리카드 (우리 K-패스)',
+        bankShort: '우리카드',
         type: '우리WON카드 / 우리은행',
         refundSchedule: '매월 7일 ~ 10일경 (가장 빠른 편)',
         creditMethod: '당월 대중교통 이용대금 청구할인 적용',
@@ -60,9 +69,11 @@ const bankCardList: BankCardRefundInfo[] = [
         color: 'border-sky-200 hover:border-sky-500 bg-sky-50/40',
         badgeColor: 'bg-sky-100 text-sky-800 border-sky-200',
         officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://www.wooricard.com',
     },
     {
         name: '하나카드 (하나 K-패스)',
+        bankShort: '하나카드',
         type: '하나Pay / 하나은행',
         refundSchedule: '매월 10일 ~ 13일경',
         creditMethod: '신용카드 결제일에 결제금액 차감 청구',
@@ -71,9 +82,11 @@ const bankCardList: BankCardRefundInfo[] = [
         color: 'border-teal-200 hover:border-teal-500 bg-teal-50/40',
         badgeColor: 'bg-teal-100 text-teal-800 border-teal-200',
         officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://www.hanacard.co.kr',
     },
     {
         name: '삼성카드 (삼성 K-패스)',
+        bankShort: '삼성카드',
         type: '삼성카드 앱 / 모니모',
         refundSchedule: '매월 9일 ~ 12일경',
         creditMethod: '신용카드 결제대금에서 환급금 자동 공제',
@@ -82,9 +95,11 @@ const bankCardList: BankCardRefundInfo[] = [
         color: 'border-indigo-200 hover:border-indigo-500 bg-indigo-50/40',
         badgeColor: 'bg-indigo-100 text-indigo-800 border-indigo-200',
         officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://www.samsungcard.com',
     },
     {
         name: '현대카드 (현대 K-패스)',
+        bankShort: '현대카드',
         type: '현대카드 앱',
         refundSchedule: '매월 10일 ~ 15일경 (결제일별 상이)',
         creditMethod: '도래하는 결제일 청구서에 청구할인으로 반영',
@@ -93,31 +108,115 @@ const bankCardList: BankCardRefundInfo[] = [
         color: 'border-zinc-300 hover:border-zinc-600 bg-zinc-50',
         badgeColor: 'bg-zinc-200 text-zinc-800 border-zinc-300',
         officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://www.hyundaicard.com',
     },
     {
-        name: 'BC카드 / IBK기업은행 (IBK K-패스)',
-        type: '페이북 / i-ONE Bank',
+        name: 'BC카드 (BC 바로 K-패스)',
+        bankShort: 'BC카드',
+        type: '페이북 (paybooc)',
         refundSchedule: '매월 10일 ~ 14일경',
         creditMethod: '결제일 결제대금 자동 차감',
-        checkMethod: '기업은행/BC 제휴계좌로 현금 캐시백 입금',
-        appGuide: '페이북 앱 > MY > K-패스 마일리지 / 기업은행 앱 카드 메뉴',
+        checkMethod: 'BC 결제계좌로 현금 캐시백 입금',
+        appGuide: '페이북 앱 > MY > K-패스 마일리지 내역',
         color: 'border-rose-200 hover:border-rose-500 bg-rose-50/40',
         badgeColor: 'bg-rose-100 text-rose-800 border-rose-200',
         officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://www.bccard.com',
     },
     {
-        name: '카카오뱅크 / 케이뱅크 (인터넷뱅크 K-패스)',
-        type: '카카오뱅크·케이뱅크 앱',
+        name: 'IBK기업은행 (IBK K-패스)',
+        bankShort: 'IBK기업은행',
+        type: 'i-ONE Bank / 기업은행',
+        refundSchedule: '매월 10일 ~ 14일경',
+        creditMethod: '도래 결제대금 청구할인',
+        checkMethod: '기업은행 결제계좌로 캐시백 현금 입금',
+        appGuide: 'i-ONE Bank 앱 > 카드 > K-패스 바우처 내역',
+        color: 'border-blue-300 hover:border-blue-600 bg-blue-50/40',
+        badgeColor: 'bg-blue-100 text-blue-900 border-blue-300',
+        officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://www.ibk.co.kr',
+    },
+    {
+        name: '카카오뱅크 (카뱅 K-패스)',
+        bankShort: '카카오뱅크',
+        type: '카카오뱅크 프렌즈 체크카드',
         refundSchedule: '매월 15일 ~ 20일경',
-        creditMethod: '해당 카드 결제일 청구할인',
-        checkMethod: '카카오뱅크/케이뱅크 계좌로 현금 캐시백 즉시 입금',
-        appGuide: '각 은행 앱 > 카드 관리 > K-패스 캐시백 내역',
+        creditMethod: '해당 없음 (체크카드 전용)',
+        checkMethod: '카카오뱅크 연결 계좌로 현금 캐시백 즉시 입금',
+        appGuide: '카카오뱅크 앱 > 내 카드 > 카드 관리 > 혜택 내역',
         color: 'border-yellow-200 hover:border-yellow-500 bg-yellow-50/40',
         badgeColor: 'bg-yellow-100 text-yellow-900 border-yellow-300',
         officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://www.kakaobank.com',
+    },
+    {
+        name: '케이뱅크 (케이뱅크 K-패스)',
+        bankShort: '케이뱅크',
+        type: '케이뱅크 MY 체크카드',
+        refundSchedule: '매월 15일 ~ 20일경',
+        creditMethod: '해당 없음 (체크카드 전용)',
+        checkMethod: '케이뱅크 통장으로 현금 캐시백 즉시 입금',
+        appGuide: '케이뱅크 앱 > 카드 > MY 체크카드 혜택 내역',
+        color: 'border-teal-300 hover:border-teal-600 bg-teal-50/40',
+        badgeColor: 'bg-teal-100 text-teal-900 border-teal-300',
+        officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://www.kbanknow.com',
+    },
+    {
+        name: '토스뱅크 (토스뱅크 K-패스)',
+        bankShort: '토스뱅크',
+        type: '토스뱅크 체크카드 / 토스앱',
+        refundSchedule: '매월 20일 ~ 25일경',
+        creditMethod: '해당 없음 (체크카드 전용)',
+        checkMethod: '토스뱅크 통장으로 현금 캐시백 즉시 입금',
+        appGuide: '토스 앱 > 토스뱅크 > 내 카드 > K-패스 혜택 확인',
+        color: 'border-blue-200 hover:border-blue-500 bg-blue-50/40',
+        badgeColor: 'bg-blue-100 text-blue-900 border-blue-200',
+        officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://www.tossbank.com',
+    },
+    {
+        name: 'iM뱅크 (대구은행 K-패스)',
+        bankShort: 'iM뱅크',
+        type: 'iM뱅크 앱 / BC카드 제휴',
+        refundSchedule: '매월 10일 ~ 15일경',
+        creditMethod: '결제일 결제대금 청구할인',
+        checkMethod: 'iM뱅크 결제계좌로 현금 캐시백 입금',
+        appGuide: 'iM뱅크 앱 > 카드 > K-패스 관리',
+        color: 'border-cyan-200 hover:border-cyan-500 bg-cyan-50/40',
+        badgeColor: 'bg-cyan-100 text-cyan-800 border-cyan-200',
+        officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://www.imbank.co.kr',
+    },
+    {
+        name: 'BNK부산은행 (부산은행 K-패스)',
+        bankShort: '부산은행',
+        type: '부산은행 모바일뱅킹',
+        refundSchedule: '매월 10일 ~ 15일경',
+        creditMethod: '신용 결제대금 차감 청구',
+        checkMethod: '부산은행 결제계좌 현금 캐시백 입금',
+        appGuide: '부산은행 앱 > 카드 > 정부지원사업 > K-패스',
+        color: 'border-red-200 hover:border-red-500 bg-red-50/40',
+        badgeColor: 'bg-red-100 text-red-800 border-red-200',
+        officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://www.busanbank.co.kr',
+    },
+    {
+        name: '광주은행 (광주은행 K-패스)',
+        bankShort: '광주은행',
+        type: '광주은행 개인뱅킹',
+        refundSchedule: '매월 11일 ~ 15일경',
+        creditMethod: '결제대금 차감 청구',
+        checkMethod: '광주은행 결제계좌로 현금 입금',
+        appGuide: '광주은행 앱 > 카드 혜택 > K-패스 마일리지',
+        color: 'border-blue-200 hover:border-blue-500 bg-blue-50/40',
+        badgeColor: 'bg-blue-100 text-blue-800 border-blue-200',
+        officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://www.kjbank.com',
     },
     {
         name: '모바일 이즐 & 티머니 (선불형 K-패스)',
+        bankShort: '이즐 / 티머니',
         type: '모바일이즐 / 모바일티머니',
         refundSchedule: '매월 15일 ~ 20일경',
         creditMethod: '해당 없음 (선불 충전식)',
@@ -126,6 +225,7 @@ const bankCardList: BankCardRefundInfo[] = [
         color: 'border-purple-200 hover:border-purple-500 bg-purple-50/40',
         badgeColor: 'bg-purple-100 text-purple-800 border-purple-200',
         officialUrl: 'https://korea-pass.kr/',
+        bankDirectUrl: 'https://pay.tmoney.co.kr',
     },
 ];
 
@@ -239,7 +339,7 @@ export default function KPassPage() {
                     </p>
 
                     {/* HERO IMMEDIATE ACTION BUTTONS (서론 섹션 바로가기 버튼) */}
-                    <div className="w-full flex flex-col sm:flex-row gap-2.5 sm:gap-3 mb-6">
+                    <div className="w-full flex flex-col sm:flex-row gap-2.5 sm:gap-3 mb-4">
                         <Link
                             href="https://korea-pass.kr/"
                             className="flex-1 group relative flex items-center justify-between bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 text-white p-4 rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98]"
@@ -271,6 +371,28 @@ export default function KPassPage() {
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-600 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-transform shrink-0"><polyline points="9 18 15 12 9 6"></polyline></svg>
                         </a>
+                    </div>
+
+                    {/* HERO BANK QUICK LINKS (각 은행별 K-패스 바로가기 버튼 모음) */}
+                    <div className="w-full bg-white/90 backdrop-blur-sm border border-slate-200 rounded-2xl p-3.5 sm:p-4 mb-6 shadow-sm">
+                        <div className="flex items-center justify-between mb-2.5">
+                            <span className="text-xs font-extrabold text-slate-800 flex items-center gap-1.5">
+                                <span>🏦</span> 각 은행·카드사 K-패스 신청/조회 바로가기
+                            </span>
+                            <span className="text-[10px] text-slate-400 font-medium">16개 금융·교통사</span>
+                        </div>
+                        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-1.5">
+                            {bankCardList.map((card, idx) => (
+                                <Link
+                                    key={idx}
+                                    href={card.bankDirectUrl}
+                                    className="px-2 py-1.5 bg-slate-50 hover:bg-emerald-50 hover:border-emerald-300 border border-slate-200 rounded-xl text-[11px] font-bold text-slate-700 hover:text-emerald-800 transition-all text-center truncate block active:scale-95"
+                                    title={`${card.bankShort} K-패스 바로가기`}
+                                >
+                                    {card.bankShort}
+                                </Link>
+                            ))}
+                        </div>
                     </div>
                 </div>
 
@@ -657,6 +779,24 @@ export default function KPassPage() {
                                         <span className="font-semibold text-slate-600 shrink-0">조회경로:</span>
                                         <span>{card.appGuide}</span>
                                     </div>
+                                </div>
+
+                                {/* Bank Action Buttons (은행별 바로가기 & K-패스 공식 등록 버튼) */}
+                                <div className="mt-3.5 pt-3 border-t border-slate-200/60 flex flex-col sm:flex-row gap-2">
+                                    <Link
+                                        href={card.bankDirectUrl}
+                                        className="flex-1 py-2 px-3 bg-neutral-900 hover:bg-neutral-800 text-white rounded-xl text-xs font-bold text-center flex items-center justify-center gap-1.5 transition-colors shadow-xs active:scale-[0.98]"
+                                    >
+                                        <span>🏦 {card.bankShort} K-패스 신청/조회</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                    </Link>
+                                    <Link
+                                        href={card.officialUrl}
+                                        className="py-2 px-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold text-center flex items-center justify-center gap-1.5 transition-colors shadow-xs active:scale-[0.98]"
+                                    >
+                                        <span>💳 K-패스 카드등록</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                    </Link>
                                 </div>
                             </div>
                         ))}
